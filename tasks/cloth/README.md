@@ -17,6 +17,8 @@ On one warmed CPU core, the four-task counterbalanced timing averaged 15.625 s t
 
 These are 16 distinct cloth geometries and material configurations, with one target fold each. The coarse ranking objective favors shape, low height and aligned corners. The binary pass additionally checks residual speed and three separate geometric thresholds. In the confirmation bank the learned shortlist contained a passing candidate on 15/16 tasks, the equal-budget geometric shortlist on 11/16 and the full bank on 16/16. Those coverage numbers count available choices. The table reports what the fixed planner actually selected.
 
+For inputs outside the checkpoint’s observed fabric and command ranges, an optional planner checks all candidates in Newton. It completed 14/16 original confirmation folds using 66 native episodes. [Training-range check, invocation and reproduction](GUARDED-PLANNER.md)
+
 ## Task and teacher
 
 Newton VBD advances a 12×8-cell triangulated patch (117 vertices) on a frictional horizontal support. Cloth self-contact, vertex–face and edge–edge contact handling are enabled. Each fabric varies in length (0.45–0.61 m), width (0.29–0.40 m), membrane and bend stiffness, and particle mass through areal density. Two ideal kinematic grasps carry the right edge’s corners along a smooth arc; two opposite corners hold their original positions. At 1.06 s all four corners become dynamic. Newton then simulates the remaining 0.54 s, for a total of 1.6 s and 80 output steps at 50 Hz. Each output step has three simulation substeps and six solver iterations per substep. The table is represented by an infinite horizontal plane. Explicit grasp acquisition, gripper slip and misses are outside this benchmark.

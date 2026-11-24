@@ -1,0 +1,888 @@
+{
+  "calibration": {
+    "checkpoint_sha256": "cbe482b70da923e3a883ba063cd333549fb7ff06f041e7de6e49bb8707efdeb0",
+    "training_centers": 200,
+    "no_motion_centers": 8,
+    "features": [
+      "length_m",
+      "width_m",
+      "membrane_stiffness",
+      "bend_stiffness",
+      "areal_density",
+      "landing_fraction",
+      "lift_fraction",
+      "release_height_m"
+    ],
+    "physical_min": [
+      0.4512035846710205,
+      0.2918393611907959,
+      350.1579284667969,
+      0.00015181978233158588,
+      0.3816894292831421,
+      -0.07518547773361206,
+      0.23454315960407257,
+      0.017910335212945938
+    ],
+    "physical_max": [
+      0.6097524762153625,
+      0.39970406889915466,
+      645.8442993164062,
+      0.0006493752007372677,
+      0.648453950881958,
+      0.4371175169944763,
+      0.6296952366828918,
+      0.07404554635286331
+    ],
+    "normalized_min": [
+      -0.29183846712112427,
+      -0.26580318808555603,
+      -0.20667871832847595,
+      -0.24818019568920135,
+      -0.15683594346046448,
+      -0.632067084312439,
+      -0.7239142060279846,
+      -0.41676411032676697
+    ],
+    "normalized_max": [
+      0.295379638671875,
+      0.2735203504562378,
+      0.20116454362869263,
+      0.24937519431114197,
+      0.15700465440750122,
+      0.7160986661911011,
+      0.7396119236946106,
+      0.4468545615673065
+    ],
+    "no_motion_command": [
+      1.0,
+      0.0,
+      0.004999999888241291
+    ]
+  },
+  "cases": [
+    {
+      "seed": 50300,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        6,
+        10,
+        5
+      ],
+      "native_evaluations": 3,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 3.4318018704652786,
+        "corner_error_percent": 4.307379573583603,
+        "final_height_p95_m": 0.042725734412670135,
+        "tail_speed_m_s": 0.0003012987435795367,
+        "success": false
+      },
+      "checked_native_outcomes": {
+        "6": {
+          "shape_error_percent": 2.4549465626478195,
+          "corner_error_percent": 4.39690500497818,
+          "final_height_p95_m": 0.04843476787209511,
+          "tail_speed_m_s": 0.0005467720911838114,
+          "success": false
+        },
+        "10": {
+          "shape_error_percent": 4.9386221915483475,
+          "corner_error_percent": 8.154172450304031,
+          "final_height_p95_m": 0.014483232982456684,
+          "tail_speed_m_s": 0.0022666105069220066,
+          "success": true
+        },
+        "5": {
+          "shape_error_percent": 3.4318018704652786,
+          "corner_error_percent": 4.307379573583603,
+          "final_height_p95_m": 0.042725734412670135,
+          "tail_speed_m_s": 0.0003012987435795367,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50301,
+      "used_model": false,
+      "outside": [
+        "areal_density"
+      ],
+      "checked": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "native_evaluations": 12,
+      "selected": 9,
+      "outcome": {
+        "shape_error_percent": 0.7843761704862118,
+        "corner_error_percent": 1.4083415269851685,
+        "final_height_p95_m": 0.011579933576285839,
+        "tail_speed_m_s": 0.001924346899613738,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "0": {
+          "shape_error_percent": 33.59681963920593,
+          "corner_error_percent": 82.10867047309875,
+          "final_height_p95_m": 0.0029953925404697657,
+          "tail_speed_m_s": 4.398395105909003e-07,
+          "success": false
+        },
+        "1": {
+          "shape_error_percent": 0.7929361425340176,
+          "corner_error_percent": 1.37323047965765,
+          "final_height_p95_m": 0.01174627710133791,
+          "tail_speed_m_s": 0.0047721234150230885,
+          "success": true
+        },
+        "2": {
+          "shape_error_percent": 1.2506685219705105,
+          "corner_error_percent": 2.214737795293331,
+          "final_height_p95_m": 0.012190446257591248,
+          "tail_speed_m_s": 0.006012807600200176,
+          "success": true
+        },
+        "3": {
+          "shape_error_percent": 9.913183748722076,
+          "corner_error_percent": 9.452158957719803,
+          "final_height_p95_m": 0.034333739429712296,
+          "tail_speed_m_s": 0.00825875997543335,
+          "success": false
+        },
+        "4": {
+          "shape_error_percent": 9.391464293003082,
+          "corner_error_percent": 7.49051570892334,
+          "final_height_p95_m": 0.04559968039393425,
+          "tail_speed_m_s": 0.0036746684927493334,
+          "success": false
+        },
+        "5": {
+          "shape_error_percent": 1.0904084891080856,
+          "corner_error_percent": 1.828613132238388,
+          "final_height_p95_m": 0.012588986195623875,
+          "tail_speed_m_s": 0.0058176154270768166,
+          "success": true
+        },
+        "6": {
+          "shape_error_percent": 2.0790690556168556,
+          "corner_error_percent": 2.2798050194978714,
+          "final_height_p95_m": 0.03377634659409523,
+          "tail_speed_m_s": 0.0005381891969591379,
+          "success": true
+        },
+        "7": {
+          "shape_error_percent": 7.217232137918472,
+          "corner_error_percent": 8.005593717098236,
+          "final_height_p95_m": 0.046271249651908875,
+          "tail_speed_m_s": 0.01736864447593689,
+          "success": false
+        },
+        "8": {
+          "shape_error_percent": 4.222254455089569,
+          "corner_error_percent": 7.637075334787369,
+          "final_height_p95_m": 0.0429716557264328,
+          "tail_speed_m_s": 0.0008827439742162824,
+          "success": false
+        },
+        "9": {
+          "shape_error_percent": 0.7843761704862118,
+          "corner_error_percent": 1.4083415269851685,
+          "final_height_p95_m": 0.011579933576285839,
+          "tail_speed_m_s": 0.001924346899613738,
+          "success": true
+        },
+        "10": {
+          "shape_error_percent": 4.82761487364769,
+          "corner_error_percent": 8.637579530477524,
+          "final_height_p95_m": 0.04461580514907837,
+          "tail_speed_m_s": 0.000388521293643862,
+          "success": false
+        },
+        "11": {
+          "shape_error_percent": 7.290521264076233,
+          "corner_error_percent": 7.432175427675247,
+          "final_height_p95_m": 0.05546184256672859,
+          "tail_speed_m_s": 0.0024091412778943777,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50302,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        5,
+        1,
+        6
+      ],
+      "native_evaluations": 3,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 2.134746126830578,
+        "corner_error_percent": 4.367109760642052,
+        "final_height_p95_m": 0.030850982293486595,
+        "tail_speed_m_s": 0.0007853476563468575,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "5": {
+          "shape_error_percent": 2.134746126830578,
+          "corner_error_percent": 4.367109760642052,
+          "final_height_p95_m": 0.030850982293486595,
+          "tail_speed_m_s": 0.0007853476563468575,
+          "success": true
+        },
+        "1": {
+          "shape_error_percent": 3.012818843126297,
+          "corner_error_percent": 4.192464426159859,
+          "final_height_p95_m": 0.040724895894527435,
+          "tail_speed_m_s": 0.0008555932436138391,
+          "success": false
+        },
+        "6": {
+          "shape_error_percent": 2.229034900665283,
+          "corner_error_percent": 6.155706569552422,
+          "final_height_p95_m": 0.03613714873790741,
+          "tail_speed_m_s": 0.0005421295645646751,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50303,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        10,
+        2,
+        8
+      ],
+      "native_evaluations": 3,
+      "selected": 8,
+      "outcome": {
+        "shape_error_percent": 1.739814132452011,
+        "corner_error_percent": 2.905050106346607,
+        "final_height_p95_m": 0.012053185142576694,
+        "tail_speed_m_s": 0.00416785990819335,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "10": {
+          "shape_error_percent": 3.010113723576069,
+          "corner_error_percent": 5.144884809851646,
+          "final_height_p95_m": 0.02853492647409439,
+          "tail_speed_m_s": 0.00022153777536004782,
+          "success": true
+        },
+        "2": {
+          "shape_error_percent": 4.013620689511299,
+          "corner_error_percent": 6.10506571829319,
+          "final_height_p95_m": 0.04569130763411522,
+          "tail_speed_m_s": 0.0007328817155212164,
+          "success": false
+        },
+        "8": {
+          "shape_error_percent": 1.739814132452011,
+          "corner_error_percent": 2.905050106346607,
+          "final_height_p95_m": 0.012053185142576694,
+          "tail_speed_m_s": 0.00416785990819335,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50304,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        10,
+        5,
+        6
+      ],
+      "native_evaluations": 3,
+      "selected": 6,
+      "outcome": {
+        "shape_error_percent": 1.3447714038193226,
+        "corner_error_percent": 2.169143036007881,
+        "final_height_p95_m": 0.011876634322106838,
+        "tail_speed_m_s": 0.004537912085652351,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "10": {
+          "shape_error_percent": 3.0245451256632805,
+          "corner_error_percent": 5.1628753542900085,
+          "final_height_p95_m": 0.031252846121788025,
+          "tail_speed_m_s": 0.00019455529400147498,
+          "success": true
+        },
+        "5": {
+          "shape_error_percent": 3.2211851328611374,
+          "corner_error_percent": 3.1817495822906494,
+          "final_height_p95_m": 0.04677991941571236,
+          "tail_speed_m_s": 0.0001718414860079065,
+          "success": false
+        },
+        "6": {
+          "shape_error_percent": 1.3447714038193226,
+          "corner_error_percent": 2.169143036007881,
+          "final_height_p95_m": 0.011876634322106838,
+          "tail_speed_m_s": 0.004537912085652351,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50305,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        2,
+        5,
+        6
+      ],
+      "native_evaluations": 3,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 1.8786108121275902,
+        "corner_error_percent": 4.262396693229675,
+        "final_height_p95_m": 0.027492467314004898,
+        "tail_speed_m_s": 0.0006646242109127343,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "2": {
+          "shape_error_percent": 2.4855582043528557,
+          "corner_error_percent": 4.182112962007523,
+          "final_height_p95_m": 0.0118261082097888,
+          "tail_speed_m_s": 0.0025545938406139612,
+          "success": true
+        },
+        "5": {
+          "shape_error_percent": 1.8786108121275902,
+          "corner_error_percent": 4.262396693229675,
+          "final_height_p95_m": 0.027492467314004898,
+          "tail_speed_m_s": 0.0006646242109127343,
+          "success": true
+        },
+        "6": {
+          "shape_error_percent": 2.0888835191726685,
+          "corner_error_percent": 1.919155940413475,
+          "final_height_p95_m": 0.04361167177557945,
+          "tail_speed_m_s": 0.00036122906021773815,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50306,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        5,
+        1,
+        2
+      ],
+      "native_evaluations": 3,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 1.8407024443149567,
+        "corner_error_percent": 3.028041124343872,
+        "final_height_p95_m": 0.01878579892218113,
+        "tail_speed_m_s": 0.0007246834575198591,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "5": {
+          "shape_error_percent": 1.8407024443149567,
+          "corner_error_percent": 3.028041124343872,
+          "final_height_p95_m": 0.01878579892218113,
+          "tail_speed_m_s": 0.0007246834575198591,
+          "success": true
+        },
+        "1": {
+          "shape_error_percent": 2.0121201872825623,
+          "corner_error_percent": 3.209642320871353,
+          "final_height_p95_m": 0.012315532192587852,
+          "tail_speed_m_s": 0.004303128458559513,
+          "success": true
+        },
+        "2": {
+          "shape_error_percent": 2.09954883903265,
+          "corner_error_percent": 5.284911021590233,
+          "final_height_p95_m": 0.020843198522925377,
+          "tail_speed_m_s": 0.0010310787474736571,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50307,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        6,
+        2,
+        5
+      ],
+      "native_evaluations": 3,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 1.9832629710435867,
+        "corner_error_percent": 3.3196065574884415,
+        "final_height_p95_m": 0.011569605208933353,
+        "tail_speed_m_s": 0.002056921599432826,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "6": {
+          "shape_error_percent": 3.2908275723457336,
+          "corner_error_percent": 3.8455143570899963,
+          "final_height_p95_m": 0.03905439376831055,
+          "tail_speed_m_s": 0.0007504301029257476,
+          "success": false
+        },
+        "2": {
+          "shape_error_percent": 2.125304564833641,
+          "corner_error_percent": 5.355824902653694,
+          "final_height_p95_m": 0.017781762406229973,
+          "tail_speed_m_s": 0.0013734541134908795,
+          "success": true
+        },
+        "5": {
+          "shape_error_percent": 1.9832629710435867,
+          "corner_error_percent": 3.3196065574884415,
+          "final_height_p95_m": 0.011569605208933353,
+          "tail_speed_m_s": 0.002056921599432826,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50308,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        1,
+        5,
+        9
+      ],
+      "native_evaluations": 3,
+      "selected": 1,
+      "outcome": {
+        "shape_error_percent": 0.8462641388177872,
+        "corner_error_percent": 1.4448540285229683,
+        "final_height_p95_m": 0.012312505394220352,
+        "tail_speed_m_s": 0.0038933842442929745,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "1": {
+          "shape_error_percent": 0.8462641388177872,
+          "corner_error_percent": 1.4448540285229683,
+          "final_height_p95_m": 0.012312505394220352,
+          "tail_speed_m_s": 0.0038933842442929745,
+          "success": true
+        },
+        "5": {
+          "shape_error_percent": 1.1462670750916004,
+          "corner_error_percent": 1.9640961661934853,
+          "final_height_p95_m": 0.012711710296571255,
+          "tail_speed_m_s": 0.006683931220322847,
+          "success": true
+        },
+        "9": {
+          "shape_error_percent": 1.456847321242094,
+          "corner_error_percent": 2.4293314665555954,
+          "final_height_p95_m": 0.013387680985033512,
+          "tail_speed_m_s": 0.0008522130665369332,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50309,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        6,
+        10,
+        5
+      ],
+      "native_evaluations": 3,
+      "selected": 6,
+      "outcome": {
+        "shape_error_percent": 2.5691183283925056,
+        "corner_error_percent": 3.5688508301973343,
+        "final_height_p95_m": 0.012375201098620892,
+        "tail_speed_m_s": 0.00539074232801795,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "6": {
+          "shape_error_percent": 2.5691183283925056,
+          "corner_error_percent": 3.5688508301973343,
+          "final_height_p95_m": 0.012375201098620892,
+          "tail_speed_m_s": 0.00539074232801795,
+          "success": true
+        },
+        "10": {
+          "shape_error_percent": 4.83953058719635,
+          "corner_error_percent": 9.009242057800293,
+          "final_height_p95_m": 0.034665659070014954,
+          "tail_speed_m_s": 0.0005531051428988576,
+          "success": true
+        },
+        "5": {
+          "shape_error_percent": 3.4800760447978973,
+          "corner_error_percent": 4.892216995358467,
+          "final_height_p95_m": 0.04874735698103905,
+          "tail_speed_m_s": 0.0007111139129847288,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50310,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        5,
+        2,
+        1
+      ],
+      "native_evaluations": 3,
+      "selected": 1,
+      "outcome": {
+        "shape_error_percent": 1.4567756094038486,
+        "corner_error_percent": 2.1447591483592987,
+        "final_height_p95_m": 0.012539236806333065,
+        "tail_speed_m_s": 0.006736290641129017,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "5": {
+          "shape_error_percent": 2.5588082149624825,
+          "corner_error_percent": 3.969905897974968,
+          "final_height_p95_m": 0.035532910376787186,
+          "tail_speed_m_s": 0.0007812523981556296,
+          "success": false
+        },
+        "2": {
+          "shape_error_percent": 3.1851008534431458,
+          "corner_error_percent": 7.072944939136505,
+          "final_height_p95_m": 0.037644606083631516,
+          "tail_speed_m_s": 0.0011809683637693524,
+          "success": false
+        },
+        "1": {
+          "shape_error_percent": 1.4567756094038486,
+          "corner_error_percent": 2.1447591483592987,
+          "final_height_p95_m": 0.012539236806333065,
+          "tail_speed_m_s": 0.006736290641129017,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50311,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        8,
+        10,
+        6
+      ],
+      "native_evaluations": 3,
+      "selected": 6,
+      "outcome": {
+        "shape_error_percent": 2.1251270547509193,
+        "corner_error_percent": 3.3269207924604416,
+        "final_height_p95_m": 0.01249063853174448,
+        "tail_speed_m_s": 0.007619128096848726,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "8": {
+          "shape_error_percent": 2.2866513580083847,
+          "corner_error_percent": 3.7395980209112167,
+          "final_height_p95_m": 0.012234247289597988,
+          "tail_speed_m_s": 0.00617581233382225,
+          "success": true
+        },
+        "10": {
+          "shape_error_percent": 3.0023351311683655,
+          "corner_error_percent": 5.079613998532295,
+          "final_height_p95_m": 0.023237379267811775,
+          "tail_speed_m_s": 0.000373932154616341,
+          "success": true
+        },
+        "6": {
+          "shape_error_percent": 2.1251270547509193,
+          "corner_error_percent": 3.3269207924604416,
+          "final_height_p95_m": 0.01249063853174448,
+          "tail_speed_m_s": 0.007619128096848726,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50312,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        1,
+        11,
+        6
+      ],
+      "native_evaluations": 3,
+      "selected": 11,
+      "outcome": {
+        "shape_error_percent": 3.3512473106384277,
+        "corner_error_percent": 4.863947257399559,
+        "final_height_p95_m": 0.01603640615940094,
+        "tail_speed_m_s": 0.003912036307156086,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "1": {
+          "shape_error_percent": 2.9065407812595367,
+          "corner_error_percent": 3.4676045179367065,
+          "final_height_p95_m": 0.04093049094080925,
+          "tail_speed_m_s": 0.0002804934047162533,
+          "success": false
+        },
+        "11": {
+          "shape_error_percent": 3.3512473106384277,
+          "corner_error_percent": 4.863947257399559,
+          "final_height_p95_m": 0.01603640615940094,
+          "tail_speed_m_s": 0.003912036307156086,
+          "success": true
+        },
+        "6": {
+          "shape_error_percent": 2.475021965801716,
+          "corner_error_percent": 2.0858054980635643,
+          "final_height_p95_m": 0.0397823229432106,
+          "tail_speed_m_s": 0.0005739771877415478,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50313,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        2,
+        5,
+        8
+      ],
+      "native_evaluations": 3,
+      "selected": 8,
+      "outcome": {
+        "shape_error_percent": 1.9566861912608147,
+        "corner_error_percent": 3.354162722826004,
+        "final_height_p95_m": 0.012092786841094494,
+        "tail_speed_m_s": 0.0035609505139291286,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "2": {
+          "shape_error_percent": 3.07607464492321,
+          "corner_error_percent": 5.745080858469009,
+          "final_height_p95_m": 0.04162446781992912,
+          "tail_speed_m_s": 0.000989678897894919,
+          "success": false
+        },
+        "5": {
+          "shape_error_percent": 3.0304523184895515,
+          "corner_error_percent": 5.085362121462822,
+          "final_height_p95_m": 0.04182608425617218,
+          "tail_speed_m_s": 0.0005754870944656432,
+          "success": false
+        },
+        "8": {
+          "shape_error_percent": 1.9566861912608147,
+          "corner_error_percent": 3.354162722826004,
+          "final_height_p95_m": 0.012092786841094494,
+          "tail_speed_m_s": 0.0035609505139291286,
+          "success": true
+        }
+      }
+    },
+    {
+      "seed": 50314,
+      "used_model": true,
+      "outside": [],
+      "checked": [
+        2,
+        6,
+        5
+      ],
+      "native_evaluations": 3,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 2.65977643430233,
+        "corner_error_percent": 2.971658483147621,
+        "final_height_p95_m": 0.03703734278678894,
+        "tail_speed_m_s": 0.00024903015582822263,
+        "success": false
+      },
+      "checked_native_outcomes": {
+        "2": {
+          "shape_error_percent": 2.6331186294555664,
+          "corner_error_percent": 6.1587657779455185,
+          "final_height_p95_m": 0.03900735452771187,
+          "tail_speed_m_s": 0.0009085856727324426,
+          "success": false
+        },
+        "6": {
+          "shape_error_percent": 2.435150370001793,
+          "corner_error_percent": 4.293414950370789,
+          "final_height_p95_m": 0.0413573794066906,
+          "tail_speed_m_s": 0.0010175531497225165,
+          "success": false
+        },
+        "5": {
+          "shape_error_percent": 2.65977643430233,
+          "corner_error_percent": 2.971658483147621,
+          "final_height_p95_m": 0.03703734278678894,
+          "tail_speed_m_s": 0.00024903015582822263,
+          "success": false
+        }
+      }
+    },
+    {
+      "seed": 50315,
+      "used_model": false,
+      "outside": [
+        "membrane_stiffness"
+      ],
+      "checked": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "native_evaluations": 12,
+      "selected": 5,
+      "outcome": {
+        "shape_error_percent": 2.3224029690027237,
+        "corner_error_percent": 3.327719122171402,
+        "final_height_p95_m": 0.0272675808519125,
+        "tail_speed_m_s": 0.0003019548312295228,
+        "success": true
+      },
+      "checked_native_outcomes": {
+        "0": {
+          "shape_error_percent": 31.32685422897339,
+          "corner_error_percent": 78.00766229629517,
+          "final_height_p95_m": 0.002997389994561672,
+          "tail_speed_m_s": 6.098574090174225e-07,
+          "success": false
+        },
+        "1": {
+          "shape_error_percent": 3.1951740384101868,
+          "corner_error_percent": 5.200191214680672,
+          "final_height_p95_m": 0.01206167135387659,
+          "tail_speed_m_s": 0.005290658678859472,
+          "success": true
+        },
+        "2": {
+          "shape_error_percent": 3.0519425868988037,
+          "corner_error_percent": 5.467039346694946,
+          "final_height_p95_m": 0.020420119166374207,
+          "tail_speed_m_s": 0.0006984369247220457,
+          "success": true
+        },
+        "3": {
+          "shape_error_percent": 13.033761084079742,
+          "corner_error_percent": 22.178208827972412,
+          "final_height_p95_m": 0.04650338739156723,
+          "tail_speed_m_s": 0.00447150319814682,
+          "success": false
+        },
+        "4": {
+          "shape_error_percent": 12.375584244728088,
+          "corner_error_percent": 14.272278547286987,
+          "final_height_p95_m": 0.0436641089618206,
+          "tail_speed_m_s": 0.006573105696588755,
+          "success": false
+        },
+        "5": {
+          "shape_error_percent": 2.3224029690027237,
+          "corner_error_percent": 3.327719122171402,
+          "final_height_p95_m": 0.0272675808519125,
+          "tail_speed_m_s": 0.0003019548312295228,
+          "success": true
+        },
+        "6": {
+          "shape_error_percent": 2.5189515203237534,
+          "corner_error_percent": 5.117184668779373,
+          "final_height_p95_m": 0.039836786687374115,
+          "tail_speed_m_s": 0.0006759646348655224,
+          "success": false
+        },
+        "7": {
+          "shape_error_percent": 12.897147238254547,
+          "corner_error_percent": 23.369288444519043,
+          "final_height_p95_m": 0.040481116622686386,
+          "tail_speed_m_s": 0.01775713823735714,
+          "success": false
+        },
+        "8": {
+          "shape_error_percent": 3.857623413205147,
+          "corner_error_percent": 7.161572575569153,
+          "final_height_p95_m": 0.042101502418518066,
+          "tail_speed_m_s": 0.0007207843009382486,
+          "success": false
+        },
+        "9": {
+          "shape_error_percent": 16.585607826709747,
+          "corner_error_percent": 9.446065127849579,
+          "final_height_p95_m": 0.05070306360721588,
+          "tail_speed_m_s": 0.009859303012490273,
+          "success": false
+        },
+        "10": {
+          "shape_error_percent": 4.213720932602882,
+          "corner_error_percent": 7.397149503231049,
+          "final_height_p95_m": 0.04188213124871254,
+          "tail_speed_m_s": 0.0006812895881012082,
+          "success": false
+        },
+        "11": {
+          "shape_error_percent": 8.565576374530792,
+          "corner_error_percent": 9.611174464225769,
+          "final_height_p95_m": 0.04160482808947563,
+          "tail_speed_m_s": 0.004337426275014877,
+          "success": false
+        }
+      }
+    }
+  ],
+  "successes": 14,
+  "native_evaluations": 66,
+  "used_model_cases": 14,
+  "mean_shape_error_percent": 2.0265927480068058
+}

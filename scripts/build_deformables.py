@@ -132,6 +132,7 @@ def main():
     html = env.get_template("deformable-physics.html.j2").render(
         rows=rows, fresh=fresh, asset=asset, retention=retention, gradient_clock=clock,
         fold=fold, fold_clock=fold_clock, fold_rows=fold_rows, cable_rows=cable_rows,
+        guarded=read(tasks / "cloth/guarded-confirmation.json"),
         gates=read(gate_results / "summary.json")["results"],
         gate_fast=read(gate_results / "fast-planning.json")["summary"],
         gate_cont=read(gate_results / "continuous-summary.json"),
