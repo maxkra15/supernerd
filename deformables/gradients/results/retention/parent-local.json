@@ -1,0 +1,200 @@
+{
+  "cases": [
+    {
+      "family": "cable",
+      "seed": 42760,
+      "amplitude_3_shape_pct": 1.045498443381709,
+      "amplitude_3_response_pct": 22.216838489720562,
+      "local_derivative_error_pct": 20.75484518913422,
+      "local_derivative_cos": 0.9817385865102719,
+      "teacher_halving_disagreement_pct": 4.732659993227486,
+      "teacher_halving_first_second_pct": 4.332725245837323,
+      "local_derivative_first_second_error_pct": 26.717869864710853
+    },
+    {
+      "family": "cable",
+      "seed": 42761,
+      "amplitude_3_shape_pct": 2.099818457011297,
+      "amplitude_3_response_pct": 72.60966231065356,
+      "local_derivative_error_pct": 72.46076767049674,
+      "local_derivative_cos": 0.9712380879347543,
+      "teacher_halving_disagreement_pct": 0.6975321929175659,
+      "teacher_halving_first_second_pct": 0.21429306500814327,
+      "local_derivative_first_second_error_pct": 72.40635450117018
+    },
+    {
+      "family": "cable",
+      "seed": 42762,
+      "amplitude_3_shape_pct": 2.406176714821219,
+      "amplitude_3_response_pct": 71.3888013318086,
+      "local_derivative_error_pct": 71.41695301664542,
+      "local_derivative_cos": 0.9650083075685398,
+      "teacher_halving_disagreement_pct": 0.5820534095177339,
+      "teacher_halving_first_second_pct": 0.4141494329970912,
+      "local_derivative_first_second_error_pct": 75.74599492190477
+    },
+    {
+      "family": "cable",
+      "seed": 42763,
+      "amplitude_3_shape_pct": 3.3487664300249262,
+      "amplitude_3_response_pct": 76.40423081501844,
+      "local_derivative_error_pct": 76.45943347645093,
+      "local_derivative_cos": 0.9603278326753416,
+      "teacher_halving_disagreement_pct": 0.9972088897134954,
+      "teacher_halving_first_second_pct": 0.789458840857453,
+      "local_derivative_first_second_error_pct": 74.42239845004293
+    },
+    {
+      "family": "cable",
+      "seed": 42764,
+      "amplitude_3_shape_pct": 0.5990942598789324,
+      "amplitude_3_response_pct": 43.688755597619576,
+      "local_derivative_error_pct": 43.839294826593715,
+      "local_derivative_cos": 0.9780206626829046,
+      "teacher_halving_disagreement_pct": 0.543682904181331,
+      "teacher_halving_first_second_pct": 0.2603892678504944,
+      "local_derivative_first_second_error_pct": 39.33945174465951
+    },
+    {
+      "family": "cable",
+      "seed": 42765,
+      "amplitude_3_shape_pct": 1.3184528311510701,
+      "amplitude_3_response_pct": 128.80122203832704,
+      "local_derivative_error_pct": 129.9363586580461,
+      "local_derivative_cos": 0.6607631880891867,
+      "teacher_halving_disagreement_pct": 4.6652294027958465,
+      "teacher_halving_first_second_pct": 2.5453754576217946,
+      "local_derivative_first_second_error_pct": 162.37041937823844
+    },
+    {
+      "family": "cable",
+      "seed": 42766,
+      "amplitude_3_shape_pct": 1.307661349092956,
+      "amplitude_3_response_pct": 69.47577759162903,
+      "local_derivative_error_pct": 69.59228730301577,
+      "local_derivative_cos": 0.9911142135966411,
+      "teacher_halving_disagreement_pct": 0.7268314273322996,
+      "teacher_halving_first_second_pct": 1.8439754498012586,
+      "local_derivative_first_second_error_pct": 67.16116553256258
+    },
+    {
+      "family": "cable",
+      "seed": 42767,
+      "amplitude_3_shape_pct": 1.3684061169771482,
+      "amplitude_3_response_pct": 40.32322869347926,
+      "local_derivative_error_pct": 41.382721355876214,
+      "local_derivative_cos": 0.9354048460248162,
+      "teacher_halving_disagreement_pct": 2.0172776200960665,
+      "teacher_halving_first_second_pct": 3.4412820042814047,
+      "local_derivative_first_second_error_pct": 18.262018326509107
+    },
+    {
+      "family": "cloth",
+      "seed": 42760,
+      "amplitude_3_shape_pct": 3.0972101921187423,
+      "amplitude_3_response_pct": 106.45709021353335,
+      "local_derivative_error_pct": 110.85142003920646,
+      "local_derivative_cos": 0.33424501938901346,
+      "teacher_halving_disagreement_pct": 0.23432244680473338,
+      "teacher_halving_first_second_pct": 0.2490926390662909,
+      "local_derivative_first_second_error_pct": 79.31494619742794
+    },
+    {
+      "family": "cloth",
+      "seed": 42761,
+      "amplitude_3_shape_pct": 2.3670230553073717,
+      "amplitude_3_response_pct": 33.479805731948154,
+      "local_derivative_error_pct": 40.43925834838829,
+      "local_derivative_cos": 0.9317826667646213,
+      "teacher_halving_disagreement_pct": 0.10913356209845143,
+      "teacher_halving_first_second_pct": 0.060314550226121984,
+      "local_derivative_first_second_error_pct": 23.105070059587604
+    },
+    {
+      "family": "cloth",
+      "seed": 42762,
+      "amplitude_3_shape_pct": 2.879864170854348,
+      "amplitude_3_response_pct": 104.47100188013845,
+      "local_derivative_error_pct": 125.23423591872152,
+      "local_derivative_cos": 0.7058757934711035,
+      "teacher_halving_disagreement_pct": 0.539895868180148,
+      "teacher_halving_first_second_pct": 0.34260351133949885,
+      "local_derivative_first_second_error_pct": 55.93619066261272
+    },
+    {
+      "family": "cloth",
+      "seed": 42763,
+      "amplitude_3_shape_pct": 4.529420151026802,
+      "amplitude_3_response_pct": 121.57293356984634,
+      "local_derivative_error_pct": 98.7004375864046,
+      "local_derivative_cos": 0.5188837214579279,
+      "teacher_halving_disagreement_pct": 11.24606115047702,
+      "teacher_halving_first_second_pct": 0.5580953563107199,
+      "local_derivative_first_second_error_pct": 77.73159129790204
+    },
+    {
+      "family": "cloth",
+      "seed": 42764,
+      "amplitude_3_shape_pct": 2.8898371118272337,
+      "amplitude_3_response_pct": 93.325271501095,
+      "local_derivative_error_pct": 65.36627979791051,
+      "local_derivative_cos": 0.7583905114629875,
+      "teacher_halving_disagreement_pct": 2.6062130407636235,
+      "teacher_halving_first_second_pct": 0.5336308056809879,
+      "local_derivative_first_second_error_pct": 64.02701754130587
+    },
+    {
+      "family": "cloth",
+      "seed": 42765,
+      "amplitude_3_shape_pct": 7.93984551333785,
+      "amplitude_3_response_pct": 143.38668354050108,
+      "local_derivative_error_pct": 104.8711402735755,
+      "local_derivative_cos": 0.5951110188034293,
+      "teacher_halving_disagreement_pct": 20.9534285125441,
+      "teacher_halving_first_second_pct": 0.7544190611330481,
+      "local_derivative_first_second_error_pct": 121.59086713970328
+    },
+    {
+      "family": "cloth",
+      "seed": 42766,
+      "amplitude_3_shape_pct": 2.687592879835767,
+      "amplitude_3_response_pct": 46.25348062653204,
+      "local_derivative_error_pct": 47.979340359612664,
+      "local_derivative_cos": 0.8775156017235606,
+      "teacher_halving_disagreement_pct": 0.1726397727115395,
+      "teacher_halving_first_second_pct": 0.2940143761910053,
+      "local_derivative_first_second_error_pct": 19.8147609790265
+    },
+    {
+      "family": "cloth",
+      "seed": 42767,
+      "amplitude_3_shape_pct": 2.0052978316562897,
+      "amplitude_3_response_pct": 59.114075419775475,
+      "local_derivative_error_pct": 79.26002118281988,
+      "local_derivative_cos": 0.6279479677461836,
+      "teacher_halving_disagreement_pct": 15.4533810978078,
+      "teacher_halving_first_second_pct": 0.20358041900755874,
+      "local_derivative_first_second_error_pct": 35.1563362988275
+    }
+  ],
+  "summary": {
+    "cable": {
+      "amplitude_3_shape_pct": 1.6867343252924072,
+      "amplitude_3_response_pct": 65.613564608532,
+      "local_derivative_error_pct": 65.73033268703239,
+      "local_derivative_cos": 0.930451965635307,
+      "teacher_halving_disagreement_pct": 1.870309479972728,
+      "teacher_halving_first_second_pct": 1.7302060955318703,
+      "local_derivative_first_second_error_pct": 67.05320908997479
+    },
+    "cloth": {
+      "amplitude_3_shape_pct": 3.549511363245551,
+      "amplitude_3_response_pct": 88.50754281042123,
+      "local_derivative_error_pct": 84.08776668832994,
+      "local_derivative_cos": 0.6687190376023534,
+      "teacher_halving_disagreement_pct": 6.414384431423427,
+      "teacher_halving_first_second_pct": 0.37446883986940394,
+      "local_derivative_first_second_error_pct": 59.58459752204918
+    }
+  }
+}

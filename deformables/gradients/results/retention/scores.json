@@ -1,0 +1,599 @@
+[
+  {
+    "arm": "parent",
+    "seed": null,
+    "checkpoint": "modal-paired.pt",
+    "local": {
+      "cable": {
+        "amplitude_3_shape_pct": 1.6867343252924072,
+        "amplitude_3_response_pct": 65.613564608532,
+        "local_derivative_error_pct": 65.73033268703239,
+        "local_derivative_cos": 0.930451965635307,
+        "teacher_halving_disagreement_pct": 1.870309479972728,
+        "teacher_halving_first_second_pct": 1.7302060955318703,
+        "local_derivative_first_second_error_pct": 67.05320908997479
+      },
+      "cloth": {
+        "amplitude_3_shape_pct": 3.549511363245551,
+        "amplitude_3_response_pct": 88.50754281042123,
+        "local_derivative_error_pct": 84.08776668832994,
+        "local_derivative_cos": 0.6687190376023534,
+        "teacher_halving_disagreement_pct": 6.414384431423427,
+        "teacher_halving_first_second_pct": 0.37446883986940394,
+        "local_derivative_first_second_error_pct": 59.58459752204918
+      }
+    },
+    "fresh": {
+      "0": {
+        "cable": {
+          "native_mm": 12.80094914257424,
+          "native_pct": 1.568111543160626,
+          "interpolation_mm": 4.591316783557986,
+          "hold_mm": 254.34945705465537,
+          "terminal_mm": 8.33989092784799,
+          "response_error_pct": 55.58893155988086,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 28.408407816292357,
+          "native_pct": 4.280716267198764,
+          "interpolation_mm": 6.08047707546862,
+          "hold_mm": 516.5013865098987,
+          "terminal_mm": 83.54571898016513,
+          "response_error_pct": 89.78195153685769,
+          "force_pairs_improving_over_zero": 21,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 8.089000730401867,
+          "native_pct": 1.0044957817717926,
+          "interpolation_mm": 4.606656186446547,
+          "hold_mm": 99.86465271074054,
+          "terminal_mm": 6.636059923763435,
+          "response_error_pct": 36.722344871860294,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 30.125980417963582,
+          "native_pct": 4.535340735435762,
+          "interpolation_mm": 6.082407067285091,
+          "hold_mm": 302.49011919735824,
+          "terminal_mm": 45.996497981257015,
+          "response_error_pct": 82.447281051716,
+          "force_pairs_improving_over_zero": 29,
+          "force_pairs": 32
+        }
+      }
+    },
+    "confirmation": {
+      "0": {
+        "cable": {
+          "native_mm": 11.740604587485368,
+          "native_pct": 1.4058398311399694,
+          "interpolation_mm": 6.100982995986929,
+          "hold_mm": 315.8790670701277,
+          "terminal_mm": 18.32124505904723,
+          "response_error_pct": 54.55879417601259,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 45.027527696891205,
+          "native_pct": 6.365758774043411,
+          "interpolation_mm": 6.071752840098393,
+          "hold_mm": 530.6069482049988,
+          "terminal_mm": 105.93390450197417,
+          "response_error_pct": 95.04462391824914,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 9.050046975978535,
+          "native_pct": 1.0703833579388828,
+          "interpolation_mm": 6.096239233098221,
+          "hold_mm": 131.59799294628678,
+          "terminal_mm": 9.140897396969638,
+          "response_error_pct": 47.29812136607448,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 49.80207242326934,
+          "native_pct": 6.9585795668224595,
+          "interpolation_mm": 5.809639062296219,
+          "hold_mm": 294.59919713378997,
+          "terminal_mm": 76.4653430701645,
+          "response_error_pct": 87.11910440870139,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      }
+    }
+  },
+  {
+    "arm": "old",
+    "seed": 271,
+    "checkpoint": "old-271.pt",
+    "fit_seconds": 3.975278357975185,
+    "updates": 1200,
+    "sampled_original_indices_sha256": "a2d78519466d6e4ecb454d533d4a4e4aadff3295bcfaaf5d416a4df246f371e9",
+    "local": {
+      "cable": {
+        "amplitude_3_shape_pct": 1.6501530362747285,
+        "amplitude_3_response_pct": 66.81083137007609,
+        "local_derivative_error_pct": 67.02630566853281,
+        "local_derivative_cos": 0.9269992596832579,
+        "teacher_halving_disagreement_pct": 1.870309479972728,
+        "teacher_halving_first_second_pct": 1.7302060955318703,
+        "local_derivative_first_second_error_pct": 68.04563185282203
+      },
+      "cloth": {
+        "amplitude_3_shape_pct": 3.5516140326697245,
+        "amplitude_3_response_pct": 87.83303640306406,
+        "local_derivative_error_pct": 83.79611781476528,
+        "local_derivative_cos": 0.665526439299958,
+        "teacher_halving_disagreement_pct": 6.414384431423427,
+        "teacher_halving_first_second_pct": 0.37446883986940394,
+        "local_derivative_first_second_error_pct": 58.345421534333106
+      }
+    },
+    "fresh": {
+      "0": {
+        "cable": {
+          "native_mm": 12.508864517595912,
+          "native_pct": 1.5323617179550806,
+          "interpolation_mm": 4.591316783557986,
+          "hold_mm": 254.34945705465537,
+          "terminal_mm": 9.541315775096358,
+          "response_error_pct": 53.68755638072953,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 27.98768824355893,
+          "native_pct": 4.219726556139148,
+          "interpolation_mm": 6.08047707546862,
+          "hold_mm": 516.5013865098987,
+          "terminal_mm": 82.91470014546243,
+          "response_error_pct": 88.9458556185572,
+          "force_pairs_improving_over_zero": 21,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 7.660395618622152,
+          "native_pct": 0.9543473495778512,
+          "interpolation_mm": 4.606656186446547,
+          "hold_mm": 99.86465271074054,
+          "terminal_mm": 6.165919112863608,
+          "response_error_pct": 36.79856151242111,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 28.932160244049165,
+          "native_pct": 4.349344372002375,
+          "interpolation_mm": 6.082407067285091,
+          "hold_mm": 302.49011919735824,
+          "terminal_mm": 44.85186161945403,
+          "response_error_pct": 81.93166691946632,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        }
+      }
+    },
+    "confirmation": {
+      "0": {
+        "cable": {
+          "native_mm": 11.36087353530487,
+          "native_pct": 1.3591582793451327,
+          "interpolation_mm": 6.100982995986929,
+          "hold_mm": 315.8790670701277,
+          "terminal_mm": 17.49670221698196,
+          "response_error_pct": 53.66174628079221,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 45.51123338075392,
+          "native_pct": 6.43496361500325,
+          "interpolation_mm": 6.071752840098393,
+          "hold_mm": 530.6069482049988,
+          "terminal_mm": 106.97320575962178,
+          "response_error_pct": 93.8149996548863,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 8.750494983257086,
+          "native_pct": 1.0362502314289193,
+          "interpolation_mm": 6.096239233098221,
+          "hold_mm": 131.59799294628678,
+          "terminal_mm": 8.944634486970589,
+          "response_error_pct": 45.4763321025021,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 49.56678439887812,
+          "native_pct": 6.927903255469832,
+          "interpolation_mm": 5.809639062296219,
+          "hold_mm": 294.59919713378997,
+          "terminal_mm": 76.48996593586314,
+          "response_error_pct": 86.91155095853645,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      }
+    }
+  },
+  {
+    "arm": "mixed",
+    "seed": 271,
+    "checkpoint": "mixed-271.pt",
+    "fit_seconds": 7.063385259825736,
+    "updates": 1200,
+    "sampled_original_indices_sha256": "a2d78519466d6e4ecb454d533d4a4e4aadff3295bcfaaf5d416a4df246f371e9",
+    "local": {
+      "cable": {
+        "amplitude_3_shape_pct": 1.5740459243129716,
+        "amplitude_3_response_pct": 66.00248997971302,
+        "local_derivative_error_pct": 66.10195415588521,
+        "local_derivative_cos": 0.9310764529819047,
+        "teacher_halving_disagreement_pct": 1.870309479972728,
+        "teacher_halving_first_second_pct": 1.7302060955318703,
+        "local_derivative_first_second_error_pct": 68.06107853922074
+      },
+      "cloth": {
+        "amplitude_3_shape_pct": 3.031853004624476,
+        "amplitude_3_response_pct": 76.29100891343421,
+        "local_derivative_error_pct": 73.79593367150893,
+        "local_derivative_cos": 0.6929208972236431,
+        "teacher_halving_disagreement_pct": 6.414384431423427,
+        "teacher_halving_first_second_pct": 0.37446883986940394,
+        "local_derivative_first_second_error_pct": 56.425462374066896
+      }
+    },
+    "fresh": {
+      "0": {
+        "cable": {
+          "native_mm": 12.503370199596105,
+          "native_pct": 1.5246830768455006,
+          "interpolation_mm": 4.591316783557986,
+          "hold_mm": 254.34945705465537,
+          "terminal_mm": 8.23310501593534,
+          "response_error_pct": 55.256231822519155,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 23.15392545894349,
+          "native_pct": 3.4518862680328626,
+          "interpolation_mm": 6.08047707546862,
+          "hold_mm": 516.5013865098987,
+          "terminal_mm": 53.51161461421871,
+          "response_error_pct": 83.51334638013515,
+          "force_pairs_improving_over_zero": 29,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 7.8620416167161435,
+          "native_pct": 0.9792537607969176,
+          "interpolation_mm": 4.606656186446547,
+          "hold_mm": 99.86465271074054,
+          "terminal_mm": 6.444635505592409,
+          "response_error_pct": 37.45148778115166,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 28.755698013418275,
+          "native_pct": 4.3304138654775794,
+          "interpolation_mm": 6.082407067285091,
+          "hold_mm": 302.49011919735824,
+          "terminal_mm": 43.76272248296143,
+          "response_error_pct": 81.34038654117666,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        }
+      }
+    },
+    "confirmation": {
+      "0": {
+        "cable": {
+          "native_mm": 10.75349508170373,
+          "native_pct": 1.288950134657917,
+          "interpolation_mm": 6.100982995986929,
+          "hold_mm": 315.8790670701277,
+          "terminal_mm": 13.934113524857292,
+          "response_error_pct": 53.81170059087339,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 43.51306186469475,
+          "native_pct": 6.0812069544419005,
+          "interpolation_mm": 6.071752840098393,
+          "hold_mm": 530.6069482049988,
+          "terminal_mm": 101.10304085125472,
+          "response_error_pct": 88.43751798213835,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 8.71000755551442,
+          "native_pct": 1.0305854046444378,
+          "interpolation_mm": 6.096239233098221,
+          "hold_mm": 131.59799294628678,
+          "terminal_mm": 8.457905637708388,
+          "response_error_pct": 44.09514389811774,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 50.79820145349116,
+          "native_pct": 7.09476487313164,
+          "interpolation_mm": 5.809639062296219,
+          "hold_mm": 294.59919713378997,
+          "terminal_mm": 81.35365529089293,
+          "response_error_pct": 87.308672170004,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      }
+    }
+  },
+  {
+    "arm": "mixed",
+    "seed": 725,
+    "checkpoint": "mixed-725.pt",
+    "fit_seconds": 7.067258158698678,
+    "updates": 1200,
+    "sampled_original_indices_sha256": "a0e9430397fac803f1d9b3aca0a502dfbaae911184377747cc92a54eccd39ef5",
+    "local": {
+      "cable": {
+        "amplitude_3_shape_pct": 1.5566751491907664,
+        "amplitude_3_response_pct": 66.34407918204992,
+        "local_derivative_error_pct": 66.44928343195117,
+        "local_derivative_cos": 0.9308450184670394,
+        "teacher_halving_disagreement_pct": 1.870309479972728,
+        "teacher_halving_first_second_pct": 1.7302060955318703,
+        "local_derivative_first_second_error_pct": 68.43733865947567
+      },
+      "cloth": {
+        "amplitude_3_shape_pct": 2.992873035547623,
+        "amplitude_3_response_pct": 76.71969737608036,
+        "local_derivative_error_pct": 74.09157552097871,
+        "local_derivative_cos": 0.6957673581375454,
+        "teacher_halving_disagreement_pct": 6.414384431423427,
+        "teacher_halving_first_second_pct": 0.37446883986940394,
+        "local_derivative_first_second_error_pct": 55.993660059370924
+      }
+    },
+    "fresh": {
+      "0": {
+        "cable": {
+          "native_mm": 12.534627066081676,
+          "native_pct": 1.5298207754275575,
+          "interpolation_mm": 4.591316783557986,
+          "hold_mm": 254.34945705465537,
+          "terminal_mm": 8.195799668453159,
+          "response_error_pct": 55.375999773279425,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 23.157577379923158,
+          "native_pct": 3.444764921207259,
+          "interpolation_mm": 6.08047707546862,
+          "hold_mm": 516.5013865098987,
+          "terminal_mm": 53.316071065415755,
+          "response_error_pct": 83.63017029729326,
+          "force_pairs_improving_over_zero": 29,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 7.720495080188508,
+          "native_pct": 0.9599615252778918,
+          "interpolation_mm": 4.606656186446547,
+          "hold_mm": 99.86465271074054,
+          "terminal_mm": 6.182698246045794,
+          "response_error_pct": 36.856761331321096,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 29.223329151661858,
+          "native_pct": 4.399099892632779,
+          "interpolation_mm": 6.082407067285091,
+          "hold_mm": 302.49011919735824,
+          "terminal_mm": 43.49691980718208,
+          "response_error_pct": 81.29586810023395,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        }
+      }
+    },
+    "confirmation": {
+      "0": {
+        "cable": {
+          "native_mm": 10.630751708577026,
+          "native_pct": 1.2749731257772428,
+          "interpolation_mm": 6.100982995986929,
+          "hold_mm": 315.8790670701277,
+          "terminal_mm": 13.883950299499372,
+          "response_error_pct": 54.07723054648416,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 42.85644402306404,
+          "native_pct": 5.984734198630973,
+          "interpolation_mm": 6.071752840098393,
+          "hold_mm": 530.6069482049988,
+          "terminal_mm": 98.48884507918251,
+          "response_error_pct": 88.73887347654772,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 8.749085097989546,
+          "native_pct": 1.0350687578128916,
+          "interpolation_mm": 6.096239233098221,
+          "hold_mm": 131.59799294628678,
+          "terminal_mm": 8.450628415424758,
+          "response_error_pct": 43.791946617268934,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 51.19838599233159,
+          "native_pct": 7.153355527065455,
+          "interpolation_mm": 5.809639062296219,
+          "hold_mm": 294.59919713378997,
+          "terminal_mm": 81.07863108855044,
+          "response_error_pct": 86.9781608559298,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      }
+    }
+  },
+  {
+    "arm": "old",
+    "seed": 725,
+    "checkpoint": "old-725.pt",
+    "fit_seconds": 4.127405873034149,
+    "updates": 1200,
+    "sampled_original_indices_sha256": "a0e9430397fac803f1d9b3aca0a502dfbaae911184377747cc92a54eccd39ef5",
+    "local": {
+      "cable": {
+        "amplitude_3_shape_pct": 1.6039105100401085,
+        "amplitude_3_response_pct": 66.53303844759266,
+        "local_derivative_error_pct": 66.74114347600405,
+        "local_derivative_cos": 0.9279798324813989,
+        "teacher_halving_disagreement_pct": 1.870309479972728,
+        "teacher_halving_first_second_pct": 1.7302060955318703,
+        "local_derivative_first_second_error_pct": 68.03979981543196
+      },
+      "cloth": {
+        "amplitude_3_shape_pct": 3.5584318264266868,
+        "amplitude_3_response_pct": 87.97640809795516,
+        "local_derivative_error_pct": 84.12581241699371,
+        "local_derivative_cos": 0.6651741143133377,
+        "teacher_halving_disagreement_pct": 6.414384431423427,
+        "teacher_halving_first_second_pct": 0.37446883986940394,
+        "local_derivative_first_second_error_pct": 58.16432868719548
+      }
+    },
+    "fresh": {
+      "0": {
+        "cable": {
+          "native_mm": 12.539649090767872,
+          "native_pct": 1.535658541836209,
+          "interpolation_mm": 4.591316783557986,
+          "hold_mm": 254.34945705465537,
+          "terminal_mm": 9.126360526098276,
+          "response_error_pct": 53.95235250177695,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 28.511100891414692,
+          "native_pct": 4.29722863155855,
+          "interpolation_mm": 6.08047707546862,
+          "hold_mm": 516.5013865098987,
+          "terminal_mm": 84.92249382967648,
+          "response_error_pct": 89.45555998902282,
+          "force_pairs_improving_over_zero": 21,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 7.545081129257966,
+          "native_pct": 0.9383064754021577,
+          "interpolation_mm": 4.606656186446547,
+          "hold_mm": 99.86465271074054,
+          "terminal_mm": 5.824297459729893,
+          "response_error_pct": 36.42388667297096,
+          "force_pairs_improving_over_zero": 32,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 29.403987899533867,
+          "native_pct": 4.4194539107809785,
+          "interpolation_mm": 6.082407067285091,
+          "hold_mm": 302.49011919735824,
+          "terminal_mm": 44.943912635709644,
+          "response_error_pct": 81.90215388709325,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        }
+      }
+    },
+    "confirmation": {
+      "0": {
+        "cable": {
+          "native_mm": 11.092337501057338,
+          "native_pct": 1.3284800855450059,
+          "interpolation_mm": 6.100982995986929,
+          "hold_mm": 315.8790670701277,
+          "terminal_mm": 16.645616475866102,
+          "response_error_pct": 53.641456249381775,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 45.638005474114,
+          "native_pct": 6.449326994232726,
+          "interpolation_mm": 6.071752840098393,
+          "hold_mm": 530.6069482049988,
+          "terminal_mm": 107.3980533407444,
+          "response_error_pct": 94.48788825208655,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      },
+      "100": {
+        "cable": {
+          "native_mm": 8.805195263236799,
+          "native_pct": 1.0422977496363774,
+          "interpolation_mm": 6.096239233098221,
+          "hold_mm": 131.59799294628678,
+          "terminal_mm": 8.841718021551639,
+          "response_error_pct": 45.097144338917005,
+          "force_pairs_improving_over_zero": 28,
+          "force_pairs": 32
+        },
+        "cloth": {
+          "native_mm": 49.84034016174119,
+          "native_pct": 6.969915596809277,
+          "interpolation_mm": 5.809639062296219,
+          "hold_mm": 294.59919713378997,
+          "terminal_mm": 76.23362923637913,
+          "response_error_pct": 86.56082366510626,
+          "force_pairs_improving_over_zero": 22,
+          "force_pairs": 32
+        }
+      }
+    }
+  }
+]

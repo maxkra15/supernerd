@@ -1,0 +1,43 @@
+{
+  "fits": [
+    {
+      "arm": "old",
+      "seed": 271,
+      "checkpoint": "old-271.pt",
+      "fit_seconds": 3.975278357975185,
+      "updates": 1200,
+      "sampled_original_indices_sha256": "a2d78519466d6e4ecb454d533d4a4e4aadff3295bcfaaf5d416a4df246f371e9"
+    },
+    {
+      "arm": "mixed",
+      "seed": 271,
+      "checkpoint": "mixed-271.pt",
+      "fit_seconds": 7.063385259825736,
+      "updates": 1200,
+      "sampled_original_indices_sha256": "a2d78519466d6e4ecb454d533d4a4e4aadff3295bcfaaf5d416a4df246f371e9"
+    },
+    {
+      "arm": "mixed",
+      "seed": 725,
+      "checkpoint": "mixed-725.pt",
+      "fit_seconds": 7.067258158698678,
+      "updates": 1200,
+      "sampled_original_indices_sha256": "a0e9430397fac803f1d9b3aca0a502dfbaae911184377747cc92a54eccd39ef5"
+    },
+    {
+      "arm": "old",
+      "seed": 725,
+      "checkpoint": "old-725.pt",
+      "fit_seconds": 4.127405873034149,
+      "updates": 1200,
+      "sampled_original_indices_sha256": "a0e9430397fac803f1d9b3aca0a502dfbaae911184377747cc92a54eccd39ef5"
+    }
+  ],
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "parent_sha256": "699a059bfe7c26a50e7ec54e1839a8cbdb42a56c610421c1656de550c7637d97",
+  "old_weight_on_mixed": 0.75,
+  "local_weight_on_mixed": 0.25,
+  "initial_lr": 0.00012,
+  "final_lr": 2e-05,
+  "matmul_precision": "highest"
+}

@@ -1,0 +1,471 @@
+{
+  "arms": {
+    "paired": {
+      "checkpoints": [
+        {
+          "step": 1,
+          "fit_seconds": 0.09392175497487187,
+          "checkpoint": "step-1.pt",
+          "development": {
+            "0": {
+              "cable": 42.037819266319275,
+              "cloth": 79.63746070861816
+            },
+            "100": {
+              "cable": 17.129889965057373,
+              "cloth": 46.14683508872986
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "fit_seconds": 3.6282333685085177,
+          "checkpoint": "step-1000.pt",
+          "development": {
+            "0": {
+              "cable": 4.41220910847187,
+              "cloth": 11.020619869232178
+            },
+            "100": {
+              "cable": 3.0472111850976944,
+              "cloth": 9.236949741840363
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "fit_seconds": 7.093627996277064,
+          "checkpoint": "step-2000.pt",
+          "development": {
+            "0": {
+              "cable": 2.5242544561624527,
+              "cloth": 9.463238626718521
+            },
+            "100": {
+              "cable": 1.7590638026595116,
+              "cloth": 7.461142182350159
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "fit_seconds": 14.35140904225409,
+          "checkpoint": "step-4000.pt",
+          "development": {
+            "0": {
+              "cable": 1.9258117116987705,
+              "cloth": 6.109761506319046
+            },
+            "100": {
+              "cable": 1.2002511247992516,
+              "cloth": 6.41529256105423
+            }
+          }
+        },
+        {
+          "step": 8000,
+          "fit_seconds": 28.61773632047698,
+          "checkpoint": "step-8000.pt",
+          "development": {
+            "0": {
+              "cable": 1.7392703369259834,
+              "cloth": 5.3397644981741905
+            },
+            "100": {
+              "cable": 0.8364148531109095,
+              "cloth": 5.575703755021095
+            }
+          },
+          "test": {
+            "0": {
+              "cable": {
+                "native_mm": 14.932531307286121,
+                "native_pct": 1.6503095234076768,
+                "interpolation_mm": 5.7394576164314755,
+                "hold_mm": 295.6359236292121,
+                "terminal_mm": 25.90091274928144,
+                "response_error_pct": 48.35043660314538,
+                "force_pairs_improving_over_zero": 30,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 22.765702991656802,
+                "native_pct": 3.150789943539226,
+                "interpolation_mm": 5.683419347923941,
+                "hold_mm": 537.0955301419929,
+                "terminal_mm": 55.37302748318696,
+                "response_error_pct": 90.06717106967417,
+                "force_pairs_improving_over_zero": 26,
+                "force_pairs": 32
+              }
+            },
+            "100": {
+              "cable": {
+                "native_mm": 10.115206714481522,
+                "native_pct": 1.1248583687094649,
+                "interpolation_mm": 5.843084122783519,
+                "hold_mm": 120.83904443491329,
+                "terminal_mm": 10.17007523152486,
+                "response_error_pct": 40.906059556721345,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 25.833813725642887,
+                "native_pct": 3.624477549697206,
+                "interpolation_mm": 5.6513637520060405,
+                "hold_mm": 310.49029900670456,
+                "terminal_mm": 39.639085341097385,
+                "response_error_pct": 78.99511145239234,
+                "force_pairs_improving_over_zero": 27,
+                "force_pairs": 32
+              }
+            }
+          },
+          "fresh": {
+            "0": {
+              "cable": {
+                "native_mm": 12.807812803582266,
+                "native_pct": 1.5697340108228504,
+                "interpolation_mm": 4.591316783557986,
+                "hold_mm": 254.34945705465537,
+                "terminal_mm": 8.36919951846819,
+                "response_error_pct": 55.46434891023173,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 28.528973660728845,
+                "native_pct": 4.294427708920009,
+                "interpolation_mm": 6.08047707546862,
+                "hold_mm": 516.5013865098987,
+                "terminal_mm": 83.03971936228317,
+                "response_error_pct": 90.62688648292996,
+                "force_pairs_improving_over_zero": 21,
+                "force_pairs": 32
+              }
+            },
+            "100": {
+              "cable": {
+                "native_mm": 8.116133643588345,
+                "native_pct": 1.0078293151052349,
+                "interpolation_mm": 4.606656186446547,
+                "hold_mm": 99.86465271074054,
+                "terminal_mm": 6.806608660541626,
+                "response_error_pct": 36.65170986203607,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 30.248207494982317,
+                "native_pct": 4.553182330137316,
+                "interpolation_mm": 6.082407067285091,
+                "hold_mm": 302.49011919735824,
+                "terminal_mm": 46.10383146699267,
+                "response_error_pct": 82.94589484887715,
+                "force_pairs_improving_over_zero": 28,
+                "force_pairs": 32
+              }
+            }
+          }
+        }
+      ],
+      "final_fit_seconds": 28.61773632047698,
+      "seed": 91,
+      "first_cases_and_starts_sha256": "32c62693ad122773aec789e964f1685556687ea6d4b1ac3693442533c4f12ca7",
+      "last_cases_and_starts_sha256": "5422e5cd936dcd1f4883dc1fd98435e865bf7645424558c40aeb7d8367ca4393"
+    },
+    "jvp": {
+      "checkpoints": [
+        {
+          "step": 1,
+          "fit_seconds": 0.010064499918371439,
+          "checkpoint": "step-1.pt",
+          "development": {
+            "0": {
+              "cable": 42.037675976753235,
+              "cloth": 79.63735771179199
+            },
+            "100": {
+              "cable": 17.129900097846985,
+              "cloth": 46.14684450626373
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "fit_seconds": 9.180350198876113,
+          "checkpoint": "step-1000.pt",
+          "development": {
+            "0": {
+              "cable": 4.393358185887337,
+              "cloth": 11.040462732315063
+            },
+            "100": {
+              "cable": 3.051895186305046,
+              "cloth": 9.251384943723679
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "fit_seconds": 18.481687236577272,
+          "checkpoint": "step-2000.pt",
+          "development": {
+            "0": {
+              "cable": 2.4967557042837143,
+              "cloth": 9.458229452371597
+            },
+            "100": {
+              "cable": 1.761976219713688,
+              "cloth": 7.484451726078987
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "fit_seconds": 37.054280758369714,
+          "checkpoint": "step-4000.pt",
+          "development": {
+            "0": {
+              "cable": 1.9200498908758163,
+              "cloth": 6.075335681438446
+            },
+            "100": {
+              "cable": 1.1983514539897442,
+              "cloth": 6.4121477752923965
+            }
+          }
+        },
+        {
+          "step": 8000,
+          "fit_seconds": 72.40325084980577,
+          "checkpoint": "step-8000.pt",
+          "development": {
+            "0": {
+              "cable": 1.755255751311779,
+              "cloth": 5.348870411515236
+            },
+            "100": {
+              "cable": 0.8388738427311182,
+              "cloth": 5.568803429603577
+            }
+          },
+          "test": {
+            "0": {
+              "cable": {
+                "native_mm": 15.055387685120248,
+                "native_pct": 1.6650963588585164,
+                "interpolation_mm": 5.7394576164314755,
+                "hold_mm": 295.6359236292121,
+                "terminal_mm": 25.72149921975636,
+                "response_error_pct": 48.4349283764735,
+                "force_pairs_improving_over_zero": 30,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 22.779707222440226,
+                "native_pct": 3.1519175313726278,
+                "interpolation_mm": 5.683419347923941,
+                "hold_mm": 537.0955301419929,
+                "terminal_mm": 55.20851197291002,
+                "response_error_pct": 90.28707996489419,
+                "force_pairs_improving_over_zero": 26,
+                "force_pairs": 32
+              }
+            },
+            "100": {
+              "cable": {
+                "native_mm": 10.138528250499684,
+                "native_pct": 1.128050920019536,
+                "interpolation_mm": 5.843084122783519,
+                "hold_mm": 120.83904443491329,
+                "terminal_mm": 10.153680291818763,
+                "response_error_pct": 40.85739180277679,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 25.852070814528577,
+                "native_pct": 3.627256038711974,
+                "interpolation_mm": 5.6513637520060405,
+                "hold_mm": 310.49029900670456,
+                "terminal_mm": 39.97836093062388,
+                "response_error_pct": 79.14763410190652,
+                "force_pairs_improving_over_zero": 26,
+                "force_pairs": 32
+              }
+            }
+          },
+          "fresh": {
+            "0": {
+              "cable": {
+                "native_mm": 12.827392046164027,
+                "native_pct": 1.5724714649995568,
+                "interpolation_mm": 4.591316783557986,
+                "hold_mm": 254.34945705465537,
+                "terminal_mm": 8.41486378486385,
+                "response_error_pct": 55.509282121058966,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 28.69751302161186,
+                "native_pct": 4.318427631872909,
+                "interpolation_mm": 6.08047707546862,
+                "hold_mm": 516.5013865098987,
+                "terminal_mm": 83.63273025200608,
+                "response_error_pct": 90.8075939220345,
+                "force_pairs_improving_over_zero": 21,
+                "force_pairs": 32
+              }
+            },
+            "100": {
+              "cable": {
+                "native_mm": 8.179832701760901,
+                "native_pct": 1.015490583089297,
+                "interpolation_mm": 4.606656186446547,
+                "hold_mm": 99.86465271074054,
+                "terminal_mm": 6.949963415782884,
+                "response_error_pct": 36.79087057147116,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 30.272009199843303,
+                "native_pct": 4.555127488792285,
+                "interpolation_mm": 6.082407067285091,
+                "hold_mm": 302.49011919735824,
+                "terminal_mm": 46.1402103659554,
+                "response_error_pct": 82.90684603060899,
+                "force_pairs_improving_over_zero": 28,
+                "force_pairs": 32
+              }
+            }
+          }
+        },
+        {
+          "step": 3000,
+          "fit_seconds": 28.10185949644074,
+          "checkpoint": "equal-time.pt",
+          "development": {
+            "0": {
+              "cable": 2.3062249198555946,
+              "cloth": 7.437459215521812
+            },
+            "100": {
+              "cable": 1.4746967628598213,
+              "cloth": 6.996454402804375
+            }
+          },
+          "test": {
+            "0": {
+              "cable": {
+                "native_mm": 17.373130060370777,
+                "native_pct": 1.953522641978637,
+                "interpolation_mm": 5.7394576164314755,
+                "hold_mm": 295.6359236292121,
+                "terminal_mm": 37.02210075056388,
+                "response_error_pct": 52.36374668309601,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 35.70383693351852,
+                "native_pct": 4.994204696634438,
+                "interpolation_mm": 5.683419347923941,
+                "hold_mm": 537.0955301419929,
+                "terminal_mm": 78.4725932939247,
+                "response_error_pct": 90.09638132177423,
+                "force_pairs_improving_over_zero": 28,
+                "force_pairs": 32
+              }
+            },
+            "100": {
+              "cable": {
+                "native_mm": 11.919764069859195,
+                "native_pct": 1.3558993268364194,
+                "interpolation_mm": 5.843084122783519,
+                "hold_mm": 120.83904443491329,
+                "terminal_mm": 13.910079406499577,
+                "response_error_pct": 45.66063304267659,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 37.390497037547,
+                "native_pct": 5.14743036767984,
+                "interpolation_mm": 5.6513637520060405,
+                "hold_mm": 310.49029900670456,
+                "terminal_mm": 60.210183025905415,
+                "response_error_pct": 80.78023677040015,
+                "force_pairs_improving_over_zero": 28,
+                "force_pairs": 32
+              }
+            }
+          },
+          "fresh": {
+            "0": {
+              "cable": {
+                "native_mm": 14.887819837981557,
+                "native_pct": 1.820132225533658,
+                "interpolation_mm": 4.591316783557986,
+                "hold_mm": 254.34945705465537,
+                "terminal_mm": 11.959432575794178,
+                "response_error_pct": 57.239387236099,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 41.47932872308482,
+                "native_pct": 6.28965596182631,
+                "interpolation_mm": 6.08047707546862,
+                "hold_mm": 516.5013865098987,
+                "terminal_mm": 131.16951697892685,
+                "response_error_pct": 92.45792579927516,
+                "force_pairs_improving_over_zero": 22,
+                "force_pairs": 32
+              }
+            },
+            "100": {
+              "cable": {
+                "native_mm": 9.704374645866197,
+                "native_pct": 1.1790283326066962,
+                "interpolation_mm": 4.606656186446547,
+                "hold_mm": 99.86465271074054,
+                "terminal_mm": 8.014034613998659,
+                "response_error_pct": 48.790513537015386,
+                "force_pairs_improving_over_zero": 32,
+                "force_pairs": 32
+              },
+              "cloth": {
+                "native_mm": 39.027742317195596,
+                "native_pct": 5.804947772068457,
+                "interpolation_mm": 6.082407067285091,
+                "hold_mm": 302.49011919735824,
+                "terminal_mm": 59.9803523222791,
+                "response_error_pct": 86.35806653951369,
+                "force_pairs_improving_over_zero": 25,
+                "force_pairs": 32
+              }
+            }
+          }
+        }
+      ],
+      "final_fit_seconds": 72.40325084980577,
+      "seed": 91,
+      "first_cases_and_starts_sha256": "32c62693ad122773aec789e964f1685556687ea6d4b1ac3693442533c4f12ca7",
+      "last_cases_and_starts_sha256": "5422e5cd936dcd1f4883dc1fd98435e865bf7645424558c40aeb7d8367ca4393"
+    }
+  },
+  "derivative_check": {
+    "direction_relative_l2": 1.5198192267746137e-11,
+    "weight_gradient_relative_l2": 1.3855479159333622e-11,
+    "centered_check_step": 0.001,
+    "dtype": "float64"
+  },
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "torch": "2.15.0+cu132",
+  "checkpoint_time_granularity_updates": 100,
+  "timing": "Warm optimizer updates including synchronization, excluding setup, checkpoint I/O and all scoring."
+}

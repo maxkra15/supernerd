@@ -8,6 +8,10 @@ On 16 fresh objects and 80 six-second trajectories, the shared model averages **
 
 ![A six-second Newton and SuperNeRD rollout on a fresh cable and cloth under a descending chirp](figures/newton-supernerd.gif)
 
+## Force-response learning
+
+Starting from the released model, an additional 7.1 seconds of training on original trajectories and new force perturbations improved release rollouts on an independent 80-trajectory confirmation set. Cable shape error fell from 1.41% to 1.28%, and cloth force-response error fell from 95.04% to 88.59%. A loss that explicitly differentiates the surrogate gave similar accuracy to ordinary backpropagation on measured displacement differences and took longer. Moving cloth restarts remain a weakness. [Study](https://maxkra15.github.io/supernerd/#gradients) · [New rollout GIF](figures/gradient-confirmation.gif) · [Data, checkpoints and commands](deformables/gradients/README.md).
+
 ## Reproduce
 
 - [Shared model, replay from stored weights, and teacher generation](deformables/MODAL_REPRODUCTION.md)

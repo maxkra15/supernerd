@@ -111,7 +111,11 @@ def main():
     rows = [(name, clock, score(key)) for name,clock,key in old]
     asset = read(ROOT / "deformables/asset/results/fresh.json")["results"]
     env = Environment(loader=FileSystemLoader(ROOT / "paper"), autoescape=select_autoescape(default=True))
-    html = env.get_template("deformable-physics.html.j2").render(rows=rows, fresh=fresh, asset=asset)
+    gradient_results = ROOT / "deformables/gradients/results"
+    retention = read(gradient_results / "retention/mean.json")
+    clock = read(gradient_results / "fit-capture.json")["capture_including_compression_wall_s"]
+    html = env.get_template("deformable-physics.html.j2").render(rows=rows, fresh=fresh, asset=asset,
+                                                           retention=retention, gradient_clock=clock)
     (ROOT / "index.html").write_text(html)
     if args.pdf:
         print_paper(html)

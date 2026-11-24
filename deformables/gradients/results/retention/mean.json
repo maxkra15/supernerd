@@ -1,0 +1,104 @@
+{
+  "parent": {
+    "fresh-0": {
+      "cable-native_pct": 1.568111543160626,
+      "cable-response_error_pct": 55.58893155988086,
+      "cloth-native_pct": 4.280716267198764,
+      "cloth-response_error_pct": 89.78195153685769
+    },
+    "fresh-100": {
+      "cable-native_pct": 1.0044957817717926,
+      "cable-response_error_pct": 36.722344871860294,
+      "cloth-native_pct": 4.535340735435762,
+      "cloth-response_error_pct": 82.447281051716
+    },
+    "confirmation-0": {
+      "cable-native_pct": 1.4058398311399694,
+      "cable-response_error_pct": 54.55879417601259,
+      "cloth-native_pct": 6.365758774043411,
+      "cloth-response_error_pct": 95.04462391824914
+    },
+    "confirmation-100": {
+      "cable-native_pct": 1.0703833579388828,
+      "cable-response_error_pct": 47.29812136607448,
+      "cloth-native_pct": 6.9585795668224595,
+      "cloth-response_error_pct": 87.11910440870139
+    },
+    "local": {
+      "cable-amplitude_3_shape_pct": 1.6867343252924072,
+      "cable-amplitude_3_response_pct": 65.613564608532,
+      "cable-local_derivative_error_pct": 65.73033268703239,
+      "cloth-amplitude_3_shape_pct": 3.549511363245551,
+      "cloth-amplitude_3_response_pct": 88.50754281042123,
+      "cloth-local_derivative_error_pct": 84.08776668832994
+    }
+  },
+  "old": {
+    "fresh-0": {
+      "cable-native_pct": 1.5340101298956448,
+      "cable-response_error_pct": 53.819954441253245,
+      "cloth-native_pct": 4.258477593848848,
+      "cloth-response_error_pct": 89.20070780379001
+    },
+    "fresh-100": {
+      "cable-native_pct": 0.9463269124900044,
+      "cable-response_error_pct": 36.611224092696034,
+      "cloth-native_pct": 4.384399141391677,
+      "cloth-response_error_pct": 81.91691040327979
+    },
+    "confirmation-0": {
+      "cable-native_pct": 1.3438191824450691,
+      "cable-response_error_pct": 53.651601265086995,
+      "cloth-native_pct": 6.442145304617988,
+      "cloth-response_error_pct": 94.15144395348642
+    },
+    "confirmation-100": {
+      "cable-native_pct": 1.0392739905326485,
+      "cable-response_error_pct": 45.28673822070955,
+      "cloth-native_pct": 6.948909426139554,
+      "cloth-response_error_pct": 86.73618731182135
+    },
+    "local": {
+      "cable-amplitude_3_shape_pct": 1.6270317731574186,
+      "cable-amplitude_3_response_pct": 66.67193490883437,
+      "cable-local_derivative_error_pct": 66.88372457226843,
+      "cloth-amplitude_3_shape_pct": 3.5550229295482056,
+      "cloth-amplitude_3_response_pct": 87.90472225050961,
+      "cloth-local_derivative_error_pct": 83.9609651158795
+    }
+  },
+  "mixed": {
+    "fresh-0": {
+      "cable-native_pct": 1.527251926136529,
+      "cable-response_error_pct": 55.316115797899286,
+      "cloth-native_pct": 3.448325594620061,
+      "cloth-response_error_pct": 83.5717583387142
+    },
+    "fresh-100": {
+      "cable-native_pct": 0.9696076430374048,
+      "cable-response_error_pct": 37.15412455623638,
+      "cloth-native_pct": 4.364756879055179,
+      "cloth-response_error_pct": 81.3181273207053
+    },
+    "confirmation-0": {
+      "cable-native_pct": 1.2819616302175798,
+      "cable-response_error_pct": 53.94446556867878,
+      "cloth-native_pct": 6.032970576536437,
+      "cloth-response_error_pct": 88.58819572934303
+    },
+    "confirmation-100": {
+      "cable-native_pct": 1.0328270812286648,
+      "cable-response_error_pct": 43.94354525769334,
+      "cloth-native_pct": 7.124060200098548,
+      "cloth-response_error_pct": 87.1434165129669
+    },
+    "local": {
+      "cable-amplitude_3_shape_pct": 1.565360536751869,
+      "cable-amplitude_3_response_pct": 66.17328458088147,
+      "cable-local_derivative_error_pct": 66.2756187939182,
+      "cloth-amplitude_3_shape_pct": 3.0123630200860494,
+      "cloth-amplitude_3_response_pct": 76.5053531447573,
+      "cloth-local_derivative_error_pct": 73.94375459624382
+    }
+  }
+}

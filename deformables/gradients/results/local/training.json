@@ -1,0 +1,65 @@
+[
+  {
+    "arm": "positions",
+    "seed": 271,
+    "updates": 1200,
+    "fit_s": 3.8836102741770446,
+    "checkpoint": "positions-271.pt"
+  },
+  {
+    "arm": "secant",
+    "seed": 271,
+    "updates": 1200,
+    "fit_s": 3.816075161099434,
+    "checkpoint": "secant-271.pt"
+  },
+  {
+    "arm": "autodiff",
+    "seed": 271,
+    "updates": 1200,
+    "fit_s": 8.817524851765484,
+    "checkpoint": "autodiff-271.pt"
+  },
+  {
+    "arm": "secant",
+    "seed": 725,
+    "updates": 1200,
+    "fit_s": 3.732821677811444,
+    "checkpoint": "secant-725.pt"
+  },
+  {
+    "arm": "autodiff",
+    "seed": 725,
+    "updates": 1200,
+    "fit_s": 10.580874043982476,
+    "checkpoint": "autodiff-725.pt"
+  },
+  {
+    "arm": "positions",
+    "seed": 725,
+    "updates": 1200,
+    "fit_s": 3.5715099927037954,
+    "checkpoint": "positions-725.pt"
+  },
+  {
+    "arm": "autodiff",
+    "seed": 1709,
+    "updates": 1200,
+    "fit_s": 9.592636430170387,
+    "checkpoint": "autodiff-1709.pt"
+  },
+  {
+    "arm": "positions",
+    "seed": 1709,
+    "updates": 1200,
+    "fit_s": 3.7311041890643537,
+    "checkpoint": "positions-1709.pt"
+  },
+  {
+    "arm": "secant",
+    "seed": 1709,
+    "updates": 1200,
+    "fit_s": 4.0154316099360585,
+    "checkpoint": "secant-1709.pt"
+  }
+]

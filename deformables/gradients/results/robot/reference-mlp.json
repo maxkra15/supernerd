@@ -1,0 +1,52 @@
+{
+  "heldout_one_step_action_jacobian_relative_rms": [
+    0.10879185689583303,
+    0.13282090735550148,
+    0.11453991118187823,
+    0.133010570424114
+  ],
+  "active": {
+    "1": {
+      "whole_window_cart_rmse_m": 0.00017451932944823056,
+      "whole_window_angle_rmse_deg": 0.019146112725138664,
+      "last_angle_rmse_deg": 0.019146112725138664
+    },
+    "15": {
+      "whole_window_cart_rmse_m": 0.011787766590714455,
+      "whole_window_angle_rmse_deg": 1.1965303421020508,
+      "last_angle_rmse_deg": 2.379167318344116
+    },
+    "60": {
+      "whole_window_cart_rmse_m": 0.13474734127521515,
+      "whole_window_angle_rmse_deg": 19.783931732177734,
+      "last_angle_rmse_deg": 37.1454963684082
+    },
+    "100": {
+      "whole_window_cart_rmse_m": 0.29173439741134644,
+      "whole_window_angle_rmse_deg": 35.487491607666016,
+      "last_angle_rmse_deg": 74.10985565185547
+    }
+  },
+  "passive": {
+    "1": {
+      "whole_window_cart_rmse_m": 0.00038986257277429104,
+      "whole_window_angle_rmse_deg": 0.01283874548971653,
+      "last_angle_rmse_deg": 0.01283874548971653
+    },
+    "15": {
+      "whole_window_cart_rmse_m": 0.035180043429136276,
+      "whole_window_angle_rmse_deg": 1.1069313287734985,
+      "last_angle_rmse_deg": 2.3039803504943848
+    },
+    "60": {
+      "whole_window_cart_rmse_m": 0.3019849956035614,
+      "whole_window_angle_rmse_deg": 9.860250473022461,
+      "last_angle_rmse_deg": 20.371421813964844
+    },
+    "100": {
+      "whole_window_cart_rmse_m": 0.5121138095855713,
+      "whole_window_angle_rmse_deg": 14.731547355651855,
+      "last_angle_rmse_deg": 23.5906925201416
+    }
+  }
+}

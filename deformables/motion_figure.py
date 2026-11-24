@@ -10,10 +10,10 @@ import numpy as np
 from native_rollouts import decode
 
 
-def render(root, prediction_file, out, split, seed):
-    with np.load(root / f"data/{split}.npz") as f:
+def render(root, prediction_file, out, split, seed, packed=None, native_path=None):
+    with np.load(packed or root / f"data/{split}.npz") as f:
         data = dict(f)
-    with np.load(root / f"data/native-{split}.npz") as f:
+    with np.load(native_path or root / f"data/native-{split}.npz") as f:
         native = dict(f)
     with np.load(prediction_file) as f:
         predictions = f["q_from_0"]
@@ -66,5 +66,7 @@ if __name__=="__main__":
     parser.add_argument("--seed", type=int, default=41540)
     parser.add_argument("--predictions", type=Path, default=root / "results/paired-fresh-rollouts.npz")
     parser.add_argument("--output", type=Path, default=root.parent / "figures/newton-supernerd.gif")
+    parser.add_argument("--packed", type=Path, help="Use an explicit packed trajectory bank.")
+    parser.add_argument("--native", type=Path, help="Use the corresponding native-vertex bank.")
     args = parser.parse_args()
-    render(root, args.predictions, args.output, args.split, args.seed)
+    render(root, args.predictions, args.output, args.split, args.seed, args.packed, args.native)

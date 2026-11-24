@@ -1,0 +1,16 @@
+{
+  "cable": {
+    "count": 192,
+    "median_pct_model_secant": 0.005270004383011514,
+    "p90_pct_model_secant": 0.018177445677739313,
+    "pooled_pct_model_secant": 0.017391316167266375,
+    "pooled_pct_newton_response": 0.008060369660321958
+  },
+  "cloth": {
+    "count": 192,
+    "median_pct_model_secant": 0.40848519238163883,
+    "p90_pct_model_secant": 1.1893343933645981,
+    "pooled_pct_model_secant": 1.0982869678499736,
+    "pooled_pct_newton_response": 0.906504718647678
+  }
+}

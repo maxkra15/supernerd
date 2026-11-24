@@ -1,0 +1,462 @@
+{
+  "modal-paired": {
+    "0": {
+      "cable": {
+        "native_mm": 12.80094914257424,
+        "native_pct": 1.568111543160626,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 8.33989092784799,
+        "response_error_pct": 55.58893155988086,
+        "force_pairs_improving_over_zero": 32,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 28.408407816292357,
+        "native_pct": 4.280716267198764,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 83.54571898016513,
+        "response_error_pct": 89.78195153685769,
+        "force_pairs_improving_over_zero": 21,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 8.089000730401867,
+        "native_pct": 1.0044957817717926,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 6.636059923763435,
+        "response_error_pct": 36.722344871860294,
+        "force_pairs_improving_over_zero": 32,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 30.125980417963582,
+        "native_pct": 4.535340735435762,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 45.996497981257015,
+        "response_error_pct": 82.447281051716,
+        "force_pairs_improving_over_zero": 29,
+        "force_pairs": 32
+      }
+    }
+  },
+  "autodiff-1709": {
+    "0": {
+      "cable": {
+        "native_mm": 15.964694572572489,
+        "native_pct": 1.9271900294376483,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.433956937157978,
+        "response_error_pct": 113.63328115516157,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 24.078002749520856,
+        "native_pct": 3.571899607755154,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 47.56440525553218,
+        "response_error_pct": 88.4005536440032,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 14.691567067566876,
+        "native_pct": 1.833762219303474,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 13.194831596958101,
+        "response_error_pct": 86.6967608434331,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 32.78697827820464,
+        "native_pct": 4.943836906898027,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 43.3496674968157,
+        "response_error_pct": 85.29789467271674,
+        "force_pairs_improving_over_zero": 27,
+        "force_pairs": 32
+      }
+    }
+  },
+  "autodiff-271": {
+    "0": {
+      "cable": {
+        "native_mm": 15.653220912609793,
+        "native_pct": 1.8833028485469534,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.105868532203184,
+        "response_error_pct": 112.56284930096676,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 23.661274990200972,
+        "native_pct": 3.5119232495707977,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 47.06080790824619,
+        "response_error_pct": 88.98112642724126,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 14.19492413779247,
+        "native_pct": 1.7707371723437082,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 12.719139049428328,
+        "response_error_pct": 84.68357825813108,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 32.70502979540898,
+        "native_pct": 4.932546448406202,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 43.88650854381808,
+        "response_error_pct": 85.41171374672248,
+        "force_pairs_improving_over_zero": 27,
+        "force_pairs": 32
+      }
+    }
+  },
+  "autodiff-725": {
+    "0": {
+      "cable": {
+        "native_mm": 15.693331639093751,
+        "native_pct": 1.890617888860671,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.25414705394972,
+        "response_error_pct": 108.990280440163,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 23.732831371523833,
+        "native_pct": 3.52462401091499,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 47.372541555636346,
+        "response_error_pct": 89.38312332850955,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 14.139271669655887,
+        "native_pct": 1.768448570773392,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 12.693555338439785,
+        "response_error_pct": 82.00645050812868,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 33.046935163589694,
+        "native_pct": 4.981909429341971,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 43.946079321607975,
+        "response_error_pct": 85.06995588196217,
+        "force_pairs_improving_over_zero": 27,
+        "force_pairs": 32
+      }
+    }
+  },
+  "positions-1709": {
+    "0": {
+      "cable": {
+        "native_mm": 14.263040780509844,
+        "native_pct": 1.7035905288893474,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 12.071548267360978,
+        "response_error_pct": 124.49363290653312,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 24.588101787499895,
+        "native_pct": 3.6437024299164067,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 50.541795577655805,
+        "response_error_pct": 95.51631615640832,
+        "force_pairs_improving_over_zero": 19,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 12.678973727393679,
+        "native_pct": 1.5473961692339282,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 12.030116371955431,
+        "response_error_pct": 82.76520719258559,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 32.89122096894755,
+        "native_pct": 4.968423742722898,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 52.48904622715425,
+        "response_error_pct": 86.58176309298314,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    }
+  },
+  "positions-271": {
+    "0": {
+      "cable": {
+        "native_mm": 14.172769562832588,
+        "native_pct": 1.687061949993743,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 12.000497158426985,
+        "response_error_pct": 125.62042851224338,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 24.642875846636016,
+        "native_pct": 3.6690161948105535,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 51.02447086409974,
+        "response_error_pct": 94.91693418020638,
+        "force_pairs_improving_over_zero": 19,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 12.358252651029572,
+        "native_pct": 1.5029027884507347,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 11.940085988309423,
+        "response_error_pct": 82.67394879500509,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 33.42003504190363,
+        "native_pct": 5.065545106039658,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 54.78568638274261,
+        "response_error_pct": 86.58350315919188,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    }
+  },
+  "positions-725": {
+    "0": {
+      "cable": {
+        "native_mm": 14.183720162965253,
+        "native_pct": 1.6923964522807136,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.970788554293375,
+        "response_error_pct": 124.10052637033142,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 24.702568235447018,
+        "native_pct": 3.668435259919444,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 50.552863321488054,
+        "response_error_pct": 96.26908208049812,
+        "force_pairs_improving_over_zero": 19,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 12.300020402209416,
+        "native_pct": 1.4991561620955913,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 11.96479966854458,
+        "response_error_pct": 82.33063366139685,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 33.339802391246494,
+        "native_pct": 5.041188900515172,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 53.176296417935134,
+        "response_error_pct": 86.55179731518167,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    }
+  },
+  "secant-1709": {
+    "0": {
+      "cable": {
+        "native_mm": 15.964690592294806,
+        "native_pct": 1.927189675993753,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.43397516386602,
+        "response_error_pct": 113.6334940807842,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 24.07821158054613,
+        "native_pct": 3.571927936529343,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 47.564006343568806,
+        "response_error_pct": 88.40195595232784,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 14.691908369465114,
+        "native_pct": 1.8338016636511731,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 13.195316439690208,
+        "response_error_pct": 86.69690412379391,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 32.78730324327882,
+        "native_pct": 4.943875104046478,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 43.349946300077534,
+        "response_error_pct": 85.29784336131688,
+        "force_pairs_improving_over_zero": 27,
+        "force_pairs": 32
+      }
+    }
+  },
+  "secant-271": {
+    "0": {
+      "cable": {
+        "native_mm": 15.653243738635174,
+        "native_pct": 1.8833051109848564,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.105906997805057,
+        "response_error_pct": 112.56313539322159,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 23.661529117216777,
+        "native_pct": 3.51195648739733,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 47.061190002348766,
+        "response_error_pct": 88.98266593096895,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 14.195168676082488,
+        "native_pct": 1.7707667178905542,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 12.71938939428031,
+        "response_error_pct": 84.68378638192561,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 32.70527086669004,
+        "native_pct": 4.932570456723534,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 43.886932329822805,
+        "response_error_pct": 85.41185700805299,
+        "force_pairs_improving_over_zero": 27,
+        "force_pairs": 32
+      }
+    }
+  },
+  "secant-725": {
+    "0": {
+      "cable": {
+        "native_mm": 15.693347963499665,
+        "native_pct": 1.8906202077137197,
+        "interpolation_mm": 4.591316783557986,
+        "hold_mm": 254.34945705465537,
+        "terminal_mm": 11.254175978506755,
+        "response_error_pct": 108.99062910916015,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 23.733055359812646,
+        "native_pct": 3.524654834460069,
+        "interpolation_mm": 6.08047707546862,
+        "hold_mm": 516.5013865098987,
+        "terminal_mm": 47.37240392852683,
+        "response_error_pct": 89.38488814838207,
+        "force_pairs_improving_over_zero": 24,
+        "force_pairs": 32
+      }
+    },
+    "100": {
+      "cable": {
+        "native_mm": 14.139456800881197,
+        "native_pct": 1.768470657898164,
+        "interpolation_mm": 4.606656186446547,
+        "hold_mm": 99.86465271074054,
+        "terminal_mm": 12.693830255684196,
+        "response_error_pct": 82.0066750972116,
+        "force_pairs_improving_over_zero": 20,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 33.047205972197446,
+        "native_pct": 4.981935297597611,
+        "interpolation_mm": 6.082407067285091,
+        "hold_mm": 302.49011919735824,
+        "terminal_mm": 43.94641845556133,
+        "response_error_pct": 85.07008277365337,
+        "force_pairs_improving_over_zero": 27,
+        "force_pairs": 32
+      }
+    }
+  }
+}
