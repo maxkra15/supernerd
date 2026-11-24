@@ -1,0 +1,115 @@
+{
+  "nerd_revision": "476dc67fccc6a99be293bf611f897b1c06f13e30",
+  "checkpoint_sha256": "287dde2134eb8f5277c17a8f7cc7abbe64063e97cb481bdb6e8d76f9536e5366",
+  "checkpoint_robot_name": "Cartpole",
+  "model_parameters": 2713668,
+  "warp_version": "1.10.0",
+  "torch_version": "2.15.0+cu132",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cases": 2048,
+  "horizon": 200,
+  "frame_dt_seconds": 0.016666666666666666,
+  "action_gain_newtons": 1500.0,
+  "max_applied_force_disagreement_newtons": 0.0,
+  "history_initialization": "10 teacher steps followed by recursive rollout",
+  "prefix_and_terminal_error": {
+    "1": {
+      "prefix_rmse": {
+        "cart_position_m": 1.4646278050140062e-06,
+        "pole_angle_rad": 9.492657539320411e-06,
+        "cart_velocity_m_s": 2.5129576561677097e-05,
+        "pole_angular_velocity_rad_s": 0.0010233592593561405
+      },
+      "terminal_rmse": {
+        "cart_position_m": 1.4646278050140062e-06,
+        "pole_angle_rad": 9.492657539320411e-06,
+        "cart_velocity_m_s": 2.5129576561677097e-05,
+        "pole_angular_velocity_rad_s": 0.0010233592593561405
+      },
+      "prefix_nrmse": 0.00011643917110152881,
+      "terminal_nrmse": 0.00011643917110152881
+    },
+    "8": {
+      "prefix_rmse": {
+        "cart_position_m": 1.1718307205337595e-05,
+        "pole_angle_rad": 0.00029785878017655814,
+        "cart_velocity_m_s": 0.00012082690171480044,
+        "pole_angular_velocity_rad_s": 0.0055861049395219175
+      },
+      "terminal_rmse": {
+        "cart_position_m": 2.078412526011188e-05,
+        "pole_angle_rad": 0.0005833592040615295,
+        "cart_velocity_m_s": 0.00018977534207423663,
+        "pole_angular_velocity_rad_s": 0.009234139866085357
+      },
+      "prefix_nrmse": 0.0006342721747360861,
+      "terminal_nrmse": 0.0010478108458926295
+    },
+    "15": {
+      "prefix_rmse": {
+        "cart_position_m": 2.9248532411043477e-05,
+        "pole_angle_rad": 0.001084613892750145,
+        "cart_velocity_m_s": 0.00019576824680956034,
+        "pole_angular_velocity_rad_s": 0.011668927830687414
+      },
+      "terminal_rmse": {
+        "cart_position_m": 5.503128719148422e-05,
+        "pole_angle_rad": 0.0023226534932799096,
+        "cart_velocity_m_s": 0.00029700830793078365,
+        "pole_angular_velocity_rad_s": 0.02105082724389685
+      },
+      "prefix_nrmse": 0.0013218200543361454,
+      "terminal_nrmse": 0.002382694634859375
+    },
+    "32": {
+      "prefix_rmse": {
+        "cart_position_m": 9.158244930737088e-05,
+        "pole_angle_rad": 0.006001631233466829,
+        "cart_velocity_m_s": 0.0008514039578163731,
+        "pole_angular_velocity_rad_s": 0.031903728470317326
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.0002120750527864116,
+        "pole_angle_rad": 0.01359951946871643,
+        "cart_velocity_m_s": 0.0019129623792401068,
+        "pole_angular_velocity_rad_s": 0.05684493951303346
+      },
+      "prefix_nrmse": 0.003672289118325038,
+      "terminal_nrmse": 0.006636041798241509
+    },
+    "100": {
+      "prefix_rmse": {
+        "cart_position_m": 0.000503305599218741,
+        "pole_angle_rad": 0.02347513275007683,
+        "cart_velocity_m_s": 0.002606807097579496,
+        "pole_angular_velocity_rad_s": 0.06332746093001142
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.0009394081361827413,
+        "pole_angle_rad": 0.04142810614864143,
+        "cart_velocity_m_s": 0.0041551810360659506,
+        "pole_angular_velocity_rad_s": 0.1302377252308147
+      },
+      "prefix_nrmse": 0.007623609951499477,
+      "terminal_nrmse": 0.015340892073928613
+    },
+    "200": {
+      "prefix_rmse": {
+        "cart_position_m": 0.0028735160364151448,
+        "pole_angle_rad": 0.1714026294269592,
+        "cart_velocity_m_s": 0.015425365276275109,
+        "pole_angular_velocity_rad_s": 0.48175399205822184
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.0070618913540033915,
+        "pole_angle_rad": 0.3766373888487909,
+        "cart_velocity_m_s": 0.0316645322611805,
+        "pole_angular_velocity_rad_s": 1.154632014138987
+      },
+      "prefix_nrmse": 0.057105224439553876,
+      "terminal_nrmse": 0.1354632446841975
+    }
+  },
+  "input_sha256": "5a5d808da1a40f8dc47f8947f3d464463e80ec48a11c2f7707924e70afe1df04",
+  "input_cohort": "active"
+}

@@ -1,0 +1,2099 @@
+{
+  "protocol": {
+    "version": 1,
+    "physics_hz": 60.0,
+    "substeps": 5,
+    "state_order": [
+      "cart_m",
+      "pole_rad",
+      "cart_m_s",
+      "pole_rad_s"
+    ],
+    "solver": "Newton SolverFeatherstone",
+    "asset_sha256": "f31276531c03050a3ac3a3e24443899f38a4424586db17140978383433dec237",
+    "policy_force_limit_n": 225.0,
+    "model_test_seed": 500,
+    "policy_test_seed": 1729
+  },
+  "run": {
+    "python": "3.12.14",
+    "torch": "2.15.0+cu132",
+    "warp": "1.19.0.dev20261020",
+    "newton": "1.9.0.dev0",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "eval_data_s_this_invocation": 0.00018741702660918236,
+    "argv": {
+      "urdf": "/tmp/supernerd-official/nerd/envs/newton_envs/assets/cartpole_single.urdf",
+      "output": "/tmp/supernerd-research/run",
+      "device": "cuda",
+      "evaluation_cases": "2048",
+      "train_worlds": "4096",
+      "fit_updates": "2200",
+      "policy_updates": "96",
+      "policy_worlds": "64",
+      "policy_eval_cases": "256",
+      "policy_horizon": "48",
+      "seeds": "(5, 19, 47)",
+      "traces_only": "False",
+      "fit_only": "False",
+      "reuse_fit": "False",
+      "newton_ppo": "True"
+    }
+  },
+  "model": {
+    "model_parameters": 4932,
+    "train_transitions": 131072,
+    "train_state_std": [
+      1.7234666347503662,
+      2.0121750831604004,
+      3.176326274871826,
+      5.054354667663574
+    ],
+    "teacher_setup_s": 0.1856692093424499,
+    "teacher_rollout_s": 0.039746230002492666,
+    "fit_s": 3.1070060557685792,
+    "train_curve": [
+      {
+        "update": 1,
+        "loss": 0.6920112371444702,
+        "horizon": 1
+      },
+      {
+        "update": 275,
+        "loss": 0.21611034870147705,
+        "horizon": 1
+      },
+      {
+        "update": 550,
+        "loss": 0.2698051631450653,
+        "horizon": 1
+      },
+      {
+        "update": 825,
+        "loss": 0.20214083790779114,
+        "horizon": 1
+      },
+      {
+        "update": 1100,
+        "loss": 0.10642535239458084,
+        "horizon": 1
+      },
+      {
+        "update": 1375,
+        "loss": 0.10743407905101776,
+        "horizon": 1
+      },
+      {
+        "update": 1650,
+        "loss": 0.11618508398532867,
+        "horizon": 1
+      },
+      {
+        "update": 1925,
+        "loss": 0.1443953812122345,
+        "horizon": 4
+      },
+      {
+        "update": 2200,
+        "loss": 0.1535424292087555,
+        "horizon": 4
+      }
+    ],
+    "rollout": {
+      "passive": {
+        "1": {
+          "endpoint_rmse_by_state": [
+            0.0003065186901949346,
+            0.0002833909820765257,
+            0.03300661966204643,
+            0.02202494814991951
+          ],
+          "endpoint_nrmse": 0.010953539051115513,
+          "reference_std_by_state": [
+            1.4413459300994873,
+            3.3434009552001953,
+            1.561458945274353,
+            3.831782579421997
+          ],
+          "prefix_rmse_by_state": [
+            0.0003065186901949346,
+            0.0002833909820765257,
+            0.03300661966204643,
+            0.02202494814991951
+          ],
+          "prefix_nrmse": 0.005635211244225502
+        },
+        "15": {
+          "endpoint_rmse_by_state": [
+            0.047723349183797836,
+            0.04050147533416748,
+            0.3386194407939911,
+            0.3043626844882965
+          ],
+          "endpoint_nrmse": 0.11681288480758667,
+          "reference_std_by_state": [
+            1.4413459300994873,
+            3.3434009552001953,
+            1.561458945274353,
+            3.831782579421997
+          ],
+          "prefix_rmse_by_state": [
+            0.024416018277406693,
+            0.020541002973914146,
+            0.2315603345632553,
+            0.19999250769615173
+          ],
+          "prefix_nrmse": 0.042382944375276566
+        },
+        "100": {
+          "endpoint_rmse_by_state": [
+            0.9762626886367798,
+            0.3481603264808655,
+            1.5981684923171997,
+            1.7010852098464966
+          ],
+          "endpoint_nrmse": 0.6546509265899658,
+          "reference_std_by_state": [
+            1.4413459300994873,
+            3.3434009552001953,
+            1.561458945274353,
+            3.831782579421997
+          ],
+          "prefix_rmse_by_state": [
+            0.45116788148880005,
+            0.2184370905160904,
+            0.9800317883491516,
+            0.9512430429458618
+          ],
+          "prefix_nrmse": 0.22963662445545197
+        },
+        "200": {
+          "endpoint_rmse_by_state": [
+            2.343139171600342,
+            1.0278410911560059,
+            2.4684674739837646,
+            4.186670780181885
+          ],
+          "endpoint_nrmse": 1.2678970098495483,
+          "reference_std_by_state": [
+            1.4413459300994873,
+            3.3434009552001953,
+            1.561458945274353,
+            3.831782579421997
+          ],
+          "prefix_rmse_by_state": [
+            1.2748631238937378,
+            0.5686574578285217,
+            1.6391772031784058,
+            2.3155763149261475
+          ],
+          "prefix_nrmse": 0.5251767635345459
+        },
+        "teacher_forced_rmse_by_state": [
+          0.0008508180035278201,
+          0.0010638302192091942,
+          0.08344075828790665,
+          0.10574661940336227
+        ]
+      },
+      "active": {
+        "1": {
+          "endpoint_rmse_by_state": [
+            0.0001852095447247848,
+            0.0003463539178483188,
+            0.018330546095967293,
+            0.03410041704773903
+          ],
+          "endpoint_nrmse": 0.004169888328760862,
+          "reference_std_by_state": [
+            2.040961503982544,
+            6.5050950050354,
+            3.2012360095977783,
+            5.624898433685303
+          ],
+          "prefix_rmse_by_state": [
+            0.0001852095447247848,
+            0.0003463539178483188,
+            0.018330546095967293,
+            0.03410041704773903
+          ],
+          "prefix_nrmse": 0.004440270364284515
+        },
+        "15": {
+          "endpoint_rmse_by_state": [
+            0.02218756452202797,
+            0.038639191538095474,
+            0.19689330458641052,
+            0.3165397047996521
+          ],
+          "endpoint_nrmse": 0.04214031249284744,
+          "reference_std_by_state": [
+            2.040961503982544,
+            6.5050950050354,
+            3.2012360095977783,
+            5.624898433685303
+          ],
+          "prefix_rmse_by_state": [
+            0.011034381575882435,
+            0.01947282999753952,
+            0.11711657792329788,
+            0.1931346356868744
+          ],
+          "prefix_nrmse": 0.027176687493920326
+        },
+        "100": {
+          "endpoint_rmse_by_state": [
+            0.7459272146224976,
+            1.1375634670257568,
+            2.977381467819214,
+            5.737020492553711
+          ],
+          "endpoint_nrmse": 0.7192797660827637,
+          "reference_std_by_state": [
+            2.040961503982544,
+            6.5050950050354,
+            3.2012360095977783,
+            5.624898433685303
+          ],
+          "prefix_rmse_by_state": [
+            0.3497607409954071,
+            0.5986968874931335,
+            1.62073814868927,
+            2.8598995208740234
+          ],
+          "prefix_nrmse": 0.4213775098323822
+        },
+        "200": {
+          "endpoint_rmse_by_state": [
+            2.34142804145813,
+            1.5786077976226807,
+            4.135580062866211,
+            6.85150146484375
+          ],
+          "endpoint_nrmse": 1.0639094114303589,
+          "reference_std_by_state": [
+            2.040961503982544,
+            6.5050950050354,
+            3.2012360095977783,
+            5.624898433685303
+          ],
+          "prefix_rmse_by_state": [
+            1.1637378931045532,
+            1.0812163352966309,
+            2.7205934524536133,
+            4.857777118682861
+          ],
+          "prefix_nrmse": 0.7749234437942505
+        },
+        "teacher_forced_rmse_by_state": [
+          0.0020941549446433783,
+          0.0026533727068454027,
+          0.20146550238132477,
+          0.2577868103981018
+        ]
+      }
+    }
+  },
+  "timing": {
+    "1": {
+      "newton": {
+        "ms_p50": 0.1876416290178895,
+        "ms_samples": [
+          0.18255012575536966,
+          0.19238959066569805,
+          0.18630743958055973,
+          0.1876416290178895,
+          0.19032668322324753
+        ]
+      },
+      "learned_eager": {
+        "ms_p50": 0.09656253270804882,
+        "ms_samples": [
+          0.1146561186760664,
+          0.10170706082135439,
+          0.09643908124417067,
+          0.09656253270804882,
+          0.0962390610948205
+        ]
+      },
+      "learned_graph": {
+        "ms_p50": 0.026699570007622242,
+        "ms_samples": [
+          0.024640741758048534,
+          0.026699570007622242,
+          0.028014900162816048,
+          0.028040478937327862,
+          0.025765509344637394
+        ]
+      }
+    },
+    "128": {
+      "newton": {
+        "ms_p50": 0.23099184967577457,
+        "ms_samples": [
+          0.23293437901884317,
+          0.2272326499223709,
+          0.22870535030961037,
+          0.23192980326712132,
+          0.23099184967577457
+        ]
+      },
+      "learned_eager": {
+        "ms_p50": 0.10296999011188745,
+        "ms_samples": [
+          0.10343204252421856,
+          0.1032029278576374,
+          0.10294348001480103,
+          0.10296999011188745,
+          0.10280993767082691
+        ]
+      },
+      "learned_graph": {
+        "ms_p50": 0.03471402917057276,
+        "ms_samples": [
+          0.03280182834714651,
+          0.03471402917057276,
+          0.03620706032961607,
+          0.036122570745646954,
+          0.032812170684337616
+        ]
+      }
+    },
+    "2048": {
+      "newton": {
+        "ms_p50": 0.391196571290493,
+        "ms_samples": [
+          0.39752048905938864,
+          0.391196571290493,
+          0.3924399707466364,
+          0.38481704890727997,
+          0.3905120398849249
+        ]
+      },
+      "learned_eager": {
+        "ms_p50": 0.10820616036653519,
+        "ms_samples": [
+          0.10834223125129938,
+          0.10794132016599178,
+          0.1081992918625474,
+          0.10837586596608162,
+          0.10820616036653519
+        ]
+      },
+      "learned_graph": {
+        "ms_p50": 0.04313746001571417,
+        "ms_samples": [
+          0.04311530850827694,
+          0.04313746001571417,
+          0.04308033734560013,
+          0.04654661286622286,
+          0.048192027024924755
+        ]
+      }
+    }
+  },
+  "policy": {
+    "world_count": 64,
+    "train_horizon": 48,
+    "eval_horizon": 120,
+    "eval_cases": 256,
+    "success": "No native termination and |theta| <= .15 rad, |omega| <= .5 rad/s for final 60 frames",
+    "arms": {
+      "pathwise": {
+        "seeds": [
+          {
+            "seed": 5,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.10914595890790224,
+                "newton": {
+                  "mean_native_cost": 5.457063674926758,
+                  "median_native_cost": 5.795348644256592,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.8197178551927209,
+                "evaluation_s": 0.043342208955436945,
+                "newton": {
+                  "mean_native_cost": 0.49266317486763,
+                  "median_native_cost": 0.15206070244312286,
+                  "success_rate": 0.28515625,
+                  "safe_rate": 0.8515625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 1.272414636798203,
+                "evaluation_s": 0.043982733972370625,
+                "newton": {
+                  "mean_native_cost": 0.10512680560350418,
+                  "median_native_cost": 0.049466077238321304,
+                  "success_rate": 0.828125,
+                  "safe_rate": 0.9921875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 1.7294588396325707,
+                "evaluation_s": 0.0441324426792562,
+                "newton": {
+                  "mean_native_cost": 0.07280530035495758,
+                  "median_native_cost": 0.04032083600759506,
+                  "success_rate": 0.95703125,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 2.190069304779172,
+                "evaluation_s": 0.04426080035045743,
+                "newton": {
+                  "mean_native_cost": 0.06589573621749878,
+                  "median_native_cost": 0.03700018674135208,
+                  "success_rate": 0.97265625,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 2.5807203543372452,
+                "evaluation_s": 0.04431265778839588,
+                "newton": {
+                  "mean_native_cost": 0.058703888207674026,
+                  "median_native_cost": 0.03329092264175415,
+                  "success_rate": 0.9921875,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 2.9679219657555223,
+                "evaluation_s": 0.04549702862277627,
+                "newton": {
+                  "mean_native_cost": 0.052765704691410065,
+                  "median_native_cost": 0.03129413723945618,
+                  "success_rate": 0.99609375,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 3.3515226780436933,
+                "evaluation_s": 0.05259109614416957,
+                "newton": {
+                  "mean_native_cost": 0.05159236490726471,
+                  "median_native_cost": 0.030145449563860893,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 3.7599406610243022,
+                "evaluation_s": 0.05322985164821148,
+                "newton": {
+                  "mean_native_cost": 0.05113338306546211,
+                  "median_native_cost": 0.030307263135910034,
+                  "success_rate": 0.99609375,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 4.141957413870841,
+                "evaluation_s": 0.05036564730107784,
+                "newton": {
+                  "mean_native_cost": 0.04768259823322296,
+                  "median_native_cost": 0.029116371646523476,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 4.516290664672852,
+                "evaluation_s": 0.05314709711819887,
+                "newton": {
+                  "mean_native_cost": 0.0461166575551033,
+                  "median_native_cost": 0.027269015088677406,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 4.901913407258689,
+                "evaluation_s": 0.0483575789257884,
+                "newton": {
+                  "mean_native_cost": 0.0459093414247036,
+                  "median_native_cost": 0.027707289904356003,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 5.284248640760779,
+                "evaluation_s": 0.052969325333833694,
+                "newton": {
+                  "mean_native_cost": 0.04550961032509804,
+                  "median_native_cost": 0.027691740542650223,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          },
+          {
+            "seed": 19,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.05288479384034872,
+                "newton": {
+                  "mean_native_cost": 5.428016662597656,
+                  "median_native_cost": 5.774425506591797,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.3886992554180324,
+                "evaluation_s": 0.05299636069685221,
+                "newton": {
+                  "mean_native_cost": 0.5952283143997192,
+                  "median_native_cost": 0.19791936874389648,
+                  "success_rate": 0.375,
+                  "safe_rate": 0.80078125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.7695899386890233,
+                "evaluation_s": 0.043421464040875435,
+                "newton": {
+                  "mean_native_cost": 0.1587064266204834,
+                  "median_native_cost": 0.0910794734954834,
+                  "success_rate": 0.57421875,
+                  "safe_rate": 0.98046875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 1.1633831867948174,
+                "evaluation_s": 0.043584984727203846,
+                "newton": {
+                  "mean_native_cost": 0.07356493175029755,
+                  "median_native_cost": 0.040895093232393265,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.5454377974383533,
+                "evaluation_s": 0.04296936793252826,
+                "newton": {
+                  "mean_native_cost": 0.062172356992959976,
+                  "median_native_cost": 0.033450525254011154,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.9200667208060622,
+                "evaluation_s": 0.042816733941435814,
+                "newton": {
+                  "mean_native_cost": 0.059964150190353394,
+                  "median_native_cost": 0.03490030765533447,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 2.2943311906419694,
+                "evaluation_s": 0.04345861170440912,
+                "newton": {
+                  "mean_native_cost": 0.05781596153974533,
+                  "median_native_cost": 0.033687688410282135,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 2.6699676238931715,
+                "evaluation_s": 0.04286012891680002,
+                "newton": {
+                  "mean_native_cost": 0.05343179404735565,
+                  "median_native_cost": 0.03152807056903839,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 3.045461332425475,
+                "evaluation_s": 0.04343122476711869,
+                "newton": {
+                  "mean_native_cost": 0.04956098645925522,
+                  "median_native_cost": 0.030121080577373505,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 3.418801596388221,
+                "evaluation_s": 0.04298527678474784,
+                "newton": {
+                  "mean_native_cost": 0.04506434127688408,
+                  "median_native_cost": 0.0273161418735981,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 3.7935977983288467,
+                "evaluation_s": 0.043622797820717096,
+                "newton": {
+                  "mean_native_cost": 0.045365139842033386,
+                  "median_native_cost": 0.027667051181197166,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 4.169013188686222,
+                "evaluation_s": 0.042834398336708546,
+                "newton": {
+                  "mean_native_cost": 0.04699062556028366,
+                  "median_native_cost": 0.02909202128648758,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 4.545874598436058,
+                "evaluation_s": 0.0438684350810945,
+                "newton": {
+                  "mean_native_cost": 0.04683677852153778,
+                  "median_native_cost": 0.028469767421483994,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          },
+          {
+            "seed": 47,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04276638198643923,
+                "newton": {
+                  "mean_native_cost": 5.439653396606445,
+                  "median_native_cost": 5.774463176727295,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.3810147875919938,
+                "evaluation_s": 0.042841293849051,
+                "newton": {
+                  "mean_native_cost": 0.4058893322944641,
+                  "median_native_cost": 0.15223845839500427,
+                  "success_rate": 0.28515625,
+                  "safe_rate": 0.875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.7542487317696214,
+                "evaluation_s": 0.04300569463521242,
+                "newton": {
+                  "mean_native_cost": 0.2535626292228699,
+                  "median_native_cost": 0.11700815707445145,
+                  "success_rate": 0.44140625,
+                  "safe_rate": 0.9296875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 1.129015849903226,
+                "evaluation_s": 0.042641236912459135,
+                "newton": {
+                  "mean_native_cost": 0.09554016590118408,
+                  "median_native_cost": 0.058382898569107056,
+                  "success_rate": 0.95703125,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.5056320559233427,
+                "evaluation_s": 0.043267945758998394,
+                "newton": {
+                  "mean_native_cost": 0.07977226376533508,
+                  "median_native_cost": 0.04370296001434326,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.8812293400987983,
+                "evaluation_s": 0.042795877903699875,
+                "newton": {
+                  "mean_native_cost": 0.06538296490907669,
+                  "median_native_cost": 0.0374603196978569,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 2.243912528734654,
+                "evaluation_s": 0.04287272598594427,
+                "newton": {
+                  "mean_native_cost": 0.06241287291049957,
+                  "median_native_cost": 0.03731419891119003,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 2.608180807903409,
+                "evaluation_s": 0.04284753976389766,
+                "newton": {
+                  "mean_native_cost": 0.06063766032457352,
+                  "median_native_cost": 0.03354199603199959,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.971533798612654,
+                "evaluation_s": 0.04324456490576267,
+                "newton": {
+                  "mean_native_cost": 0.05357998237013817,
+                  "median_native_cost": 0.03215373679995537,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 3.3514725803397596,
+                "evaluation_s": 0.04284869600087404,
+                "newton": {
+                  "mean_native_cost": 0.054128497838974,
+                  "median_native_cost": 0.03286454826593399,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 3.7393530658446252,
+                "evaluation_s": 0.042457013856619596,
+                "newton": {
+                  "mean_native_cost": 0.051771581172943115,
+                  "median_native_cost": 0.03055010735988617,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 4.122175422031432,
+                "evaluation_s": 0.04282960016280413,
+                "newton": {
+                  "mean_native_cost": 0.04528707638382912,
+                  "median_native_cost": 0.029070934280753136,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 4.504039459396154,
+                "evaluation_s": 0.04376182705163956,
+                "newton": {
+                  "mean_native_cost": 0.046238191425800323,
+                  "median_native_cost": 0.028270753100514412,
+                  "success_rate": 1.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ppo": {
+        "seeds": [
+          {
+            "seed": 5,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04279305739328265,
+                "newton": {
+                  "mean_native_cost": 5.457063674926758,
+                  "median_native_cost": 5.795348644256592,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.3586028632707894,
+                "evaluation_s": 0.042789929546415806,
+                "newton": {
+                  "mean_native_cost": 5.137522220611572,
+                  "median_native_cost": 5.49749231338501,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.6719725215807557,
+                "evaluation_s": 0.04268225282430649,
+                "newton": {
+                  "mean_native_cost": 4.830957412719727,
+                  "median_native_cost": 5.1951680183410645,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0078125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 0.9993824451230466,
+                "evaluation_s": 0.04284557979553938,
+                "newton": {
+                  "mean_native_cost": 4.689960479736328,
+                  "median_native_cost": 5.170506000518799,
+                  "success_rate": 0.00390625,
+                  "safe_rate": 0.03125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.2930562891997397,
+                "evaluation_s": 0.042175880167633295,
+                "newton": {
+                  "mean_native_cost": 4.449522018432617,
+                  "median_native_cost": 4.905205726623535,
+                  "success_rate": 0.00390625,
+                  "safe_rate": 0.07421875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.5971282557584345,
+                "evaluation_s": 0.0426715943031013,
+                "newton": {
+                  "mean_native_cost": 3.5694570541381836,
+                  "median_native_cost": 3.7908287048339844,
+                  "success_rate": 0.03515625,
+                  "safe_rate": 0.26953125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 1.8990939729847014,
+                "evaluation_s": 0.04383748210966587,
+                "newton": {
+                  "mean_native_cost": 3.3784706592559814,
+                  "median_native_cost": 3.772172212600708,
+                  "success_rate": 0.0390625,
+                  "safe_rate": 0.3203125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 2.205799365416169,
+                "evaluation_s": 0.042749770916998386,
+                "newton": {
+                  "mean_native_cost": 2.9836206436157227,
+                  "median_native_cost": 3.369950771331787,
+                  "success_rate": 0.046875,
+                  "safe_rate": 0.4453125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.514954515732825,
+                "evaluation_s": 0.04272634629160166,
+                "newton": {
+                  "mean_native_cost": 2.601649284362793,
+                  "median_native_cost": 2.0916733741760254,
+                  "success_rate": 0.0859375,
+                  "safe_rate": 0.4921875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 2.8251278889365494,
+                "evaluation_s": 0.042773451656103134,
+                "newton": {
+                  "mean_native_cost": 1.1347198486328125,
+                  "median_native_cost": 0.6154940724372864,
+                  "success_rate": 0.1171875,
+                  "safe_rate": 0.64453125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 3.140837282408029,
+                "evaluation_s": 0.04264031769707799,
+                "newton": {
+                  "mean_native_cost": 1.1382200717926025,
+                  "median_native_cost": 0.45842137932777405,
+                  "success_rate": 0.1171875,
+                  "safe_rate": 0.671875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 3.4603078071959317,
+                "evaluation_s": 0.04265644587576389,
+                "newton": {
+                  "mean_native_cost": 2.8019607067108154,
+                  "median_native_cost": 2.624342679977417,
+                  "success_rate": 0.05078125,
+                  "safe_rate": 0.47265625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 3.7716465471312404,
+                "evaluation_s": 0.04388362122699618,
+                "newton": {
+                  "mean_native_cost": 2.466413974761963,
+                  "median_native_cost": 1.5276597738265991,
+                  "success_rate": 0.07421875,
+                  "safe_rate": 0.5234375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          },
+          {
+            "seed": 19,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04284335486590862,
+                "newton": {
+                  "mean_native_cost": 5.428016662597656,
+                  "median_native_cost": 5.774425506591797,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.30665838485583663,
+                "evaluation_s": 0.04275857610628009,
+                "newton": {
+                  "mean_native_cost": 5.340238571166992,
+                  "median_native_cost": 5.691075801849365,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.6196147832088172,
+                "evaluation_s": 0.04269028315320611,
+                "newton": {
+                  "mean_native_cost": 5.259601593017578,
+                  "median_native_cost": 5.621652126312256,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.00390625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 0.929243331309408,
+                "evaluation_s": 0.0438893879763782,
+                "newton": {
+                  "mean_native_cost": 5.04335355758667,
+                  "median_native_cost": 5.46677827835083,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.015625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.2390869646333158,
+                "evaluation_s": 0.04264298966154456,
+                "newton": {
+                  "mean_native_cost": 4.810201168060303,
+                  "median_native_cost": 5.208335876464844,
+                  "success_rate": 0.0078125,
+                  "safe_rate": 0.23046875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.5480059832334518,
+                "evaluation_s": 0.04253406170755625,
+                "newton": {
+                  "mean_native_cost": 4.343008041381836,
+                  "median_native_cost": 4.731997013092041,
+                  "success_rate": 0.00390625,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 1.8553497339598835,
+                "evaluation_s": 0.04271940886974335,
+                "newton": {
+                  "mean_native_cost": 3.5825767517089844,
+                  "median_native_cost": 3.9516496658325195,
+                  "success_rate": 0.0390625,
+                  "safe_rate": 0.76171875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 2.1659148577600718,
+                "evaluation_s": 0.04263893701136112,
+                "newton": {
+                  "mean_native_cost": 3.2665157318115234,
+                  "median_native_cost": 3.5365519523620605,
+                  "success_rate": 0.03515625,
+                  "safe_rate": 0.29296875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.4659049944020808,
+                "evaluation_s": 0.0427918778732419,
+                "newton": {
+                  "mean_native_cost": 2.9000282287597656,
+                  "median_native_cost": 3.173076629638672,
+                  "success_rate": 0.03515625,
+                  "safe_rate": 0.3828125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 2.7650123704224825,
+                "evaluation_s": 0.043130261823534966,
+                "newton": {
+                  "mean_native_cost": 2.121577024459839,
+                  "median_native_cost": 1.3543531894683838,
+                  "success_rate": 0.09765625,
+                  "safe_rate": 0.546875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 3.0720017408020794,
+                "evaluation_s": 0.04265260510146618,
+                "newton": {
+                  "mean_native_cost": 2.2014403343200684,
+                  "median_native_cost": 1.3598600625991821,
+                  "success_rate": 0.08203125,
+                  "safe_rate": 0.53515625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 3.3838590579107404,
+                "evaluation_s": 0.04367904318496585,
+                "newton": {
+                  "mean_native_cost": 2.686176300048828,
+                  "median_native_cost": 2.8968698978424072,
+                  "success_rate": 0.05859375,
+                  "safe_rate": 0.42578125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 3.6800667168572545,
+                "evaluation_s": 0.0431036283262074,
+                "newton": {
+                  "mean_native_cost": 2.206813097000122,
+                  "median_native_cost": 1.5062037706375122,
+                  "success_rate": 0.08203125,
+                  "safe_rate": 0.546875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          },
+          {
+            "seed": 47,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04297268809750676,
+                "newton": {
+                  "mean_native_cost": 5.439653396606445,
+                  "median_native_cost": 5.774463176727295,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.296851372346282,
+                "evaluation_s": 0.04259456600993872,
+                "newton": {
+                  "mean_native_cost": 5.146100044250488,
+                  "median_native_cost": 5.557024955749512,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.604114344343543,
+                "evaluation_s": 0.04271286493167281,
+                "newton": {
+                  "mean_native_cost": 4.940868854522705,
+                  "median_native_cost": 5.311644077301025,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.203125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 0.9097424605861306,
+                "evaluation_s": 0.04274360882118344,
+                "newton": {
+                  "mean_native_cost": 4.730708599090576,
+                  "median_native_cost": 5.135861873626709,
+                  "success_rate": 0.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.2226793901063502,
+                "evaluation_s": 0.04276562575250864,
+                "newton": {
+                  "mean_native_cost": 4.49709415435791,
+                  "median_native_cost": 4.921682357788086,
+                  "success_rate": 0.01171875,
+                  "safe_rate": 0.0625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.5272244648076594,
+                "evaluation_s": 0.04274699604138732,
+                "newton": {
+                  "mean_native_cost": 4.200534343719482,
+                  "median_native_cost": 4.351841926574707,
+                  "success_rate": 0.0078125,
+                  "safe_rate": 0.08984375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 1.8380741835571826,
+                "evaluation_s": 0.042826368007808924,
+                "newton": {
+                  "mean_native_cost": 3.86539363861084,
+                  "median_native_cost": 3.981621026992798,
+                  "success_rate": 0.01953125,
+                  "safe_rate": 0.19140625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 2.1382011361420155,
+                "evaluation_s": 0.042856702115386724,
+                "newton": {
+                  "mean_native_cost": 3.2781171798706055,
+                  "median_native_cost": 3.7986202239990234,
+                  "success_rate": 0.03125,
+                  "safe_rate": 0.37109375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.43560051266104,
+                "evaluation_s": 0.04324578074738383,
+                "newton": {
+                  "mean_native_cost": 1.717376947402954,
+                  "median_native_cost": 1.0349773168563843,
+                  "success_rate": 0.0859375,
+                  "safe_rate": 0.59765625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 2.7336096088401973,
+                "evaluation_s": 0.0427582822740078,
+                "newton": {
+                  "mean_native_cost": 1.0364892482757568,
+                  "median_native_cost": 0.4354162812232971,
+                  "success_rate": 0.171875,
+                  "safe_rate": 0.6875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 3.0400798320770264,
+                "evaluation_s": 0.043026607017964125,
+                "newton": {
+                  "mean_native_cost": 1.274733543395996,
+                  "median_native_cost": 0.5257928371429443,
+                  "success_rate": 0.1484375,
+                  "safe_rate": 0.65625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 3.351601075846702,
+                "evaluation_s": 0.042998099233955145,
+                "newton": {
+                  "mean_native_cost": 1.6717097759246826,
+                  "median_native_cost": 0.7900912165641785,
+                  "success_rate": 0.0859375,
+                  "safe_rate": 0.58984375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 3.6537039023824036,
+                "evaluation_s": 0.043005021288990974,
+                "newton": {
+                  "mean_native_cost": 0.7670612335205078,
+                  "median_native_cost": 0.32693809270858765,
+                  "success_rate": 0.16015625,
+                  "safe_rate": 0.73046875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "newton_ppo": {
+        "seeds": [
+          {
+            "seed": 5,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04340011114254594,
+                "newton": {
+                  "mean_native_cost": 5.457063674926758,
+                  "median_native_cost": 5.795348644256592,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.2836321764625609,
+                "evaluation_s": 0.042901125736534595,
+                "newton": {
+                  "mean_native_cost": 5.155750751495361,
+                  "median_native_cost": 5.489068508148193,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.5629140469245613,
+                "evaluation_s": 0.04262454388663173,
+                "newton": {
+                  "mean_native_cost": 4.894700050354004,
+                  "median_native_cost": 5.239922523498535,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.00390625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 0.8469831408001482,
+                "evaluation_s": 0.04285204317420721,
+                "newton": {
+                  "mean_native_cost": 4.67601203918457,
+                  "median_native_cost": 5.182061195373535,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.16015625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.1240711761638522,
+                "evaluation_s": 0.04280612990260124,
+                "newton": {
+                  "mean_native_cost": 4.5825090408325195,
+                  "median_native_cost": 5.0520124435424805,
+                  "success_rate": 0.00390625,
+                  "safe_rate": 0.546875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.4193626656197011,
+                "evaluation_s": 0.04355625016614795,
+                "newton": {
+                  "mean_native_cost": 4.205173015594482,
+                  "median_native_cost": 4.849626541137695,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.109375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 1.7095491751097143,
+                "evaluation_s": 0.0437770439311862,
+                "newton": {
+                  "mean_native_cost": 3.7512688636779785,
+                  "median_native_cost": 3.8854236602783203,
+                  "success_rate": 0.015625,
+                  "safe_rate": 0.19140625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 1.9938992327079177,
+                "evaluation_s": 0.043489407282322645,
+                "newton": {
+                  "mean_native_cost": 3.194643020629883,
+                  "median_native_cost": 3.689495801925659,
+                  "success_rate": 0.03125,
+                  "safe_rate": 0.30859375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.276182344648987,
+                "evaluation_s": 0.04231123486533761,
+                "newton": {
+                  "mean_native_cost": 2.355344295501709,
+                  "median_native_cost": 2.108583450317383,
+                  "success_rate": 0.10546875,
+                  "safe_rate": 0.4921875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 2.55259404797107,
+                "evaluation_s": 0.04269972397014499,
+                "newton": {
+                  "mean_native_cost": 1.467207670211792,
+                  "median_native_cost": 0.6290589570999146,
+                  "success_rate": 0.125,
+                  "safe_rate": 0.6640625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 2.8350104792043567,
+                "evaluation_s": 0.043323080986738205,
+                "newton": {
+                  "mean_native_cost": 1.3880856037139893,
+                  "median_native_cost": 0.6368849873542786,
+                  "success_rate": 0.12890625,
+                  "safe_rate": 0.67578125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 3.1136754187755287,
+                "evaluation_s": 0.04278014600276947,
+                "newton": {
+                  "mean_native_cost": 2.6424560546875,
+                  "median_native_cost": 2.9845130443573,
+                  "success_rate": 0.07421875,
+                  "safe_rate": 0.43359375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 3.3930974286049604,
+                "evaluation_s": 0.04231857880949974,
+                "newton": {
+                  "mean_native_cost": 2.23154878616333,
+                  "median_native_cost": 2.000901937484741,
+                  "success_rate": 0.109375,
+                  "safe_rate": 0.5,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          },
+          {
+            "seed": 19,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04213947802782059,
+                "newton": {
+                  "mean_native_cost": 5.428016662597656,
+                  "median_native_cost": 5.774425506591797,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.289098946377635,
+                "evaluation_s": 0.0427745939232409,
+                "newton": {
+                  "mean_native_cost": 5.307756423950195,
+                  "median_native_cost": 5.663158416748047,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.579491158016026,
+                "evaluation_s": 0.042633102275431156,
+                "newton": {
+                  "mean_native_cost": 5.282604217529297,
+                  "median_native_cost": 5.609124660491943,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.01171875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 0.863719567656517,
+                "evaluation_s": 0.0421929657459259,
+                "newton": {
+                  "mean_native_cost": 5.109800815582275,
+                  "median_native_cost": 5.463832378387451,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.1953125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.1395732685923576,
+                "evaluation_s": 0.04213449917733669,
+                "newton": {
+                  "mean_native_cost": 5.0049333572387695,
+                  "median_native_cost": 5.326653480529785,
+                  "success_rate": 0.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.4273849907331169,
+                "evaluation_s": 0.04241662286221981,
+                "newton": {
+                  "mean_native_cost": 4.714805603027344,
+                  "median_native_cost": 5.081278324127197,
+                  "success_rate": 0.01171875,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 1.7102263667620718,
+                "evaluation_s": 0.04276705300435424,
+                "newton": {
+                  "mean_native_cost": 4.321815490722656,
+                  "median_native_cost": 4.732560157775879,
+                  "success_rate": 0.01171875,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 1.994945805054158,
+                "evaluation_s": 0.04247404681518674,
+                "newton": {
+                  "mean_native_cost": 3.9188666343688965,
+                  "median_native_cost": 4.39478063583374,
+                  "success_rate": 0.01171875,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.272596578579396,
+                "evaluation_s": 0.04257896821945906,
+                "newton": {
+                  "mean_native_cost": 2.995056390762329,
+                  "median_native_cost": 3.2756388187408447,
+                  "success_rate": 0.03515625,
+                  "safe_rate": 0.65234375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 2.552474297583103,
+                "evaluation_s": 0.042348848190158606,
+                "newton": {
+                  "mean_native_cost": 1.9998934268951416,
+                  "median_native_cost": 1.2256855964660645,
+                  "success_rate": 0.078125,
+                  "safe_rate": 0.5546875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 2.8373075458221138,
+                "evaluation_s": 0.042764326091855764,
+                "newton": {
+                  "mean_native_cost": 1.358016014099121,
+                  "median_native_cost": 0.47762084007263184,
+                  "success_rate": 0.15234375,
+                  "safe_rate": 0.64453125,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 3.1155595113523304,
+                "evaluation_s": 0.043436179868876934,
+                "newton": {
+                  "mean_native_cost": 2.1656336784362793,
+                  "median_native_cost": 1.4167850017547607,
+                  "success_rate": 0.109375,
+                  "safe_rate": 0.53515625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 3.4094889694824815,
+                "evaluation_s": 0.04254267690703273,
+                "newton": {
+                  "mean_native_cost": 0.9040664434432983,
+                  "median_native_cost": 0.4199737310409546,
+                  "success_rate": 0.1484375,
+                  "safe_rate": 0.71484375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          },
+          {
+            "seed": 47,
+            "curve": [
+              {
+                "update": 0,
+                "simulator_steps": 0,
+                "training_s": 0.0,
+                "evaluation_s": 0.04223683988675475,
+                "newton": {
+                  "mean_native_cost": 5.439653396606445,
+                  "median_native_cost": 5.774463176727295,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 8,
+                "simulator_steps": 24576,
+                "training_s": 0.28515260526910424,
+                "evaluation_s": 0.042817729990929365,
+                "newton": {
+                  "mean_native_cost": 5.15644645690918,
+                  "median_native_cost": 5.529269218444824,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 16,
+                "simulator_steps": 49152,
+                "training_s": 0.5939064095728099,
+                "evaluation_s": 0.043189034797251225,
+                "newton": {
+                  "mean_native_cost": 4.968430519104004,
+                  "median_native_cost": 5.346150875091553,
+                  "success_rate": 0.0,
+                  "safe_rate": 0.99609375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 24,
+                "simulator_steps": 73728,
+                "training_s": 0.8820954384282231,
+                "evaluation_s": 0.04292449029162526,
+                "newton": {
+                  "mean_native_cost": 4.824851989746094,
+                  "median_native_cost": 5.154423713684082,
+                  "success_rate": 0.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 32,
+                "simulator_steps": 98304,
+                "training_s": 1.1713675176724792,
+                "evaluation_s": 0.04291762411594391,
+                "newton": {
+                  "mean_native_cost": 4.698541641235352,
+                  "median_native_cost": 5.155261993408203,
+                  "success_rate": 0.0,
+                  "safe_rate": 1.0,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 40,
+                "simulator_steps": 122880,
+                "training_s": 1.454269461799413,
+                "evaluation_s": 0.04358350718393922,
+                "newton": {
+                  "mean_native_cost": 4.558944225311279,
+                  "median_native_cost": 5.067734718322754,
+                  "success_rate": 0.00390625,
+                  "safe_rate": 0.9296875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 48,
+                "simulator_steps": 147456,
+                "training_s": 1.7502920432016253,
+                "evaluation_s": 0.042931817937642336,
+                "newton": {
+                  "mean_native_cost": 4.5477519035339355,
+                  "median_native_cost": 5.175413131713867,
+                  "success_rate": 0.015625,
+                  "safe_rate": 0.29296875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 56,
+                "simulator_steps": 172032,
+                "training_s": 2.057070694398135,
+                "evaluation_s": 0.04635618394240737,
+                "newton": {
+                  "mean_native_cost": 4.120734691619873,
+                  "median_native_cost": 4.711831092834473,
+                  "success_rate": 0.01953125,
+                  "safe_rate": 0.140625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 64,
+                "simulator_steps": 196608,
+                "training_s": 2.3716745004057884,
+                "evaluation_s": 0.04850362706929445,
+                "newton": {
+                  "mean_native_cost": 3.764052152633667,
+                  "median_native_cost": 4.340505599975586,
+                  "success_rate": 0.02734375,
+                  "safe_rate": 0.19921875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 72,
+                "simulator_steps": 221184,
+                "training_s": 2.7083635409362614,
+                "evaluation_s": 0.054634708911180496,
+                "newton": {
+                  "mean_native_cost": 2.856537103652954,
+                  "median_native_cost": 3.245215892791748,
+                  "success_rate": 0.04296875,
+                  "safe_rate": 0.375,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 80,
+                "simulator_steps": 245760,
+                "training_s": 3.028062226716429,
+                "evaluation_s": 0.046362990979105234,
+                "newton": {
+                  "mean_native_cost": 1.4110921621322632,
+                  "median_native_cost": 0.5342166423797607,
+                  "success_rate": 0.1484375,
+                  "safe_rate": 0.6640625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 88,
+                "simulator_steps": 270336,
+                "training_s": 3.3360177990980446,
+                "evaluation_s": 0.04537319531664252,
+                "newton": {
+                  "mean_native_cost": 2.3467280864715576,
+                  "median_native_cost": 2.4908227920532227,
+                  "success_rate": 0.07421875,
+                  "safe_rate": 0.46875,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              },
+              {
+                "update": 96,
+                "simulator_steps": 294912,
+                "training_s": 3.6431803898885846,
+                "evaluation_s": 0.046887201722711325,
+                "newton": {
+                  "mean_native_cost": 0.9266805052757263,
+                  "median_native_cost": 0.317769855260849,
+                  "success_rate": 0.20703125,
+                  "safe_rate": 0.7890625,
+                  "cases": 256,
+                  "horizon": 120
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

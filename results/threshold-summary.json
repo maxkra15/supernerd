@@ -1,0 +1,176 @@
+{
+  "first_observed_success_threshold": 0.9,
+  "model_commissioning_s": 3.332421495113522,
+  "threshold": {
+    "pathwise": {
+      "seeds": [
+        {
+          "seed": 5,
+          "update": 24,
+          "world_steps": 73728,
+          "optimization_s": 1.7294588396325707,
+          "evaluation_s": 0.240603344514966,
+          "optimization_plus_evaluation_s": 1.9700621841475368,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 5.302483679261059,
+          "final_cost": 0.04550961032509804,
+          "final_success": 1.0,
+          "final_update": 96
+        },
+        {
+          "seed": 19,
+          "update": 24,
+          "world_steps": 73728,
+          "optimization_s": 1.1633831867948174,
+          "evaluation_s": 0.1928876033052802,
+          "optimization_plus_evaluation_s": 1.3562707901000977,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 4.6886922852136195,
+          "final_cost": 0.04683677852153778,
+          "final_success": 1.0,
+          "final_update": 96
+        },
+        {
+          "seed": 47,
+          "update": 24,
+          "world_steps": 73728,
+          "optimization_s": 1.129015849903226,
+          "evaluation_s": 0.17125460738316178,
+          "optimization_plus_evaluation_s": 1.3002704572863877,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 4.6326919523999095,
+          "final_cost": 0.046238191425800323,
+          "final_success": 1.0,
+          "final_update": 96
+        }
+      ],
+      "medians": {
+        "update": 24,
+        "world_steps": 73728,
+        "optimization_s": 1.1633831867948174,
+        "evaluation_s": 0.1928876033052802,
+        "optimization_plus_evaluation_s": 1.3562707901000977,
+        "optimization_plus_evaluation_plus_model_commissioning_s": 4.6886922852136195,
+        "final_cost": 0.046238191425800323,
+        "final_success": 1.0,
+        "final_update": 96
+      }
+    },
+    "ppo": {
+      "seeds": [
+        {
+          "seed": 5,
+          "update": 232,
+          "world_steps": 712704,
+          "optimization_s": 8.960315322037786,
+          "evaluation_s": 1.6361920875497162,
+          "optimization_plus_evaluation_s": 10.596507409587502,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 13.928928904701024,
+          "final_cost": 0.02769697830080986,
+          "final_success": 1.0,
+          "final_update": 640
+        },
+        {
+          "seed": 19,
+          "update": 176,
+          "world_steps": 540672,
+          "optimization_s": 6.866956042591482,
+          "evaluation_s": 0.9878713926300406,
+          "optimization_plus_evaluation_s": 7.854827435221523,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 11.187248930335045,
+          "final_cost": 0.02810860238969326,
+          "final_success": 1.0,
+          "final_update": 640
+        },
+        {
+          "seed": 47,
+          "update": 160,
+          "world_steps": 491520,
+          "optimization_s": 6.010174633003771,
+          "evaluation_s": 0.8952186536043882,
+          "optimization_plus_evaluation_s": 6.9053932866081595,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 10.237814781721681,
+          "final_cost": 0.028352605178952217,
+          "final_success": 1.0,
+          "final_update": 640
+        }
+      ],
+      "medians": {
+        "update": 176,
+        "world_steps": 540672,
+        "optimization_s": 6.866956042591482,
+        "evaluation_s": 0.9878713926300406,
+        "optimization_plus_evaluation_s": 7.854827435221523,
+        "optimization_plus_evaluation_plus_model_commissioning_s": 11.187248930335045,
+        "final_cost": 0.02810860238969326,
+        "final_success": 1.0,
+        "final_update": 640
+      }
+    },
+    "newton_ppo": {
+      "seeds": [
+        {
+          "seed": 5,
+          "update": 184,
+          "world_steps": 565248,
+          "optimization_s": 6.584327927324921,
+          "evaluation_s": 1.0286248731426895,
+          "optimization_plus_evaluation_s": 7.61295280046761,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 7.61295280046761,
+          "final_cost": 0.026107672601938248,
+          "final_success": 1.0,
+          "final_update": 640
+        },
+        {
+          "seed": 19,
+          "update": 184,
+          "world_steps": 565248,
+          "optimization_s": 6.432644148822874,
+          "evaluation_s": 1.0296760639175773,
+          "optimization_plus_evaluation_s": 7.462320212740451,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 7.462320212740451,
+          "final_cost": 0.026065930724143982,
+          "final_success": 1.0,
+          "final_update": 640
+        },
+        {
+          "seed": 47,
+          "update": 120,
+          "world_steps": 368640,
+          "optimization_s": 5.0772197768092155,
+          "evaluation_s": 0.6871136017143726,
+          "optimization_plus_evaluation_s": 5.764333378523588,
+          "optimization_plus_evaluation_plus_model_commissioning_s": 5.764333378523588,
+          "final_cost": 0.026263222098350525,
+          "final_success": 1.0,
+          "final_update": 640
+        }
+      ],
+      "medians": {
+        "update": 184,
+        "world_steps": 565248,
+        "optimization_s": 6.432644148822874,
+        "evaluation_s": 1.0286248731426895,
+        "optimization_plus_evaluation_s": 7.462320212740451,
+        "optimization_plus_evaluation_plus_model_commissioning_s": 7.462320212740451,
+        "final_cost": 0.026107672601938248,
+        "final_success": 1.0,
+        "final_update": 640
+      }
+    }
+  },
+  "timing": {
+    "1": {
+      "newton_graph_ms": 0.18832129891961813,
+      "learned_graph_ms": 0.02471908926963806,
+      "graph_speedup": 7.6184562006064365
+    },
+    "128": {
+      "newton_graph_ms": 0.22562576923519373,
+      "learned_graph_ms": 0.03288549371063709,
+      "graph_speedup": 6.860951251652128
+    },
+    "2048": {
+      "newton_graph_ms": 0.39257930126041174,
+      "learned_graph_ms": 0.04476689733564854,
+      "graph_speedup": 8.769410538259374
+    }
+  }
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A controlled study of differentiating through learned robot dynamics, with held-out Newton evaluation and an audit of public NeRD benchmarks.">
+  <title>SuperNeRD · Differentiable Robot Dynamics for Policy Learning</title>
+  <link rel="stylesheet" href="paper.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="frame">
+    <strong>SuperNeRD</strong>
+    <nav aria-label="Project links">
+      <a href="paper/supernerd.pdf">PDF</a>
+      <a href="https://github.com/maxkra15/supernerd">Code</a>
+      <a href="results/cartpole.json">Run data</a>
+      <a href="https://maxkra15.github.io/neurall/">NeurALL</a>
+    </nav>
+  </div>
+</header>
+<main class="frame">
+  <div class="title-block">
+    <p class="label">Research report · {{ release }}</p>
+    <h1>Differentiable Robot Dynamics for Policy Learning</h1>
+    <p class="subtitle">SuperNeRD compares gradient-based and PPO updates on a shared learned simulator and evaluates both in Newton.</p>
+    <p class="meta">SuperNeRD project · {{ date }}</p>
+  </div>
+  <div class="abstract" aria-labelledby="abstract">
+    <h2 id="abstract">Abstract</h2>
+    <p>{{ abstract }}</p>
+  </div>
+
+  <div class="paper-layout">
+    <nav class="toc" aria-label="Paper contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#introduction">1. Introduction</a></li>
+        <li><a href="#related">2. Related work</a></li>
+        <li><a href="#methods">3. Method</a></li>
+        <li><a href="#experiments">4. Experimental setup</a></li>
+        <li><a href="#results">5. Results</a></li>
+        <li><a href="#reproduction">6. NeRD replication</a></li>
+        <li><a href="#limitations">7. Limitations</a></li>
+        <li><a href="#conclusion">8. Conclusion</a></li>
+        <li><a href="#reproducibility">Reproducibility</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+    <article class="manuscript">
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>Learned robot dynamics can cut the cost of a transition and provide derivatives of that transition with respect to state and action. Those are separate sources of potential speedup. Optimizing a policy through an inaccurate derivative can spend fewer imagined steps and still produce a worse controller on the original simulator.</p>
+        <p>We test whether direct policy gradients reach useful Newton performance sooner than PPO on the same learned dynamics. We measure both the behavior of the learned step over open-loop horizons and the closed-loop performance of the resulting policies on Newton. The comparison isolates the policy update from changes to the simulator architecture.</p>
+      </section>
+      <section id="related">
+        <h2>2. Related work</h2>
+        <p>NeRD learns robot-specific state transitions and uses geometric contact information from an analytical simulator. FlashNeRD reduces forward cost with a streaming attention architecture and extends the interface to variable contacts and fixed-base two-way coupling. Its ANYmal learning comparison uses PPO across dynamics backends. <a href="#ref-nerd">[1]</a> <a href="#ref-flashnerd">[2]</a></p>
+        <p>SuperMimic uses short imagined rollouts to backpropagate policy gradients through a differentiable world model and updates that model as policy data arrive. The present pilot tests the policy-gradient mechanism on a frozen model. Freezing makes it possible to hold the model and logged data constant for the policy comparison. <a href="#ref-supermimic">[3]</a></p>
+        <p>NeurALL studies a related question for deformables. Its cable experiments optimize applied forces from observed material state and replay the controls in Newton. Controller performance for articulated bodies and target matching for cables require separate metrics and datasets. <a href="https://maxkra15.github.io/neurall/">NeurALL report.</a></p>
+      </section>
+      <section id="methods">
+        <h2>3. Method</h2>
+        {{ methods }}
+      </section>
+      <section id="experiments">
+        <h2>4. Experimental setup</h2>
+        {{ setup }}
+      </section>
+      <section id="results">
+        <h2>5. Results</h2>
+        {{ results }}
+      </section>
+      <section id="reproduction">
+        <h2>6. NeRD replication</h2>
+        <p>The original NeRD checkpoint and the published FlashNeRD comparisons answer different questions. The release audit records the version, training teacher, state/action conventions and what ran. The FlashNeRD rows below are author-reported references.</p>
+        {{ released_baseline }}
+        <div class="table-wrap">
+          <table>
+            <caption>FlashNeRD paper Table I. CartPole prefix-averaged NRMSE (lower is better) and model-only throughput on a GB200. These columns describe the paper's own held-out trajectories, training normalization and replay timing. [2]</caption>
+            <thead><tr><th scope="col">Paper model</th><th scope="col" class="num">E<sub>1</sub></th><th scope="col" class="num">E<sub>15</sub></th><th scope="col" class="num">E<sub>100</sub></th><th scope="col" class="num">E<sub>200</sub></th><th scope="col" class="num">Steps/s at B=16,384</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Optimized NeRD</th><td class="num">5.89e−5</td><td class="num">4.78e−4</td><td class="num">8.43e−3</td><td class="num">0.106</td><td class="num">1.22M</td></tr>
+              <tr><th scope="row">FlashNeRD</th><td class="num">4.41e−5</td><td class="num">1.73e−4</td><td class="num">3.23e−3</td><td class="num">0.0599</td><td class="num">48.1M</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>FlashNeRD reports CartPole training on about 9,000 trajectories for five million updates. Its ANYmal experiment crosses a training-reward threshold at 34.3 s, compared with 93.2 s for Optimized NeRD and 129.9 s for MJWarp. Those times start with a ready dynamics model and count PPO iteration durations. Final ANYmal evaluation in MJWarp yields mean returns of 28.0, 27.6 and 27.8, respectively. <a href="#ref-flashnerd">[2, Sections IV-A and IV-B]</a></p>
+        <p>A direct FlashNeRD result needs its weights or a validated reproduction of its training data, observation and contact processing, normalization, CUDA graph timing and policy environment. The CartPole pilot provides a controlled intervention on the policy optimizer. ANYmal velocity tracking and G1 contact-rich control remain separate replication targets.</p>
+      </section>
+      <section id="limitations">
+        <h2>7. Limitations</h2>
+        {{ limitations }}
+      </section>
+      <section id="conclusion">
+        <h2>8. Conclusion</h2>
+        <p>{{ conclusion }}</p>
+      </section>
+      <section id="reproducibility">
+        <h2>Reproducibility</h2>
+        {{ reproduce }}
+      </section>
+      <section id="references">
+        <h2>References</h2>
+        <ol>
+          <li id="ref-nerd">Xu, J., Heiden, E., Akinola, I., Fox, D., Macklin, M., and Narang, Y. (2025). <em>Neural Robot Dynamics.</em> CoRL. <a href="https://research.nvidia.com/publication/2025-09_neural-robot-dynamics">Paper</a> · <a href="https://github.com/NVlabs/neural-robot-dynamics">Code</a>.</li>
+          <li id="ref-flashnerd">Ataei, M., Nabian, M. A., Xu, J., et al. (2026). <em>FlashNeRD: Performance-First Contact-Rich Neural Robot Dynamics.</em> arXiv:2610.09130. <a href="https://arxiv.org/html/2610.09130v1">Paper</a>.</li>
+          <li id="ref-supermimic">Liao, Q., Shao, Y., Long, J., et al. (2026). <em>SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model.</em> arXiv:2610.28480. <a href="https://arxiv.org/abs/2610.28480">Paper</a> · <a href="https://github.com/HybridRobotics/supermimic">Code</a>.</li>
+          <li id="ref-ppo">Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and Klimov, O. (2017). <em>Proximal Policy Optimization Algorithms.</em> arXiv:1707.06347. <a href="https://arxiv.org/abs/1707.06347">Paper</a>.</li>
+          <li id="ref-newton">Newton Physics. <em>Newton Physics Engine.</em> <a href="https://github.com/newton-physics/newton">Source</a>.</li>
+        </ol>
+      </section>
+    </article>
+  </div>
+</main>
+<footer><div class="frame">SuperNeRD research report · <a href="https://github.com/maxkra15/supernerd">Versioned source and evidence</a></div></footer>
+</body>
+</html>

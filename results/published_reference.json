@@ -1,0 +1,44 @@
+{
+  "neural_robot_dynamics": {
+    "citation": "Xu et al., Conference on Robot Learning 2025, PMLR 305:3915–3935",
+    "paper": "https://proceedings.mlr.press/v305/xu25g.html",
+    "figure_3": "https://arxiv.org/html/2508.15755v1#S5.F3",
+    "source_revision": "https://github.com/NVlabs/neural-robot-dynamics/tree/370e89d2b8ce68aa3578aa7812859c681b7502bc",
+    "newton_adapter_revision": "https://github.com/NVlabs/neural-robot-dynamics/tree/476dc67fccc6a99be293bf611f897b1c06f13e30",
+    "code_license": "Apache-2.0 at repository root",
+    "published_cartpole_passive": {
+      "cases": 2048,
+      "horizons": [100, 500, 1000],
+      "cart_mae_m": [0.0002, 0.004, 0.033],
+      "pole_mae_rad": [0.0004, 0.013, 0.075]
+    }
+  },
+  "flashnerd": {
+    "citation": "Ataei et al., arXiv:2610.09130v1, 2026",
+    "paper": "https://arxiv.org/html/2610.09130v1",
+    "public_project_site_source": "https://github.com/flashnerd/flashnerd.github.io",
+    "benchmark_hardware": "NVIDIA GB200",
+    "published_cartpole_open_loop": {
+      "cases": 2048,
+      "horizons": [1, 15, 100, 200],
+      "teacher": "Newton SolverFeatherstone",
+      "normalization": "Training-state standard deviation in each channel",
+      "optimized_nerd_prefix_nrmse": [0.0000589, 0.000478, 0.00843, 0.106],
+      "flashnerd_prefix_nrmse": [0.0000441, 0.000173, 0.00323, 0.0599],
+      "model_only_batches": [16, 16384, 512000],
+      "optimized_nerd_model_only_million_transitions_per_second": [0.0805, 1.22, 1.22],
+      "flashnerd_model_only_million_transitions_per_second": [0.174, 48.1, 67.7]
+    },
+    "published_anymal_c_ppo": {
+      "methods": ["FlashNeRD", "Optimized NeRD", "MJWarp", "NeRD"],
+      "environments": 16384,
+      "iterations": 300,
+      "transitions_per_environment_per_iteration": 24,
+      "training_seeds_per_method": 1,
+      "threshold": "95% of MJWarp's mean reward over its final 20 iterations",
+      "first_unsmoothed_crossing_seconds": [34.3, 93.2, 129.9, 357.5],
+      "loop_seconds_excluding_collection_of_dynamics_data_training_of_dynamics_and_startup": [79.1, 204.9, 255.9, 657.5],
+      "final_mjwarp_rewards": [28.0, 27.6, 27.8, 27.0]
+    }
+  }
+}

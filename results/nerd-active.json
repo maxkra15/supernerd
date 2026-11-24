@@ -1,0 +1,122 @@
+{
+  "nerd_revision": "476dc67fccc6a99be293bf611f897b1c06f13e30",
+  "checkpoint_sha256": "287dde2134eb8f5277c17a8f7cc7abbe64063e97cb481bdb6e8d76f9536e5366",
+  "checkpoint_robot_name": "Cartpole",
+  "model_parameters": 2713668,
+  "warp_version": "1.10.0",
+  "torch_version": "2.15.0+cu132",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cases": 2048,
+  "horizon": 200,
+  "seed": 500,
+  "frame_dt_seconds": 0.016666666666666666,
+  "analytical_solver": "featherstone",
+  "analytical_substeps": 5,
+  "action_gain_newtons": 1500.0,
+  "max_applied_force_disagreement_newtons": 0.0,
+  "history_initialization": "10 teacher frames followed by recursive rollout",
+  "prefix_and_terminal_error": {
+    "1": {
+      "prefix_rmse": {
+        "cart_position_m": 0.0021059464618138585,
+        "pole_angle_rad": 0.0027973730632657643,
+        "cart_velocity_m_s": 0.20911765885313818,
+        "pole_angular_velocity_rad_s": 0.28263228049635986
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.0021059464618138585,
+        "pole_angle_rad": 0.0027973730632657643,
+        "cart_velocity_m_s": 0.20911765885313818,
+        "pole_angular_velocity_rad_s": 0.28263228049635986
+      },
+      "prefix_nrmse": 0.04121049896861261,
+      "terminal_nrmse": 0.04121049896861261
+    },
+    "8": {
+      "prefix_rmse": {
+        "cart_position_m": 0.038721267664614534,
+        "pole_angle_rad": 0.051460329811073534,
+        "cart_velocity_m_s": 0.7322264846996861,
+        "pole_angular_velocity_rad_s": 0.9523221317634821
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.073361113260654,
+        "pole_angle_rad": 0.0968716207660338,
+        "cart_velocity_m_s": 1.1623308662814031,
+        "pole_angular_velocity_rad_s": 1.4861994760533648
+      },
+      "prefix_nrmse": 0.14265810568958306,
+      "terminal_nrmse": 0.22536548258150835
+    },
+    "15": {
+      "prefix_rmse": {
+        "cart_position_m": 0.11348796137239353,
+        "pole_angle_rad": 0.14276377061487497,
+        "cart_velocity_m_s": 1.1900985520811802,
+        "pole_angular_velocity_rad_s": 1.335602306952219
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.2262060476401584,
+        "pole_angle_rad": 0.2735753142564265,
+        "cart_velocity_m_s": 1.9953486247706813,
+        "pole_angular_velocity_rad_s": 1.8430357027024502
+      },
+      "prefix_nrmse": 0.2225764834595698,
+      "terminal_nrmse": 0.3570443706114001
+    },
+    "32": {
+      "prefix_rmse": {
+        "cart_position_m": 0.48145700126120244,
+        "pole_angle_rad": 0.4600384854843406,
+        "cart_velocity_m_s": 2.57465305620281,
+        "pole_angular_velocity_rad_s": 2.3188612458451603
+      },
+      "terminal_rmse": {
+        "cart_position_m": 0.9585190923616956,
+        "pole_angle_rad": 0.9147909963124256,
+        "cart_velocity_m_s": 3.222301839213405,
+        "pole_angular_velocity_rad_s": 3.6747676756529275
+      },
+      "prefix_nrmse": 0.46836099915406076,
+      "terminal_nrmse": 0.6481421089324739
+    },
+    "100": {
+      "prefix_rmse": {
+        "cart_position_m": 1.3694551026154644,
+        "pole_angle_rad": 1.297739714812974,
+        "cart_velocity_m_s": 2.811871510780033,
+        "pole_angular_velocity_rad_s": 5.417045686892509
+      },
+      "terminal_rmse": {
+        "cart_position_m": 2.075354956120585,
+        "pole_angle_rad": 1.9271121582624562,
+        "cart_velocity_m_s": 3.3951169326376807,
+        "pole_angular_velocity_rad_s": 8.389061494680938
+      },
+      "prefix_nrmse": 0.739767023951145,
+      "terminal_nrmse": 1.0572225068812233
+    },
+    "200": {
+      "prefix_rmse": {
+        "cart_position_m": 2.2128556061711446,
+        "pole_angle_rad": 1.6211687659049494,
+        "cart_velocity_m_s": 3.1882643998847735,
+        "pole_angular_velocity_rad_s": 7.109556349154362
+      },
+      "terminal_rmse": {
+        "cart_position_m": 3.216104321971178,
+        "pole_angle_rad": 1.8890520397231578,
+        "cart_velocity_m_s": 3.8708386749176107,
+        "pole_angular_velocity_rad_s": 8.548290139378725
+      },
+      "prefix_nrmse": 0.9781515634726586,
+      "terminal_nrmse": 1.2588761469588183
+    }
+  },
+  "smoke_elapsed_seconds": {
+    "analytical_including_warmup": null,
+    "neural_including_warmup": 2.804813133087009
+  },
+  "input_sha256": "416a4feeeb2e1fdc845d62a8255f9183c1833b929d4c8488815e5cee19b2b797",
+  "input_cohort": "active"
+}

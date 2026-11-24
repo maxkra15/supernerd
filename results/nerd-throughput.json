@@ -1,0 +1,43 @@
+{
+  "nerd_revision": "476dc67fccc6a99be293bf611f897b1c06f13e30",
+  "checkpoint_sha256": "287dde2134eb8f5277c17a8f7cc7abbe64063e97cb481bdb6e8d76f9536e5366",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "warp_version": "1.10.0",
+  "torch_version": "2.15.0+cu132",
+  "protocol": "Eager author adapter, fixed GPU inputs, 10 warm steps and 5 groups of 100 synced steps, no policy/rendering",
+  "timings": {
+    "1": {
+      "block_seconds": [
+        0.2554280390031636,
+        0.2659775810316205,
+        0.27747104223817587,
+        0.29695480316877365,
+        0.33573735691607
+      ],
+      "median_ms_per_step": 2.7747104223817587,
+      "median_transitions_per_second": 360.39796871545934
+    },
+    "128": {
+      "block_seconds": [
+        0.2683133971877396,
+        0.26959717785939574,
+        0.2679742039181292,
+        0.26815450470894575,
+        0.2722327052615583
+      ],
+      "median_ms_per_step": 2.683133971877396,
+      "median_transitions_per_second": 47705.40768429765
+    },
+    "2048": {
+      "block_seconds": [
+        0.9688344313763082,
+        0.856515672057867,
+        0.8463457399047911,
+        0.8782645729370415,
+        0.8878618706949055
+      ],
+      "median_ms_per_step": 8.782645729370415,
+      "median_transitions_per_second": 233187.13552924
+    }
+  }
+}

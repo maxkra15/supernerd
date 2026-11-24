@@ -1,0 +1,15 @@
+{
+  "original_nerd_commit": "370e89d2b8ce68aa3578aa7812859c681b7502bc",
+  "checkpoint_sha256": "287dde2134eb8f5277c17a8f7cc7abbe64063e97cb481bdb6e8d76f9536e5366",
+  "python": "3.12.14",
+  "warp": "1.8.0",
+  "torch": "2.15.0+cu132",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "seed": 500,
+  "cases": 2048,
+  "mean_absolute_error_over_time_and_cases": {
+    "100": {"cart_m": 0.000156, "pole_rad": 0.000394},
+    "500": {"cart_m": 0.004366, "pole_rad": 0.013441},
+    "1000": {"cart_m": 0.032776, "pole_rad": 0.075032}
+  }
+}
