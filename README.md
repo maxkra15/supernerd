@@ -16,11 +16,11 @@ On 16 fresh objects and 80 six-second trajectories, the shared model averages **
 - [Training and held-out trajectories](deformables/data/), [checkpoints](deformables/weights/), [measurements](deformables/results/)
 - [Original NeurALL experiments](https://maxkra15.github.io/neurall/) and [archived CartPole policy study](https://maxkra15.github.io/supernerd/cartpole.html)
 
-To render the paper with a uv environment containing Jinja2, NumPy and Matplotlib, run the following from the repository root.
+To render the paper with a uv environment containing Jinja2, NumPy and Matplotlib, and a local Google Chrome installation for PDF export, run the following from the repository root.
 
 ~~~sh
-uv run --no-project .venv/bin/python scripts/build_deformables.py
 uv run --no-project .venv/bin/python deformables/motion_figure.py
+uv run --no-project .venv/bin/python scripts/build_deformables.py --pdf
 ~~~
 
 SuperNeRD's original code is released under the [Apache License 2.0](LICENSE).
