@@ -1,0 +1,135 @@
+{
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "cpu_core": 0,
+  "batch": 1,
+  "dt": 0.02,
+  "steps_per_object": 300,
+  "profile": "descending chirp, 6 m/s^2",
+  "method": "CPU affinity one core. One untimed warmup per family. Precomputed control schedules and native geometry maps. Force assignment, full integration, native XYZ decode, and writing every frame to host memory timed for both. Scene creation, files, model initialization excluded.",
+  "case_measurements": [
+    {
+      "identity": "cable-41540-descending-chirp-6",
+      "newton_s": 1.3058525691740215,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011675848625600338,
+      "neural_rms_m": 0.009269248694181442
+    },
+    {
+      "identity": "cable-41541-descending-chirp-6",
+      "newton_s": 1.3154265061020851,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011677171103656292,
+      "neural_rms_m": 0.007718388922512531
+    },
+    {
+      "identity": "cable-41542-descending-chirp-6",
+      "newton_s": 1.317816365044564,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011579202022403479,
+      "neural_rms_m": 0.01159924827516079
+    },
+    {
+      "identity": "cable-41543-descending-chirp-6",
+      "newton_s": 1.3223287859000266,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011719569098204374,
+      "neural_rms_m": 0.007040468975901604
+    },
+    {
+      "identity": "cable-41544-descending-chirp-6",
+      "newton_s": 1.3161148000508547,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.01174150500446558,
+      "neural_rms_m": 0.04088049754500389
+    },
+    {
+      "identity": "cable-41545-descending-chirp-6",
+      "newton_s": 1.3262736448086798,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.01189411710947752,
+      "neural_rms_m": 0.014678433537483215
+    },
+    {
+      "identity": "cable-41546-descending-chirp-6",
+      "newton_s": 1.309806760866195,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011920372024178505,
+      "neural_rms_m": 0.02058004029095173
+    },
+    {
+      "identity": "cable-41547-descending-chirp-6",
+      "newton_s": 1.3217948200181127,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011785364244133234,
+      "neural_rms_m": 0.01612502709031105
+    },
+    {
+      "identity": "cloth-41540-descending-chirp-6",
+      "newton_s": 1.4580289293080568,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011556711047887802,
+      "neural_rms_m": 0.02259782887995243
+    },
+    {
+      "identity": "cloth-41541-descending-chirp-6",
+      "newton_s": 1.629876810591668,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011751568876206875,
+      "neural_rms_m": 0.0638304278254509
+    },
+    {
+      "identity": "cloth-41542-descending-chirp-6",
+      "newton_s": 1.529586376156658,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011688200291246176,
+      "neural_rms_m": 0.036750223487615585
+    },
+    {
+      "identity": "cloth-41543-descending-chirp-6",
+      "newton_s": 1.7160724992863834,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011740911286324263,
+      "neural_rms_m": 0.016810612753033638
+    },
+    {
+      "identity": "cloth-41544-descending-chirp-6",
+      "newton_s": 1.7133737159892917,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011831237003207207,
+      "neural_rms_m": 0.03232820704579353
+    },
+    {
+      "identity": "cloth-41545-descending-chirp-6",
+      "newton_s": 1.5648600407876074,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011761165224015713,
+      "neural_rms_m": 0.0343947559595108
+    },
+    {
+      "identity": "cloth-41546-descending-chirp-6",
+      "newton_s": 1.551413823850453,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.01185934105888009,
+      "neural_rms_m": 0.018148357048630714
+    },
+    {
+      "identity": "cloth-41547-descending-chirp-6",
+      "newton_s": 1.8481269469484687,
+      "teacher_replay_max_m": 0.0,
+      "neural_s": 0.011728005949407816,
+      "neural_rms_m": 0.05009622126817703
+    }
+  ],
+  "summary": {
+    "cloth": {
+      "newton_ms": 5.421391309549412,
+      "neural_ms": 0.03913214197382331,
+      "speed_ratio": 138.5406225188477
+    },
+    "cable": {
+      "newton_ms": 4.389755938318558,
+      "neural_ms": 0.03916381218004972,
+      "speed_ratio": 112.0870439817584
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "seconds_per_physics_step": 0.02,
+  "frames_for_full_window": 5,
+  "precision": "float32",
+  "measurement": "Warmed CUDA graph replay, complete state-to-state transition and cache/window maintenance on GPU, prescribed constant force, excluding initialization, host transfer and collision. Five groups of 100 steps.",
+  "batches": {
+    "1": {
+      "cached": {
+        "group_ms": [
+          0.13703704811632633,
+          0.1317168679088354,
+          0.13569693081080914,
+          0.13355288188904524,
+          0.1358819706365466
+        ],
+        "median_ms_per_batched_step": 0.13569693081080914
+      },
+      "full_window": {
+        "group_ms": [
+          0.1787721598520875,
+          0.18010963685810566,
+          0.17758773639798164,
+          0.19334212876856327,
+          0.1780235068872571
+        ],
+        "median_ms_per_batched_step": 0.1787721598520875
+      },
+      "full_over_cached": 1.3174370178006056,
+      "warm_three_step_parity_max_abs": 1.1920928955078125e-07
+    },
+    "80": {
+      "cached": {
+        "group_ms": [
+          0.2129406901076436,
+          0.14703475404530764,
+          0.1701006479561329,
+          0.20665280986577272,
+          0.20968318916857243
+        ],
+        "median_ms_per_batched_step": 0.20665280986577272
+      },
+      "full_window": {
+        "group_ms": [
+          0.2714883489534259,
+          0.2731561614200473,
+          0.27260991744697094,
+          0.26982609182596207,
+          0.26860401034355164
+        ],
+        "median_ms_per_batched_step": 0.2714883489534259
+      },
+      "full_over_cached": 1.3137413864818281,
+      "warm_three_step_parity_max_abs": 7.748603820800781e-07
+    },
+    "512": {
+      "cached": {
+        "group_ms": [
+          0.2709942916408181,
+          0.2707964600995183,
+          0.26829609647393227,
+          0.26944121811538935,
+          0.2688130410388112
+        ],
+        "median_ms_per_batched_step": 0.26944121811538935
+      },
+      "full_window": {
+        "group_ms": [
+          0.3079802030697465,
+          0.3122410783544183,
+          0.310014127753675,
+          0.30687368009239435,
+          0.31012820079922676
+        ],
+        "median_ms_per_batched_step": 0.310014127753675
+      },
+      "full_over_cached": 1.1505816738881804,
+      "warm_three_step_parity_max_abs": 7.152557373046875e-07
+    }
+  }
+}

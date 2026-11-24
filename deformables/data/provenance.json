@@ -1,0 +1,57 @@
+{
+  "features": [
+    "is_cloth",
+    "length_m",
+    "width_m",
+    "axial_cells",
+    "lateral_cells",
+    "mass_per_free_vertex_kg",
+    "log_stiffness",
+    "membrane_damping",
+    "bend_stiffness_nm_rad",
+    "radius_m",
+    "density_kg_m3",
+    "initial_tilt_rad"
+  ],
+  "sampling": "3 lateral rows then 5 axial points, bilinear interpolation",
+  "dt_s": 0.02,
+  "source_dirs": {
+    "train": "load-diversity-v5-diverse",
+    "development": "load-diversity-v5-development",
+    "test": "load-diversity-v5-held"
+  },
+  "splits": {
+    "train": {
+      "episodes": 384,
+      "objects": 384,
+      "sha256": "9af8abce0c48372175b5e7ab67f3e8c13f567c26a48ad0fa478a4e940fe4b1ad",
+      "pack_s": 1.4431400219909847
+    },
+    "development": {
+      "episodes": 32,
+      "objects": 32,
+      "sha256": "84f1811cd85716afabc67c88feff72e1ac01b0da7e9a3f64a2b879c775ef4e38",
+      "pack_s": 0.1199243520386517
+    },
+    "test": {
+      "episodes": 80,
+      "objects": 16,
+      "sha256": "cf0630d31880e387eeeb7063e7021c59d89df415db3c451a48c070a9c3c9254d",
+      "pack_s": 0.27901497622951865
+    },
+    "fresh": {
+      "episodes": 80,
+      "objects": 16,
+      "sha256": "e62a375765a292aa7ea785dc04b9676e8c1f9974d8e1bc970a5240520893232a"
+    },
+    "train-pulses": {
+      "episodes": 384,
+      "objects": 384,
+      "sha256": "1ad0b0a1191bb3cd8498822a60bc2b9efd32d360d75c455274d449b0d8ecbf7b"
+    }
+  },
+  "native_archives": {
+    "native-test.npz": "90d7cb5af1e776af503cb055274d8a5958aceafe9c09c3eabc494fb0228f493c",
+    "native-fresh.npz": "dfab399f045625ed07ff98e97beb6c4e27ef2560862ac54dee22232548796386"
+  }
+}

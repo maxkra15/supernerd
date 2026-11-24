@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A controlled study of differentiating through learned robot dynamics, with held-out Newton evaluation and an audit of public NeRD benchmarks.">
+  <title>SuperNeRD · Differentiable Robot Dynamics for Policy Learning</title>
+  <link rel="stylesheet" href="paper.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="frame">
+    <strong>SuperNeRD</strong>
+    <nav aria-label="Project links">
+      <a href="paper/supernerd.pdf">PDF</a>
+      <a href="https://github.com/maxkra15/supernerd">Code</a>
+      <a href="results/cartpole.json">Run data</a>
+      <a href="https://maxkra15.github.io/neurall/">NeurALL</a>
+    </nav>
+  </div>
+</header>
+<main class="frame">
+  <div class="title-block">
+    <p class="label">Research report · v0.1</p>
+    <h1>Differentiable Robot Dynamics for Policy Learning</h1>
+    <p class="subtitle">SuperNeRD compares gradient-based and PPO updates on a shared learned simulator and evaluates both in Newton.</p>
+    <p class="meta">SuperNeRD project · 24 November 2026</p>
+  </div>
+  <div class="abstract" aria-labelledby="abstract">
+    <h2 id="abstract">Abstract</h2>
+    <p>We study whether differentiating through a learned transition reduces the data and time needed to train a robot controller. We train a compact world model on Newton CartPole transitions and compare direct policy gradients with PPO on both the learned model and Newton. Across three training seeds, backpropagation reaches at least 90% success on 256 held-out Newton resets after 73,728 imagined transitions and reaches 100% at the fixed 294,912-transition budget. With more training, both PPO arms also reach 100%. Backpropagation reaches the 90% threshold 5.90× faster than PPO on the same learned simulator in policy training time and 2.39× faster when including commissioning and scheduled evaluation. At batch 2,048 the learned graph advances a control step 8.77× faster than the local Newton graph, although unrestricted predictions drift over long open-loop rollouts. A CartPole-specific mechanical prior improves those rollouts. A released NeRD checkpoint is evaluated as a transfer baseline and FlashNeRD benchmarks are audited separately. The result establishes a policy-learning advantage on this restricted task under the measured recipes.</p>
+  </div>
+
+  <div class="paper-layout">
+    <nav class="toc" aria-label="Paper contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#introduction">1. Introduction</a></li>
+        <li><a href="#related">2. Related work</a></li>
+        <li><a href="#methods">3. Method</a></li>
+        <li><a href="#experiments">4. Experimental setup</a></li>
+        <li><a href="#results">5. Results</a></li>
+        <li><a href="#reproduction">6. NeRD replication</a></li>
+        <li><a href="#limitations">7. Limitations</a></li>
+        <li><a href="#conclusion">8. Conclusion</a></li>
+        <li><a href="#reproducibility">Reproducibility</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+    <article class="manuscript">
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>Learned robot dynamics can cut the cost of a transition and provide derivatives of that transition with respect to state and action. Those are separate sources of potential speedup. Optimizing a policy through an inaccurate derivative can spend fewer imagined steps and still produce a worse controller on the original simulator.</p>
+        <p>We test whether direct policy gradients reach useful Newton performance sooner than PPO on the same learned dynamics. We measure both the behavior of the learned step over open-loop horizons and the closed-loop performance of the resulting policies on Newton. The comparison isolates the policy update from changes to the simulator architecture.</p>
+      </section>
+      <section id="related">
+        <h2>2. Related work</h2>
+        <p>NeRD learns robot-specific state transitions and uses geometric contact information from an analytical simulator. FlashNeRD reduces forward cost with a streaming attention architecture and extends the interface to variable contacts and fixed-base two-way coupling. Its ANYmal learning comparison uses PPO across dynamics backends. <a href="#ref-nerd">[1]</a> <a href="#ref-flashnerd">[2]</a></p>
+        <p>SuperMimic uses short imagined rollouts to backpropagate policy gradients through a differentiable world model and updates that model as policy data arrive. The present pilot tests the policy-gradient mechanism on a frozen model. Freezing makes it possible to hold the model and logged data constant for the policy comparison. <a href="#ref-supermimic">[3]</a></p>
+        <p>NeurALL studies a related question for deformables. Its cable experiments optimize applied forces from observed material state and replay the controls in Newton. Controller performance for articulated bodies and target matching for cables require separate metrics and datasets. <a href="https://maxkra15.github.io/neurall/">NeurALL report.</a></p>
+      </section>
+      <section id="methods">
+        <h2>3. Method</h2>
+
+<h3>3.1 Learned decision step</h3>
+<p>The model state is cart translation, pole angle and their velocities. The input is seven features from
+scaled state, sine and cosine of the pole angle, normalized force and signed proximity beyond the rail-limit
+margin. A 4,932-parameter MLP with two width-64 SiLU layers outputs four state corrections over a kinematic
+position update. The architecture receives a single observed state. The force remains constant across the
+five Newton physics substeps in each label.</p>
+<div class="equation" aria-label="Next state equals kinematic prediction plus learned residual">
+  ŝ<sub>t+1</sub> = [q<sub>t</sub> + h v<sub>t</sub>, v<sub>t</sub>] + D f<sub>θ</sub>(φ(ŝ<sub>t</sub>, u<sub>t</sub>))
+</div>
+<p>The diagonal scale <em>D</em> puts the four residual components on comparable scales for fitting.
+The first 80% of updates use one-step error. The final 20% unroll four predictions with the recorded forces.
+The loss is the mean squared error of state normalized by component and horizon. Newton supplies the labels
+and accepts replay actions through the same force interface.</p>
+<h3>3.2 Policy update</h3>
+<p>All arms use the same actor and initial observation and exploration distributions. The actor outputs a
+Gaussian logit mean with fixed standard deviation 0.18 in training. A tanh maps the sampled logit to a cart
+force bounded at ±225 N. Training costs include pole-angle error, cart displacement, joint speeds, force and
+soft state-limit penalties. Evaluation takes the mean logit and uses the stage cost for the physical state.</p>
+<div class="equation" aria-label="Policy gradient through recursive transitions">
+  J(ψ) = E<sub>s₀,ε</sub>[H<sup>−1</sup> ∑<sub>t=0</sub><sup>H−1</sup> ℓ(ŝ<sub>t+1</sub>, u<sub>t</sub>)]
+  &ensp; with &ensp; ŝ<sub>t+1</sub> = F<sub>θ</sub>(ŝ<sub>t</sub>, u<sub>ψ,t</sub>).
+</div>
+<p>Backpropagation takes the derivative of this objective through 48 imagined steps with frozen dynamics.
+The PPO arms fit a critic and use clipped updates with ratio clipping of 0.2 and GAE with λ=0.95.
+One PPO arm samples the frozen model. The other uses Newton. Actor learning rates are 0.01 for
+backpropagation and 0.001 for PPO. The comparison measures these optimization recipes at equal
+environment interactions, with wall time reported separately. <a href="#ref-ppo">[4]</a></p>
+<h3>3.3 Mechanically structured comparison</h3>
+<p>A specialized analytical prior integrates a two-coordinate mass matrix, gravity, centrifugal bias
+and stiff rail-limit forces for five semi-implicit substeps. It refreshes the inertia once per decision,
+as configured in Newton. A second model adds a 322-parameter MLP residual to generalized forces, with its final
+layer initialized to zero. The residual test uses the same training distribution and held-out trajectories.
+A separate system-identification control fits six scalar coefficients from Newton transitions. It begins
+with deliberately perturbed mass, inertia, coupling, gravity, rail stiffness, and damping. Positive
+inertia parameters and a bounded coupling maintain a positive-definite mass matrix. We fit the same
+formula separately under the two inertia conventions.</p>
+
+      </section>
+      <section id="experiments">
+        <h2>4. Experimental setup</h2>
+
+<p>The public NeRD CartPole URDF is evaluated with Newton Featherstone at a 60 Hz decision rate.
+Training data are 131,072 transitions from 4,096 Newton worlds started from
+a mixture of broad and near-upright states with randomized open-loop forces. Each held-out open-loop
+cohort has 2,048 reset trajectories, passive or actively forced. Autonomous prediction is scored over the
+200 steps after the first ten observed frames. The released NeRD model uses all ten observations. The primary control benchmark uses the inertias declared by the URDF, with 1 kg and 10 kg cart and pole masses.
+Checkpoint, asset and run metadata are versioned with the report.</p>
+<p>For each policy seed (5, 19, 47), a policy update uses 64 reset worlds for 48 decisions. Checkpoints are
+tested with deterministic feedback over 120 Newton decisions and a separate 256-reset seed.
+Success requires the cart and speeds to stay inside the declared state limits and the
+upright angle and angular velocity to stay within 0.15 rad and 0.5 rad/s for all final 60 decisions.
+The 90% success threshold is measured on these Newton replays.</p>
+<p>Open-loop error uses the root mean square over trajectories and the indicated prefix, with pole-angle
+differences wrapped. Each state channel is normalized by its training-trajectory standard deviation
+before the root mean square across channels. Endpoint and one-step teacher-forced errors are retained
+in the raw receipts. This normalization and the test data are shared across the local figure.</p>
+
+      </section>
+      <section id="results">
+        <h2>5. Results</h2>
+        <h3>5.1 Policy quality and time</h3><p>Backpropagation first reaches at least 90% success in all three seeds at the update-24 checkpoint, after 73,728 imagined transitions and 1.13–1.73 s of policy training. It reaches 100% in all seeds at 294,912 transitions. The learned-model PPO arm ends at 7.4–16.0% and Newton PPO at 10.9–20.7% at that budget. At equal steps, backpropagation takes longer per update. The quality advantage drives its sample efficiency.</p><div class="table-wrap"><table><caption>Table 1. Final policies at 294,912 training transitions per seed. Each seed is evaluated on the same 256 Newton resets. Wall time covers the optimizer and data collection for policy updates.</caption><thead><tr><th scope="col">Optimizer</th><th scope="col">Mean success</th><th scope="col">Seed range</th><th scope="col">Mean cost</th><th scope="col">Training time (s)</th></tr></thead><tbody><tr><th scope="row">Backpropagation · learned</th><td class="num">100.0%</td><td class="num">100.0–100.0%</td><td class="num">0.046</td><td class="num">4.50–5.28</td></tr><tr><th scope="row">PPO · learned</th><td class="num">10.5%</td><td class="num">7.4–16.0%</td><td class="num">1.813</td><td class="num">3.65–3.77</td></tr><tr><th scope="row">PPO · Newton</th><td class="num">15.5%</td><td class="num">10.9–20.7%</td><td class="num">1.354</td><td class="num">3.39–3.64</td></tr></tbody></table></div><figure><img src="figures/policy-learning.svg" alt="Success and cost versus training transitions and time"><figcaption><strong>Figure 1.</strong> Thin lines are individual policy seeds. Thick lines are seed means on the common support. Each point is a separate analytical Newton policy replay. Lower cost is better.</figcaption></figure><p>An extended run used the same PPO settings and seeds with a higher fixed update budget. A threshold crossing is the first observed checkpoint with at least 90% Newton success. The exact crossing between evaluations is interval-censored.</p><div class="table-wrap"><table><caption>Table 3. Extended policy training. Times are policy updates only.</caption><thead><tr><th scope="col">Optimizer</th><th scope="col">Final transitions</th><th scope="col">Final success range</th><th scope="col">Seeds crossing 90%</th><th scope="col">Transitions to 90%</th><th scope="col">Seconds to 90%</th></tr></thead><tbody><tr><th scope="row">PPO · learned</th><td class="num">1,966,080</td><td class="num">100.0–100.0%</td><td class="num">3/3</td><td class="num">491,520–712,704</td><td class="num">6.01–8.96</td></tr><tr><th scope="row">PPO · Newton</th><td class="num">1,966,080</td><td class="num">100.0–100.0%</td><td class="num">3/3</td><td class="num">368,640–565,248</td><td class="num">5.08–6.58</td></tr></tbody></table></div><figure><img src="figures/extended-policy-learning.svg" alt="PPO improvements at longer budgets"><figcaption><strong>Extended training.</strong> Same PPO settings and seeds as the fixed-budget comparison. Both PPO arms eventually reach 100% Newton success across all three seeds.</figcaption></figure><p>Median policy-training time to the 90% threshold is 5.90× lower than learned-model PPO and 5.53× lower than Newton PPO. These ratios use medians across the three seeds. With dynamics setup, data generation, fitting and scheduled Newton evaluation charged, medians are 4.69 s for backpropagation, 11.19 s for learned-model PPO and 7.46 s for Newton PPO. The longer PPO runs also reach 100% and achieve lower stage cost than the initial 96-update backpropagation runs. A separate 320-update backpropagation run keeps 100% success but still ends at higher median cost (0.0414) than learned PPO at 640 (0.0281). The longer backpropagation runs are scored by quality here. <a href="results/threshold-summary.json">Threshold accounting.</a></p><p>The learned arm uses 3.33 s to create the training worlds, log training rollouts and fit the dynamics after caches are warm. Adding that cost to the pathwise threshold times gives about 4.46–5.06 s, before replay evaluations. This separates an upfront world-model fit from amortized policy learning.</p><figure><img src="figures/cartpole-policy.gif" alt="Sample CartPole policy actions replayed in Newton"><figcaption><strong>Rollout.</strong> The same fixed held-out start is replayed with mean actions from the three final policies. All trajectories were generated by Newton.</figcaption></figure><h3>5.2 Prediction and throughput</h3><p>Passive prefix NRMSE reaches 0.525 at 200 steps for the unrestricted MLP. The mechanical prior gives 4.20e-06 on the same trajectories. Adding the trained force residual raises that to 2.58e-05. The structured prior already captures this teacher closely, so fitting a free correction can amplify small errors.</p><figure><img src="figures/rollout-errors.svg" alt="Normalized rollout error for two held-out control cohorts"><figcaption><strong>Figure 2.</strong> The original NeRD checkpoints were fitted to legacy Warp labels. Local normalized scores for those weights measure transfer to the current Newton teacher.</figcaption></figure><p>The six-coefficient calibration runs in 49–75 ms on CPU after 0.50–0.58 s of teacher setup and data generation. With the corresponding neural fit normalizers, its passive and active 200-step prefix NRMSE are 3.75e−6 and 9.81e−4 for the modern asset and 3.91e−5 and 4.47e−5 under legacy inertias. The known CartPole equations and rail force law supply the structure for this comparison. <a href="results/calibrated-modern-common.json">Modern fit</a> · <a href="results/calibrated-legacy-common.json">Legacy fit</a>.</p><div class="table-wrap"><table><caption>Table 2. Median latency per 60 Hz control step, from five synchronized groups of 100 calls on one RTX PRO 6000 Blackwell. Inputs stay on device. Newton uses five physics substeps.</caption><thead><tr><th scope="col">Batch</th><th scope="col">Newton graph (ms)</th><th scope="col">Learned eager (ms)</th><th scope="col">Learned graph (ms)</th><th scope="col">Newton / learned graphs</th></tr></thead><tbody><tr><th scope="row">1</th><td class="num">0.188</td><td class="num">0.168</td><td class="num">0.025</td><td class="num">7.62×</td></tr><tr><th scope="row">128</th><td class="num">0.226</td><td class="num">0.178</td><td class="num">0.033</td><td class="num">6.86×</td></tr><tr><th scope="row">2048</th><td class="num">0.393</td><td class="num">0.184</td><td class="num">0.045</td><td class="num">8.77×</td></tr></tbody></table></div><h3>5.3 Action derivative fidelity</h3><p>We differentiate a separate smooth tracking objective through 1, 8 and 32 controls for 16 near-upright and 16 wide-state cases. Central differences check PyTorch derivatives and independently estimate Newton derivatives at two force perturbation sizes. Near upright at 32 steps, the median cosine with Newton is 1.000 for the unrestricted model and 1.000 for the structured residual. Median relative gradient-vector errors are 7.49% and 0.012%, respectively. All 16 near-upright cases improve with one fixed-size negative-gradient step for either model.</p><figure><img src="figures/action-gradients.svg" alt="Gradient agreement and actual Newton descent of the learned model"><figcaption><strong>Figure 3.</strong> Dots are individual cases and diamonds are medians. Positive cost reduction means the learned action step improved the objective when evaluated by Newton.</figcaption></figure><p><a href="figures/action-gradients-structured.svg">Structured model derivative plot</a> · <a href="results/action-gradients.json">MLP probe data</a> · <a href="results/action-gradients-structured.json">Structured probe data</a></p>
+      </section>
+      <section id="reproduction">
+        <h2>6. NeRD replication</h2>
+        <p>The original NeRD checkpoint and the published FlashNeRD comparisons answer different questions. The release audit records the version, training teacher, state/action conventions and what ran. The FlashNeRD rows below are author-reported references.</p>
+        <p>We reproduced original NeRD Figure 3 on its legacy Warp teacher and public checkpoint. <a href="results/nerd-original.json">Replay receipt.</a></p><div class="table-wrap"><table><caption>Original NeRD Figure 3 passive CartPole mean absolute error. The author script, original checkpoint, Warp 1.8.0 and the 2,048-case seed-500 protocol reproduce all six rounded values.</caption><thead><tr><th scope="col">Horizon</th><th scope="col">Cart replay (m)</th><th scope="col">Cart paper (m)</th><th scope="col">Pole replay (rad)</th><th scope="col">Pole paper (rad)</th></tr></thead><tbody><tr><th scope="row">100</th><td class="num">0.000156</td><td class="num">0.0002</td><td class="num">0.000394</td><td class="num">0.0004</td></tr><tr><th scope="row">500</th><td class="num">0.004366</td><td class="num">0.004</td><td class="num">0.013441</td><td class="num">0.013</td></tr><tr><th scope="row">1000</th><td class="num">0.032776</td><td class="num">0.033</td><td class="num">0.075032</td><td class="num">0.075</td></tr></tbody></table></div><p>The released 2,713,668-parameter NeRD model also ran on all local active and passive trajectories with ten teacher frames of warmup and the same recorded forces. The legacy Warp importer infers 50 kg and 2.5 kg cart and pole masses from collision geometry. The primary current Newton teacher uses the URDF-declared 1 kg and 10 kg inertias. <a href="https://github.com/NVlabs/neural-robot-dynamics/tree/476dc67fccc6a99be293bf611f897b1c06f13e30">Pinned NeRD source</a> · <code>287dde2134eb8f5277c17a8f7cc7abbe64063e97cb481bdb6e8d76f9536e5366</code> checkpoint SHA-256.</p><p>A second Newton run uses the legacy-inferred masses and re-fits SuperNeRD from scratch. Released NeRD is substantially more accurate than the small learned MLP in both cohorts. The original analytical Warp solver incurs similar error to the released checkpoint, meaning different numerical solvers still contribute an error of that scale after inertia alignment.</p><div class="table-wrap"><table><caption>200-step endpoint NRMSE after matching original masses in the current Newton teacher. All rows use the held-out Newton states and actions. Errors in the analytical Warp column quantify cross-simulator drift independently of the networks.</caption><thead><tr><th scope="col">Test cohort</th><th scope="col">Released NeRD</th><th scope="col">Refit SuperNeRD MLP</th><th scope="col">Original Warp teacher</th></tr></thead><tbody><tr><th scope="row">Passive</th><td class="num">0.0544</td><td class="num">0.6556</td><td class="num">0.0540</td></tr><tr><th scope="row">Active</th><td class="num">0.1355</td><td class="num">0.7957</td><td class="num">0.1361</td></tr></tbody></table></div><p>The released eager NeRD adapter takes 8.78 ms at batch 2,048 on this workstation. The compact SuperNeRD eager model takes about 0.18 ms in the local forward harness. The two figures cover different adapter implementations and model sizes. The same-mass accuracy gap prevents treating the faster model as an equivalent solver. <a href="results/nerd-throughput.json">Released adapter receipt</a> · <a href="results/forward-timing.json">SuperNeRD timing receipt.</a></p>
+        <div class="table-wrap">
+          <table>
+            <caption>FlashNeRD paper Table I. CartPole prefix-averaged NRMSE (lower is better) and model-only throughput on a GB200. These columns describe the paper's own held-out trajectories, training normalization and replay timing. [2]</caption>
+            <thead><tr><th scope="col">Paper model</th><th scope="col" class="num">E<sub>1</sub></th><th scope="col" class="num">E<sub>15</sub></th><th scope="col" class="num">E<sub>100</sub></th><th scope="col" class="num">E<sub>200</sub></th><th scope="col" class="num">Steps/s at B=16,384</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Optimized NeRD</th><td class="num">5.89e−5</td><td class="num">4.78e−4</td><td class="num">8.43e−3</td><td class="num">0.106</td><td class="num">1.22M</td></tr>
+              <tr><th scope="row">FlashNeRD</th><td class="num">4.41e−5</td><td class="num">1.73e−4</td><td class="num">3.23e−3</td><td class="num">0.0599</td><td class="num">48.1M</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>FlashNeRD reports CartPole training on about 9,000 trajectories for five million updates. Its ANYmal experiment crosses a training-reward threshold at 34.3 s, compared with 93.2 s for Optimized NeRD and 129.9 s for MJWarp. Those times start with a ready dynamics model and count PPO iteration durations. Final ANYmal evaluation in MJWarp yields mean returns of 28.0, 27.6 and 27.8, respectively. <a href="#ref-flashnerd">[2, Sections IV-A and IV-B]</a></p>
+        <p>A direct FlashNeRD result needs its weights or a validated reproduction of its training data, observation and contact processing, normalization, CUDA graph timing and policy environment. The CartPole pilot provides a controlled intervention on the policy optimizer. ANYmal velocity tracking and G1 contact-rich control remain separate replication targets.</p>
+      </section>
+      <section id="limitations">
+        <h2>7. Limitations</h2>
+
+<p>CartPole has two generalized coordinates, bounded forces and a rail joint limit. The policy starts
+near upright. No floating base, variable contact set or dynamic-object interaction is exercised.
+The unrestricted MLP's long-horizon error limits replacement of general articulated dynamics.
+Mechanical structure helps CartPole because its equations are available and its teacher closely matches them.</p>
+<p>The policy optimizer comparison uses one hyperparameter recipe per method and three seeds.
+Evaluation resets are shared across seeds and methods. Episode counts therefore describe evaluation
+coverage. The independent training seeds are the units of optimizer variation. Timing on one workstation
+with warmed kernels does not establish performance on the GB200 or at FlashNeRD's largest batches.</p>
+<p>The main NeRD transfer experiment changes the cart and pole masses, alongside the simulator implementation. Its eager
+adapter and local CUDA graph timings are recorded separately. The latest benchmark's original data,
+weights and optimized kernels are needed for a matched state-of-the-art comparison.</p>
+
+      </section>
+      <section id="conclusion">
+        <h2>8. Conclusion</h2>
+        <p>Short-horizon pathwise policy updates exploit a useful control gradient even when the learned simulator accumulates substantial long-horizon state error. The evidence motivates a matched ANYmal or G1 experiment that holds the contact representation and world model fixed while changing the optimizer. Comparable analytical-simulator policy quality is the deciding metric.</p>
+      </section>
+      <section id="reproducibility">
+        <h2>Reproducibility</h2>
+
+<p>The repository pins Newton, Warp, the public NeRD asset and checkpoint hashes. It includes the run
+commands, policy learning curves, model and policy weights, per-cohort prediction metrics and the source
+for the figures. <a href="README.md">Reproduction instructions</a> ·
+<a href="paper/replication-protocol.md">Protocol and follow-up targets</a> ·
+<a href="results/cartpole.json">Raw pilot data</a></p>
+
+      </section>
+      <section id="references">
+        <h2>References</h2>
+        <ol>
+          <li id="ref-nerd">Xu, J., Heiden, E., Akinola, I., Fox, D., Macklin, M., and Narang, Y. (2025). <em>Neural Robot Dynamics.</em> CoRL. <a href="https://research.nvidia.com/publication/2025-09_neural-robot-dynamics">Paper</a> · <a href="https://github.com/NVlabs/neural-robot-dynamics">Code</a>.</li>
+          <li id="ref-flashnerd">Ataei, M., Nabian, M. A., Xu, J., et al. (2026). <em>FlashNeRD: Performance-First Contact-Rich Neural Robot Dynamics.</em> arXiv:2610.09130. <a href="https://arxiv.org/html/2610.09130v1">Paper</a>.</li>
+          <li id="ref-supermimic">Liao, Q., Shao, Y., Long, J., et al. (2026). <em>SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model.</em> arXiv:2610.28480. <a href="https://arxiv.org/abs/2610.28480">Paper</a> · <a href="https://github.com/HybridRobotics/supermimic">Code</a>.</li>
+          <li id="ref-ppo">Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and Klimov, O. (2017). <em>Proximal Policy Optimization Algorithms.</em> arXiv:1707.06347. <a href="https://arxiv.org/abs/1707.06347">Paper</a>.</li>
+          <li id="ref-newton">Newton Physics. <em>Newton Physics Engine.</em> <a href="https://github.com/newton-physics/newton">Source</a>.</li>
+        </ol>
+      </section>
+    </article>
+  </div>
+</main>
+<footer><div class="frame">SuperNeRD research report · <a href="https://github.com/maxkra15/supernerd">Versioned source and evidence</a></div></footer>
+</body>
+</html>

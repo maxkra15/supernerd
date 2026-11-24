@@ -1,0 +1,2803 @@
+{
+  "assets": [
+    {
+      "family": "cable",
+      "seed": 20483100,
+      "nodes": 13,
+      "calibration_sha256": "879a0d4d6b04ef12151e8a8f7062f2ec8cb9b9f09cda31366887bad7126ef956",
+      "fresh_sha256": "af6822142f57e486ce8ba2b8a4b4f69dbb8d61a786f486380ba62fc202bc78f6",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 7.756522178326942,
+            "percent_span": 1.1153127207796616,
+            "percent_response": 112.99432784209976,
+            "target_response_mm": 6.864523491095979
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 4.789841475853763,
+            "percent_span": 0.6887327858695067,
+            "percent_response": 56.925585673376915,
+            "target_response_mm": 8.414215539804074
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 3.391576975479584,
+            "percent_span": 0.48767590129829297,
+            "percent_response": 71.86720812995837,
+            "target_response_mm": 4.719227396932622
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 8.450908082167272,
+            "percent_span": 1.2151586844574516,
+            "percent_response": 51.84517607760631,
+            "target_response_mm": 16.300278485923606
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 6.074981030664315,
+            "percent_span": 0.8735233995626253,
+            "percent_response": 53.771335621317164,
+            "target_response_mm": 11.29780571836111
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 4.717336605238221,
+            "percent_span": 0.6783072881197614,
+            "percent_response": 43.725965360141984,
+            "target_response_mm": 10.788410424754776
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 5.748104648886211,
+            "percent_span": 0.8265217436222583,
+            "percent_response": 57.814151432281214,
+            "target_response_mm": 9.94238349345847
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 15.625249797674295,
+            "percent_span": 2.2467594965950237,
+            "percent_response": 75.62879327188683,
+            "target_response_mm": 20.660451028884264
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 6.864523491095979,
+            "percent_span": 0.987051953915969,
+            "percent_response": 100.0,
+            "target_response_mm": 6.864523491095979
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 8.414215539804074,
+            "percent_span": 1.2098826524530861,
+            "percent_response": 100.0,
+            "target_response_mm": 8.414215539804074
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 4.719227396932622,
+            "percent_span": 0.6785791656417521,
+            "percent_response": 100.0,
+            "target_response_mm": 4.719227396932622
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 16.300278485923606,
+            "percent_span": 2.343822080261619,
+            "percent_response": 100.0,
+            "target_response_mm": 16.300278485923606
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 11.29780571836111,
+            "percent_span": 1.6245149752544452,
+            "percent_response": 100.0,
+            "target_response_mm": 11.29780571836111
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 10.788410424754776,
+            "percent_span": 1.5512688685841258,
+            "percent_response": 100.00000000000001,
+            "target_response_mm": 10.788410424754776
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 9.94238349345847,
+            "percent_span": 1.4296183947115069,
+            "percent_response": 100.0,
+            "target_response_mm": 9.94238349345847
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 20.660451028884264,
+            "percent_span": 2.9707726375031314,
+            "percent_response": 99.99999999999999,
+            "target_response_mm": 20.660451028884264
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 5.7480106548359275,
+            "percent_span": 0.826508228188724,
+            "percent_response": 83.73502781790626,
+            "target_response_mm": 6.864523491095979
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 4.40214284010928,
+            "percent_span": 0.6329854792372952,
+            "percent_response": 52.31792339148689,
+            "target_response_mm": 8.414215539804074
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 3.184424270423594,
+            "percent_span": 0.45788934982830193,
+            "percent_response": 67.4776611208307,
+            "target_response_mm": 4.719227396932622
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 4.6969957694288365,
+            "percent_span": 0.675382473053431,
+            "percent_response": 28.815432653405345,
+            "target_response_mm": 16.300278485923606
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 5.461676314487167,
+            "percent_span": 0.7853361249129348,
+            "percent_response": 48.34280612217372,
+            "target_response_mm": 11.29780571836111
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 5.312999801037938,
+            "percent_span": 0.7639578831031678,
+            "percent_response": 49.24729030374003,
+            "target_response_mm": 10.788410424754776
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 5.557101648160192,
+            "percent_span": 0.7990573631281169,
+            "percent_response": 55.89305272539982,
+            "target_response_mm": 9.94238349345847
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 10.011435127741917,
+            "percent_span": 1.4395473505420133,
+            "percent_response": 48.45700180381091,
+            "target_response_mm": 20.660451028884264
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 4.494380000166048,
+            "percent_span": 0.6462482889830532,
+            "percent_response": 65.47257076176867,
+            "target_response_mm": 6.864523491095979
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 4.890679079137502,
+            "percent_span": 0.7032322560043999,
+            "percent_response": 58.12400521476756,
+            "target_response_mm": 8.414215539804074
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 2.481186640602473,
+            "percent_span": 0.3567705937365591,
+            "percent_response": 52.5761196041365,
+            "target_response_mm": 4.719227396932622
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 3.3262848180957993,
+            "percent_span": 0.4782875218128636,
+            "percent_response": 20.406306683461093,
+            "target_response_mm": 16.300278485923606
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 4.136535140507879,
+            "percent_span": 0.5947936660390812,
+            "percent_response": 36.61361545441707,
+            "target_response_mm": 11.29780571836111
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 5.251056070176371,
+            "percent_span": 0.7550509749020288,
+            "percent_response": 48.67312109416461,
+            "target_response_mm": 10.788410424754776
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 3.323634183285178,
+            "percent_span": 0.4779063862144007,
+            "percent_response": 33.42894775153204,
+            "target_response_mm": 9.94238349345847
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 7.802533597655204,
+            "percent_span": 1.1219287169823575,
+            "percent_response": 37.76555306922827,
+            "target_response_mm": 20.660451028884264
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 5.977030910576151,
+            "percent_span": 0.8594391215286535,
+            "percent_response": 87.07131555932469,
+            "target_response_mm": 6.864523491095979
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 4.46432981272122,
+            "percent_span": 0.6419273632448819,
+            "percent_response": 53.05699374590983,
+            "target_response_mm": 8.414215539804074
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 2.1195666884500315,
+            "percent_span": 0.3047731490763358,
+            "percent_response": 44.91342565581172,
+            "target_response_mm": 4.719227396932622
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 4.507361093540327,
+            "percent_span": 0.6481148444104864,
+            "percent_response": 27.652049610273462,
+            "target_response_mm": 16.300278485923606
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 4.5468341347975345,
+            "percent_span": 0.6537906852099927,
+            "percent_response": 40.24528521859828,
+            "target_response_mm": 11.29780571836111
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 6.373568273033993,
+            "percent_span": 0.9164573514061374,
+            "percent_response": 59.077918081512614,
+            "target_response_mm": 10.788410424754776
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 3.2597651405857673,
+            "percent_span": 0.4687226368291786,
+            "percent_response": 32.78655608819062,
+            "target_response_mm": 9.94238349345847
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 9.030400477539823,
+            "percent_span": 1.2984840750506736,
+            "percent_response": 43.70863184407207,
+            "target_response_mm": 20.660451028884264
+          }
+        ]
+      }
+    },
+    {
+      "family": "cable",
+      "seed": 20483101,
+      "nodes": 13,
+      "calibration_sha256": "c073e4de3c6055a0c4cc89226e5b1ccb47d871b393b2e7441de6d02136f704b2",
+      "fresh_sha256": "82477ebb956c4db9cb3c0a3d5ecfd41525e50d197ee6ac28bff09747a0fe609d",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 11.414912617646875,
+            "percent_span": 1.2062248043936878,
+            "percent_response": 65.79552723054333,
+            "target_response_mm": 17.349070823081558
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 6.728537491484011,
+            "percent_span": 0.7110110336695677,
+            "percent_response": 92.06659713889246,
+            "target_response_mm": 7.308337334694017
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 4.291485686728835,
+            "percent_span": 0.4534854235353672,
+            "percent_response": 43.807343498263755,
+            "target_response_mm": 9.796270086313092
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 7.48561706508791,
+            "percent_span": 0.7910123609831947,
+            "percent_response": 43.007180407617525,
+            "target_response_mm": 17.405505299673262
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 20.837599933753573,
+            "percent_span": 2.201929243441483,
+            "percent_response": 46.94001205000939,
+            "target_response_mm": 44.391978237145345
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 10.20128229483413,
+            "percent_span": 1.077979319931729,
+            "percent_response": 72.27796471932533,
+            "target_response_mm": 14.113958983831985
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 6.899938108798017,
+            "percent_span": 0.7291231018927552,
+            "percent_response": 40.71816444343653,
+            "target_response_mm": 16.945602050365107
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 18.191264427766335,
+            "percent_span": 1.922288423139912,
+            "percent_response": 81.91076564607096,
+            "target_response_mm": 22.20863678209181
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 17.349070823081558,
+            "percent_span": 1.833293014230516,
+            "percent_response": 100.0,
+            "target_response_mm": 17.349070823081558
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 7.308337334694017,
+            "percent_span": 0.772279041221574,
+            "percent_response": 100.0,
+            "target_response_mm": 7.308337334694017
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 9.796270086313092,
+            "percent_span": 1.0351812899892925,
+            "percent_response": 100.0,
+            "target_response_mm": 9.796270086313092
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 17.405505299673262,
+            "percent_span": 1.8392564996962435,
+            "percent_response": 100.0,
+            "target_response_mm": 17.405505299673262
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 44.391978237145345,
+            "percent_span": 4.690943072395402,
+            "percent_response": 99.99999999999999,
+            "target_response_mm": 44.391978237145345
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 14.113958983831985,
+            "percent_span": 1.4914356320322673,
+            "percent_response": 100.00000000000001,
+            "target_response_mm": 14.113958983831985
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 16.945602050365107,
+            "percent_span": 1.7906580806352743,
+            "percent_response": 100.0,
+            "target_response_mm": 16.945602050365107
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 22.20863678209181,
+            "percent_span": 2.3468080269765115,
+            "percent_response": 100.0,
+            "target_response_mm": 22.20863678209181
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 9.516123357719831,
+            "percent_span": 1.0055779155073423,
+            "percent_response": 54.85091077649753,
+            "target_response_mm": 17.349070823081558
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 6.430518058177644,
+            "percent_span": 0.679519033276174,
+            "percent_response": 87.988796407232,
+            "target_response_mm": 7.308337334694017
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 3.762252029804059,
+            "percent_span": 0.3975607935635398,
+            "percent_response": 38.40494388839389,
+            "target_response_mm": 9.796270086313092
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 11.974450303252532,
+            "percent_span": 1.265351690247126,
+            "percent_response": 68.79691279906315,
+            "target_response_mm": 17.405505299673262
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 24.559041223261207,
+            "percent_span": 2.595177526793152,
+            "percent_response": 55.32315116047528,
+            "target_response_mm": 44.391978237145345
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 11.183793453638602,
+            "percent_span": 1.1818022198557623,
+            "percent_response": 79.23923731427881,
+            "target_response_mm": 14.113958983831985
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 9.77938373815727,
+            "percent_span": 1.033396893324732,
+            "percent_response": 57.71045318479295,
+            "target_response_mm": 16.945602050365107
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 17.816101788597358,
+            "percent_span": 1.8826446259243443,
+            "percent_response": 80.22150104667197,
+            "target_response_mm": 22.20863678209181
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 5.094248207630954,
+            "percent_span": 0.5383141118647706,
+            "percent_response": 29.36323368311726,
+            "target_response_mm": 17.349070823081558
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 6.382612177255582,
+            "percent_span": 0.6744567727245524,
+            "percent_response": 87.33330010584147,
+            "target_response_mm": 7.308337334694017
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 2.560251807635244,
+            "percent_span": 0.2705442730318537,
+            "percent_response": 26.13496550296539,
+            "target_response_mm": 9.796270086313092
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 5.312455296078661,
+            "percent_span": 0.5613722649489429,
+            "percent_response": 30.521695317735972,
+            "target_response_mm": 17.405505299673262
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 10.820539666176279,
+            "percent_span": 1.1434168424635933,
+            "percent_response": 24.374988671088566,
+            "target_response_mm": 44.391978237145345
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 10.237987553613989,
+            "percent_span": 1.0818579999597744,
+            "percent_response": 72.5380282409914,
+            "target_response_mm": 14.113958983831985
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 5.0264305880276865,
+            "percent_span": 0.5311477587195058,
+            "percent_response": 29.662154068579625,
+            "target_response_mm": 16.945602050365107
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 8.365208518191912,
+            "percent_span": 0.883959636534521,
+            "percent_response": 37.66646552992075,
+            "target_response_mm": 22.20863678209181
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 6.745693113120959,
+            "percent_span": 0.7128238847220838,
+            "percent_response": 38.882157908689564,
+            "target_response_mm": 17.349070823081558
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 6.8401829084708154,
+            "percent_span": 0.7228087123533421,
+            "percent_response": 93.59424168886147,
+            "target_response_mm": 7.308337334694017
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 2.9979222798017737,
+            "percent_span": 0.31679333313081703,
+            "percent_response": 30.602691160897415,
+            "target_response_mm": 9.796270086313092
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 6.164321793027553,
+            "percent_span": 0.6513898176950923,
+            "percent_response": 35.41593126367477,
+            "target_response_mm": 17.405505299673262
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 9.723455419782844,
+            "percent_span": 1.0274868940850561,
+            "percent_response": 21.903631705348662,
+            "target_response_mm": 44.391978237145345
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 8.584444552874078,
+            "percent_span": 0.9071265193577606,
+            "percent_response": 60.8223714034301,
+            "target_response_mm": 14.113958983831985
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 6.776543349174982,
+            "percent_span": 0.7160838588625983,
+            "percent_response": 39.989982822882205,
+            "target_response_mm": 16.945602050365107
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 9.291397761623331,
+            "percent_span": 0.9818309454451543,
+            "percent_response": 41.83686667844268,
+            "target_response_mm": 22.20863678209181
+          }
+        ]
+      }
+    },
+    {
+      "family": "cable",
+      "seed": 20483102,
+      "nodes": 15,
+      "calibration_sha256": "f10614195b77fabad60a4bd425449ff5326805ced4428085b3c17a831ad4029e",
+      "fresh_sha256": "0b8e501744745a39c87a68ec56d5363989533cafa90967303505e44af8595422",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 7.5090441168701165,
+            "percent_span": 1.0224799190321128,
+            "percent_response": 36.112358825871,
+            "target_response_mm": 20.793557554846338
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 4.006015049349361,
+            "percent_span": 0.5454848685863714,
+            "percent_response": 68.11754961257034,
+            "target_response_mm": 5.881032233446775
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 3.522574092609788,
+            "percent_span": 0.47965642722812285,
+            "percent_response": 31.06736892243401,
+            "target_response_mm": 11.338501504278039
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 9.56462039194932,
+            "percent_span": 1.3023804537200585,
+            "percent_response": 50.01175066866077,
+            "target_response_mm": 19.12474621277929
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 7.3495440557517995,
+            "percent_span": 1.000761361111874,
+            "percent_response": 37.671243092820816,
+            "target_response_mm": 19.509693475319473
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 5.2677827529354655,
+            "percent_span": 0.7172953040187046,
+            "percent_response": 55.48203638755088,
+            "target_response_mm": 9.49457355194961
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 3.3170051011776525,
+            "percent_span": 0.4516648263740512,
+            "percent_response": 27.612185876511024,
+            "target_response_mm": 12.012830552467573
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 13.417756068687318,
+            "percent_span": 1.827048280070899,
+            "percent_response": 71.55043057486354,
+            "target_response_mm": 18.752865581498156
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 20.793557554846338,
+            "percent_span": 2.831385022402927,
+            "percent_response": 100.0,
+            "target_response_mm": 20.793557554846338
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 5.881032233446775,
+            "percent_span": 0.8007993119084662,
+            "percent_response": 100.0,
+            "target_response_mm": 5.881032233446775
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 11.338501504278039,
+            "percent_span": 1.5439235566606313,
+            "percent_response": 100.0,
+            "target_response_mm": 11.338501504278039
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 19.12474621277929,
+            "percent_span": 2.6041488976233316,
+            "percent_response": 100.0,
+            "target_response_mm": 19.12474621277929
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 19.509693475319473,
+            "percent_span": 2.6565658017868645,
+            "percent_response": 100.0,
+            "target_response_mm": 19.509693475319473
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 9.49457355194961,
+            "percent_span": 1.292842423822158,
+            "percent_response": 100.0,
+            "target_response_mm": 9.49457355194961
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 12.012830552467573,
+            "percent_span": 1.6357445527638248,
+            "percent_response": 100.00000000000001,
+            "target_response_mm": 12.012830552467573
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 18.752865581498156,
+            "percent_span": 2.5535112303192227,
+            "percent_response": 100.0,
+            "target_response_mm": 18.752865581498156
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 11.133084906679562,
+            "percent_span": 1.515952706734677,
+            "percent_response": 53.541030087392535,
+            "target_response_mm": 20.793557554846338
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 4.129310010348795,
+            "percent_span": 0.5622735063647196,
+            "percent_response": 70.21403465304041,
+            "target_response_mm": 5.881032233446775
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 5.4564250294214975,
+            "percent_span": 0.7429820541010664,
+            "percent_response": 48.122981924575996,
+            "target_response_mm": 11.338501504278039
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 9.332594072473155,
+            "percent_span": 1.2707862522932336,
+            "percent_response": 48.79852505565304,
+            "target_response_mm": 19.12474621277929
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 11.757328327816614,
+            "percent_span": 1.6009537205476825,
+            "percent_response": 60.26403409510301,
+            "target_response_mm": 19.509693475319473
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 7.320760288151422,
+            "percent_span": 0.9968419775115894,
+            "percent_response": 77.10467719372379,
+            "target_response_mm": 9.49457355194961
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 5.462172576583774,
+            "percent_span": 0.7437646772240168,
+            "percent_response": 45.469488250309006,
+            "target_response_mm": 12.012830552467573
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 9.664306137221523,
+            "percent_span": 1.3159543082837286,
+            "percent_response": 51.5350899051741,
+            "target_response_mm": 18.752865581498156
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 7.930248110370028,
+            "percent_span": 1.0798337737261114,
+            "percent_response": 38.13800543486958,
+            "target_response_mm": 20.793557554846338
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 5.190524953378492,
+            "percent_span": 0.7067753833195917,
+            "percent_response": 88.2587400874763,
+            "target_response_mm": 5.881032233446775
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 2.416208220051777,
+            "percent_span": 0.32900650825221395,
+            "percent_response": 21.309766719527595,
+            "target_response_mm": 11.338501504278039
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 13.965016556872715,
+            "percent_span": 1.9015668007960798,
+            "percent_response": 73.02066339338504,
+            "target_response_mm": 19.12474621277929
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 7.941192898726898,
+            "percent_span": 1.0813240867591398,
+            "percent_response": 40.703832219469874,
+            "target_response_mm": 19.509693475319473
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 7.721559060429129,
+            "percent_span": 1.0514173255650103,
+            "percent_response": 81.32602289276687,
+            "target_response_mm": 9.49457355194961
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 2.9620966489069787,
+            "percent_span": 0.40333820052213276,
+            "percent_response": 24.65777433527962,
+            "target_response_mm": 12.012830552467573
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 12.545757588126545,
+            "percent_span": 1.7083113380682815,
+            "percent_response": 66.90048266812283,
+            "target_response_mm": 18.752865581498156
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 8.554132388882536,
+            "percent_span": 1.1647858843610357,
+            "percent_response": 41.138378395902876,
+            "target_response_mm": 20.793557554846338
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 5.732140738981241,
+            "percent_span": 0.780525284903662,
+            "percent_response": 97.46827617065667,
+            "target_response_mm": 5.881032233446775
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 2.664274961370232,
+            "percent_span": 0.3627848770605699,
+            "percent_response": 23.497593225745007,
+            "target_response_mm": 11.338501504278039
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 12.124335197728348,
+            "percent_span": 1.650927745042826,
+            "percent_response": 63.396057980768305,
+            "target_response_mm": 19.12474621277929
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 9.36818202997576,
+            "percent_span": 1.2756321383127376,
+            "percent_response": 48.01808927355459,
+            "target_response_mm": 19.509693475319473
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 9.944960224079482,
+            "percent_span": 1.3541699804172633,
+            "percent_response": 104.74362191904227,
+            "target_response_mm": 9.49457355194961
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 5.045420534791654,
+            "percent_span": 0.6870170290126106,
+            "percent_response": 42.00026390745407,
+            "target_response_mm": 12.012830552467573
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 11.791338913632561,
+            "percent_span": 1.6055848214561455,
+            "percent_response": 62.87753123589851,
+            "target_response_mm": 18.752865581498156
+          }
+        ]
+      }
+    },
+    {
+      "family": "cable",
+      "seed": 20483103,
+      "nodes": 16,
+      "calibration_sha256": "1c25b181e82dc3cf81e5f3a14252db79a46c389a649535323ce94063df61c04e",
+      "fresh_sha256": "03983cd1c2f47539f7a89dbd018993f6f24d02f682796a0e1e914dca322b5228",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 1.039310142955937,
+            "percent_span": 0.12030886508882989,
+            "percent_response": 30.473862058222284,
+            "target_response_mm": 3.4104969726852077
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 0.7318319169643535,
+            "percent_span": 0.08471568180346044,
+            "percent_response": 53.12128047181288,
+            "target_response_mm": 1.3776624178942314
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 0.5090660289859178,
+            "percent_span": 0.05892866207230858,
+            "percent_response": 41.27387813878058,
+            "target_response_mm": 1.2333855017796445
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 0.7083868581213463,
+            "percent_span": 0.08200171962339288,
+            "percent_response": 31.516598203386856,
+            "target_response_mm": 2.247662814209502
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 1.022961920757996,
+            "percent_span": 0.1184164212671422,
+            "percent_response": 27.265112220410305,
+            "target_response_mm": 3.7519079785493057
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 0.47208440560486453,
+            "percent_span": 0.05464772902429379,
+            "percent_response": 52.98426681815715,
+            "target_response_mm": 0.8909897861285233
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 0.47518170915182234,
+            "percent_span": 0.055006267884994485,
+            "percent_response": 36.919925167411996,
+            "target_response_mm": 1.2870603258189959
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 1.7349123627452268,
+            "percent_span": 0.20083065560855182,
+            "percent_response": 71.01420995091247,
+            "target_response_mm": 2.4430495867580015
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 3.4104969726852077,
+            "percent_span": 0.39479362628528025,
+            "percent_response": 100.0,
+            "target_response_mm": 3.4104969726852077
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 1.3776624178942314,
+            "percent_span": 0.15947597846104658,
+            "percent_response": 100.00000000000001,
+            "target_response_mm": 1.3776624178942314
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 1.2333855017796445,
+            "percent_span": 0.1427747154608661,
+            "percent_response": 100.0,
+            "target_response_mm": 1.2333855017796445
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 2.247662814209502,
+            "percent_span": 0.2601858204816685,
+            "percent_response": 100.0,
+            "target_response_mm": 2.247662814209502
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 3.7519079785493057,
+            "percent_span": 0.43431481341381467,
+            "percent_response": 100.0,
+            "target_response_mm": 3.7519079785493057
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 0.8909897861285233,
+            "percent_span": 0.10313953991634096,
+            "percent_response": 100.0,
+            "target_response_mm": 0.8909897861285233
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 1.2870603258189959,
+            "percent_span": 0.14898802648047269,
+            "percent_response": 99.99999999999999,
+            "target_response_mm": 1.2870603258189959
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 2.4430495867580015,
+            "percent_span": 0.282803477990353,
+            "percent_response": 100.0,
+            "target_response_mm": 2.4430495867580015
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 1.2915873015820334,
+            "percent_span": 0.14951206188994792,
+            "percent_response": 37.87094115392573,
+            "target_response_mm": 3.4104969726852077
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 0.5059888869253338,
+            "percent_span": 0.05857245707273739,
+            "percent_response": 36.72807506056107,
+            "target_response_mm": 1.3776624178942314
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 0.46117432149818843,
+            "percent_span": 0.05338479529292008,
+            "percent_response": 37.39093096463051,
+            "target_response_mm": 1.2333855017796445
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 1.6353542200678022,
+            "percent_span": 0.18930596566200086,
+            "percent_response": 72.75798708459537,
+            "target_response_mm": 2.247662814209502
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 1.8196676657706599,
+            "percent_span": 0.210641792723262,
+            "percent_response": 48.49979466911775,
+            "target_response_mm": 3.7519079785493057
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 0.511551474221182,
+            "percent_span": 0.05921637320215921,
+            "percent_response": 57.413842693297916,
+            "target_response_mm": 0.8909897861285233
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 0.7089486705506141,
+            "percent_span": 0.08206675412364876,
+            "percent_response": 55.082784880303755,
+            "target_response_mm": 1.2870603258189959
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 1.1503228153562137,
+            "percent_span": 0.13315951291275052,
+            "percent_response": 47.08552874208034,
+            "target_response_mm": 2.4430495867580015
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 2.8531629376331447,
+            "percent_span": 0.3302775377173515,
+            "percent_response": 83.65827503980296,
+            "target_response_mm": 3.4104969726852077
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 0.5716782147228583,
+            "percent_span": 0.0661765476604527,
+            "percent_response": 41.49624808642695,
+            "target_response_mm": 1.3776624178942314
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 0.6109830199361403,
+            "percent_span": 0.07072640848861549,
+            "percent_response": 49.537068423015896,
+            "target_response_mm": 1.2333855017796445
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 0.7507826049114432,
+            "percent_span": 0.08690938286085846,
+            "percent_response": 33.40281292038422,
+            "target_response_mm": 2.247662814209502
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 2.3409554654153806,
+            "percent_span": 0.2709852272456446,
+            "percent_response": 62.39373350304084,
+            "target_response_mm": 3.7519079785493057
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 0.7795141708193395,
+            "percent_span": 0.09023530256830278,
+            "percent_response": 87.48856417383178,
+            "target_response_mm": 0.8909897861285233
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 1.212920228926539,
+            "percent_span": 0.14040568849872404,
+            "percent_response": 94.23957872019098,
+            "target_response_mm": 1.2870603258189959
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 2.0733353253862776,
+            "percent_span": 0.240005951675176,
+            "percent_response": 84.86669024748099,
+            "target_response_mm": 2.4430495867580015
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 2.3241428724988116,
+            "percent_span": 0.26903902861889,
+            "percent_response": 68.14675078479631,
+            "target_response_mm": 3.4104969726852077
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 0.44028737612751784,
+            "percent_span": 0.05096695620056716,
+            "percent_response": 31.959017710630505,
+            "target_response_mm": 1.3776624178942314
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 0.425580397004179,
+            "percent_span": 0.04926450002883996,
+            "percent_response": 34.505059155479906,
+            "target_response_mm": 1.2333855017796445
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 0.7238636510679097,
+            "percent_span": 0.08379328820110356,
+            "percent_response": 32.20517092206693,
+            "target_response_mm": 2.247662814209502
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 1.8640359534073616,
+            "percent_span": 0.21577779410618378,
+            "percent_response": 49.68234733006699,
+            "target_response_mm": 3.7519079785493057
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 0.6897550675894565,
+            "percent_span": 0.07984493361619666,
+            "percent_response": 77.41447526424965,
+            "target_response_mm": 0.8909897861285233
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 0.9935736694772249,
+            "percent_span": 0.11501448472057968,
+            "percent_response": 77.19713284184901,
+            "target_response_mm": 1.2870603258189959
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 1.7588475552939624,
+            "percent_span": 0.20360135487550116,
+            "percent_response": 71.9939359736044,
+            "target_response_mm": 2.4430495867580015
+          }
+        ]
+      }
+    },
+    {
+      "family": "cloth",
+      "seed": 20483200,
+      "nodes": 60,
+      "calibration_sha256": "06edd61692556eeae0bfb4774c5da531e9c24181fc96cc226c8e53785de7444b",
+      "fresh_sha256": "f43b563f2459baef3cee95e18608d126dfd3275166164f9de1705bab95c55dcd",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 20.2115663822698,
+            "percent_span": 2.177389493500679,
+            "percent_response": 72.91407747385155,
+            "target_response_mm": 27.71970390699666
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 23.144227692623478,
+            "percent_span": 2.493324726049584,
+            "percent_response": 95.16976792358187,
+            "target_response_mm": 24.31888634130906
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 12.535116815241615,
+            "percent_span": 1.350406551233642,
+            "percent_response": 68.14626911236252,
+            "target_response_mm": 18.394428599712732
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 12.13957527926183,
+            "percent_span": 1.3077949115221839,
+            "percent_response": 48.92508855372969,
+            "target_response_mm": 24.812577019518542
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 17.087828658860193,
+            "percent_span": 1.8408696231075372,
+            "percent_response": 59.72779593131726,
+            "target_response_mm": 28.609508173564592
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 19.197881346368252,
+            "percent_span": 2.0681853326184676,
+            "percent_response": 166.9151629920744,
+            "target_response_mm": 11.50158020531653
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 10.445492134863473,
+            "percent_span": 1.1252915483506192,
+            "percent_response": 56.29961236053906,
+            "target_response_mm": 18.553399742739295
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 11.8864940151172,
+            "percent_span": 1.2805304989018047,
+            "percent_response": 37.691242218665124,
+            "target_response_mm": 31.536487829607466
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 27.71970390699666,
+            "percent_span": 2.986240200709574,
+            "percent_response": 100.0,
+            "target_response_mm": 27.71970390699666
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 24.31888634130906,
+            "percent_span": 2.619870553904933,
+            "percent_response": 100.0,
+            "target_response_mm": 24.31888634130906
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 18.394428599712732,
+            "percent_span": 1.9816294697029317,
+            "percent_response": 100.0,
+            "target_response_mm": 18.394428599712732
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 24.812577019518542,
+            "percent_span": 2.6730557883118786,
+            "percent_response": 100.0,
+            "target_response_mm": 24.812577019518542
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 28.609508173564592,
+            "percent_span": 3.082098701958477,
+            "percent_response": 100.0,
+            "target_response_mm": 28.609508173564592
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 11.50158020531653,
+            "percent_span": 1.2390637827892668,
+            "percent_response": 100.0,
+            "target_response_mm": 11.50158020531653
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 18.553399742739295,
+            "percent_span": 1.9987554108620238,
+            "percent_response": 100.0,
+            "target_response_mm": 18.553399742739295
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 31.536487829607466,
+            "percent_span": 3.3974218506061113,
+            "percent_response": 100.0,
+            "target_response_mm": 31.536487829607466
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 36.89611673203243,
+            "percent_span": 3.9748139953059884,
+            "percent_response": 133.1042959759739,
+            "target_response_mm": 27.71970390699666
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 25.25307471886543,
+            "percent_span": 2.720510549824599,
+            "percent_response": 103.84141101054253,
+            "target_response_mm": 24.31888634130906
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 23.062489643081825,
+            "percent_span": 2.484519096296545,
+            "percent_response": 125.37758114129187,
+            "target_response_mm": 18.394428599712732
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 17.923465674290235,
+            "percent_span": 1.9308926932330555,
+            "percent_response": 72.2354056984526,
+            "target_response_mm": 24.812577019518542
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 26.475412873180165,
+            "percent_span": 2.8521928847991247,
+            "percent_response": 92.54060822214221,
+            "target_response_mm": 28.609508173564592
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 19.374586265773843,
+            "percent_span": 2.0872217312669727,
+            "percent_response": 168.4515163996167,
+            "target_response_mm": 11.50158020531653
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 16.771867807914642,
+            "percent_span": 1.8068312005432234,
+            "percent_response": 90.39781409592146,
+            "target_response_mm": 18.553399742739295
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 41.16586451118127,
+            "percent_span": 4.434793384254885,
+            "percent_response": 130.5340808196575,
+            "target_response_mm": 31.536487829607466
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 29.080782375876897,
+            "percent_span": 3.1328690122483756,
+            "percent_response": 104.91014793464907,
+            "target_response_mm": 27.71970390699666
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 38.170479236449715,
+            "percent_span": 4.112100906946024,
+            "percent_response": 156.9581711133366,
+            "target_response_mm": 24.31888634130906
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 27.65185113837097,
+            "percent_span": 2.9789304305158044,
+            "percent_response": 150.3273177988405,
+            "target_response_mm": 18.394428599712732
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 29.137866275627065,
+            "percent_span": 3.1390186535583684,
+            "percent_response": 117.43184213677638,
+            "target_response_mm": 24.812577019518542
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 27.390509931354252,
+            "percent_span": 2.9507761752931034,
+            "percent_response": 95.73918490728651,
+            "target_response_mm": 28.609508173564592
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 30.6726571056112,
+            "percent_span": 3.304361475817815,
+            "percent_response": 266.6821128755244,
+            "target_response_mm": 11.50158020531653
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 21.840169391797588,
+            "percent_span": 2.352838690013233,
+            "percent_response": 117.7151880228557,
+            "target_response_mm": 18.553399742739295
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 29.00566134592121,
+            "percent_span": 3.1247762331795577,
+            "percent_response": 91.97492600520266,
+            "target_response_mm": 31.536487829607466
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 29.606998152808792,
+            "percent_span": 3.1895581714325405,
+            "percent_response": 106.8084935255595,
+            "target_response_mm": 27.71970390699666
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 42.332903779558855,
+            "percent_span": 4.560518377232035,
+            "percent_response": 174.07418738435587,
+            "target_response_mm": 24.31888634130906
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 25.905142072630177,
+            "percent_span": 2.790757683485039,
+            "percent_response": 140.83145846147536,
+            "target_response_mm": 18.394428599712732
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 28.610472552905502,
+            "percent_span": 3.0822025944230655,
+            "percent_response": 115.30633247163078,
+            "target_response_mm": 24.812577019518542
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 21.073344160360342,
+            "percent_span": 2.2702287046858527,
+            "percent_response": 73.65853349353372,
+            "target_response_mm": 28.609508173564592
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 33.38367502789938,
+            "percent_span": 3.596419094165523,
+            "percent_response": 290.2529429170784,
+            "target_response_mm": 11.50158020531653
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 21.836892305584424,
+            "percent_span": 2.352485649929408,
+            "percent_response": 117.69752502707809,
+            "target_response_mm": 18.553399742739295
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 26.59544673694278,
+            "percent_span": 2.8651241177811606,
+            "percent_response": 84.3323038400431,
+            "target_response_mm": 31.536487829607466
+          }
+        ]
+      }
+    },
+    {
+      "family": "cloth",
+      "seed": 20483201,
+      "nodes": 80,
+      "calibration_sha256": "bd754d5c17590f8404d6d759a64d0fd259d337655b7c87f65f4e878e0e2150df",
+      "fresh_sha256": "e94a71c80cbf90018e0383f70e01263544dee92fe52ca224d0b43d00d60d7a62",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 9.064969495912358,
+            "percent_span": 1.042682723144751,
+            "percent_response": 59.54055689066678,
+            "target_response_mm": 15.224865149578955
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 6.367363067341814,
+            "percent_span": 0.7323951244735074,
+            "percent_response": 62.917568219983394,
+            "target_response_mm": 10.120167144857104
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 9.42625962831425,
+            "percent_span": 1.0842395071215756,
+            "percent_response": 66.1006344349652,
+            "target_response_mm": 14.260467707898504
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 8.518775802996476,
+            "percent_span": 0.979857721102458,
+            "percent_response": 72.69730207083528,
+            "target_response_mm": 11.718145736269408
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 11.987176070404768,
+            "percent_span": 1.3788045722096804,
+            "percent_response": 58.81879421260703,
+            "target_response_mm": 20.379839863897576
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 7.168059931548703,
+            "percent_span": 0.8244939216245809,
+            "percent_response": 81.04724104589822,
+            "target_response_mm": 8.84429850917359
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 6.516996237912247,
+            "percent_span": 0.7496064258279703,
+            "percent_response": 57.4979820900238,
+            "target_response_mm": 11.334304267771826
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 21.66741079185736,
+            "percent_span": 2.4922571331472496,
+            "percent_response": 58.43821827583511,
+            "target_response_mm": 37.07746647850331
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 15.224865149578955,
+            "percent_span": 1.7512142606583443,
+            "percent_response": 100.0,
+            "target_response_mm": 15.224865149578955
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 10.120167144857104,
+            "percent_span": 1.1640550408953816,
+            "percent_response": 99.99999999999999,
+            "target_response_mm": 10.120167144857104
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 14.260467707898504,
+            "percent_span": 1.6402860825614807,
+            "percent_response": 100.00000000000001,
+            "target_response_mm": 14.260467707898504
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 11.718145736269408,
+            "percent_span": 1.34785981486314,
+            "percent_response": 100.0,
+            "target_response_mm": 11.718145736269408
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 20.379839863897576,
+            "percent_span": 2.3441564735683613,
+            "percent_response": 100.0,
+            "target_response_mm": 20.379839863897576
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 8.84429850917359,
+            "percent_span": 1.0173004176140408,
+            "percent_response": 100.0,
+            "target_response_mm": 8.84429850917359
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 11.334304267771826,
+            "percent_span": 1.3037091017460787,
+            "percent_response": 100.00000000000001,
+            "target_response_mm": 11.334304267771826
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 37.07746647850331,
+            "percent_span": 4.264772620861761,
+            "percent_response": 100.0,
+            "target_response_mm": 37.07746647850331
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 19.624915388534294,
+            "percent_span": 2.257322567718446,
+            "percent_response": 128.90042174906898,
+            "target_response_mm": 15.224865149578955
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 13.425500406789224,
+            "percent_span": 1.5442453865999521,
+            "percent_response": 132.66085643271052,
+            "target_response_mm": 10.120167144857104
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 13.351026998991156,
+            "percent_span": 1.5356792093304341,
+            "percent_response": 93.62264458967476,
+            "target_response_mm": 14.260467707898504
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 13.776742465149432,
+            "percent_span": 1.5846464079226532,
+            "percent_response": 117.5675979392231,
+            "target_response_mm": 11.718145736269408
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 22.480120570287152,
+            "percent_span": 2.5857376953578184,
+            "percent_response": 110.30567816241862,
+            "target_response_mm": 20.379839863897576
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 12.545283701261768,
+            "percent_span": 1.4429999547327272,
+            "percent_response": 141.84600042897011,
+            "target_response_mm": 8.84429850917359
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 9.854542299941329,
+            "percent_span": 1.133501994163501,
+            "percent_response": 86.9443952370497,
+            "target_response_mm": 11.334304267771826
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 30.0237366822253,
+            "percent_span": 3.453429328903977,
+            "percent_response": 80.97569638322618,
+            "target_response_mm": 37.07746647850331
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 24.167491935828586,
+            "percent_span": 2.7798247213729175,
+            "percent_response": 158.73698517780923,
+            "target_response_mm": 15.224865149578955
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 19.140893669819565,
+            "percent_span": 2.2016487914351117,
+            "percent_response": 189.13614168464244,
+            "target_response_mm": 10.120167144857104
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 13.202108181866615,
+            "percent_span": 1.5185500752680492,
+            "percent_response": 92.57836735995909,
+            "target_response_mm": 14.260467707898504
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 19.998724145380717,
+            "percent_span": 2.3003192852142673,
+            "percent_response": 170.66457949470356,
+            "target_response_mm": 11.718145736269408
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 23.101549598993145,
+            "percent_span": 2.657216514143093,
+            "percent_response": 113.35491227248069,
+            "target_response_mm": 20.379839863897576
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 19.637697175258754,
+            "percent_span": 2.258792771031819,
+            "percent_response": 222.03792821883957,
+            "target_response_mm": 8.84429850917359
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 13.317980747580439,
+            "percent_span": 1.5318781203773835,
+            "percent_response": 117.5015283950779,
+            "target_response_mm": 11.334304267771826
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 29.229987208502127,
+            "percent_span": 3.362129643546007,
+            "percent_response": 78.83490967606706,
+            "target_response_mm": 37.07746647850331
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 19.56430649881278,
+            "percent_span": 2.2503511330975017,
+            "percent_response": 128.50233027747925,
+            "target_response_mm": 15.224865149578955
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 22.025106745142743,
+            "percent_span": 2.533400502774432,
+            "percent_response": 217.6358001788095,
+            "target_response_mm": 10.120167144857104
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 16.46107262662601,
+            "percent_span": 1.893406926515693,
+            "percent_response": 115.43150592114623,
+            "target_response_mm": 14.260467707898504
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 22.88995464446517,
+            "percent_span": 2.6328781638055214,
+            "percent_response": 195.33768532693145,
+            "target_response_mm": 11.718145736269408
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 18.814925239836118,
+            "percent_span": 2.1641548262995842,
+            "percent_response": 92.32126143035272,
+            "target_response_mm": 20.379839863897576
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 21.21514813173818,
+            "percent_span": 2.4402363886491685,
+            "percent_response": 239.87372327757984,
+            "target_response_mm": 8.84429850917359
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 13.459153456834555,
+            "percent_span": 1.5481162715355512,
+            "percent_response": 118.74706324149568,
+            "target_response_mm": 11.334304267771826
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 30.11848019057654,
+            "percent_span": 3.464327040069194,
+            "percent_response": 81.23122492211965,
+            "target_response_mm": 37.07746647850331
+          }
+        ]
+      }
+    },
+    {
+      "family": "cloth",
+      "seed": 20483202,
+      "nodes": 108,
+      "calibration_sha256": "9e5f7d92c988049c64728ef3aaa5c73a33c28a8b5b34275fba94798befb6b6aa",
+      "fresh_sha256": "f116efe56f51186217d081a5cc3eb27656b4a6c96cb03e48fa28d9c152058f9d",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 11.426331889304326,
+            "percent_span": 1.3790959916468588,
+            "percent_response": 53.974904274748354,
+            "target_response_mm": 21.16971218909605
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 8.774955562111684,
+            "percent_span": 1.0590893175363834,
+            "percent_response": 69.14027062049757,
+            "target_response_mm": 12.691526202256766
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 6.890918875849761,
+            "percent_span": 0.8316963564959667,
+            "percent_response": 57.60706992491358,
+            "target_response_mm": 11.961932597564061
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 14.988544511497986,
+            "percent_span": 1.8090356429937287,
+            "percent_response": 63.207747404740886,
+            "target_response_mm": 23.713144554133837
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 8.696715175668457,
+            "percent_span": 1.049646129260909,
+            "percent_response": 61.61127124485581,
+            "target_response_mm": 14.115461343275859
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 8.555372196110525,
+            "percent_span": 1.0325868018718432,
+            "percent_response": 71.65461509509065,
+            "target_response_mm": 11.93973644929493
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 5.665137399352392,
+            "percent_span": 0.6837512121356089,
+            "percent_response": 121.27366206005404,
+            "target_response_mm": 4.6713666455846345
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 12.303730171431932,
+            "percent_span": 1.4849931829487029,
+            "percent_response": 56.51953814848711,
+            "target_response_mm": 21.768985689705733
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 21.16971218909605,
+            "percent_span": 2.555068897624809,
+            "percent_response": 99.99999999999999,
+            "target_response_mm": 21.16971218909605
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 12.691526202256766,
+            "percent_span": 1.531798050588483,
+            "percent_response": 100.0,
+            "target_response_mm": 12.691526202256766
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 11.961932597564061,
+            "percent_span": 1.4437400783966612,
+            "percent_response": 100.0,
+            "target_response_mm": 11.961932597564061
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 23.713144554133837,
+            "percent_span": 2.8620473237400046,
+            "percent_response": 100.0,
+            "target_response_mm": 23.713144554133837
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 14.115461343275859,
+            "percent_span": 1.7036592624252151,
+            "percent_response": 100.0,
+            "target_response_mm": 14.115461343275859
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 11.93973644929493,
+            "percent_span": 1.4410611242577032,
+            "percent_response": 100.0,
+            "target_response_mm": 11.93973644929493
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 4.6713666455846345,
+            "percent_span": 0.5638084976744737,
+            "percent_response": 100.0,
+            "target_response_mm": 4.6713666455846345
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 21.768985689705733,
+            "percent_span": 2.6273979434286168,
+            "percent_response": 100.0,
+            "target_response_mm": 21.768985689705733
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 20.119810999840706,
+            "percent_span": 2.428351545481149,
+            "percent_response": 95.0405504813801,
+            "target_response_mm": 21.16971218909605
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 13.714235836787777,
+            "percent_span": 1.6552335302563344,
+            "percent_response": 108.05820843161604,
+            "target_response_mm": 12.691526202256766
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 11.289745102834143,
+            "percent_span": 1.3626107108447778,
+            "percent_response": 94.3806112494999,
+            "target_response_mm": 11.961932597564061
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 21.720353571740933,
+            "percent_span": 2.6215283118092754,
+            "percent_response": 91.59626013393697,
+            "target_response_mm": 23.713144554133837
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 17.357476615256758,
+            "percent_span": 2.094952838505559,
+            "percent_response": 122.96783075762019,
+            "target_response_mm": 14.115461343275859
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 12.354791661928218,
+            "percent_span": 1.491156026593815,
+            "percent_response": 103.47625104118438,
+            "target_response_mm": 11.93973644929493
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 8.954261985205184,
+            "percent_span": 1.0807306256797473,
+            "percent_response": 191.68399024445517,
+            "target_response_mm": 4.6713666455846345
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 16.58229002781022,
+            "percent_span": 2.0013920417526982,
+            "percent_response": 76.17392130333276,
+            "target_response_mm": 21.768985689705733
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 16.79775909465059,
+            "percent_span": 2.02739798392926,
+            "percent_response": 79.34807495069616,
+            "target_response_mm": 21.16971218909605
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 16.533416745525052,
+            "percent_span": 1.995493302914105,
+            "percent_response": 130.2713045069799,
+            "target_response_mm": 12.691526202256766
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 12.092936311024733,
+            "percent_span": 1.459551512711253,
+            "percent_response": 101.09517180766716,
+            "target_response_mm": 11.961932597564061
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 26.573486600359363,
+            "percent_span": 3.2072750213864416,
+            "percent_response": 112.06226377820015,
+            "target_response_mm": 23.713144554133837
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 17.02855124557672,
+            "percent_span": 2.0552533388523657,
+            "percent_response": 120.6375819497289,
+            "target_response_mm": 14.115461343275859
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 15.192944994279626,
+            "percent_span": 1.833705667392259,
+            "percent_response": 127.2469041406421,
+            "target_response_mm": 11.93973644929493
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 13.982660633384445,
+            "percent_span": 1.6876309404341008,
+            "percent_response": 299.32697846787136,
+            "target_response_mm": 4.6713666455846345
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 25.310367772084728,
+            "percent_span": 3.0548234621351473,
+            "percent_response": 116.26801603371747,
+            "target_response_mm": 21.768985689705733
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 17.566017637256266,
+            "percent_span": 2.1201226034239635,
+            "percent_response": 82.97712071071071,
+            "target_response_mm": 21.16971218909605
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 16.02486534043706,
+            "percent_span": 1.9341139196529096,
+            "percent_response": 126.26428914110875,
+            "target_response_mm": 12.691526202256766
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 12.35156379228537,
+            "percent_span": 1.490766440318085,
+            "percent_response": 103.25725957359643,
+            "target_response_mm": 11.961932597564061
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 27.25522094727422,
+            "percent_span": 3.289556641971813,
+            "percent_response": 114.93718551352104,
+            "target_response_mm": 23.713144554133837
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 19.480080777949436,
+            "percent_span": 2.351139593886128,
+            "percent_response": 138.00527169612565,
+            "target_response_mm": 14.115461343275859
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 16.175692694510662,
+            "percent_span": 1.9523179593612532,
+            "percent_response": 135.47780357803356,
+            "target_response_mm": 11.93973644929493
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 16.38500371509752,
+            "percent_span": 1.9775806589130704,
+            "percent_response": 350.75396470077095,
+            "target_response_mm": 4.6713666455846345
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 25.615155621627515,
+            "percent_span": 3.091609694644338,
+            "percent_response": 117.66811732409096,
+            "target_response_mm": 21.768985689705733
+          }
+        ]
+      }
+    },
+    {
+      "family": "cloth",
+      "seed": 20483203,
+      "nodes": 117,
+      "calibration_sha256": "2f416a3ba6a878b64a366d877ad353464d2e118f5f1e4a5d79c942ec988d7e47",
+      "fresh_sha256": "6ab3e302fc61db588f285732f170993dbc787cc920aca89e36a2e0a120ff825b",
+      "rows": {
+        "rbf": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 16.328928386933132,
+            "percent_span": 1.8463594899694067,
+            "percent_response": 99.69888572400052,
+            "target_response_mm": 16.378245622661225
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 7.451717453855074,
+            "percent_span": 0.8425873952944739,
+            "percent_response": 70.60839581644166,
+            "target_response_mm": 10.553585544171067
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 5.994694380580279,
+            "percent_span": 0.6778375528860722,
+            "percent_response": 132.37350383792,
+            "target_response_mm": 4.528621065980295
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 19.62912248440292,
+            "percent_span": 2.219522048235045,
+            "percent_response": 89.79018718751405,
+            "target_response_mm": 21.86109985872987
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 21.99860122016884,
+            "percent_span": 2.487445909886802,
+            "percent_response": 103.60941584360987,
+            "target_response_mm": 21.23224133738383
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 11.403885131337047,
+            "percent_span": 1.2894705050953932,
+            "percent_response": 72.17247857383714,
+            "target_response_mm": 15.800877781507989
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 7.010733660269867,
+            "percent_span": 0.7927240734086167,
+            "percent_response": 62.85345524215223,
+            "target_response_mm": 11.154094286877276
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 11.92603836567257,
+            "percent_span": 1.3485118920491814,
+            "percent_response": 40.950751296873825,
+            "target_response_mm": 29.122880503984803
+          }
+        ],
+        "nominal": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 16.378245622661225,
+            "percent_span": 1.851935933447381,
+            "percent_response": 100.0,
+            "target_response_mm": 16.378245622661225
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 10.553585544171067,
+            "percent_span": 1.1933246543157854,
+            "percent_response": 100.0,
+            "target_response_mm": 10.553585544171067
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 4.528621065980295,
+            "percent_span": 0.5120643733326167,
+            "percent_response": 100.0,
+            "target_response_mm": 4.528621065980295
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 21.86109985872987,
+            "percent_span": 2.4718982304824557,
+            "percent_response": 100.0,
+            "target_response_mm": 21.86109985872987
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 21.23224133738383,
+            "percent_span": 2.4007913659521085,
+            "percent_response": 99.99999999999999,
+            "target_response_mm": 21.23224133738383
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 15.800877781507989,
+            "percent_span": 1.7866512700906911,
+            "percent_response": 100.0,
+            "target_response_mm": 15.800877781507989
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 11.154094286877276,
+            "percent_span": 1.26122592680789,
+            "percent_response": 100.0,
+            "target_response_mm": 11.154094286877276
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 29.122880503984803,
+            "percent_span": 3.2930089176462234,
+            "percent_response": 100.0,
+            "target_response_mm": 29.122880503984803
+          }
+        ],
+        "stationary": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 32.73896940745309,
+            "percent_span": 3.7018906216553207,
+            "percent_response": 199.893017614505,
+            "target_response_mm": 16.378245622661225
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 10.521775934514496,
+            "percent_span": 1.1897278491078804,
+            "percent_response": 99.69858955022032,
+            "target_response_mm": 10.553585544171067
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 7.721006623866762,
+            "percent_span": 0.873036706040116,
+            "percent_response": 170.49354563728377,
+            "target_response_mm": 4.528621065980295
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 28.13224468708412,
+            "percent_span": 3.180994840647647,
+            "percent_response": 128.68631893582415,
+            "target_response_mm": 21.86109985872987
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 39.330086205052574,
+            "percent_span": 4.44716739428683,
+            "percent_response": 185.2375619704533,
+            "target_response_mm": 21.23224133738383
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 12.36283357361349,
+            "percent_span": 1.397901598357174,
+            "percent_response": 78.24143534659767,
+            "target_response_mm": 15.800877781507989
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 11.336371059852539,
+            "percent_span": 1.2818364924009873,
+            "percent_response": 101.63416919641526,
+            "target_response_mm": 11.154094286877276
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 22.923680528258508,
+            "percent_span": 2.5920473215037765,
+            "percent_response": 78.713644157287,
+            "target_response_mm": 29.122880503984803
+          }
+        ],
+        "phase": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 26.118390906520755,
+            "percent_span": 2.9532825284220983,
+            "percent_response": 159.4700159483681,
+            "target_response_mm": 16.378245622661225
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 16.285664385981203,
+            "percent_span": 1.8414675033773436,
+            "percent_response": 154.31404159106918,
+            "target_response_mm": 10.553585544171067
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 14.154453820618414,
+            "percent_span": 1.6004853176982432,
+            "percent_response": 312.5554912719209,
+            "target_response_mm": 4.528621065980295
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 25.487587276637928,
+            "percent_span": 2.881955724804457,
+            "percent_response": 116.58876928124857,
+            "target_response_mm": 21.86109985872987
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 35.908512721927,
+            "percent_span": 4.06028011537317,
+            "percent_response": 169.12257237158713,
+            "target_response_mm": 21.23224133738383
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 24.036159667213834,
+            "percent_span": 2.7178385777901872,
+            "percent_response": 152.1191417311241,
+            "target_response_mm": 15.800877781507989
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 15.5579653946714,
+            "percent_span": 1.7591844590398353,
+            "percent_response": 139.4821040106793,
+            "target_response_mm": 11.154094286877276
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 21.791281198006036,
+            "percent_span": 2.4640036311707485,
+            "percent_response": 74.82529482282632,
+            "target_response_mm": 29.122880503984803
+          }
+        ],
+        "neural": [
+          {
+            "program": "reversal",
+            "test_index": 0,
+            "rms_mm": 28.18660847091384,
+            "percent_span": 3.1871419120173123,
+            "percent_response": 172.09784930758613,
+            "target_response_mm": 16.378245622661225
+          },
+          {
+            "program": "chirp",
+            "test_index": 1,
+            "rms_mm": 15.17583725168147,
+            "percent_span": 1.7159761169811827,
+            "percent_response": 143.79792714205416,
+            "target_response_mm": 10.553585544171067
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 2,
+            "rms_mm": 13.71660966577131,
+            "percent_span": 1.5509770039085582,
+            "percent_response": 302.8871143318352,
+            "target_response_mm": 4.528621065980295
+          },
+          {
+            "program": "rotating",
+            "test_index": 3,
+            "rms_mm": 25.663922135029118,
+            "percent_span": 2.9018944208099784,
+            "percent_response": 117.39538404231136,
+            "target_response_mm": 21.86109985872987
+          },
+          {
+            "program": "reversal",
+            "test_index": 4,
+            "rms_mm": 29.68680270221064,
+            "percent_span": 3.3567732429972907,
+            "percent_response": 139.81944831203845,
+            "target_response_mm": 21.23224133738383
+          },
+          {
+            "program": "chirp",
+            "test_index": 5,
+            "rms_mm": 20.35756529537487,
+            "percent_span": 2.301889198428093,
+            "percent_response": 128.83819226296177,
+            "target_response_mm": 15.800877781507989
+          },
+          {
+            "program": "late_pulse",
+            "test_index": 6,
+            "rms_mm": 16.74538585374242,
+            "percent_span": 1.893449548654903,
+            "percent_response": 150.12770578282866,
+            "target_response_mm": 11.154094286877276
+          },
+          {
+            "program": "rotating",
+            "test_index": 7,
+            "rms_mm": 26.613481592757022,
+            "percent_span": 3.009263874243867,
+            "percent_response": 91.38341102321789,
+            "target_response_mm": 29.122880503984803
+          }
+        ]
+      }
+    }
+  ],
+  "methods": {
+    "cable": {
+      "nominal": {
+        "rms_mm": 11.626770975838117,
+        "percent_span": 1.4512738181649996,
+        "percent_response": 100.0,
+        "target_response_mm": 11.626770975838117,
+        "cases_improved": 0,
+        "cases": 32
+      },
+      "stationary": {
+        "rms_mm": 6.6167820963594295,
+        "percent_span": 0.8158457458258218,
+        "percent_response": 56.396932779051355,
+        "target_response_mm": 11.626770975838117,
+        "cases_improved": 32,
+        "cases": 32
+      },
+      "phase": {
+        "rms_mm": 5.042873729651577,
+        "percent_span": 0.6367682352701858,
+        "percent_response": 51.939166550587146,
+        "target_response_mm": 11.626770975838117,
+        "cases_improved": 32,
+        "cases": 32
+      },
+      "neural": {
+        "rms_mm": 5.370240288782169,
+        "percent_span": 0.6805244779169675,
+        "percent_response": 52.43136726649019,
+        "target_response_mm": 11.626770975838117,
+        "cases_improved": 31,
+        "cases": 32
+      },
+      "rbf": {
+        "rms_mm": 6.351663606094018,
+        "percent_span": 0.7920835366814828,
+        "percent_response": 54.165317360412644,
+        "target_response_mm": 11.626770975838117,
+        "cases_improved": 31,
+        "cases": 32
+      }
+    },
+    "cloth": {
+      "nominal": {
+        "rms_mm": 17.720926198403856,
+        "percent_span": 2.009717856932028,
+        "percent_response": 100.0,
+        "target_response_mm": 17.720926198403856,
+        "cases_improved": 0,
+        "cases": 32
+      },
+      "stationary": {
+        "rms_mm": 19.661396267518718,
+        "percent_span": 2.225934266724281,
+        "percent_response": 116.72755969804851,
+        "target_response_mm": 17.720926198403856,
+        "cases_improved": 13,
+        "cases": 32
+      },
+      "phase": {
+        "rms_mm": 22.424954632271895,
+        "percent_span": 2.540801893355998,
+        "percent_response": 144.04118655432433,
+        "target_response_mm": 17.720926198403856,
+        "cases_improved": 6,
+        "cases": 32
+      },
+      "neural": {
+        "rms_mm": 22.527901119270034,
+        "percent_span": 2.554960577377938,
+        "percent_response": 147.11657550435817,
+        "target_response_mm": 17.720926198403856,
+        "cases_improved": 6,
+        "cases": 32
+      },
+      "rbf": {
+        "rms_mm": 12.075331881732518,
+        "percent_span": 1.3675776036141025,
+        "percent_response": 73.43417081570854,
+        "target_response_mm": 17.720926198403856,
+        "cases_improved": 28,
+        "cases": 32
+      }
+    }
+  },
+  "max_replay_error_mm": 0.0
+}

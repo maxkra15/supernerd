@@ -395,7 +395,7 @@ for the figures. <a href="README.md">Reproduction instructions</a> ·
                       autoescape=select_autoescape(("html", "j2")))
     rendered = env.get_template("index.html.j2").render(context)
     clean = "\n".join(line.rstrip() for line in rendered.splitlines())
-    (ROOT / "index.html").write_text(clean + "\n", encoding="utf-8")
+    (ROOT / "cartpole.html").write_text(clean + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

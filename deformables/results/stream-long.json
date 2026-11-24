@@ -1,0 +1,1393 @@
+{
+  "seed": 2841,
+  "dt": 0.02,
+  "batch": 96,
+  "update_budget": 6000,
+  "architecture": "Two width-48 parallel multi-query attention and SwiGLU blocks, two query heads, one KV head, span 3 per block, 5-frame total receptive field; trapezoidal integration with learned state residual and direct affine readout. One shared cable/cloth checkpoint per budget.",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "lr": 0.00045,
+  "recursive_steps": 12,
+  "resume_model_sha256": "64be20e8510284454b6b5bbbec491278a599457eb5ab714e8e5f10a9b4efe5d3",
+  "timing": "Synchronized wall time, excludes validation, teacher data generation, and initial model/preprocessing setup. CUDA graph warm-up/capture included. Hardware can be shared.",
+  "selection": "Lowest development mean percent-length error across cable and cloth and both restart horizons.",
+  "runs": [
+    {
+      "trajectories_per_family": 192,
+      "preprocessing_and_setup_s": 0.8951688618399203,
+      "fit_s": 44.4346154211089,
+      "updates_selected": 6000,
+      "test": {
+        "0": {
+          "cloth": {
+            "pct_length": 4.70700216293335,
+            "mm": 33.43455181684468,
+            "cases": 40
+          },
+          "cable": {
+            "pct_length": 4.0623860359191895,
+            "mm": 37.39403650862671,
+            "cases": 40
+          },
+          "cases": [
+            {
+              "identity": "cable-40500-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.5852882862091064,
+              "mm": 14.864310015392702
+            },
+            {
+              "identity": "cable-40500-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.6841679811477661,
+              "mm": 15.791446589077871
+            },
+            {
+              "identity": "cable-40500-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.681354284286499,
+              "mm": 15.765063996123772
+            },
+            {
+              "identity": "cable-40500-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.9187755584716797,
+              "mm": 17.991222253585054
+            },
+            {
+              "identity": "cable-40500-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.2053096294403076,
+              "mm": 20.67788301969128
+            },
+            {
+              "identity": "cable-40501-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.7506887912750244,
+              "mm": 12.066095420770269
+            },
+            {
+              "identity": "cable-40501-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 2.263495445251465,
+              "mm": 15.600461319501598
+            },
+            {
+              "identity": "cable-40501-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.6481876373291016,
+              "mm": 11.359637386227135
+            },
+            {
+              "identity": "cable-40501-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.4789257049560547,
+              "mm": 10.193050444605763
+            },
+            {
+              "identity": "cable-40501-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.8812522888183594,
+              "mm": 12.965965372496775
+            },
+            {
+              "identity": "cable-40502-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.9450228214263916,
+              "mm": 15.15764727704791
+            },
+            {
+              "identity": "cable-40502-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 2.16642165184021,
+              "mm": 16.883018758458377
+            },
+            {
+              "identity": "cable-40502-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.9480513334274292,
+              "mm": 15.181248417311801
+            },
+            {
+              "identity": "cable-40502-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.0891995429992676,
+              "mm": 16.281222382641495
+            },
+            {
+              "identity": "cable-40502-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.22192645072937,
+              "mm": 17.315570076161702
+            },
+            {
+              "identity": "cable-40503-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.7523471117019653,
+              "mm": 16.108246394593575
+            },
+            {
+              "identity": "cable-40503-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.805580735206604,
+              "mm": 16.597589371770212
+            },
+            {
+              "identity": "cable-40503-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.818063497543335,
+              "mm": 16.71233636111192
+            },
+            {
+              "identity": "cable-40503-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.9872126579284668,
+              "mm": 18.267220659784357
+            },
+            {
+              "identity": "cable-40503-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.4481966495513916,
+              "mm": 22.50476248950873
+            },
+            {
+              "identity": "cable-40504-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 7.9040656089782715,
+              "mm": 75.2455822403904
+            },
+            {
+              "identity": "cable-40504-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 7.7524566650390625,
+              "mm": 73.80228573170092
+            },
+            {
+              "identity": "cable-40504-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 7.971977233886719,
+              "mm": 75.89209035055701
+            },
+            {
+              "identity": "cable-40504-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 7.609470367431641,
+              "mm": 72.44107649859033
+            },
+            {
+              "identity": "cable-40504-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 7.13562536239624,
+              "mm": 67.93014029774267
+            },
+            {
+              "identity": "cable-40505-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 12.46680736541748,
+              "mm": 120.91448762635694
+            },
+            {
+              "identity": "cable-40505-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 12.459583282470703,
+              "mm": 120.84442002109765
+            },
+            {
+              "identity": "cable-40505-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 12.68781566619873,
+              "mm": 123.05802800987307
+            },
+            {
+              "identity": "cable-40505-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 13.5211181640625,
+              "mm": 131.14015497385503
+            },
+            {
+              "identity": "cable-40505-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 14.71507740020752,
+              "mm": 142.7202604316776
+            },
+            {
+              "identity": "cable-40506-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.6881825923919678,
+              "mm": 11.945349273965734
+            },
+            {
+              "identity": "cable-40506-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 2.1071701049804688,
+              "mm": 14.910050256637668
+            },
+            {
+              "identity": "cable-40506-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.6019099950790405,
+              "mm": 11.334897296762518
+            },
+            {
+              "identity": "cable-40506-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.5056623220443726,
+              "mm": 10.653861860305701
+            },
+            {
+              "identity": "cable-40506-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.0343334674835205,
+              "mm": 14.39466778433401
+            },
+            {
+              "identity": "cable-40507-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.8860230445861816,
+              "mm": 18.809559588151505
+            },
+            {
+              "identity": "cable-40507-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.654900074005127,
+              "mm": 16.504539233475686
+            },
+            {
+              "identity": "cable-40507-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 2.218360185623169,
+              "mm": 22.124002902423065
+            },
+            {
+              "identity": "cable-40507-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.4927284717559814,
+              "mm": 24.860314583705566
+            },
+            {
+              "identity": "cable-40507-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.802699327468872,
+              "mm": 27.951697364162104
+            },
+            {
+              "identity": "cloth-40500-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.333001136779785,
+              "mm": 33.12999939541465
+            },
+            {
+              "identity": "cloth-40500-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.016932010650635,
+              "mm": 30.713344765416682
+            },
+            {
+              "identity": "cloth-40500-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 4.94625186920166,
+              "mm": 37.81889960232808
+            },
+            {
+              "identity": "cloth-40500-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.358602046966553,
+              "mm": 40.97171635696016
+            },
+            {
+              "identity": "cloth-40500-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.739753246307373,
+              "mm": 43.88598735781214
+            },
+            {
+              "identity": "cloth-40501-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.652132511138916,
+              "mm": 32.065775586154736
+            },
+            {
+              "identity": "cloth-40501-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.876061916351318,
+              "mm": 33.33617460121776
+            },
+            {
+              "identity": "cloth-40501-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 4.866634845733643,
+              "mm": 27.609476916981933
+            },
+            {
+              "identity": "cloth-40501-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.821997165679932,
+              "mm": 33.02945462341842
+            },
+            {
+              "identity": "cloth-40501-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 7.371036529541016,
+              "mm": 41.8174893748032
+            },
+            {
+              "identity": "cloth-40502-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.7540297508239746,
+              "mm": 23.982970472802812
+            },
+            {
+              "identity": "cloth-40502-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.900284767150879,
+              "mm": 24.9173324838143
+            },
+            {
+              "identity": "cloth-40502-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 3.4576151371002197,
+              "mm": 22.089298318794995
+            },
+            {
+              "identity": "cloth-40502-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 4.161946773529053,
+              "mm": 26.58898649071348
+            },
+            {
+              "identity": "cloth-40502-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.02070426940918,
+              "mm": 32.075240828693495
+            },
+            {
+              "identity": "cloth-40503-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 2.9776904582977295,
+              "mm": 22.332183100069795
+            },
+            {
+              "identity": "cloth-40503-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.4788384437561035,
+              "mm": 26.09070849226945
+            },
+            {
+              "identity": "cloth-40503-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 3.05855131149292,
+              "mm": 22.93862496530429
+            },
+            {
+              "identity": "cloth-40503-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.3725485801696777,
+              "mm": 25.29355363987647
+            },
+            {
+              "identity": "cloth-40503-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.793355941772461,
+              "mm": 43.44920800691092
+            },
+            {
+              "identity": "cloth-40504-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.000268936157227,
+              "mm": 38.801522644791014
+            },
+            {
+              "identity": "cloth-40504-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.308877468109131,
+              "mm": 41.19628780494366
+            },
+            {
+              "identity": "cloth-40504-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 5.428224086761475,
+              "mm": 42.122407057117975
+            },
+            {
+              "identity": "cloth-40504-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.482895851135254,
+              "mm": 42.54665155861582
+            },
+            {
+              "identity": "cloth-40504-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.891448020935059,
+              "mm": 45.71697028956161
+            },
+            {
+              "identity": "cloth-40505-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.249757289886475,
+              "mm": 41.48399410825828
+            },
+            {
+              "identity": "cloth-40505-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.432889938354492,
+              "mm": 42.93112188890477
+            },
+            {
+              "identity": "cloth-40505-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 5.278171062469482,
+              "mm": 41.708518950653826
+            },
+            {
+              "identity": "cloth-40505-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.2718682289123535,
+              "mm": 41.65871497334247
+            },
+            {
+              "identity": "cloth-40505-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.3131537437438965,
+              "mm": 41.9849548385208
+            },
+            {
+              "identity": "cloth-40506-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.8062148094177246,
+              "mm": 22.14862488554054
+            },
+            {
+              "identity": "cloth-40506-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.003098964691162,
+              "mm": 23.294307252444103
+            },
+            {
+              "identity": "cloth-40506-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 3.9138083457946777,
+              "mm": 22.774716813585922
+            },
+            {
+              "identity": "cloth-40506-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.8218014240264893,
+              "mm": 22.239323629687856
+            },
+            {
+              "identity": "cloth-40506-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 4.107236385345459,
+              "mm": 23.900290026490847
+            },
+            {
+              "identity": "cloth-40507-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.457174777984619,
+              "mm": 36.19155595424284
+            },
+            {
+              "identity": "cloth-40507-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.1413116455078125,
+              "mm": 41.746639794750244
+            },
+            {
+              "identity": "cloth-40507-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 3.833767890930176,
+              "mm": 31.129586844175595
+            },
+            {
+              "identity": "cloth-40507-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.9294443130493164,
+              "mm": 31.90646734377943
+            },
+            {
+              "identity": "cloth-40507-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 4.650705814361572,
+              "mm": 37.7629942363896
+            }
+          ]
+        },
+        "100": {
+          "cloth": {
+            "pct_length": 4.368568420410156,
+            "mm": 30.47202369833371,
+            "cases": 40
+          },
+          "cable": {
+            "pct_length": 2.2592782974243164,
+            "mm": 20.430924775260642,
+            "cases": 40
+          },
+          "cases": [
+            {
+              "identity": "cable-40500-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.2585173845291138,
+              "mm": 11.800372983660003
+            },
+            {
+              "identity": "cable-40500-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.5862079858779907,
+              "mm": 14.872932823956164
+            },
+            {
+              "identity": "cable-40500-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.3005380630493164,
+              "mm": 12.194375333926065
+            },
+            {
+              "identity": "cable-40500-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.6386233568191528,
+              "mm": 15.364399826527853
+            },
+            {
+              "identity": "cable-40500-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.1834254264831543,
+              "mm": 20.472688253884495
+            },
+            {
+              "identity": "cable-40501-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.3979679346084595,
+              "mm": 9.63507386389809
+            },
+            {
+              "identity": "cable-40501-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 2.1818900108337402,
+              "mm": 15.03802107338152
+            },
+            {
+              "identity": "cable-40501-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.251829743385315,
+              "mm": 8.627860350718116
+            },
+            {
+              "identity": "cable-40501-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.0929477214813232,
+              "mm": 7.532813654590993
+            },
+            {
+              "identity": "cable-40501-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.7060160636901855,
+              "mm": 11.75820307288768
+            },
+            {
+              "identity": "cable-40502-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.2693579196929932,
+              "mm": 9.89216198265046
+            },
+            {
+              "identity": "cable-40502-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.638447642326355,
+              "mm": 12.76849484051936
+            },
+            {
+              "identity": "cable-40502-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.3277167081832886,
+              "mm": 10.346953636743661
+            },
+            {
+              "identity": "cable-40502-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.6771200895309448,
+              "mm": 13.069869421264087
+            },
+            {
+              "identity": "cable-40502-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.0599241256713867,
+              "mm": 16.05307852222559
+            },
+            {
+              "identity": "cable-40503-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 0.8653407692909241,
+              "mm": 7.954544074666494
+            },
+            {
+              "identity": "cable-40503-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.161879062652588,
+              "mm": 10.680438178727726
+            },
+            {
+              "identity": "cable-40503-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 0.9111820459365845,
+              "mm": 8.375934973909846
+            },
+            {
+              "identity": "cable-40503-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.2684398889541626,
+              "mm": 11.659985007263792
+            },
+            {
+              "identity": "cable-40503-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.0043113231658936,
+              "mm": 18.42439594718981
+            },
+            {
+              "identity": "cable-40504-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 2.280989646911621,
+              "mm": 21.71469728190668
+            },
+            {
+              "identity": "cable-40504-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 2.3919484615325928,
+              "mm": 22.771008066659046
+            },
+            {
+              "identity": "cable-40504-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 2.2737810611724854,
+              "mm": 21.64607211615663
+            },
+            {
+              "identity": "cable-40504-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.6004912853240967,
+              "mm": 24.756306112653192
+            },
+            {
+              "identity": "cable-40504-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.683727741241455,
+              "mm": 25.548705798004193
+            },
+            {
+              "identity": "cable-40505-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 6.007298469543457,
+              "mm": 58.26426614264815
+            },
+            {
+              "identity": "cable-40505-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 7.173697471618652,
+              "mm": 69.57707282501588
+            },
+            {
+              "identity": "cable-40505-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 5.433793544769287,
+              "mm": 52.70189428249
+            },
+            {
+              "identity": "cable-40505-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 5.815993785858154,
+              "mm": 56.40881764587405
+            },
+            {
+              "identity": "cable-40505-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 7.243588447570801,
+              "mm": 70.25493565266281
+            },
+            {
+              "identity": "cable-40506-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.1402387619018555,
+              "mm": 8.06817430897371
+            },
+            {
+              "identity": "cable-40506-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.8741425275802612,
+              "mm": 13.26117697496661
+            },
+            {
+              "identity": "cable-40506-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 0.9764307141304016,
+              "mm": 6.909090770532598
+            },
+            {
+              "identity": "cable-40506-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 0.9525335431098938,
+              "mm": 6.739997640455857
+            },
+            {
+              "identity": "cable-40506-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 1.7258962392807007,
+              "mm": 12.21220708797279
+            },
+            {
+              "identity": "cable-40507-descending-chirp-3",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.5152381658554077,
+              "mm": 15.111673498543336
+            },
+            {
+              "identity": "cable-40507-descending-chirp-6",
+              "family": "cable",
+              "excitation": "descending-chirp",
+              "pct_length": 1.4222383499145508,
+              "mm": 14.184173634977983
+            },
+            {
+              "identity": "cable-40507-reference",
+              "family": "cable",
+              "excitation": "reference",
+              "pct_length": 1.9205762147903442,
+              "mm": 19.154164648958368
+            },
+            {
+              "identity": "cable-40507-triangle-load-3",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.3245739936828613,
+              "mm": 23.18328696664993
+            },
+            {
+              "identity": "cable-40507-triangle-load-6",
+              "family": "cable",
+              "excitation": "triangle-load",
+              "pct_length": 2.8322761058807373,
+              "mm": 28.246667685035355
+            },
+            {
+              "identity": "cloth-40500-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 2.477426052093506,
+              "mm": 18.942328374629987
+            },
+            {
+              "identity": "cloth-40500-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.098353385925293,
+              "mm": 23.6899200070984
+            },
+            {
+              "identity": "cloth-40500-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 2.947704792022705,
+              "mm": 22.538064504045387
+            },
+            {
+              "identity": "cloth-40500-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 2.782254695892334,
+              "mm": 21.273037873997275
+            },
+            {
+              "identity": "cloth-40500-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 2.663637399673462,
+              "mm": 20.36609529490631
+            },
+            {
+              "identity": "cloth-40501-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 6.675192832946777,
+              "mm": 37.869818203159696
+            },
+            {
+              "identity": "cloth-40501-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 7.230361461639404,
+              "mm": 41.0194075720908
+            },
+            {
+              "identity": "cloth-40501-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 5.3717942237854,
+              "mm": 30.475353498585406
+            },
+            {
+              "identity": "cloth-40501-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 6.634938716888428,
+              "mm": 37.64144732861005
+            },
+            {
+              "identity": "cloth-40501-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 9.149553298950195,
+              "mm": 51.907398691831446
+            },
+            {
+              "identity": "cloth-40502-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 2.864814043045044,
+              "mm": 18.302131915794003
+            },
+            {
+              "identity": "cloth-40502-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.479029655456543,
+              "mm": 22.226104837999948
+            },
+            {
+              "identity": "cloth-40502-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 2.195920467376709,
+              "mm": 14.028842497337848
+            },
+            {
+              "identity": "cloth-40502-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 2.8391928672790527,
+              "mm": 18.138448335575585
+            },
+            {
+              "identity": "cloth-40502-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.7972350120544434,
+              "mm": 24.258991321547878
+            },
+            {
+              "identity": "cloth-40503-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 2.7411439418792725,
+              "mm": 20.55812360472291
+            },
+            {
+              "identity": "cloth-40503-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.420304775238037,
+              "mm": 25.651717152936985
+            },
+            {
+              "identity": "cloth-40503-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 2.8711235523223877,
+              "mm": 21.53294833015948
+            },
+            {
+              "identity": "cloth-40503-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.553178071975708,
+              "mm": 26.648243686252144
+            },
+            {
+              "identity": "cloth-40503-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 7.17553186416626,
+              "mm": 53.815293758464776
+            },
+            {
+              "identity": "cloth-40504-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.007431983947754,
+              "mm": 38.85710856734873
+            },
+            {
+              "identity": "cloth-40504-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.245711803436279,
+              "mm": 40.706129375573155
+            },
+            {
+              "identity": "cloth-40504-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 5.884922027587891,
+              "mm": 45.66633079775232
+            },
+            {
+              "identity": "cloth-40504-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.362929821014404,
+              "mm": 41.61573092363244
+            },
+            {
+              "identity": "cloth-40504-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 4.826380729675293,
+              "mm": 37.452168306370325
+            },
+            {
+              "identity": "cloth-40505-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.625988006591797,
+              "mm": 36.55491961387965
+            },
+            {
+              "identity": "cloth-40505-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.986843109130859,
+              "mm": 39.40642490243145
+            },
+            {
+              "identity": "cloth-40505-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 4.537215232849121,
+              "mm": 35.853428694374855
+            },
+            {
+              "identity": "cloth-40505-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 4.211883068084717,
+              "mm": 33.28262768927608
+            },
+            {
+              "identity": "cloth-40505-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.842337131500244,
+              "mm": 30.362448256485848
+            },
+            {
+              "identity": "cloth-40506-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.257526397705078,
+              "mm": 24.774839553472102
+            },
+            {
+              "identity": "cloth-40506-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 5.321518898010254,
+              "mm": 30.966281362791875
+            },
+            {
+              "identity": "cloth-40506-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 4.102118015289307,
+              "mm": 23.870504771125596
+            },
+            {
+              "identity": "cloth-40506-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 4.5841145515441895,
+              "mm": 26.675275585358385
+            },
+            {
+              "identity": "cloth-40506-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 5.536097526550293,
+              "mm": 32.21492907997991
+            },
+            {
+              "identity": "cloth-40507-descending-chirp-3",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 3.547805070877075,
+              "mm": 28.807615174511906
+            },
+            {
+              "identity": "cloth-40507-descending-chirp-6",
+              "family": "cloth",
+              "excitation": "descending-chirp",
+              "pct_length": 4.703241348266602,
+              "mm": 38.189575229746914
+            },
+            {
+              "identity": "cloth-40507-reference",
+              "family": "cloth",
+              "excitation": "reference",
+              "pct_length": 3.1903629302978516,
+              "mm": 25.9052404141723
+            },
+            {
+              "identity": "cloth-40507-triangle-load-3",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.326146364212036,
+              "mm": 27.007781564732824
+            },
+            {
+              "identity": "cloth-40507-triangle-load-6",
+              "family": "cloth",
+              "excitation": "triangle-load",
+              "pct_length": 3.6734542846679688,
+              "mm": 29.827867287539284
+            }
+          ]
+        }
+      },
+      "parameters": 40272,
+      "development_curve": [
+        {
+          "updates": 50,
+          "fit_seconds": 0.9840565649792552,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 9.226690292358398,
+                "mm": 65.79591673873288,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 5.828100204467773,
+                "mm": 51.81959184986315,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 7.863269805908203,
+                "mm": 56.21250542187128,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 3.935729742050171,
+                "mm": 34.88588098893859,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.30889181792736053
+        },
+        {
+          "updates": 200,
+          "fit_seconds": 1.9611324132420123,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 8.30334186553955,
+                "mm": 58.92379018358216,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 5.138804912567139,
+                "mm": 45.158871075584884,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 7.681119441986084,
+                "mm": 54.59355998583935,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 3.546208143234253,
+                "mm": 31.090988901751114,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.1880649160593748
+        },
+        {
+          "updates": 500,
+          "fit_seconds": 4.0374347870238125,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 9.174678802490234,
+                "mm": 65.34541045337613,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 5.67488431930542,
+                "mm": 49.523947063654816,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 7.964381694793701,
+                "mm": 56.63026267611531,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 3.6867077350616455,
+                "mm": 31.811145262944056,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.18309921072795987
+        },
+        {
+          "updates": 1000,
+          "fit_seconds": 7.436078048776835,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 7.506397247314453,
+                "mm": 53.427884200020145,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 4.746588230133057,
+                "mm": 41.379673506173134,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 6.429717063903809,
+                "mm": 45.66612346949113,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 2.694566249847412,
+                "mm": 23.513885898771054,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.1816782890819013
+        },
+        {
+          "updates": 2000,
+          "fit_seconds": 14.283387225586921,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 6.95746374130249,
+                "mm": 49.86859911424158,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 4.2526631355285645,
+                "mm": 36.94679174971608,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 6.38906717300415,
+                "mm": 45.6306067180456,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 2.6359000205993652,
+                "mm": 22.82717295357934,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.18425805401057005
+        },
+        {
+          "updates": 4000,
+          "fit_seconds": 27.90679119946435,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 6.466670513153076,
+                "mm": 45.58224512640713,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 4.973220348358154,
+                "mm": 43.04061396155822,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 5.614816188812256,
+                "mm": 39.75336865975207,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 3.2217602729797363,
+                "mm": 27.188538002246336,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.18263116432353854
+        },
+        {
+          "updates": 6000,
+          "fit_seconds": 44.4346154211089,
+          "development": {
+            "0": {
+              "cloth": {
+                "pct_length": 5.816242218017578,
+                "mm": 41.69008938171901,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 3.648125410079956,
+                "mm": 32.13960503229486,
+                "cases": 16
+              }
+            },
+            "100": {
+              "cloth": {
+                "pct_length": 5.384634017944336,
+                "mm": 38.45009279388659,
+                "cases": 16
+              },
+              "cable": {
+                "pct_length": 2.2403502464294434,
+                "mm": 19.322906055903413,
+                "cases": 16
+              }
+            }
+          },
+          "validation_seconds": 0.1911909580230713
+        }
+      ],
+      "cached_full_max_abs_float64": 0.0,
+      "weights_sha256": "2a6e66d6018dc4cdd696d23173fa56f12845a920fd70473aedee886e2e786620"
+    }
+  ]
+}

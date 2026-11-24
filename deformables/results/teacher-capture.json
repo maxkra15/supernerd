@@ -1,0 +1,43 @@
+{
+  "newton_revision": "0ced8f8420d4ee1eab9ecfaee59e1354ef670348",
+  "warp": "1.19.0.dev20261020",
+  "cpu_workers": 8,
+  "substeps": 4,
+  "sweeps": 8,
+  "frames_per_trajectory": 301,
+  "dt_seconds": 0.02,
+  "trajectories": 384,
+  "sha256_matching_archived_episodes": 384,
+  "warmed_kernel_cache": true,
+  "capture_and_write_wall_s": 87.48,
+  "seed_range": [
+    24500,
+    24691
+  ],
+  "timed_exports": [
+    {
+      "program": "diverse",
+      "trajectories": 16,
+      "identical_sha256": 16,
+      "warm_capture_and_write_seconds": 8.75
+    },
+    {
+      "program": "diverse",
+      "trajectories": 64,
+      "identical_sha256": 64,
+      "warm_capture_and_write_seconds": 19.29
+    },
+    {
+      "program": "diverse",
+      "trajectories": 384,
+      "identical_sha256": 384,
+      "warm_capture_and_write_seconds": 87.48
+    },
+    {
+      "program": "pulses",
+      "trajectories": 384,
+      "identical_sha256": 384,
+      "warm_capture_and_write_seconds": 81.37
+    }
+  ]
+}

@@ -1,0 +1,1350 @@
+{
+  "0": {
+    "summary": {
+      "cable": {
+        "native_mm": 14.18124305917245,
+        "native_pct": 1.5791055104311262,
+        "interpolation_mm": 5.7394576164314755,
+        "hold_mm": 295.6359236292121,
+        "terminal_mm": 10.461565543785289,
+        "response_error_pct": 134.44471973261972,
+        "force_pairs_improving_over_zero": 16,
+        "force_pairs": 32
+      },
+      "cloth": {
+        "native_mm": 19.88344217594955,
+        "native_pct": 2.758846743178867,
+        "interpolation_mm": 5.683419347923941,
+        "hold_mm": 537.0955301419929,
+        "terminal_mm": 30.24045345118943,
+        "response_error_pct": 91.82449839108847,
+        "force_pairs_improving_over_zero": 23,
+        "force_pairs": 32
+      }
+    },
+    "cases": [
+      {
+        "identity": "cable-40500-descending-chirp-3",
+        "family": "cable",
+        "seed": 40500,
+        "native_mm": 12.554104273315202,
+        "native_pct": 1.338903390133268,
+        "interpolation_mm": 3.9988821917518416,
+        "hold_mm": 230.51793832115925,
+        "terminal_mm": 3.523860176981646
+      },
+      {
+        "identity": "cable-40500-descending-chirp-6",
+        "family": "cable",
+        "seed": 40500,
+        "native_mm": 17.70785972203456,
+        "native_pct": 1.8885547624637882,
+        "interpolation_mm": 4.004205937945746,
+        "hold_mm": 230.7951596780462,
+        "terminal_mm": 5.594050144369404
+      },
+      {
+        "identity": "cable-40500-reference",
+        "family": "cable",
+        "seed": 40500,
+        "native_mm": 9.581371758133516,
+        "native_pct": 1.0218595329306153,
+        "interpolation_mm": 3.9985546505707386,
+        "hold_mm": 230.50126034002253,
+        "terminal_mm": 4.447460899257374
+      },
+      {
+        "identity": "cable-40500-triangle-load-3",
+        "family": "cable",
+        "seed": 40500,
+        "native_mm": 11.307165326137607,
+        "native_pct": 1.2059165399910385,
+        "interpolation_mm": 4.001590373611656,
+        "hold_mm": 230.65719137871596,
+        "terminal_mm": 5.620751305183308
+      },
+      {
+        "identity": "cable-40500-triangle-load-6",
+        "family": "cable",
+        "seed": 40500,
+        "native_mm": 13.918938716293408,
+        "native_pct": 1.484463871621256,
+        "interpolation_mm": 4.0072545777307225,
+        "hold_mm": 230.94358160941758,
+        "terminal_mm": 6.980483224033738
+      },
+      {
+        "identity": "cable-40501-descending-chirp-3",
+        "family": "cable",
+        "seed": 40501,
+        "native_mm": 6.728273195359031,
+        "native_pct": 0.9762157583105621,
+        "interpolation_mm": 3.2036833699732354,
+        "hold_mm": 169.68016329551475,
+        "terminal_mm": 7.216512390111415
+      },
+      {
+        "identity": "cable-40501-descending-chirp-6",
+        "family": "cable",
+        "seed": 40501,
+        "native_mm": 8.290729156841035,
+        "native_pct": 1.2029149554117018,
+        "interpolation_mm": 3.204049277521271,
+        "hold_mm": 169.69835992708292,
+        "terminal_mm": 7.535318056151433
+      },
+      {
+        "identity": "cable-40501-reference",
+        "family": "cable",
+        "seed": 40501,
+        "native_mm": 5.738659107376717,
+        "native_pct": 0.8326310911479917,
+        "interpolation_mm": 3.203525430969192,
+        "hold_mm": 169.6724133718689,
+        "terminal_mm": 7.468354612081581
+      },
+      {
+        "identity": "cable-40501-triangle-load-3",
+        "family": "cable",
+        "seed": 40501,
+        "native_mm": 6.145457015105149,
+        "native_pct": 0.8916540404905043,
+        "interpolation_mm": 3.2035822164568897,
+        "hold_mm": 169.67510181601557,
+        "terminal_mm": 7.599503607169042
+      },
+      {
+        "identity": "cable-40501-triangle-load-6",
+        "family": "cable",
+        "seed": 40501,
+        "native_mm": 6.9797183953688755,
+        "native_pct": 1.012698338531959,
+        "interpolation_mm": 3.203732584517936,
+        "hold_mm": 169.68221031798603,
+        "terminal_mm": 7.880651649425594
+      },
+      {
+        "identity": "cable-40502-descending-chirp-3",
+        "family": "cable",
+        "seed": 40502,
+        "native_mm": 14.375835727425867,
+        "native_pct": 1.8447009924124464,
+        "interpolation_mm": 3.8476494459141515,
+        "hold_mm": 224.31361354465176,
+        "terminal_mm": 2.3144324373160754
+      },
+      {
+        "identity": "cable-40502-descending-chirp-6",
+        "family": "cable",
+        "seed": 40502,
+        "native_mm": 18.274180222422565,
+        "native_pct": 2.344934863683433,
+        "interpolation_mm": 3.8527055568753266,
+        "hold_mm": 224.58346606083865,
+        "terminal_mm": 1.6103827342360797
+      },
+      {
+        "identity": "cable-40502-reference",
+        "family": "cable",
+        "seed": 40502,
+        "native_mm": 11.271276582636096,
+        "native_pct": 1.4463253122792192,
+        "interpolation_mm": 3.8457294216175733,
+        "hold_mm": 224.2105271545004,
+        "terminal_mm": 3.3028559471481573
+      },
+      {
+        "identity": "cable-40502-triangle-load-3",
+        "family": "cable",
+        "seed": 40502,
+        "native_mm": 10.180999310800456,
+        "native_pct": 1.3064214066215498,
+        "interpolation_mm": 3.8464401955921477,
+        "hold_mm": 224.24643848204965,
+        "terminal_mm": 3.824357449073894
+      },
+      {
+        "identity": "cable-40502-triangle-load-6",
+        "family": "cable",
+        "seed": 40502,
+        "native_mm": 10.99992858489188,
+        "native_pct": 1.411506055143932,
+        "interpolation_mm": 3.8487355522237108,
+        "hold_mm": 224.3637439235946,
+        "terminal_mm": 4.746063076222511
+      },
+      {
+        "identity": "cable-40503-descending-chirp-3",
+        "family": "cable",
+        "seed": 40503,
+        "native_mm": 10.901826756200172,
+        "native_pct": 1.1859631087984557,
+        "interpolation_mm": 5.563720547737967,
+        "hold_mm": 304.76863919118773,
+        "terminal_mm": 1.433290976219327
+      },
+      {
+        "identity": "cable-40503-descending-chirp-6",
+        "family": "cable",
+        "seed": 40503,
+        "native_mm": 13.265332338490888,
+        "native_pct": 1.4430787730555343,
+        "interpolation_mm": 5.564188019366812,
+        "hold_mm": 304.78997925829884,
+        "terminal_mm": 2.966959148082087
+      },
+      {
+        "identity": "cable-40503-reference",
+        "family": "cable",
+        "seed": 40503,
+        "native_mm": 9.230116440991972,
+        "native_pct": 1.0041048930359266,
+        "interpolation_mm": 5.563579984259255,
+        "hold_mm": 304.7627890121811,
+        "terminal_mm": 2.689177755252354
+      },
+      {
+        "identity": "cable-40503-triangle-load-3",
+        "family": "cable",
+        "seed": 40503,
+        "native_mm": 8.63343797806132,
+        "native_pct": 0.939194794877573,
+        "interpolation_mm": 5.563803275629007,
+        "hold_mm": 304.77310726366807,
+        "terminal_mm": 2.4246743995236155
+      },
+      {
+        "identity": "cable-40503-triangle-load-6",
+        "family": "cable",
+        "seed": 40503,
+        "native_mm": 8.759337854070308,
+        "native_pct": 0.9528909039506731,
+        "interpolation_mm": 5.564414592897087,
+        "hold_mm": 304.80158970295787,
+        "terminal_mm": 2.317829075098196
+      },
+      {
+        "identity": "cable-40504-descending-chirp-3",
+        "family": "cable",
+        "seed": 40504,
+        "native_mm": 23.68942795392273,
+        "native_pct": 2.4884224681274723,
+        "interpolation_mm": 10.22725307902824,
+        "hold_mm": 487.85349543579304,
+        "terminal_mm": 19.79228264634978
+      },
+      {
+        "identity": "cable-40504-descending-chirp-6",
+        "family": "cable",
+        "seed": 40504,
+        "native_mm": 23.41654541049982,
+        "native_pct": 2.4597579071454962,
+        "interpolation_mm": 10.226437532014469,
+        "hold_mm": 487.6957155492063,
+        "terminal_mm": 21.839454249551
+      },
+      {
+        "identity": "cable-40504-reference",
+        "family": "cable",
+        "seed": 40504,
+        "native_mm": 25.00767673766748,
+        "native_pct": 2.62689604792149,
+        "interpolation_mm": 10.230684100609162,
+        "hold_mm": 488.05775766740766,
+        "terminal_mm": 19.003887827068958
+      },
+      {
+        "identity": "cable-40504-triangle-load-3",
+        "family": "cable",
+        "seed": 40504,
+        "native_mm": 18.174180235649207,
+        "native_pct": 1.9090810688275361,
+        "interpolation_mm": 10.220175609918636,
+        "hold_mm": 487.46579480430637,
+        "terminal_mm": 16.940320556983657
+      },
+      {
+        "identity": "cable-40504-triangle-load-6",
+        "family": "cable",
+        "seed": 40504,
+        "native_mm": 18.696339897359582,
+        "native_pct": 1.9639305922806671,
+        "interpolation_mm": 10.21798267559026,
+        "hold_mm": 487.2903150284439,
+        "terminal_mm": 15.925294225050898
+      },
+      {
+        "identity": "cable-40505-descending-chirp-3",
+        "family": "cable",
+        "seed": 40505,
+        "native_mm": 24.066614890501768,
+        "native_pct": 2.4813722083957965,
+        "interpolation_mm": 11.686578753414526,
+        "hold_mm": 536.5027854120383,
+        "terminal_mm": 30.832435376525808
+      },
+      {
+        "identity": "cable-40505-descending-chirp-6",
+        "family": "cable",
+        "seed": 40505,
+        "native_mm": 25.665068326148848,
+        "native_pct": 2.6461796792293795,
+        "interpolation_mm": 11.687539597535014,
+        "hold_mm": 536.5419606465526,
+        "terminal_mm": 37.18250739808394
+      },
+      {
+        "identity": "cable-40505-reference",
+        "family": "cable",
+        "seed": 40505,
+        "native_mm": 23.24191050926776,
+        "native_pct": 2.396341615558083,
+        "interpolation_mm": 11.685910028147957,
+        "hold_mm": 536.4703035724,
+        "terminal_mm": 24.764292012289232
+      },
+      {
+        "identity": "cable-40505-triangle-load-3",
+        "family": "cable",
+        "seed": 40505,
+        "native_mm": 23.04654908982398,
+        "native_pct": 2.376199007259985,
+        "interpolation_mm": 11.686478459206873,
+        "hold_mm": 536.5009440774429,
+        "terminal_mm": 28.57125853878275
+      },
+      {
+        "identity": "cable-40505-triangle-load-6",
+        "family": "cable",
+        "seed": 40505,
+        "native_mm": 23.233112452791744,
+        "native_pct": 2.3954344978380875,
+        "interpolation_mm": 11.687151741290348,
+        "hold_mm": 536.5329087626492,
+        "terminal_mm": 32.61339511629505
+      },
+      {
+        "identity": "cable-40506-descending-chirp-3",
+        "family": "cable",
+        "seed": 40506,
+        "native_mm": 5.825452931433682,
+        "native_pct": 0.8232850247486683,
+        "interpolation_mm": 3.3144460119328483,
+        "hold_mm": 175.54281879535867,
+        "terminal_mm": 3.2011173214749977
+      },
+      {
+        "identity": "cable-40506-descending-chirp-6",
+        "family": "cable",
+        "seed": 40506,
+        "native_mm": 7.512468643673524,
+        "native_pct": 1.061703356979696,
+        "interpolation_mm": 3.315128611700995,
+        "hold_mm": 175.57645106821872,
+        "terminal_mm": 3.99954572970764
+      },
+      {
+        "identity": "cable-40506-reference",
+        "family": "cable",
+        "seed": 40506,
+        "native_mm": 5.1463451449974364,
+        "native_pct": 0.727309780017684,
+        "interpolation_mm": 3.3141360630320316,
+        "hold_mm": 175.52734990364377,
+        "terminal_mm": 4.226272355988639
+      },
+      {
+        "identity": "cable-40506-triangle-load-3",
+        "family": "cable",
+        "seed": 40506,
+        "native_mm": 5.454507197880393,
+        "native_pct": 0.7708609349785922,
+        "interpolation_mm": 3.31422438623727,
+        "hold_mm": 175.53141629490764,
+        "terminal_mm": 4.424720645308746
+      },
+      {
+        "identity": "cable-40506-triangle-load-6",
+        "family": "cable",
+        "seed": 40506,
+        "native_mm": 6.1529243620528264,
+        "native_pct": 0.8695650870948956,
+        "interpolation_mm": 3.314532486034719,
+        "hold_mm": 175.54588486224264,
+        "terminal_mm": 4.48750347951112
+      },
+      {
+        "identity": "cable-40507-descending-chirp-3",
+        "family": "cable",
+        "seed": 40507,
+        "native_mm": 17.171699923318986,
+        "native_pct": 1.721795802956406,
+        "interpolation_mm": 4.066422900939757,
+        "hold_mm": 235.5831288329374,
+        "terminal_mm": 7.499838270253978
+      },
+      {
+        "identity": "cable-40507-descending-chirp-6",
+        "family": "cable",
+        "seed": 40507,
+        "native_mm": 21.74458118914991,
+        "native_pct": 2.1803157984190245,
+        "interpolation_mm": 4.070488751131071,
+        "hold_mm": 235.78918787174587,
+        "terminal_mm": 6.186945312608709
+      },
+      {
+        "identity": "cable-40507-reference",
+        "family": "cable",
+        "seed": 40507,
+        "native_mm": 16.023968100716107,
+        "native_pct": 1.606713438140938,
+        "interpolation_mm": 4.0681372231764215,
+        "hold_mm": 235.6790391456057,
+        "terminal_mm": 12.0564873765055
+      },
+      {
+        "identity": "cable-40507-triangle-load-3",
+        "family": "cable",
+        "seed": 40507,
+        "native_mm": 18.200943578455526,
+        "native_pct": 1.8249974320057845,
+        "interpolation_mm": 4.073244694646839,
+        "hold_mm": 235.9477089154378,
+        "terminal_mm": 15.175746169391882
+      },
+      {
+        "identity": "cable-40507-triangle-load-6",
+        "family": "cable",
+        "seed": 40507,
+        "native_mm": 20.9348573296301,
+        "native_pct": 2.0991252844279433,
+        "interpolation_mm": 4.081324748509295,
+        "hold_mm": 236.36470487238802,
+        "terminal_mm": 18.242348080742467
+      },
+      {
+        "identity": "cloth-40500-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40500,
+        "native_mm": 19.701804932869635,
+        "native_pct": 2.5767563690221142,
+        "interpolation_mm": 3.6873244559526754,
+        "hold_mm": 573.4644345497627,
+        "terminal_mm": 29.961439415632682
+      },
+      {
+        "identity": "cloth-40500-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40500,
+        "native_mm": 26.19161625676366,
+        "native_pct": 3.4255447272245854,
+        "interpolation_mm": 3.8968625725715227,
+        "hold_mm": 574.3320812740714,
+        "terminal_mm": 55.76474892151294
+      },
+      {
+        "identity": "cloth-40500-reference",
+        "family": "cloth",
+        "seed": 40500,
+        "native_mm": 15.21492528857199,
+        "native_pct": 1.9899271044002333,
+        "interpolation_mm": 3.8222207028640227,
+        "hold_mm": 572.3287244960464,
+        "terminal_mm": 8.082636203678273
+      },
+      {
+        "identity": "cloth-40500-triangle-load-3",
+        "family": "cloth",
+        "seed": 40500,
+        "native_mm": 14.06531552667254,
+        "native_pct": 1.8395721350988021,
+        "interpolation_mm": 4.088591187624229,
+        "hold_mm": 571.3520416694827,
+        "terminal_mm": 11.070039960938562
+      },
+      {
+        "identity": "cloth-40500-triangle-load-6",
+        "family": "cloth",
+        "seed": 40500,
+        "native_mm": 16.491038134250022,
+        "native_pct": 2.1568271378690382,
+        "interpolation_mm": 4.482046718939838,
+        "hold_mm": 571.1049587730075,
+        "terminal_mm": 22.974557646203483
+      },
+      {
+        "identity": "cloth-40501-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40501,
+        "native_mm": 10.96546654927673,
+        "native_pct": 1.9328480131126284,
+        "interpolation_mm": 4.195130166820913,
+        "hold_mm": 398.5638314114422,
+        "terminal_mm": 11.745585071907337
+      },
+      {
+        "identity": "cloth-40501-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40501,
+        "native_mm": 12.779956326863266,
+        "native_pct": 2.252682371793212,
+        "interpolation_mm": 4.70890601617626,
+        "hold_mm": 398.9820135765464,
+        "terminal_mm": 16.823331900439353
+      },
+      {
+        "identity": "cloth-40501-reference",
+        "family": "cloth",
+        "seed": 40501,
+        "native_mm": 10.735172814672406,
+        "native_pct": 1.892254866860077,
+        "interpolation_mm": 4.007299320963216,
+        "hold_mm": 398.726131007685,
+        "terminal_mm": 12.27548567237324
+      },
+      {
+        "identity": "cloth-40501-triangle-load-3",
+        "family": "cloth",
+        "seed": 40501,
+        "native_mm": 15.084543903975435,
+        "native_pct": 2.65890471531576,
+        "interpolation_mm": 4.674990245312344,
+        "hold_mm": 399.29733601598076,
+        "terminal_mm": 14.774341510276013
+      },
+      {
+        "identity": "cloth-40501-triangle-load-6",
+        "family": "cloth",
+        "seed": 40501,
+        "native_mm": 23.980187206322828,
+        "native_pct": 4.226911548863113,
+        "interpolation_mm": 5.325395029037518,
+        "hold_mm": 400.77485458174806,
+        "terminal_mm": 31.02367711166676
+      },
+      {
+        "identity": "cloth-40502-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40502,
+        "native_mm": 15.560944771208451,
+        "native_pct": 2.4357388240766853,
+        "interpolation_mm": 4.897027964942294,
+        "hold_mm": 497.5247359933373,
+        "terminal_mm": 17.847149789490388
+      },
+      {
+        "identity": "cloth-40502-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40502,
+        "native_mm": 18.16683157365502,
+        "native_pct": 2.8436356291352145,
+        "interpolation_mm": 5.186815669717299,
+        "hold_mm": 497.3035510730208,
+        "terminal_mm": 19.188742091542473
+      },
+      {
+        "identity": "cloth-40502-reference",
+        "family": "cloth",
+        "seed": 40502,
+        "native_mm": 13.090662021434989,
+        "native_pct": 2.049067983164571,
+        "interpolation_mm": 4.838761737484504,
+        "hold_mm": 497.65284991223314,
+        "terminal_mm": 14.438016006423835
+      },
+      {
+        "identity": "cloth-40502-triangle-load-3",
+        "family": "cloth",
+        "seed": 40502,
+        "native_mm": 14.039537533433943,
+        "native_pct": 2.1975944998878876,
+        "interpolation_mm": 5.0977789554814485,
+        "hold_mm": 496.49507652350474,
+        "terminal_mm": 14.291340551346565
+      },
+      {
+        "identity": "cloth-40502-triangle-load-6",
+        "family": "cloth",
+        "seed": 40502,
+        "native_mm": 15.983081885700418,
+        "native_pct": 2.5018155163321736,
+        "interpolation_mm": 5.411538925335592,
+        "hold_mm": 495.63021038364616,
+        "terminal_mm": 11.72908867718844
+      },
+      {
+        "identity": "cloth-40503-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40503,
+        "native_mm": 27.525706309088942,
+        "native_pct": 3.6701755530829514,
+        "interpolation_mm": 6.448853937694006,
+        "hold_mm": 551.5226156780618,
+        "terminal_mm": 71.34289759877296
+      },
+      {
+        "identity": "cloth-40503-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40503,
+        "native_mm": 35.60013338719786,
+        "native_pct": 4.74678970185199,
+        "interpolation_mm": 6.617577761530393,
+        "hold_mm": 552.1723700060206,
+        "terminal_mm": 105.37221166192742
+      },
+      {
+        "identity": "cloth-40503-reference",
+        "family": "cloth",
+        "seed": 40503,
+        "native_mm": 17.501094807220273,
+        "native_pct": 2.3335310488449665,
+        "interpolation_mm": 6.957177973485799,
+        "hold_mm": 551.2121016195688,
+        "terminal_mm": 20.595194933912396
+      },
+      {
+        "identity": "cloth-40503-triangle-load-3",
+        "family": "cloth",
+        "seed": 40503,
+        "native_mm": 17.60190224590547,
+        "native_pct": 2.34697233870241,
+        "interpolation_mm": 7.722917900764642,
+        "hold_mm": 549.8771678612273,
+        "terminal_mm": 23.516849592993854
+      },
+      {
+        "identity": "cloth-40503-triangle-load-6",
+        "family": "cloth",
+        "seed": 40503,
+        "native_mm": 39.81036603040808,
+        "native_pct": 5.308166501647302,
+        "interpolation_mm": 8.301507698367695,
+        "hold_mm": 549.6515782881893,
+        "terminal_mm": 104.94953292753085
+      },
+      {
+        "identity": "cloth-40504-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40504,
+        "native_mm": 18.357177355677617,
+        "native_pct": 2.3656500929532016,
+        "interpolation_mm": 8.312197865084212,
+        "hold_mm": 584.4462754879174,
+        "terminal_mm": 16.024156567526422
+      },
+      {
+        "identity": "cloth-40504-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40504,
+        "native_mm": 21.568690635740985,
+        "native_pct": 2.7795109247304026,
+        "interpolation_mm": 7.978698051827844,
+        "hold_mm": 584.6367870310974,
+        "terminal_mm": 36.72753010001889
+      },
+      {
+        "identity": "cloth-40504-reference",
+        "family": "cloth",
+        "seed": 40504,
+        "native_mm": 20.68605552068286,
+        "native_pct": 2.6657676295862163,
+        "interpolation_mm": 9.124798076928883,
+        "hold_mm": 581.2790918035896,
+        "terminal_mm": 37.119407633120545
+      },
+      {
+        "identity": "cloth-40504-triangle-load-3",
+        "family": "cloth",
+        "seed": 40504,
+        "native_mm": 22.473867076836367,
+        "native_pct": 2.896159072238443,
+        "interpolation_mm": 9.448594083815735,
+        "hold_mm": 580.8787322143729,
+        "terminal_mm": 23.760754385508736
+      },
+      {
+        "identity": "cloth-40504-triangle-load-6",
+        "family": "cloth",
+        "seed": 40504,
+        "native_mm": 30.5221137578787,
+        "native_pct": 3.933319368738465,
+        "interpolation_mm": 10.376457159911917,
+        "hold_mm": 583.0906756697952,
+        "terminal_mm": 56.544319218887715
+      },
+      {
+        "identity": "cloth-40505-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40505,
+        "native_mm": 13.552860790271003,
+        "native_pct": 1.715100725690322,
+        "interpolation_mm": 4.782531529041314,
+        "hold_mm": 582.6288784884521,
+        "terminal_mm": 17.008517066048125
+      },
+      {
+        "identity": "cloth-40505-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40505,
+        "native_mm": 14.596068830446871,
+        "native_pct": 1.847117640380097,
+        "interpolation_mm": 4.913750717126366,
+        "hold_mm": 583.569857445461,
+        "terminal_mm": 10.213952713071556
+      },
+      {
+        "identity": "cloth-40505-reference",
+        "family": "cloth",
+        "seed": 40505,
+        "native_mm": 15.627970155474301,
+        "native_pct": 1.9777037017868389,
+        "interpolation_mm": 4.781845690169264,
+        "hold_mm": 581.7835763218005,
+        "terminal_mm": 28.226656339423823
+      },
+      {
+        "identity": "cloth-40505-triangle-load-3",
+        "family": "cloth",
+        "seed": 40505,
+        "native_mm": 16.942856811291303,
+        "native_pct": 2.1441012685065637,
+        "interpolation_mm": 5.115347787621625,
+        "hold_mm": 581.0665265064447,
+        "terminal_mm": 20.143607563746134
+      },
+      {
+        "identity": "cloth-40505-triangle-load-6",
+        "family": "cloth",
+        "seed": 40505,
+        "native_mm": 20.239265643490402,
+        "native_pct": 2.5612584479217895,
+        "interpolation_mm": 5.78754954994925,
+        "hold_mm": 581.0734683119596,
+        "terminal_mm": 16.185478889114698
+      },
+      {
+        "identity": "cloth-40506-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40506,
+        "native_mm": 10.097692959475308,
+        "native_pct": 1.7352765087515212,
+        "interpolation_mm": 3.900719746481097,
+        "hold_mm": 424.1707928424293,
+        "terminal_mm": 16.117243158071286
+      },
+      {
+        "identity": "cloth-40506-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40506,
+        "native_mm": 13.172110697356015,
+        "native_pct": 2.263611535380276,
+        "interpolation_mm": 4.958974074643541,
+        "hold_mm": 424.6939170606683,
+        "terminal_mm": 7.630080957260451
+      },
+      {
+        "identity": "cloth-40506-reference",
+        "family": "cloth",
+        "seed": 40506,
+        "native_mm": 9.47359625778283,
+        "native_pct": 1.6280262338637277,
+        "interpolation_mm": 3.5287735744207422,
+        "hold_mm": 424.2100287252816,
+        "terminal_mm": 18.51078540851105
+      },
+      {
+        "identity": "cloth-40506-triangle-load-3",
+        "family": "cloth",
+        "seed": 40506,
+        "native_mm": 11.304288951000336,
+        "native_pct": 1.9426285928414226,
+        "interpolation_mm": 3.80521194383016,
+        "hold_mm": 423.7845869639885,
+        "terminal_mm": 19.533267198269495
+      },
+      {
+        "identity": "cloth-40506-triangle-load-6",
+        "family": "cloth",
+        "seed": 40506,
+        "native_mm": 15.60143699923449,
+        "native_pct": 2.6810883670347985,
+        "interpolation_mm": 4.391711446816053,
+        "hold_mm": 423.87495034153534,
+        "terminal_mm": 19.71176146155331
+      },
+      {
+        "identity": "cloth-40507-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40507,
+        "native_mm": 35.593989314048414,
+        "native_pct": 4.383581617624365,
+        "interpolation_mm": 5.950464355602549,
+        "hold_mm": 689.5592027028088,
+        "terminal_mm": 57.874178169108056
+      },
+      {
+        "identity": "cloth-40507-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40507,
+        "native_mm": 42.192941071435854,
+        "native_pct": 5.19627623760776,
+        "interpolation_mm": 6.710471344774067,
+        "hold_mm": 690.3880953949954,
+        "terminal_mm": 56.31883547787438
+      },
+      {
+        "identity": "cloth-40507-reference",
+        "family": "cloth",
+        "seed": 40507,
+        "native_mm": 32.72182371246303,
+        "native_pct": 4.029859751193578,
+        "interpolation_mm": 5.788364645609727,
+        "hold_mm": 688.7695957731854,
+        "terminal_mm": 58.64264799280852
+      },
+      {
+        "identity": "cloth-40507-triangle-load-3",
+        "family": "cloth",
+        "seed": 40507,
+        "native_mm": 25.85867933365629,
+        "native_pct": 3.1846284602417354,
+        "interpolation_mm": 6.645620180917146,
+        "hold_mm": 686.8812858222291,
+        "terminal_mm": 38.5313680058797
+      },
+      {
+        "identity": "cloth-40507-triangle-load-6",
+        "family": "cloth",
+        "seed": 40507,
+        "native_mm": 24.663913658247196,
+        "native_pct": 3.0374869637974258,
+        "interpolation_mm": 6.665967151319956,
+        "hold_mm": 685.0662160771182,
+        "terminal_mm": 37.02672249601671
+      }
+    ],
+    "force_pairs": [
+      {
+        "identity": "cable-40500-descending-chirp-3",
+        "family": "cable",
+        "seed": 40500,
+        "response_mm": 11.34788863967907,
+        "error_mm": 10.452409967464733,
+        "response_error_pct": 92.1088521341036
+      },
+      {
+        "identity": "cable-40500-descending-chirp-6",
+        "family": "cable",
+        "seed": 40500,
+        "response_mm": 22.6759118126834,
+        "error_mm": 20.85668145408038,
+        "response_error_pct": 91.97725598145314
+      },
+      {
+        "identity": "cable-40500-triangle-load-3",
+        "family": "cable",
+        "seed": 40500,
+        "response_mm": 8.701752874841672,
+        "error_mm": 6.225174638736128,
+        "response_error_pct": 71.53931774751068
+      },
+      {
+        "identity": "cable-40500-triangle-load-6",
+        "family": "cable",
+        "seed": 40500,
+        "response_mm": 17.345400216920456,
+        "error_mm": 12.801754460310713,
+        "response_error_pct": 73.80489524722864
+      },
+      {
+        "identity": "cable-40501-descending-chirp-3",
+        "family": "cable",
+        "seed": 40501,
+        "response_mm": 1.7894064658991131,
+        "error_mm": 4.518899361309248,
+        "response_error_pct": 252.53621507613488
+      },
+      {
+        "identity": "cable-40501-descending-chirp-6",
+        "family": "cable",
+        "seed": 40501,
+        "response_mm": 3.57839624212687,
+        "error_mm": 8.844966894820418,
+        "response_error_pct": 247.17684393618993
+      },
+      {
+        "identity": "cable-40501-triangle-load-3",
+        "family": "cable",
+        "seed": 40501,
+        "response_mm": 1.1036112161057086,
+        "error_mm": 2.640777756462438,
+        "response_error_pct": 239.2851502344185
+      },
+      {
+        "identity": "cable-40501-triangle-load-6",
+        "family": "cable",
+        "seed": 40501,
+        "response_mm": 2.206671470317727,
+        "error_mm": 5.4654111260776785,
+        "response_error_pct": 247.67670220029368
+      },
+      {
+        "identity": "cable-40502-descending-chirp-3",
+        "family": "cable",
+        "seed": 40502,
+        "response_mm": 9.510579787530888,
+        "error_mm": 8.972787417600879,
+        "response_error_pct": 94.34532508065284
+      },
+      {
+        "identity": "cable-40502-descending-chirp-6",
+        "family": "cable",
+        "seed": 40502,
+        "response_mm": 18.984812663342847,
+        "error_mm": 17.86724324416531,
+        "response_error_pct": 94.11335029217635
+      },
+      {
+        "identity": "cable-40502-triangle-load-3",
+        "family": "cable",
+        "seed": 40502,
+        "response_mm": 7.0107950411396995,
+        "error_mm": 5.068345943093935,
+        "response_error_pct": 72.29345478440926
+      },
+      {
+        "identity": "cable-40502-triangle-load-6",
+        "family": "cable",
+        "seed": 40502,
+        "response_mm": 13.97059411408041,
+        "error_mm": 10.324229321306058,
+        "response_error_pct": 73.89971562412423
+      },
+      {
+        "identity": "cable-40503-descending-chirp-3",
+        "family": "cable",
+        "seed": 40503,
+        "response_mm": 3.2566139489948434,
+        "error_mm": 6.4524178633759375,
+        "response_error_pct": 198.1327220368715
+      },
+      {
+        "identity": "cable-40503-descending-chirp-6",
+        "family": "cable",
+        "seed": 40503,
+        "response_mm": 6.512980418248593,
+        "error_mm": 12.463731173923206,
+        "response_error_pct": 191.36755177401304
+      },
+      {
+        "identity": "cable-40503-triangle-load-3",
+        "family": "cable",
+        "seed": 40503,
+        "response_mm": 3.318242994100351,
+        "error_mm": 3.5684677876919775,
+        "response_error_pct": 107.54088214867062
+      },
+      {
+        "identity": "cable-40503-triangle-load-6",
+        "family": "cable",
+        "seed": 40503,
+        "response_mm": 6.635282617853811,
+        "error_mm": 7.145622546335957,
+        "response_error_pct": 107.69130657839584
+      },
+      {
+        "identity": "cable-40504-descending-chirp-3",
+        "family": "cable",
+        "seed": 40504,
+        "response_mm": 9.716464814971156,
+        "error_mm": 9.574021687088761,
+        "response_error_pct": 98.53400253492485
+      },
+      {
+        "identity": "cable-40504-descending-chirp-6",
+        "family": "cable",
+        "seed": 40504,
+        "response_mm": 19.42415881180015,
+        "error_mm": 18.893110974019397,
+        "response_error_pct": 97.26604460493732
+      },
+      {
+        "identity": "cable-40504-triangle-load-3",
+        "family": "cable",
+        "seed": 40504,
+        "response_mm": 19.07582393058045,
+        "error_mm": 16.925410802506768,
+        "response_error_pct": 88.72702360904917
+      },
+      {
+        "identity": "cable-40504-triangle-load-6",
+        "family": "cable",
+        "seed": 40504,
+        "response_mm": 38.17419329707963,
+        "error_mm": 34.023003850569886,
+        "response_error_pct": 89.12566556625228
+      },
+      {
+        "identity": "cable-40505-descending-chirp-3",
+        "family": "cable",
+        "seed": 40505,
+        "response_mm": 3.5060439476580916,
+        "error_mm": 6.786767516195271,
+        "response_error_pct": 193.5733726534883
+      },
+      {
+        "identity": "cable-40505-descending-chirp-6",
+        "family": "cable",
+        "seed": 40505,
+        "response_mm": 7.0088643041641525,
+        "error_mm": 13.36770931218299,
+        "response_error_pct": 190.72575430288867
+      },
+      {
+        "identity": "cable-40505-triangle-load-3",
+        "family": "cable",
+        "seed": 40505,
+        "response_mm": 3.271939130633525,
+        "error_mm": 4.8675895890483885,
+        "response_error_pct": 148.76773053250253
+      },
+      {
+        "identity": "cable-40505-triangle-load-6",
+        "family": "cable",
+        "seed": 40505,
+        "response_mm": 6.5415126601915,
+        "error_mm": 9.555175955366803,
+        "response_error_pct": 146.06982286398386
+      },
+      {
+        "identity": "cable-40506-descending-chirp-3",
+        "family": "cable",
+        "seed": 40506,
+        "response_mm": 2.619810129180859,
+        "error_mm": 4.587383445983021,
+        "response_error_pct": 175.1036609442138
+      },
+      {
+        "identity": "cable-40506-descending-chirp-6",
+        "family": "cable",
+        "seed": 40506,
+        "response_mm": 5.238669649897238,
+        "error_mm": 9.031884439149824,
+        "response_error_pct": 172.40797841350798
+      },
+      {
+        "identity": "cable-40506-triangle-load-3",
+        "family": "cable",
+        "seed": 40506,
+        "response_mm": 1.5882116755051126,
+        "error_mm": 2.385934973303671,
+        "response_error_pct": 150.2277693900501
+      },
+      {
+        "identity": "cable-40506-triangle-load-6",
+        "family": "cable",
+        "seed": 40506,
+        "response_mm": 3.1753166079028823,
+        "error_mm": 5.092520874152596,
+        "response_error_pct": 160.3783654668666
+      },
+      {
+        "identity": "cable-40507-descending-chirp-3",
+        "family": "cable",
+        "seed": 40507,
+        "response_mm": 11.966123991750191,
+        "error_mm": 11.229532209623407,
+        "response_error_pct": 93.84435776668693
+      },
+      {
+        "identity": "cable-40507-descending-chirp-6",
+        "family": "cable",
+        "seed": 40507,
+        "response_mm": 23.936384951005806,
+        "error_mm": 22.516279162940734,
+        "response_error_pct": 94.06716682167414
+      },
+      {
+        "identity": "cable-40507-triangle-load-3",
+        "family": "cable",
+        "seed": 40507,
+        "response_mm": 9.271878471428069,
+        "error_mm": 6.834246030519982,
+        "response_error_pct": 73.70940043681743
+      },
+      {
+        "identity": "cable-40507-triangle-load-6",
+        "family": "cable",
+        "seed": 40507,
+        "response_mm": 18.519974007770433,
+        "error_mm": 13.744297697199142,
+        "response_error_pct": 74.21337465934047
+      },
+      {
+        "identity": "cloth-40500-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40500,
+        "response_mm": 19.910886467034477,
+        "error_mm": 15.871981351195721,
+        "response_error_pct": 79.71509142736673
+      },
+      {
+        "identity": "cloth-40500-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40500,
+        "response_mm": 42.32337030499453,
+        "error_mm": 31.203858187583503,
+        "response_error_pct": 73.72725272755787
+      },
+      {
+        "identity": "cloth-40500-triangle-load-3",
+        "family": "cloth",
+        "seed": 40500,
+        "response_mm": 9.700228530147369,
+        "error_mm": 7.899388662241042,
+        "response_error_pct": 81.43507792306653
+      },
+      {
+        "identity": "cloth-40500-triangle-load-6",
+        "family": "cloth",
+        "seed": 40500,
+        "response_mm": 18.951445276818482,
+        "error_mm": 18.19419885723953,
+        "response_error_pct": 96.00428142277245
+      },
+      {
+        "identity": "cloth-40501-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40501,
+        "response_mm": 7.331513074118014,
+        "error_mm": 6.728509003033128,
+        "response_error_pct": 91.77517566989502
+      },
+      {
+        "identity": "cloth-40501-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40501,
+        "response_mm": 20.208843895857832,
+        "error_mm": 16.461483490323346,
+        "response_error_pct": 81.45682937210191
+      },
+      {
+        "identity": "cloth-40501-triangle-load-3",
+        "family": "cloth",
+        "seed": 40501,
+        "response_mm": 13.248447161414918,
+        "error_mm": 14.083949450528067,
+        "response_error_pct": 106.30641673649485
+      },
+      {
+        "identity": "cloth-40501-triangle-load-6",
+        "family": "cloth",
+        "seed": 40501,
+        "response_mm": 33.7248186367417,
+        "error_mm": 33.94209715096375,
+        "response_error_pct": 100.64426888862592
+      },
+      {
+        "identity": "cloth-40502-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40502,
+        "response_mm": 7.309349014648476,
+        "error_mm": 6.749010741073903,
+        "response_error_pct": 92.33395104746516
+      },
+      {
+        "identity": "cloth-40502-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40502,
+        "response_mm": 11.936825532833959,
+        "error_mm": 13.063369974297798,
+        "response_error_pct": 109.43755471976293
+      },
+      {
+        "identity": "cloth-40502-triangle-load-3",
+        "family": "cloth",
+        "seed": 40502,
+        "response_mm": 9.365617367006164,
+        "error_mm": 6.634325854817513,
+        "response_error_pct": 70.83703716307447
+      },
+      {
+        "identity": "cloth-40502-triangle-load-6",
+        "family": "cloth",
+        "seed": 40502,
+        "response_mm": 16.44318173516268,
+        "error_mm": 12.749327312517925,
+        "response_error_pct": 77.53564679793277
+      },
+      {
+        "identity": "cloth-40503-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40503,
+        "response_mm": 28.14742225980229,
+        "error_mm": 26.72698757445754,
+        "response_error_pct": 94.95358874345914
+      },
+      {
+        "identity": "cloth-40503-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40503,
+        "response_mm": 50.36129213333834,
+        "error_mm": 43.807116209632056,
+        "response_error_pct": 86.98568752693394
+      },
+      {
+        "identity": "cloth-40503-triangle-load-3",
+        "family": "cloth",
+        "seed": 40503,
+        "response_mm": 22.50334161098142,
+        "error_mm": 18.76757965156351,
+        "response_error_pct": 83.39907901680303
+      },
+      {
+        "identity": "cloth-40503-triangle-load-6",
+        "family": "cloth",
+        "seed": 40503,
+        "response_mm": 63.51625022176602,
+        "error_mm": 55.34748797949392,
+        "response_error_pct": 87.13909871292623
+      },
+      {
+        "identity": "cloth-40504-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40504,
+        "response_mm": 23.837164356807403,
+        "error_mm": 19.201240643383535,
+        "response_error_pct": 80.55169799548769
+      },
+      {
+        "identity": "cloth-40504-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40504,
+        "response_mm": 41.739085001630585,
+        "error_mm": 31.284594956430475,
+        "response_error_pct": 74.95275700271893
+      },
+      {
+        "identity": "cloth-40504-triangle-load-3",
+        "family": "cloth",
+        "seed": 40504,
+        "response_mm": 16.197997767723233,
+        "error_mm": 15.406614013272415,
+        "response_error_pct": 95.11431125130933
+      },
+      {
+        "identity": "cloth-40504-triangle-load-6",
+        "family": "cloth",
+        "seed": 40504,
+        "response_mm": 47.69480529390585,
+        "error_mm": 42.84393829465436,
+        "response_error_pct": 89.82935988655497
+      },
+      {
+        "identity": "cloth-40505-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40505,
+        "response_mm": 10.699313898924167,
+        "error_mm": 9.093969197551484,
+        "response_error_pct": 84.99581639964687
+      },
+      {
+        "identity": "cloth-40505-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40505,
+        "response_mm": 22.97670906700236,
+        "error_mm": 16.779882559885163,
+        "response_error_pct": 73.0299648698748
+      },
+      {
+        "identity": "cloth-40505-triangle-load-3",
+        "family": "cloth",
+        "seed": 40505,
+        "response_mm": 7.88317510701271,
+        "error_mm": 8.276877350332098,
+        "response_error_pct": 104.9942090334789
+      },
+      {
+        "identity": "cloth-40505-triangle-load-6",
+        "family": "cloth",
+        "seed": 40505,
+        "response_mm": 17.67081788419755,
+        "error_mm": 18.552027601335855,
+        "response_error_pct": 104.98680775792694
+      },
+      {
+        "identity": "cloth-40506-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40506,
+        "response_mm": 9.276685694581937,
+        "error_mm": 7.430105070333869,
+        "response_error_pct": 80.09439270615187
+      },
+      {
+        "identity": "cloth-40506-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40506,
+        "response_mm": 18.091233802028604,
+        "error_mm": 17.147701786704424,
+        "response_error_pct": 94.78459000834769
+      },
+      {
+        "identity": "cloth-40506-triangle-load-3",
+        "family": "cloth",
+        "seed": 40506,
+        "response_mm": 6.4683812188180605,
+        "error_mm": 6.805350563900931,
+        "response_error_pct": 105.2094849342297
+      },
+      {
+        "identity": "cloth-40506-triangle-load-6",
+        "family": "cloth",
+        "seed": 40506,
+        "response_mm": 14.049008634653175,
+        "error_mm": 15.69215229791215,
+        "response_error_pct": 111.69579794552912
+      },
+      {
+        "identity": "cloth-40507-descending-chirp-3",
+        "family": "cloth",
+        "seed": 40507,
+        "response_mm": 14.538358416156571,
+        "error_mm": 12.451377641181024,
+        "response_error_pct": 85.64500395961988
+      },
+      {
+        "identity": "cloth-40507-descending-chirp-6",
+        "family": "cloth",
+        "seed": 40507,
+        "response_mm": 29.74647172816119,
+        "error_mm": 28.09599016720427,
+        "response_error_pct": 94.45150478335755
+      },
+      {
+        "identity": "cloth-40507-triangle-load-3",
+        "family": "cloth",
+        "seed": 40507,
+        "response_mm": 15.529460985444105,
+        "error_mm": 21.225894572191518,
+        "response_error_pct": 136.68146365213016
+      },
+      {
+        "identity": "cloth-40507-triangle-load-6",
+        "family": "cloth",
+        "seed": 40507,
+        "response_mm": 28.9819988091885,
+        "error_mm": 31.208033228353433,
+        "response_error_pct": 107.68074843222749
+      }
+    ]
+  },
+  "verification": {
+    "matched_trajectories": 80,
+    "frames_per_trajectory": 301,
+    "frame_interval_seconds": 0.02,
+    "native_teacher_hashes_matched": 80,
+    "max_rest_length_difference_m": 0.0,
+    "source": "NeurALL, load-diversity-v5-eval-held-diverse"
+  }
+}
