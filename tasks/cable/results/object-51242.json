@@ -1,0 +1,592 @@
+{
+  "cases": [
+    {
+      "seed": 51242,
+      "target": 0,
+      "gate_y_m": [
+        -0.010172098875045776,
+        -0.04212027043104172
+      ],
+      "witness": [
+        -5.413459109404175,
+        -8.519319624970779
+      ],
+      "methods": {
+        "supernerd": {
+          "candidate": 5,
+          "amplitudes_m_s2": [
+            -5.0,
+            -10.0
+          ],
+          "predicted_gate_distance_mm": [
+            3.7437779903411865,
+            3.640096664428711
+          ],
+          "actual_gate_distance_mm": [
+            0.8107256293296814,
+            4.4951066970825195
+          ],
+          "refined_gate_distance_mm": [
+            9.993023872375488,
+            54.632835388183594
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.014108200557529926,
+          "physical_replay_s": 0.5147754019126296,
+          "plan_plus_execution_s": 0.5288836024701595,
+          "model_edge_strain_rms_pct": 2.230391025543213,
+          "native_rms_mm": 7.758917331695557
+        },
+        "supernerd_mixed": {
+          "candidate": 6,
+          "amplitudes_m_s2": [
+            -5.0,
+            -5.0
+          ],
+          "predicted_gate_distance_mm": [
+            4.523005485534668,
+            6.2010178565979
+          ],
+          "actual_gate_distance_mm": [
+            0.8107256293296814,
+            10.516364097595215
+          ],
+          "refined_gate_distance_mm": [
+            9.993023872375488,
+            50.5262451171875
+          ],
+          "success": false,
+          "refined_success": false,
+          "planning_s": 0.013596524950116873,
+          "physical_replay_s": 0.5163703430444002,
+          "plan_plus_execution_s": 0.5299668679945171,
+          "model_edge_strain_rms_pct": 2.1065545082092285,
+          "native_rms_mm": 7.0740251541137695
+        },
+        "neurall": {
+          "candidate": 6,
+          "amplitudes_m_s2": [
+            -5.0,
+            -5.0
+          ],
+          "predicted_gate_distance_mm": [
+            1.7967541217803955,
+            1.6000605821609497
+          ],
+          "actual_gate_distance_mm": [
+            0.8107256293296814,
+            10.516364097595215
+          ],
+          "refined_gate_distance_mm": [
+            9.993023872375488,
+            50.5262451171875
+          ],
+          "success": false,
+          "refined_success": false,
+          "planning_s": 0.005691482685506344,
+          "physical_replay_s": 0.5136968600563705,
+          "plan_plus_execution_s": 0.5193883427418768,
+          "model_edge_strain_rms_pct": 4.0649429138284177e-05,
+          "native_rms_mm": 4.296429634094238
+        },
+        "newton": {
+          "candidate": 5,
+          "amplitudes_m_s2": [
+            -5.0,
+            -10.0
+          ],
+          "predicted_gate_distance_mm": [
+            0.8107256293296814,
+            4.4951066970825195
+          ],
+          "actual_gate_distance_mm": [
+            0.8107256293296814,
+            4.4951066970825195
+          ],
+          "refined_gate_distance_mm": [
+            9.993023872375488,
+            54.632835388183594
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 12.930163365323097,
+          "physical_replay_s": 0.511195161845535,
+          "plan_plus_execution_s": 13.441358527168632
+        },
+        "zero": {
+          "candidate": 12,
+          "amplitudes_m_s2": [
+            0.0,
+            0.0
+          ],
+          "predicted_gate_distance_mm": [
+            10.61391830444336,
+            24.9133243560791
+          ],
+          "actual_gate_distance_mm": [
+            10.61391830444336,
+            24.9133243560791
+          ],
+          "refined_gate_distance_mm": [
+            5.04865026473999,
+            50.711700439453125
+          ],
+          "success": false,
+          "refined_success": false,
+          "planning_s": 1.2433156371116638e-07,
+          "physical_replay_s": 0.508001693058759,
+          "plan_plus_execution_s": 0.5080018173903227
+        }
+      }
+    },
+    {
+      "seed": 51242,
+      "target": 1,
+      "gate_y_m": [
+        -0.012359973043203354,
+        0.008949095383286476
+      ],
+      "witness": [
+        -6.52931703544137,
+        8.420671966827145
+      ],
+      "methods": {
+        "supernerd": {
+          "candidate": 9,
+          "amplitudes_m_s2": [
+            -5.0,
+            10.0
+          ],
+          "predicted_gate_distance_mm": [
+            1.5558871030807495,
+            0.7557878494262695
+          ],
+          "actual_gate_distance_mm": [
+            2.9985997676849365,
+            4.546075344085693
+          ],
+          "refined_gate_distance_mm": [
+            7.805150032043457,
+            12.605520248413086
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.014103550929576159,
+          "physical_replay_s": 0.513971611391753,
+          "plan_plus_execution_s": 0.5280751623213291,
+          "model_edge_strain_rms_pct": 2.2320497035980225,
+          "native_rms_mm": 7.741031169891357
+        },
+        "supernerd_mixed": {
+          "candidate": 9,
+          "amplitudes_m_s2": [
+            -5.0,
+            10.0
+          ],
+          "predicted_gate_distance_mm": [
+            2.3351385593414307,
+            4.80450439453125
+          ],
+          "actual_gate_distance_mm": [
+            2.9985997676849365,
+            4.546075344085693
+          ],
+          "refined_gate_distance_mm": [
+            7.805150032043457,
+            12.605520248413086
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.013596066739410162,
+          "physical_replay_s": 0.5115068787708879,
+          "plan_plus_execution_s": 0.525102945510298,
+          "model_edge_strain_rms_pct": 2.107447862625122,
+          "native_rms_mm": 7.140349864959717
+        },
+        "neurall": {
+          "candidate": 8,
+          "amplitudes_m_s2": [
+            -5.0,
+            5.0
+          ],
+          "predicted_gate_distance_mm": [
+            0.3911200761795044,
+            1.851373314857483
+          ],
+          "actual_gate_distance_mm": [
+            2.9985997676849365,
+            10.480278015136719
+          ],
+          "refined_gate_distance_mm": [
+            7.805150032043457,
+            8.538155555725098
+          ],
+          "success": false,
+          "refined_success": true,
+          "planning_s": 0.005691509693861008,
+          "physical_replay_s": 0.5133323753252625,
+          "plan_plus_execution_s": 0.5190238850191236,
+          "model_edge_strain_rms_pct": 3.998230386059731e-05,
+          "native_rms_mm": 5.696097373962402
+        },
+        "newton": {
+          "candidate": 9,
+          "amplitudes_m_s2": [
+            -5.0,
+            10.0
+          ],
+          "predicted_gate_distance_mm": [
+            2.9985997676849365,
+            4.546075344085693
+          ],
+          "actual_gate_distance_mm": [
+            2.9985997676849365,
+            4.546075344085693
+          ],
+          "refined_gate_distance_mm": [
+            7.805150032043457,
+            12.605520248413086
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 12.93016314925626,
+          "physical_replay_s": 0.5106749320402741,
+          "plan_plus_execution_s": 13.440838081296533
+        },
+        "zero": {
+          "candidate": 12,
+          "amplitudes_m_s2": [
+            0.0,
+            0.0
+          ],
+          "predicted_gate_distance_mm": [
+            12.80179214477539,
+            26.156042098999023
+          ],
+          "actual_gate_distance_mm": [
+            12.80179214477539,
+            26.156042098999023
+          ],
+          "refined_gate_distance_mm": [
+            2.86077618598938,
+            0.35766884684562683
+          ],
+          "success": false,
+          "refined_success": true,
+          "planning_s": 1.3504177331924438e-07,
+          "physical_replay_s": 0.5080042909830809,
+          "plan_plus_execution_s": 0.5080044260248542
+        }
+      }
+    },
+    {
+      "seed": 51242,
+      "target": 2,
+      "gate_y_m": [
+        0.017951300367712975,
+        -0.0451585128903389
+      ],
+      "witness": [
+        8.951383602078192,
+        -8.918433696584998
+      ],
+      "methods": {
+        "supernerd": {
+          "candidate": 15,
+          "amplitudes_m_s2": [
+            5.0,
+            -10.0
+          ],
+          "predicted_gate_distance_mm": [
+            4.130224704742432,
+            3.34696102142334
+          ],
+          "actual_gate_distance_mm": [
+            7.717845916748047,
+            2.7482471466064453
+          ],
+          "refined_gate_distance_mm": [
+            28.333534240722656,
+            66.17340087890625
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.014103890862315893,
+          "physical_replay_s": 0.5100745400413871,
+          "plan_plus_execution_s": 0.524178430903703,
+          "model_edge_strain_rms_pct": 2.2358977794647217,
+          "native_rms_mm": 8.572258949279785
+        },
+        "supernerd_mixed": {
+          "candidate": 15,
+          "amplitudes_m_s2": [
+            5.0,
+            -10.0
+          ],
+          "predicted_gate_distance_mm": [
+            5.712655544281006,
+            0.9533129930496216
+          ],
+          "actual_gate_distance_mm": [
+            7.717845916748047,
+            2.7482471466064453
+          ],
+          "refined_gate_distance_mm": [
+            28.333534240722656,
+            66.17340087890625
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.013596060685813427,
+          "physical_replay_s": 0.5098288580775261,
+          "plan_plus_execution_s": 0.5234249187633395,
+          "model_edge_strain_rms_pct": 2.1091039180755615,
+          "native_rms_mm": 8.11056137084961
+        },
+        "neurall": {
+          "candidate": 15,
+          "amplitudes_m_s2": [
+            5.0,
+            -10.0
+          ],
+          "predicted_gate_distance_mm": [
+            7.966240882873535,
+            6.739377975463867
+          ],
+          "actual_gate_distance_mm": [
+            7.717845916748047,
+            2.7482471466064453
+          ],
+          "refined_gate_distance_mm": [
+            28.333534240722656,
+            66.17340087890625
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.0056913066655397415,
+          "physical_replay_s": 0.5135023524053395,
+          "plan_plus_execution_s": 0.5191936590708792,
+          "model_edge_strain_rms_pct": 4.008810719824396e-05,
+          "native_rms_mm": 8.748738288879395
+        },
+        "newton": {
+          "candidate": 20,
+          "amplitudes_m_s2": [
+            10.0,
+            -10.0
+          ],
+          "predicted_gate_distance_mm": [
+            2.044705629348755,
+            3.383535861968994
+          ],
+          "actual_gate_distance_mm": [
+            2.044705629348755,
+            3.383535861968994
+          ],
+          "refined_gate_distance_mm": [
+            23.748483657836914,
+            70.43807220458984
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 12.930163603276014,
+          "physical_replay_s": 0.5152631909586489,
+          "plan_plus_execution_s": 13.445426794234663
+        },
+        "zero": {
+          "candidate": 12,
+          "amplitudes_m_s2": [
+            0.0,
+            0.0
+          ],
+          "predicted_gate_distance_mm": [
+            17.50948143005371,
+            27.951566696166992
+          ],
+          "actual_gate_distance_mm": [
+            17.50948143005371,
+            27.951566696166992
+          ],
+          "refined_gate_distance_mm": [
+            33.17205047607422,
+            53.749942779541016
+          ],
+          "success": false,
+          "refined_success": false,
+          "planning_s": 2.561137080192566e-07,
+          "physical_replay_s": 0.512457821983844,
+          "plan_plus_execution_s": 0.5124580780975521
+        }
+      }
+    },
+    {
+      "seed": 51242,
+      "target": 3,
+      "gate_y_m": [
+        0.01544678583741188,
+        0.0076879337430000305
+      ],
+      "witness": [
+        7.668059177050212,
+        8.59196591664072
+      ],
+      "methods": {
+        "supernerd": {
+          "candidate": 19,
+          "amplitudes_m_s2": [
+            5.0,
+            10.0
+          ],
+          "predicted_gate_distance_mm": [
+            1.625710129737854,
+            4.405176162719727
+          ],
+          "actual_gate_distance_mm": [
+            5.21333122253418,
+            4.55266809463501
+          ],
+          "refined_gate_distance_mm": [
+            25.829021453857422,
+            2.7811145782470703
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.01410315977409482,
+          "physical_replay_s": 0.51617586100474,
+          "plan_plus_execution_s": 0.5302790207788348,
+          "model_edge_strain_rms_pct": 2.2377870082855225,
+          "native_rms_mm": 8.50513744354248
+        },
+        "supernerd_mixed": {
+          "candidate": 19,
+          "amplitudes_m_s2": [
+            5.0,
+            10.0
+          ],
+          "predicted_gate_distance_mm": [
+            3.208158493041992,
+            1.3445522785186768
+          ],
+          "actual_gate_distance_mm": [
+            5.21333122253418,
+            4.55266809463501
+          ],
+          "refined_gate_distance_mm": [
+            25.829021453857422,
+            2.7811145782470703
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 0.013596097007393837,
+          "physical_replay_s": 0.5115551161579788,
+          "plan_plus_execution_s": 0.5251512131653726,
+          "model_edge_strain_rms_pct": 2.1120359897613525,
+          "native_rms_mm": 8.11594295501709
+        },
+        "neurall": {
+          "candidate": 13,
+          "amplitudes_m_s2": [
+            0.0,
+            5.0
+          ],
+          "predicted_gate_distance_mm": [
+            7.97067403793335,
+            5.489829063415527
+          ],
+          "actual_gate_distance_mm": [
+            15.004966735839844,
+            9.854706764221191
+          ],
+          "refined_gate_distance_mm": [
+            30.66753578186035,
+            3.0666356086730957
+          ],
+          "success": false,
+          "refined_success": false,
+          "planning_s": 0.005691015627235174,
+          "physical_replay_s": 0.5192140699364245,
+          "plan_plus_execution_s": 0.5249050855636597,
+          "model_edge_strain_rms_pct": 4.098003410035744e-05,
+          "native_rms_mm": 7.55585241317749
+        },
+        "newton": {
+          "candidate": 24,
+          "amplitudes_m_s2": [
+            10.0,
+            10.0
+          ],
+          "predicted_gate_distance_mm": [
+            4.549220085144043,
+            3.9502978324890137
+          ],
+          "actual_gate_distance_mm": [
+            4.549220085144043,
+            3.9502978324890137
+          ],
+          "refined_gate_distance_mm": [
+            21.243968963623047,
+            1.5617516040802002
+          ],
+          "success": true,
+          "refined_success": false,
+          "planning_s": 12.930164362303913,
+          "physical_replay_s": 0.5117885950021446,
+          "plan_plus_execution_s": 13.441952957306057
+        },
+        "zero": {
+          "candidate": 12,
+          "amplitudes_m_s2": [
+            0.0,
+            0.0
+          ],
+          "predicted_gate_distance_mm": [
+            15.004966735839844,
+            24.894880294799805
+          ],
+          "actual_gate_distance_mm": [
+            15.004966735839844,
+            24.894880294799805
+          ],
+          "refined_gate_distance_mm": [
+            30.66753578186035,
+            0.90349280834198
+          ],
+          "success": false,
+          "refined_success": false,
+          "planning_s": 1.341104507446289e-07,
+          "physical_replay_s": 0.5128596662543714,
+          "plan_plus_execution_s": 0.5128598003648221
+        }
+      }
+    }
+  ],
+  "bank_clocks_s": {
+    "supernerd": [
+      0.014284497126936913,
+      0.014377987943589687,
+      0.014085070695728064,
+      0.013625366147607565,
+      0.013854028657078743
+    ],
+    "supernerd_mixed": [
+      0.013340701814740896,
+      0.013585949782282114,
+      0.013467701617628336,
+      0.014217500109225512,
+      0.014393121935427189
+    ],
+    "neurall": [
+      0.006602517794817686,
+      0.0056813606061041355,
+      0.0055489856749773026,
+      0.005686571821570396,
+      0.005452618934214115
+    ],
+    "newton": [
+      12.930153067223728
+    ],
+    "zero": []
+  },
+  "initial_state_and_wrench_check_max_m": 0.0
+}

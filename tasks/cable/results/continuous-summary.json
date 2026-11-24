@@ -1,0 +1,54 @@
+{
+  "newton_refined_witness_still_meets_stock_target": 0,
+  "stock_refined_witness_mean_worst_gate_shift_mm": 61.873873106378596,
+  "methods": {
+    "supernerd": {
+      "pass": 16,
+      "refined_stock_goal_pass": 0,
+      "refined_witness_goal_pass": 20,
+      "planner_s": 0.018685149727389216,
+      "planner_and_replay_s": 0.7254101221915334,
+      "mean_newton_worst_gate_mm": 20.652028413678636
+    },
+    "supernerd_mixed": {
+      "pass": 13,
+      "refined_stock_goal_pass": 2,
+      "refined_witness_goal_pass": 18,
+      "planner_s": 0.018576858332380652,
+      "planner_and_replay_s": 0.7253280070144683,
+      "mean_newton_worst_gate_mm": 21.4849850290193
+    },
+    "neurall": {
+      "pass": 14,
+      "refined_stock_goal_pass": 1,
+      "refined_witness_goal_pass": 25,
+      "planner_s": 0.011384456884115934,
+      "planner_and_replay_s": 0.7194241806864738,
+      "mean_newton_worst_gate_mm": 14.021424507518532
+    },
+    "newton": {
+      "pass": 32,
+      "refined_stock_goal_pass": 0,
+      "refined_witness_goal_pass": 32,
+      "planner_s": 17.66358954156749,
+      "planner_and_replay_s": 18.36938146362081,
+      "mean_newton_worst_gate_mm": 0.13715276872972026
+    },
+    "supernerd_one_replay": {
+      "pass": 20,
+      "refined_stock_goal_pass": 1,
+      "refined_witness_goal_pass": 23,
+      "planner_s": 0.7232775655575097,
+      "planner_and_replay_s": 1.4281863037031144,
+      "mean_newton_worst_gate_mm": 19.25057552762155
+    },
+    "newton_three_probes": {
+      "pass": 32,
+      "refined_stock_goal_pass": 0,
+      "refined_witness_goal_pass": 32,
+      "planner_s": 2.1172444713301957,
+      "planner_and_replay_s": 2.8250415180809796,
+      "mean_newton_worst_gate_mm": 0.7608087471453473
+    }
+  }
+}

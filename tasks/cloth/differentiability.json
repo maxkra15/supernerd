@@ -1,0 +1,7 @@
+{
+  "exact": 0.03054456107463753,
+  "finite_difference": 0.03054456157426666,
+  "h": 0.0001,
+  "relative_error": 1.6357384495215737e-08,
+  "scope": "Gradient of model output, independent of teacher."
+}

@@ -1,0 +1,834 @@
+{
+  "summary": {
+    "newton_no_memory": {
+      "passed": 26,
+      "mean_worst_error_mm": 6.169225198391359,
+      "median_plan_s": 1.4049044633284211,
+      "median_total_s": 2.1052709582727402
+    },
+    "supernerd_memory": {
+      "passed": 26,
+      "mean_worst_error_mm": 7.599711749207927,
+      "median_plan_s": 1.4055388832930475,
+      "median_total_s": 2.1067282122094184
+    }
+  },
+  "geometries": [
+    {
+      "seed": 51240,
+      "nominal_y_m": [
+        -0.08644372224807739,
+        -0.07039377093315125
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.011536531895399094,
+        0.014571367576718331
+      ],
+      "supernerd_memory_share": 0.053862351924180984,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -6.777885479858624,
+              -5.327045572130817
+            ],
+            "peak_error_mm": 1.145482063293457,
+            "success": true,
+            "plan_s": 1.3902923101559281,
+            "total_s": 2.0839024339802563
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -6.777885479858622,
+              -5.244451195028702
+            ],
+            "peak_error_mm": 1.145482063293457,
+            "success": true,
+            "plan_s": 1.3908391492441297,
+            "total_s": 2.084790091495961
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -6.803712021211992,
+              5.8521631384933706
+            ],
+            "peak_error_mm": 12.775848619639874,
+            "success": false,
+            "plan_s": 1.3901719646528363,
+            "total_s": 2.081106147263199
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -6.80371202121199,
+              6.572645198526483
+            ],
+            "peak_error_mm": 3.0147070065140724,
+            "success": true,
+            "plan_s": 1.3908151909708977,
+            "total_s": 2.082448970992118
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              7.711180654622418,
+              -4.080235068554887
+            ],
+            "peak_error_mm": 13.068832457065582,
+            "success": false,
+            "plan_s": 1.3901740461587906,
+            "total_s": 2.0813548639416695
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              7.711180654622415,
+              -4.751504608095715
+            ],
+            "peak_error_mm": 4.0892064571380615,
+            "success": true,
+            "plan_s": 1.3908635377883911,
+            "total_s": 2.0833526109345257
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              5.66022204367314,
+              5.722088951838767
+            ],
+            "peak_error_mm": 0.12421514838933945,
+            "success": true,
+            "plan_s": 1.3902037092484534,
+            "total_s": 2.0796173373237252
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              5.66022204367314,
+              5.725610952244159
+            ],
+            "peak_error_mm": 0.07129739969968796,
+            "success": true,
+            "plan_s": 1.3908566678874195,
+            "total_s": 2.087918696925044
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51241,
+      "nominal_y_m": [
+        0.012793446891009808,
+        -0.015587312169373035
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.012276937998831273,
+        0.01780841890722513
+      ],
+      "supernerd_memory_share": 0.45711928606033325,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -7.4161557768485515,
+              -6.729777923595085
+            ],
+            "peak_error_mm": 4.67991828918457,
+            "success": true,
+            "plan_s": 1.3997126817703247,
+            "total_s": 2.102267577778548
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -7.416155776848554,
+              -6.151830418387306
+            ],
+            "peak_error_mm": 3.284275531768799,
+            "success": true,
+            "plan_s": 1.4003240196034312,
+            "total_s": 2.101337810512632
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -8.5076297756429,
+              3.86323164615729
+            ],
+            "peak_error_mm": 51.144075812771916,
+            "success": false,
+            "plan_s": 1.399619818199426,
+            "total_s": 2.0998823922127485
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -6.955367142365353,
+              9.999999894545583
+            ],
+            "peak_error_mm": 37.80181705951691,
+            "success": false,
+            "plan_s": 1.4011819236911833,
+            "total_s": 2.1005970020778477
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              6.573730541446232,
+              -3.5240159421018826
+            ],
+            "peak_error_mm": 34.38151627779007,
+            "success": false,
+            "plan_s": 1.3996048881672323,
+            "total_s": 2.1005251281894743
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              5.838703769069663,
+              -9.999999956967747
+            ],
+            "peak_error_mm": 63.26182186603546,
+            "success": false,
+            "plan_s": 1.4010068364441395,
+            "total_s": 2.099195711314678
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              6.991228546227172,
+              7.698016941451091
+            ],
+            "peak_error_mm": 4.862971603870392,
+            "success": true,
+            "plan_s": 1.399609460029751,
+            "total_s": 2.0985420243814588
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              6.991228546227174,
+              8.293150639010284
+            ],
+            "peak_error_mm": 3.0675679445266724,
+            "success": true,
+            "plan_s": 1.4002574495971203,
+            "total_s": 2.103312724735588
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51242,
+      "nominal_y_m": [
+        0.00044181986595503986,
+        -0.017206946387887
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.001958326908061281,
+        0.0028840701561421156
+      ],
+      "supernerd_memory_share": 0.15800397098064423,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -5.419891182268676,
+              -8.638251739506952
+            ],
+            "peak_error_mm": 0.3551170229911804,
+            "success": true,
+            "plan_s": 1.4231509268283844,
+            "total_s": 2.1355215697549284
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -5.419891182268674,
+              -9.242190155562632
+            ],
+            "peak_error_mm": 2.1663829684257507,
+            "success": true,
+            "plan_s": 1.4237415515817702,
+            "total_s": 2.1348420148715377
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -6.537107189030053,
+              9.069141995547424
+            ],
+            "peak_error_mm": 1.9474951550364494,
+            "success": true,
+            "plan_s": 1.4230523332953453,
+            "total_s": 2.1334490296430886
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -5.990277410857223,
+              9.999999998936577
+            ],
+            "peak_error_mm": 4.674162715673447,
+            "success": true,
+            "plan_s": 1.4245998398400843,
+            "total_s": 2.135512435808778
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              8.941040655511445,
+              -9.691708241883195
+            ],
+            "peak_error_mm": 2.3229047656059265,
+            "success": true,
+            "plan_s": 1.4230571021325886,
+            "total_s": 2.134623150806874
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              8.068338299638627,
+              -9.999999998288832
+            ],
+            "peak_error_mm": 3.136318176984787,
+            "success": true,
+            "plan_s": 1.424442176707089,
+            "total_s": 2.1369650177657604
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              7.66213542268669,
+              8.631856641167056
+            ],
+            "peak_error_mm": 0.12166192755103111,
+            "success": true,
+            "plan_s": 1.4230596302077174,
+            "total_s": 2.1338884262368083
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              7.662135422686687,
+              8.813828762155007
+            ],
+            "peak_error_mm": 0.6686123088002205,
+            "success": true,
+            "plan_s": 1.4237091559916735,
+            "total_s": 2.1395384250208735
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51243,
+      "nominal_y_m": [
+        -0.01477889996021986,
+        -0.021584095433354378
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.0013592584058642388,
+        0.0019309565424919129
+      ],
+      "supernerd_memory_share": 0.3036758303642273,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -5.482334751132003,
+              -5.482989644578857
+            ],
+            "peak_error_mm": 0.030912458896636963,
+            "success": true,
+            "plan_s": 1.4148828648030758,
+            "total_s": 2.1262730630114675
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -5.482334751132001,
+              -5.483275251943854
+            ],
+            "peak_error_mm": 0.03032386302947998,
+            "success": true,
+            "plan_s": 1.4154868116602302,
+            "total_s": 2.125082229729742
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -6.291654373581613,
+              7.89061252018956
+            ],
+            "peak_error_mm": 5.6177659425884485,
+            "success": true,
+            "plan_s": 1.414787211921066,
+            "total_s": 2.1232559392228723
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -4.825299752887277,
+              9.999999988113355
+            ],
+            "peak_error_mm": 9.932353161275387,
+            "success": true,
+            "plan_s": 1.4164106026291847,
+            "total_s": 2.1247824914753437
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              5.04966863141341,
+              -9.999971265187154
+            ],
+            "peak_error_mm": 4.171174019575119,
+            "success": true,
+            "plan_s": 1.4154675318859518,
+            "total_s": 2.1249500578269362
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              2.2174375401811575,
+              -9.999999972852281
+            ],
+            "peak_error_mm": 3.849795088171959,
+            "success": true,
+            "plan_s": 1.4162401058711112,
+            "total_s": 2.123691278975457
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              7.702545734044832,
+              7.940004836619868
+            ],
+            "peak_error_mm": 0.10579871013760567,
+            "success": true,
+            "plan_s": 1.4147810339927673,
+            "total_s": 2.1249058647081256
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              7.702545734044827,
+              8.04356377266791
+            ],
+            "peak_error_mm": 0.3462289460003376,
+            "success": true,
+            "plan_s": 1.4154557436704636,
+            "total_s": 2.128704358357936
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51244,
+      "nominal_y_m": [
+        -0.00621062470600009,
+        -0.0010289400815963745
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.0013779790024273098,
+        0.001794981025159359
+      ],
+      "supernerd_memory_share": 0.1330110877752304,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -6.281817487140368,
+              -6.782203425622237
+            ],
+            "peak_error_mm": 0.1682564616203308,
+            "success": true,
+            "plan_s": 1.4357263939455152,
+            "total_s": 2.15565390791744
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -6.281817487140372,
+              -6.858971279335746
+            ],
+            "peak_error_mm": 0.3333874046802521,
+            "success": true,
+            "plan_s": 1.4362890827469528,
+            "total_s": 2.1516985199414194
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -5.578956283564167,
+              9.445872256888773
+            ],
+            "peak_error_mm": 5.064722150564194,
+            "success": true,
+            "plan_s": 1.4356224690563977,
+            "total_s": 2.1518284771591425
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -5.246326059205404,
+              9.999999999348264
+            ],
+            "peak_error_mm": 6.132479757070541,
+            "success": true,
+            "plan_s": 1.4371892209164798,
+            "total_s": 2.1557189687155187
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              6.576050629440118,
+              -9.999999971853866
+            ],
+            "peak_error_mm": 4.318686202168465,
+            "success": true,
+            "plan_s": 1.4363680579699576,
+            "total_s": 2.1917134593240917
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              5.938940279701644,
+              -9.999999998743254
+            ],
+            "peak_error_mm": 4.103759303689003,
+            "success": true,
+            "plan_s": 1.4370136172510684,
+            "total_s": 2.154464370571077
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              5.0326069247304765,
+              8.051893323576222
+            ],
+            "peak_error_mm": 1.0144589468836784,
+            "success": true,
+            "plan_s": 1.4356212001293898,
+            "total_s": 2.1534902933053672
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              5.032606924730478,
+              8.51510405505478
+            ],
+            "peak_error_mm": 2.0020846277475357,
+            "success": true,
+            "plan_s": 1.4362755115143955,
+            "total_s": 2.1579765011556447
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51245,
+      "nominal_y_m": [
+        -0.010192991234362125,
+        -0.014544256031513214
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.0030210468918085097,
+        0.0038024234585464
+      ],
+      "supernerd_memory_share": 0.0371914841234684,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -8.074077930975548,
+              -7.661012626783965
+            ],
+            "peak_error_mm": 0.03904476761817932,
+            "success": true,
+            "plan_s": 1.4041894087567925,
+            "total_s": 2.106695454567671
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -8.074077930975548,
+              -7.645056690115902
+            ],
+            "peak_error_mm": 0.10148808360099792,
+            "success": true,
+            "plan_s": 1.4047911539673805,
+            "total_s": 2.107096863910556
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -7.088988849088132,
+              5.273879989500397
+            ],
+            "peak_error_mm": 0.5680541507899761,
+            "success": true,
+            "plan_s": 1.4040946159511805,
+            "total_s": 2.1036529559642076
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -7.088988849088132,
+              5.751434386401731
+            ],
+            "peak_error_mm": 1.2256847694516182,
+            "success": true,
+            "plan_s": 1.4047430497594178,
+            "total_s": 2.107541799545288
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              8.98930626454379,
+              -6.582964901401141
+            ],
+            "peak_error_mm": 0.750567764043808,
+            "success": true,
+            "plan_s": 1.4040899672545493,
+            "total_s": 2.104340963996947
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              8.989306264543789,
+              -7.184492480649157
+            ],
+            "peak_error_mm": 1.5055984258651733,
+            "success": true,
+            "plan_s": 1.4047319539822638,
+            "total_s": 2.105198830831796
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              6.071383210509175,
+              5.1348892068770775
+            ],
+            "peak_error_mm": 0.043347012251615524,
+            "success": true,
+            "plan_s": 1.404094026889652,
+            "total_s": 2.1045296057127416
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              6.071383210509175,
+              5.098714202924086
+            ],
+            "peak_error_mm": 0.0917334109544754,
+            "success": true,
+            "plan_s": 1.4047324457205832,
+            "total_s": 2.106700715608895
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51246,
+      "nominal_y_m": [
+        -0.07546938210725784,
+        -0.01708223856985569
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.00839627832174301,
+        0.0074693746864795685
+      ],
+      "supernerd_memory_share": -0.4635106921195984,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -7.845961778972135,
+              -8.21928659955263
+            ],
+            "peak_error_mm": 1.5930086374282837,
+            "success": true,
+            "plan_s": 1.4057300076819956,
+            "total_s": 2.107696683611721
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -7.8459617789721365,
+              -8.101050329121238
+            ],
+            "peak_error_mm": 1.5930086374282837,
+            "success": true,
+            "plan_s": 1.4063321738503873,
+            "total_s": 2.106436065863818
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -7.389115059026768,
+              8.602017161709588
+            ],
+            "peak_error_mm": 18.238868564367294,
+            "success": false,
+            "plan_s": 1.4056341527029872,
+            "total_s": 2.1081538586877286
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -7.389115059026775,
+              3.5374414101825185
+            ],
+            "peak_error_mm": 25.65564587712288,
+            "success": false,
+            "plan_s": 1.4062940189614892,
+            "total_s": 2.105595780070871
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              6.603347112960226,
+              -7.832998012513435
+            ],
+            "peak_error_mm": 15.422023832798004,
+            "success": false,
+            "plan_s": 1.4056195179000497,
+            "total_s": 2.106012310832739
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              6.603347112960232,
+              -3.260841241253672
+            ],
+            "peak_error_mm": 23.1315940618515,
+            "success": false,
+            "plan_s": 1.406293099746108,
+            "total_s": 2.106755708809942
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              7.906140349164731,
+              6.277039667438886
+            ],
+            "peak_error_mm": 2.0988229662179947,
+            "success": true,
+            "plan_s": 1.405631860718131,
+            "total_s": 2.1042874357663095
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              7.906140349164734,
+              6.792994616442805
+            ],
+            "peak_error_mm": 2.2635143250226974,
+            "success": true,
+            "plan_s": 1.4062866126187146,
+            "total_s": 2.1078272527083755
+          }
+        }
+      ]
+    },
+    {
+      "seed": 51247,
+      "nominal_y_m": [
+        -0.011220814660191536,
+        0.0034972887951880693
+      ],
+      "diagonal_increment_m_per_ms2": [
+        0.001598759228363633,
+        7.494604215025902e-05
+      ],
+      "supernerd_memory_share": 78.50625610351562,
+      "cases": [
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -5.04271491065486,
+              -9.999858952075217
+            ],
+            "peak_error_mm": 3.175810561515391,
+            "success": true,
+            "plan_s": 1.386675480287522,
+            "total_s": 2.075964313466102
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -5.04271491065486,
+              -4.707813174830982
+            ],
+            "peak_error_mm": 2.291408949531615,
+            "success": true,
+            "plan_s": 1.3864478799514472,
+            "total_s": 2.0757763306610286
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              -6.243752055778954,
+              9.999999664192119
+            ],
+            "peak_error_mm": 4.595067352056503,
+            "success": true,
+            "plan_s": 1.3863135599531233,
+            "total_s": 2.0748245022259653
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              -6.243752055778955,
+              -8.345992053692129
+            ],
+            "peak_error_mm": 14.384704641997814,
+            "success": false,
+            "plan_s": 1.386417947243899,
+            "total_s": 2.0726176383905113
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              5.474043949375607,
+              -9.999999694903346
+            ],
+            "peak_error_mm": 1.0553570464253426,
+            "success": true,
+            "plan_s": 1.3863402451388538,
+            "total_s": 2.0747792972251773
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              5.4740439493756075,
+              8.048000967833163
+            ],
+            "peak_error_mm": 17.613335978239775,
+            "success": false,
+            "plan_s": 1.3864072589203715,
+            "total_s": 2.073046474251896
+          }
+        },
+        {
+          "newton_no_memory": {
+            "amplitudes": [
+              5.963049556880879,
+              3.44954872894783
+            ],
+            "peak_error_mm": 2.4134196573868394,
+            "success": true,
+            "plan_s": 1.3857375760562718,
+            "total_s": 2.0767397452145815
+          },
+          "supernerd_memory": {
+            "amplitudes": [
+              5.96304955688088,
+              5.995479207779978
+            ],
+            "peak_error_mm": 0.22099516354501247,
+            "success": true,
+            "plan_s": 1.386420835275203,
+            "total_s": 2.0864582462236285
+          }
+        }
+      ]
+    }
+  ]
+}

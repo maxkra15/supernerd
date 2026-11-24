@@ -1,0 +1,8 @@
+{
+  "train": "192 novel seeded fabrics each with a random macro-action, plus 8 no-movement examples",
+  "test": "16 different asset/target seeds, 12 action choices per asset including no movement and geometric folding; all arms see identical choices",
+  "success": ["final six-frame mean native-vertex RMS to ideal reflected fold <= 5% of length", "both grasp corner errors <= 10% of length", "95th-percentile final height <= 35 mm", "mean final displacement-derived speed <= 50 mm/s"],
+  "native_task_score": "minimize RMS shape error / length + positive(95th-percentile-height - 0.035)/length + positive(max grasp-corner error / length - 0.10); same objective for model and Newton candidate ranking",
+  "surrogate": "task-conditioned RBF trajectory model, conditional on initial geometry, material, release schedule and an open-loop grasp macro-action. Fixed fit using only training data. Full native relative XYZ shape history predicted per candidate.",
+  "safety_checks": "Report support, final edge stretch, terminal interlayer order and non-adjacent triangle intersection diagnostics; no exact self-collision guarantee."
+}

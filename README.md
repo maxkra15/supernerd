@@ -8,6 +8,10 @@ On 16 fresh objects and 80 six-second trajectories, the shared model averages **
 
 ![A six-second Newton and SuperNeRD rollout on a fresh cable and cloth under a descending chirp](figures/newton-supernerd.gif)
 
+## Task performance in Newton
+
+SuperNeRD and NeurALL now choose actions on the same cable task. The released SuperNeRD cable passed both timed tip gates on **16/32** goals, NeurALL on **14/32**, and a three-probe continuous Newton controller on **32/32**. The gates move substantially under teacher refinement. On tabletop cloth, a new learned model ranked 12 grasp motions. Checking its top three in Newton completed **14/16** folds, against **15/16** for a full search, at **3.91×** the planning speed on one CPU core. The learned choice alone completed **9/16**. [Task results and videos](https://maxkra15.github.io/supernerd/#tasks) · [Cable benchmark](tasks/cable/README.md) · [Folding benchmark](tasks/cloth/README.md).
+
 ## Force-response learning
 
 Starting from the released model, an additional 7.1 seconds of training on original trajectories and new force perturbations improved release rollouts on an independent 80-trajectory confirmation set. Cable shape error fell from 1.41% to 1.28%, and cloth force-response error fell from 95.04% to 88.59%. A loss that explicitly differentiates the surrogate gave similar accuracy to ordinary backpropagation on measured displacement differences and took longer. Moving cloth restarts remain a weakness. [Study](https://maxkra15.github.io/supernerd/#gradients) · [New rollout GIF](figures/gradient-confirmation.gif) · [Data, checkpoints and commands](deformables/gradients/README.md).

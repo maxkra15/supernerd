@@ -1,0 +1,386 @@
+[
+  {
+    "target_gate_m": [
+      -0.1646370142698288,
+      -0.14801611006259918
+    ],
+    "refined_witness_gate_m": [
+      -0.01583700068295002,
+      -0.01029791310429573
+    ],
+    "methods": {
+      "supernerd": {
+        "candidate": [
+          -10.0,
+          -10.0
+        ],
+        "newton_peak_mm": 62.115415930747986,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 151.73753164708614,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 4.530264995992184,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.01841120608150959,
+        "planner_and_replay_s": 0.7287819152697921
+      },
+      "supernerd_mixed": {
+        "candidate": [
+          -10.0,
+          -10.0
+        ],
+        "newton_peak_mm": 62.115415930747986,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 151.73753164708614,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 4.530264995992184,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.018742769490927458,
+        "planner_and_replay_s": 0.7288287221454084
+      },
+      "neurall": {
+        "candidate": [
+          -9.223839485762763,
+          -6.866031825189102
+        ],
+        "newton_peak_mm": 25.735855102539062,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 150.99818538874388,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 2.198171801865101,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.011268677189946175,
+        "planner_and_replay_s": 0.7228205720894039
+      },
+      "newton": {
+        "candidate": [
+          -6.908416137009369,
+          -5.3321688873452775
+        ],
+        "newton_peak_mm": 0.30712783336639404,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 148.82869273424149,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.030815601348876953,
+        "refined_witness_goal_pass": true,
+        "planner_s": 17.675103374756873,
+        "planner_and_replay_s": 18.384958170820028
+      },
+      "supernerd_one_replay": {
+        "candidate": [
+          -10.0,
+          -10.0
+        ],
+        "newton_peak_mm": 62.115415930747986,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 151.73753164708614,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 4.530264995992184,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.7237347513437271,
+        "planner_and_replay_s": 1.4307762645184994
+      },
+      "newton_three_probes": {
+        "candidate": [
+          -6.777885479858622,
+          -5.200658969481191
+        ],
+        "newton_peak_mm": 1.6702860593795776,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 148.70399236679077,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.09602122008800507,
+        "refined_witness_goal_pass": true,
+        "planner_s": 2.1206675693392754,
+        "planner_and_replay_s": 2.82671223860234
+      }
+    }
+  },
+  {
+    "target_gate_m": [
+      -0.16493496298789978,
+      0.01488024927675724
+    ],
+    "refined_witness_gate_m": [
+      -0.01580873318016529,
+      -0.038577646017074585
+    ],
+    "methods": {
+      "supernerd": {
+        "candidate": [
+          -10.0,
+          10.0
+        ],
+        "newton_peak_mm": 40.7914686948061,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 152.03548036515713,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 13.815734535455704,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.018378719221800566,
+        "planner_and_replay_s": 0.7219491032883525
+      },
+      "supernerd_mixed": {
+        "candidate": [
+          -10.0,
+          10.0
+        ],
+        "newton_peak_mm": 40.7914686948061,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 152.03548036515713,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 13.815734535455704,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.0187179958447814,
+        "planner_and_replay_s": 0.7260744366794825
+      },
+      "neurall": {
+        "candidate": [
+          -9.278208000696091,
+          6.01042938482436
+        ],
+        "newton_peak_mm": 26.028543710708618,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 151.3451524078846,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 2.991948276758194,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.011276297271251678,
+        "planner_and_replay_s": 0.7192361424677074
+      },
+      "newton": {
+        "candidate": [
+          -6.935412052586072,
+          6.813589189686001
+        ],
+        "newton_peak_mm": 0.30478835105895996,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 149.14841204881668,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.07957220077514648,
+        "refined_witness_goal_pass": true,
+        "planner_s": 17.675090193282813,
+        "planner_and_replay_s": 18.379735267255455
+      },
+      "supernerd_one_replay": {
+        "candidate": [
+          -10.0,
+          10.0
+        ],
+        "newton_peak_mm": 40.7914686948061,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 152.03548036515713,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 13.815734535455704,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.7237406577914953,
+        "planner_and_replay_s": 1.4340703608468175
+      },
+      "newton_three_probes": {
+        "candidate": [
+          -6.803712021211991,
+          6.86821454259421
+        ],
+        "newton_peak_mm": 1.1585354804992676,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 149.02692660689354,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.09930320084095001,
+        "refined_witness_goal_pass": true,
+        "planner_s": 2.120644633192569,
+        "planner_and_replay_s": 2.8311746772378683
+      }
+    }
+  },
+  {
+    "target_gate_m": [
+      0.002516559325158596,
+      -0.12984837591648102
+    ],
+    "refined_witness_gate_m": [
+      -0.028601182624697685,
+      0.01921948604285717
+    ],
+    "methods": {
+      "supernerd": {
+        "candidate": [
+          8.411371201621549,
+          -10.0
+        ],
+        "newton_peak_mm": 64.22817707061768,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 161.97844967246056,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 12.910587713122368,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.01841383008286357,
+        "planner_and_replay_s": 0.7253984338603914
+      },
+      "supernerd_mixed": {
+        "candidate": [
+          8.382071440858091,
+          -10.0
+        ],
+        "newton_peak_mm": 64.25836682319641,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 161.91919893026352,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 12.851336970925331,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.018715987913310528,
+        "planner_and_replay_s": 0.7239035107195377
+      },
+      "neurall": {
+        "candidate": [
+          10.0,
+          -4.434661221777367
+        ],
+        "newton_peak_mm": 25.53087193518877,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 152.24845707416534,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 3.180595114827156,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.011221765074878931,
+        "planner_and_replay_s": 0.7162604951299727
+      },
+      "newton": {
+        "candidate": [
+          7.752900127834421,
+          -5.064810463716425
+        ],
+        "newton_peak_mm": 0.1952950842678547,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 149.11476336419582,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.0469014048576355,
+        "refined_witness_goal_pass": true,
+        "planner_s": 17.675092054065317,
+        "planner_and_replay_s": 18.3829598990269
+      },
+      "supernerd_one_replay": {
+        "candidate": [
+          10.0,
+          -10.0
+        ],
+        "newton_peak_mm": 62.67982721328735,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 165.22615775465965,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 16.158295795321465,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.7237446438521147,
+        "planner_and_replay_s": 1.4260282958857715
+      },
+      "newton_three_probes": {
+        "candidate": [
+          7.71118065462242,
+          -5.029152022308962
+        ],
+        "newton_peak_mm": 0.3815889358520508,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 148.94625917077065,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.12160278856754303,
+        "refined_witness_goal_pass": true,
+        "planner_s": 2.120627688243985,
+        "planner_and_replay_s": 2.8263392485678196
+      }
+    }
+  },
+  {
+    "target_gate_m": [
+      -0.021144390106201172,
+      0.01298489049077034
+    ],
+    "refined_witness_gate_m": [
+      -0.026825936511158943,
+      -0.010171446949243546
+    ],
+    "methods": {
+      "supernerd": {
+        "candidate": [
+          2.951431055989664,
+          10.0
+        ],
+        "newton_peak_mm": 53.59559878706932,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 38.778094574809074,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 15.621757134795189,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.01841180305927992,
+        "planner_and_replay_s": 0.7260921373963356
+      },
+      "supernerd_mixed": {
+        "candidate": [
+          3.6355669834748254,
+          10.0
+        ],
+        "newton_peak_mm": 54.267216473817825,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 37.36588917672634,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 14.209551736712456,
+        "refined_witness_goal_pass": false,
+        "planner_s": 0.018730511888861656,
+        "planner_and_replay_s": 0.7259663478471339
+      },
+      "neurall": {
+        "candidate": [
+          7.2455486128529945,
+          7.770942613670318
+        ],
+        "newton_peak_mm": 28.837136924266815,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 24.68573022633791,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 1.5293927863240242,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.011272503528743982,
+        "planner_and_replay_s": 0.7221724321134388
+      },
+      "newton": {
+        "candidate": [
+          5.670381497938216,
+          5.741406804493396
+        ],
+        "newton_peak_mm": 0.14732498675584793,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 23.167066276073456,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.010728836059570312,
+        "refined_witness_goal_pass": true,
+        "planner_s": 17.67510396288708,
+        "planner_and_replay_s": 18.380733185913414
+      },
+      "supernerd_one_replay": {
+        "candidate": [
+          10.0,
+          10.0
+        ],
+        "newton_peak_mm": 60.94467267394066,
+        "pass": false,
+        "refined_stock_goal_peak_mm": 24.287947453558445,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 3.7273000925779343,
+        "refined_witness_goal_pass": true,
+        "planner_s": 0.7237455216236413,
+        "planner_and_replay_s": 1.4265116094611585
+      },
+      "newton_three_probes": {
+        "candidate": [
+          5.66022204367314,
+          5.717649917271526
+        ],
+        "newton_peak_mm": 0.18166657537221909,
+        "pass": true,
+        "refined_stock_goal_peak_mm": 23.13100267201662,
+        "refined_stock_goal_pass": false,
+        "refined_witness_goal_peak_mm": 0.025334767997264862,
+        "refined_witness_goal_pass": true,
+        "planner_s": 2.12062188051641,
+        "planner_and_replay_s": 2.8245534845627844
+      }
+    }
+  }
+]
