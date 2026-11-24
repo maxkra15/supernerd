@@ -1,0 +1,2020 @@
+{
+  "summary": {
+    "no_move": {
+      "successes": 0,
+      "mean_shape_error_pct": 32.80846681445837,
+      "final_intersecting_cases": 0
+    },
+    "script": {
+      "successes": 8,
+      "mean_shape_error_pct": 3.788474726025015,
+      "final_intersecting_cases": 0
+    },
+    "neural": {
+      "successes": 9,
+      "mean_shape_error_pct": 2.7956837555393577,
+      "final_intersecting_cases": 0
+    },
+    "script_plus_two": {
+      "successes": 11,
+      "mean_shape_error_pct": 2.6900129625573754,
+      "final_intersecting_cases": 0
+    },
+    "neural_plus_newton": {
+      "successes": 14,
+      "mean_shape_error_pct": 2.0271277462597936,
+      "final_intersecting_cases": 0
+    },
+    "full_newton": {
+      "successes": 15,
+      "mean_shape_error_pct": 2.000626811059192,
+      "final_intersecting_cases": 0
+    }
+  },
+  "cases": [
+    {
+      "seed": 50300,
+      "target": 0.09537924260587279,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 6,
+        "script_plus_two": 8,
+        "neural_plus_newton": 5,
+        "full_newton": 8
+      },
+      "learned_shortlist": [
+        6,
+        10,
+        5
+      ],
+      "script_shortlist": [
+        1,
+        8,
+        11
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 38.380879163742065,
+          "corner_error_percent": 90.4656708240509,
+          "final_height_p95_m": 0.002996395342051983,
+          "tail_speed_m_s": 4.992858180230542e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 2.4301307275891304,
+          "corner_error_percent": 1.6334030777215958,
+          "final_height_p95_m": 0.04902409762144089,
+          "tail_speed_m_s": 0.000531593628693372,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 2.4549465626478195,
+          "corner_error_percent": 4.39690500497818,
+          "final_height_p95_m": 0.04843476787209511,
+          "tail_speed_m_s": 0.0005467720911838114,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 4.71113882958889,
+          "corner_error_percent": 7.027272135019302,
+          "final_height_p95_m": 0.011911498382687569,
+          "tail_speed_m_s": 0.004871038254350424,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 3.4318018704652786,
+          "corner_error_percent": 4.307379573583603,
+          "final_height_p95_m": 0.042725734412670135,
+          "tail_speed_m_s": 0.0003012987435795367,
+          "success": false
+        },
+        "full_newton": {
+          "shape_error_percent": 4.71113882958889,
+          "corner_error_percent": 7.027272135019302,
+          "final_height_p95_m": 0.011911498382687569,
+          "tail_speed_m_s": 0.004871038254350424,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.7566852048039436,
+        "corner_error_percent": 6.045166030526161,
+        "final_height_p95_m": 0.03289603441953659,
+        "tail_speed_m_s": 0.0035209176130592823,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 0,
+        "min_z_m": 0.0014372840523719788,
+        "overlap_probe_count": 36,
+        "positive_layer_fraction": 1.0,
+        "median_layer_gap_mm": 13.376210226670546
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029962954577058554,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002495537279173732,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.976447793039945
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002492346102371812,
+          "overlap_probe_count": 34,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.980225224044514
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 6.350333569571376e-05,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.981196356472749
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0025328933261334896,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.972335102056583
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 6.350333569571376e-05,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.981196356472749
+        }
+      }
+    },
+    {
+      "seed": 50301,
+      "target": 0.17895783990016842,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 11,
+        "script_plus_two": 9,
+        "neural_plus_newton": 1,
+        "full_newton": 9
+      },
+      "learned_shortlist": [
+        11,
+        6,
+        1
+      ],
+      "script_shortlist": [
+        1,
+        6,
+        9
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 33.59681963920593,
+          "corner_error_percent": 82.10867047309875,
+          "final_height_p95_m": 0.0029953925404697657,
+          "tail_speed_m_s": 4.398395105909003e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 0.7929361425340176,
+          "corner_error_percent": 1.37323047965765,
+          "final_height_p95_m": 0.01174627710133791,
+          "tail_speed_m_s": 0.0047721234150230885,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 7.290521264076233,
+          "corner_error_percent": 7.432175427675247,
+          "final_height_p95_m": 0.05546184256672859,
+          "tail_speed_m_s": 0.0024091412778943777,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 0.7843761704862118,
+          "corner_error_percent": 1.4083415269851685,
+          "final_height_p95_m": 0.011579933576285839,
+          "tail_speed_m_s": 0.001924346899613738,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 0.7929361425340176,
+          "corner_error_percent": 1.37323047965765,
+          "final_height_p95_m": 0.01174627710133791,
+          "tail_speed_m_s": 0.0047721234150230885,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 0.7843761704862118,
+          "corner_error_percent": 1.4083415269851685,
+          "final_height_p95_m": 0.011579933576285839,
+          "tail_speed_m_s": 0.001924346899613738,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.450457401573658,
+        "corner_error_percent": 4.874671250581741,
+        "final_height_p95_m": 0.02346462570130825,
+        "tail_speed_m_s": 0.0037874008994549513,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 0,
+        "min_z_m": -0.0060366615653038025,
+        "overlap_probe_count": 36,
+        "positive_layer_fraction": 1.0,
+        "median_layer_gap_mm": 15.597464514771445
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029952533077448606,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00011335001909174025,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.953568872637243
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0018676391337066889,
+          "overlap_probe_count": 36,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 29.242924629185985
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00023613838129676878,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.952147727174012
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00011335001909174025,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.953568872637243
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00023613838129676878,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.952147727174012
+        }
+      }
+    },
+    {
+      "seed": 50302,
+      "target": 0.048331973326689835,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 5,
+        "script_plus_two": 2,
+        "neural_plus_newton": 5,
+        "full_newton": 5
+      },
+      "learned_shortlist": [
+        5,
+        1,
+        6
+      ],
+      "script_shortlist": [
+        1,
+        2,
+        8
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 41.17398262023926,
+          "corner_error_percent": 95.17109394073486,
+          "final_height_p95_m": 0.002995656570419669,
+          "tail_speed_m_s": 4.900428507426113e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 3.012818843126297,
+          "corner_error_percent": 4.192464426159859,
+          "final_height_p95_m": 0.040724895894527435,
+          "tail_speed_m_s": 0.0008555932436138391,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 2.134746126830578,
+          "corner_error_percent": 4.367109760642052,
+          "final_height_p95_m": 0.030850982293486595,
+          "tail_speed_m_s": 0.0007853476563468575,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 3.2503288239240646,
+          "corner_error_percent": 4.944713041186333,
+          "final_height_p95_m": 0.030320992693305016,
+          "tail_speed_m_s": 0.0020333225838840008,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 2.134746126830578,
+          "corner_error_percent": 4.367109760642052,
+          "final_height_p95_m": 0.030850982293486595,
+          "tail_speed_m_s": 0.0007853476563468575,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 2.134746126830578,
+          "corner_error_percent": 4.367109760642052,
+          "final_height_p95_m": 0.030850982293486595,
+          "tail_speed_m_s": 0.0007853476563468575,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 1.393697690218687,
+        "corner_error_percent": 4.814811423420906,
+        "final_height_p95_m": 0.01513700745999813,
+        "tail_speed_m_s": 0.0025041161570698023,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 0,
+        "min_z_m": 0.001606722828000784,
+        "overlap_probe_count": 44,
+        "positive_layer_fraction": 1.0,
+        "median_layer_gap_mm": 10.179420036486492
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029956288635730743,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0017608313355594873,
+          "overlap_probe_count": 40,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.97856804635904
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002433682791888714,
+          "overlap_probe_count": 43,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.972651066784604
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0020917262881994247,
+          "overlap_probe_count": 43,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.992085076906685
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002433682791888714,
+          "overlap_probe_count": 43,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.972651066784604
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002433682791888714,
+          "overlap_probe_count": 43,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.972651066784604
+        }
+      }
+    },
+    {
+      "seed": 50303,
+      "target": 0.3069690692522785,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 10,
+        "script_plus_two": 5,
+        "neural_plus_newton": 8,
+        "full_newton": 6
+      },
+      "learned_shortlist": [
+        10,
+        2,
+        8
+      ],
+      "script_shortlist": [
+        1,
+        4,
+        5
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 26.674440503120422,
+          "corner_error_percent": 69.30835247039795,
+          "final_height_p95_m": 0.0029964307323098183,
+          "tail_speed_m_s": 5.76879983782419e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 8.077894151210785,
+          "corner_error_percent": 6.05999119579792,
+          "final_height_p95_m": 0.03604092448949814,
+          "tail_speed_m_s": 0.0028656362555921078,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 3.010113723576069,
+          "corner_error_percent": 5.144884809851646,
+          "final_height_p95_m": 0.02853492647409439,
+          "tail_speed_m_s": 0.00022153777536004782,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 3.2108791172504425,
+          "corner_error_percent": 3.169642761349678,
+          "final_height_p95_m": 0.0463363341987133,
+          "tail_speed_m_s": 0.00018721920787356794,
+          "success": false
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.739814132452011,
+          "corner_error_percent": 2.905050106346607,
+          "final_height_p95_m": 0.012053185142576694,
+          "tail_speed_m_s": 0.00416785990819335,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.6338597983121872,
+          "corner_error_percent": 2.6411280035972595,
+          "final_height_p95_m": 0.01207786612212658,
+          "tail_speed_m_s": 0.005140521563589573,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.283596619963646,
+        "corner_error_percent": 4.973456263542175,
+        "final_height_p95_m": 0.031076177954673767,
+        "tail_speed_m_s": 0.00975213386118412,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 53,
+        "min_z_m": -0.0036784494295716286,
+        "overlap_probe_count": 22,
+        "positive_layer_fraction": 0.6818181818181818,
+        "median_layer_gap_mm": 6.624732601836932
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029963452834635973,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0010206750594079494,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 14.341472288376659
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0024268559645861387,
+          "overlap_probe_count": 24,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.956737468198757
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002598763443529606,
+          "overlap_probe_count": 26,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.982099511429155
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00047475373139604926,
+          "overlap_probe_count": 21,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.989399212413074
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 2.606722409836948e-05,
+          "overlap_probe_count": 23,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.997151688055382
+        }
+      }
+    },
+    {
+      "seed": 50304,
+      "target": 0.3121106158358773,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 10,
+        "script_plus_two": 5,
+        "neural_plus_newton": 6,
+        "full_newton": 6
+      },
+      "learned_shortlist": [
+        10,
+        5,
+        6
+      ],
+      "script_shortlist": [
+        1,
+        11,
+        5
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 26.408258080482483,
+          "corner_error_percent": 68.79416704177856,
+          "final_height_p95_m": 0.002997439121827483,
+          "tail_speed_m_s": 3.9221475844897213e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 8.253032714128494,
+          "corner_error_percent": 14.834477007389069,
+          "final_height_p95_m": 0.03321647644042969,
+          "tail_speed_m_s": 0.0008063452551141381,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 3.0245451256632805,
+          "corner_error_percent": 5.1628753542900085,
+          "final_height_p95_m": 0.031252846121788025,
+          "tail_speed_m_s": 0.00019455529400147498,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 3.2211851328611374,
+          "corner_error_percent": 3.1817495822906494,
+          "final_height_p95_m": 0.04677991941571236,
+          "tail_speed_m_s": 0.0001718414860079065,
+          "success": false
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.3447714038193226,
+          "corner_error_percent": 2.169143036007881,
+          "final_height_p95_m": 0.011876634322106838,
+          "tail_speed_m_s": 0.004537912085652351,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.3447714038193226,
+          "corner_error_percent": 2.169143036007881,
+          "final_height_p95_m": 0.011876634322106838,
+          "tail_speed_m_s": 0.004537912085652351,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.6852689683437347,
+        "corner_error_percent": 5.449733138084412,
+        "final_height_p95_m": 0.03661426901817322,
+        "tail_speed_m_s": 0.007520102430135012,
+        "success": false
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 45,
+        "min_z_m": -0.0006535067223012447,
+        "overlap_probe_count": 22,
+        "positive_layer_fraction": 0.6818181818181818,
+        "median_layer_gap_mm": 3.8071518530322406
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029973064083606005,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -0.0001705862523522228,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.181723881578323
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002480972558259964,
+          "overlap_probe_count": 24,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.961653734435307
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0025733327493071556,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.980207136640189
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.000788223696872592,
+          "overlap_probe_count": 23,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.978283126176086
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.000788223696872592,
+          "overlap_probe_count": 23,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.978283126176086
+        }
+      }
+    },
+    {
+      "seed": 50305,
+      "target": 0.20488329342409936,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 2,
+        "script_plus_two": 1,
+        "neural_plus_newton": 5,
+        "full_newton": 5
+      },
+      "learned_shortlist": [
+        2,
+        5,
+        6
+      ],
+      "script_shortlist": [
+        1,
+        7,
+        6
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 32.15632140636444,
+          "corner_error_percent": 79.51551675796509,
+          "final_height_p95_m": 0.002996140858158469,
+          "tail_speed_m_s": 4.682756014062761e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 2.2435138002038,
+          "corner_error_percent": 3.6102935671806335,
+          "final_height_p95_m": 0.0120138144120574,
+          "tail_speed_m_s": 0.00430384511128068,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 2.4855582043528557,
+          "corner_error_percent": 4.182112962007523,
+          "final_height_p95_m": 0.0118261082097888,
+          "tail_speed_m_s": 0.0025545938406139612,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 2.2435138002038,
+          "corner_error_percent": 3.6102935671806335,
+          "final_height_p95_m": 0.0120138144120574,
+          "tail_speed_m_s": 0.00430384511128068,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.8786108121275902,
+          "corner_error_percent": 4.262396693229675,
+          "final_height_p95_m": 0.027492467314004898,
+          "tail_speed_m_s": 0.0006646242109127343,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.8786108121275902,
+          "corner_error_percent": 4.262396693229675,
+          "final_height_p95_m": 0.027492467314004898,
+          "tail_speed_m_s": 0.0006646242109127343,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.6393450796604156,
+        "corner_error_percent": 3.978334739804268,
+        "final_height_p95_m": 0.027526451274752617,
+        "tail_speed_m_s": 0.00728254858404398,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 30,
+        "min_z_m": -0.013722487725317478,
+        "overlap_probe_count": 32,
+        "positive_layer_fraction": 0.8125,
+        "median_layer_gap_mm": 9.165378573507184
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029960228130221367,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00023340643383562565,
+          "overlap_probe_count": 34,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.991095194136577
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0007267457549460232,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.961765174045281
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00023340643383562565,
+          "overlap_probe_count": 34,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.991095194136577
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0021509325597435236,
+          "overlap_probe_count": 35,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.957445466139086
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0021509325597435236,
+          "overlap_probe_count": 35,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.957445466139086
+        }
+      }
+    },
+    {
+      "seed": 50306,
+      "target": 0.20037205889498416,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 5,
+        "script_plus_two": 1,
+        "neural_plus_newton": 5,
+        "full_newton": 5
+      },
+      "learned_shortlist": [
+        5,
+        1,
+        2
+      ],
+      "script_shortlist": [
+        1,
+        8,
+        4
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 32.40672945976257,
+          "corner_error_percent": 79.96785044670105,
+          "final_height_p95_m": 0.0029974670615047216,
+          "tail_speed_m_s": 5.959608984085207e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 2.0121201872825623,
+          "corner_error_percent": 3.209642320871353,
+          "final_height_p95_m": 0.012315532192587852,
+          "tail_speed_m_s": 0.004303128458559513,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 1.8407024443149567,
+          "corner_error_percent": 3.028041124343872,
+          "final_height_p95_m": 0.01878579892218113,
+          "tail_speed_m_s": 0.0007246834575198591,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 2.0121201872825623,
+          "corner_error_percent": 3.209642320871353,
+          "final_height_p95_m": 0.012315532192587852,
+          "tail_speed_m_s": 0.004303128458559513,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.8407024443149567,
+          "corner_error_percent": 3.028041124343872,
+          "final_height_p95_m": 0.01878579892218113,
+          "tail_speed_m_s": 0.0007246834575198591,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.8407024443149567,
+          "corner_error_percent": 3.028041124343872,
+          "final_height_p95_m": 0.01878579892218113,
+          "tail_speed_m_s": 0.0007246834575198591,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 1.5482403337955475,
+        "corner_error_percent": 3.2424762845039368,
+        "final_height_p95_m": 0.019594909623265266,
+        "tail_speed_m_s": 0.004540365654975176,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 70,
+        "min_z_m": -0.0024594375863671303,
+        "overlap_probe_count": 31,
+        "positive_layer_fraction": 0.6774193548387096,
+        "median_layer_gap_mm": 4.541072531170032
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029974565841257572,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00048344203969463706,
+          "overlap_probe_count": 34,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98722640110506
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0020405962131917477,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.970956098202574
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.00048344203969463706,
+          "overlap_probe_count": 34,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98722640110506
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0020405962131917477,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.970956098202574
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0020405962131917477,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.970956098202574
+        }
+      }
+    },
+    {
+      "seed": 50307,
+      "target": 0.19761301134769213,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 6,
+        "script_plus_two": 1,
+        "neural_plus_newton": 5,
+        "full_newton": 1
+      },
+      "learned_shortlist": [
+        6,
+        2,
+        5
+      ],
+      "script_shortlist": [
+        1,
+        2,
+        7
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 32.55997896194458,
+          "corner_error_percent": 80.24383783340454,
+          "final_height_p95_m": 0.002995432121679187,
+          "tail_speed_m_s": 6.636054195041652e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 1.854339987039566,
+          "corner_error_percent": 2.830922231078148,
+          "final_height_p95_m": 0.012366675771772861,
+          "tail_speed_m_s": 0.003430250333622098,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 3.2908275723457336,
+          "corner_error_percent": 3.8455143570899963,
+          "final_height_p95_m": 0.03905439376831055,
+          "tail_speed_m_s": 0.0007504301029257476,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 1.854339987039566,
+          "corner_error_percent": 2.830922231078148,
+          "final_height_p95_m": 0.012366675771772861,
+          "tail_speed_m_s": 0.003430250333622098,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.9832629710435867,
+          "corner_error_percent": 3.3196065574884415,
+          "final_height_p95_m": 0.011569605208933353,
+          "tail_speed_m_s": 0.002056921599432826,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.854339987039566,
+          "corner_error_percent": 2.830922231078148,
+          "final_height_p95_m": 0.012366675771772861,
+          "tail_speed_m_s": 0.003430250333622098,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.8280993923544884,
+        "corner_error_percent": 8.340047299861908,
+        "final_height_p95_m": 0.02950071170926094,
+        "tail_speed_m_s": 0.004011060576885939,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 0,
+        "min_z_m": -0.006351490505039692,
+        "overlap_probe_count": 34,
+        "positive_layer_fraction": 1.0,
+        "median_layer_gap_mm": 10.560582109022134
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002995324321091175,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -1.89109705388546e-05,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.995852025036859
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0016533645102754235,
+          "overlap_probe_count": 35,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.987120305185433
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -1.89109705388546e-05,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.995852025036859
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0004345503984950483,
+          "overlap_probe_count": 28,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.97027085489231
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -1.89109705388546e-05,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.995852025036859
+        }
+      }
+    },
+    {
+      "seed": 50308,
+      "target": 0.17949076386647114,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 1,
+        "script_plus_two": 1,
+        "neural_plus_newton": 1,
+        "full_newton": 1
+      },
+      "learned_shortlist": [
+        1,
+        5,
+        9
+      ],
+      "script_shortlist": [
+        1,
+        7,
+        8
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 33.56727063655853,
+          "corner_error_percent": 82.05575346946716,
+          "final_height_p95_m": 0.0029973264317959547,
+          "tail_speed_m_s": 4.1683921381263644e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 0.8462641388177872,
+          "corner_error_percent": 1.4448540285229683,
+          "final_height_p95_m": 0.012312505394220352,
+          "tail_speed_m_s": 0.0038933842442929745,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 0.8462641388177872,
+          "corner_error_percent": 1.4448540285229683,
+          "final_height_p95_m": 0.012312505394220352,
+          "tail_speed_m_s": 0.0038933842442929745,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 0.8462641388177872,
+          "corner_error_percent": 1.4448540285229683,
+          "final_height_p95_m": 0.012312505394220352,
+          "tail_speed_m_s": 0.0038933842442929745,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 0.8462641388177872,
+          "corner_error_percent": 1.4448540285229683,
+          "final_height_p95_m": 0.012312505394220352,
+          "tail_speed_m_s": 0.0038933842442929745,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 0.8462641388177872,
+          "corner_error_percent": 1.4448540285229683,
+          "final_height_p95_m": 0.012312505394220352,
+          "tail_speed_m_s": 0.0038933842442929745,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.4619609117507935,
+        "corner_error_percent": 5.541098490357399,
+        "final_height_p95_m": 0.021960603073239326,
+        "tail_speed_m_s": 0.004021649248898029,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 0,
+        "min_z_m": -0.005511777475476265,
+        "overlap_probe_count": 32,
+        "positive_layer_fraction": 1.0,
+        "median_layer_gap_mm": 13.823536381373382
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029973024502396584,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0007845539948903024,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98865326367384
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0007845539948903024,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98865326367384
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0007845539948903024,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98865326367384
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0007845539948903024,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98865326367384
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0007845539948903024,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.98865326367384
+        }
+      }
+    },
+    {
+      "seed": 50309,
+      "target": 0.12488126918817141,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 6,
+        "script_plus_two": 1,
+        "neural_plus_newton": 6,
+        "full_newton": 1
+      },
+      "learned_shortlist": [
+        6,
+        10,
+        5
+      ],
+      "script_shortlist": [
+        1,
+        5,
+        4
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 36.66362762451172,
+          "corner_error_percent": 87.51548528671265,
+          "final_height_p95_m": 0.0029949306044727564,
+          "tail_speed_m_s": 3.682126532567054e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 2.5236105546355247,
+          "corner_error_percent": 3.736964985728264,
+          "final_height_p95_m": 0.011683783493936062,
+          "tail_speed_m_s": 0.0032723189797252417,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 2.5691183283925056,
+          "corner_error_percent": 3.5688508301973343,
+          "final_height_p95_m": 0.012375201098620892,
+          "tail_speed_m_s": 0.00539074232801795,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 2.5236105546355247,
+          "corner_error_percent": 3.736964985728264,
+          "final_height_p95_m": 0.011683783493936062,
+          "tail_speed_m_s": 0.0032723189797252417,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 2.5691183283925056,
+          "corner_error_percent": 3.5688508301973343,
+          "final_height_p95_m": 0.012375201098620892,
+          "tail_speed_m_s": 0.00539074232801795,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 2.5236105546355247,
+          "corner_error_percent": 3.736964985728264,
+          "final_height_p95_m": 0.011683783493936062,
+          "tail_speed_m_s": 0.0032723189797252417,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.1448053419589996,
+        "corner_error_percent": 4.9731336534023285,
+        "final_height_p95_m": 0.027817826718091965,
+        "tail_speed_m_s": 0.006097115576267242,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 6,
+        "min_z_m": -0.001637046691030264,
+        "overlap_probe_count": 33,
+        "positive_layer_fraction": 1.0,
+        "median_layer_gap_mm": 13.850536589826673
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029947892762720585,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0005141418660059571,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.963282330748676
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -8.093664655461907e-05,
+          "overlap_probe_count": 36,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.997907001261115
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0005141418660059571,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.963282330748676
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -8.093664655461907e-05,
+          "overlap_probe_count": 36,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.997907001261115
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0005141418660059571,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.963282330748676
+        }
+      }
+    },
+    {
+      "seed": 50310,
+      "target": 0.1473127802536171,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 5,
+        "script_plus_two": 1,
+        "neural_plus_newton": 1,
+        "full_newton": 1
+      },
+      "learned_shortlist": [
+        5,
+        2,
+        1
+      ],
+      "script_shortlist": [
+        1,
+        6,
+        3
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 35.379558801651,
+          "corner_error_percent": 85.27358174324036,
+          "final_height_p95_m": 0.0029971711337566376,
+          "tail_speed_m_s": 5.131111606715422e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 1.4567756094038486,
+          "corner_error_percent": 2.1447591483592987,
+          "final_height_p95_m": 0.012539236806333065,
+          "tail_speed_m_s": 0.006736290641129017,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 2.5588082149624825,
+          "corner_error_percent": 3.969905897974968,
+          "final_height_p95_m": 0.035532910376787186,
+          "tail_speed_m_s": 0.0007812523981556296,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 1.4567756094038486,
+          "corner_error_percent": 2.1447591483592987,
+          "final_height_p95_m": 0.012539236806333065,
+          "tail_speed_m_s": 0.006736290641129017,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.4567756094038486,
+          "corner_error_percent": 2.1447591483592987,
+          "final_height_p95_m": 0.012539236806333065,
+          "tail_speed_m_s": 0.006736290641129017,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.4567756094038486,
+          "corner_error_percent": 2.1447591483592987,
+          "final_height_p95_m": 0.012539236806333065,
+          "tail_speed_m_s": 0.006736290641129017,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 1.8203813582658768,
+        "corner_error_percent": 3.205595910549164,
+        "final_height_p95_m": 0.013126839883625507,
+        "tail_speed_m_s": 0.005350874736905098,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 66,
+        "min_z_m": -0.009847433306276798,
+        "overlap_probe_count": 34,
+        "positive_layer_fraction": 0.6470588235294118,
+        "median_layer_gap_mm": 3.309498456044121
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002997155301272869,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -2.163939643651247e-05,
+          "overlap_probe_count": 30,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.040236381752608
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002198284724727273,
+          "overlap_probe_count": 36,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.972246218320315
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -2.163939643651247e-05,
+          "overlap_probe_count": 30,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.040236381752608
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -2.163939643651247e-05,
+          "overlap_probe_count": 30,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.040236381752608
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -2.163939643651247e-05,
+          "overlap_probe_count": 30,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.040236381752608
+        }
+      }
+    },
+    {
+      "seed": 50311,
+      "target": 0.2967735291014304,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 8,
+        "script_plus_two": 2,
+        "neural_plus_newton": 6,
+        "full_newton": 6
+      },
+      "learned_shortlist": [
+        8,
+        10,
+        6
+      ],
+      "script_shortlist": [
+        1,
+        7,
+        2
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 27.205196022987366,
+          "corner_error_percent": 70.32747864723206,
+          "final_height_p95_m": 0.002995658665895462,
+          "tail_speed_m_s": 4.110535201107268e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 7.577745616436005,
+          "corner_error_percent": 4.829233884811401,
+          "final_height_p95_m": 0.02964043989777565,
+          "tail_speed_m_s": 0.002906677545979619,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 2.2866513580083847,
+          "corner_error_percent": 3.7395980209112167,
+          "final_height_p95_m": 0.012234247289597988,
+          "tail_speed_m_s": 0.00617581233382225,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 3.9552319794893265,
+          "corner_error_percent": 5.7057250291109085,
+          "final_height_p95_m": 0.045787882059812546,
+          "tail_speed_m_s": 0.00043788753100670874,
+          "success": false
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 2.1251270547509193,
+          "corner_error_percent": 3.3269207924604416,
+          "final_height_p95_m": 0.01249063853174448,
+          "tail_speed_m_s": 0.007619128096848726,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 2.1251270547509193,
+          "corner_error_percent": 3.3269207924604416,
+          "final_height_p95_m": 0.01249063853174448,
+          "tail_speed_m_s": 0.007619128096848726,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.425066754221916,
+        "corner_error_percent": 3.432433307170868,
+        "final_height_p95_m": 0.02831173688173294,
+        "tail_speed_m_s": 0.003030021907761693,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 20,
+        "min_z_m": -0.001455408986657858,
+        "overlap_probe_count": 24,
+        "positive_layer_fraction": 0.875,
+        "median_layer_gap_mm": 8.886265071003281
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002995565067976713,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -7.550770533271134e-05,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 12.351499105240093
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -4.7169451136142015e-05,
+          "overlap_probe_count": 25,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.03122219416572
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0019962231162935495,
+          "overlap_probe_count": 26,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.987347707512361
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -0.0003659071517176926,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.050212278439533
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -0.0003659071517176926,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.050212278439533
+        }
+      }
+    },
+    {
+      "seed": 50312,
+      "target": 0.04950271212332804,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 1,
+        "script_plus_two": 6,
+        "neural_plus_newton": 11,
+        "full_newton": 5
+      },
+      "learned_shortlist": [
+        1,
+        11,
+        6
+      ],
+      "script_shortlist": [
+        1,
+        6,
+        9
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 41.103750467300415,
+          "corner_error_percent": 95.05448341369629,
+          "final_height_p95_m": 0.002996808849275112,
+          "tail_speed_m_s": 4.266991879831039e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 2.9065407812595367,
+          "corner_error_percent": 3.4676045179367065,
+          "final_height_p95_m": 0.04093049094080925,
+          "tail_speed_m_s": 0.0002804934047162533,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 2.9065407812595367,
+          "corner_error_percent": 3.4676045179367065,
+          "final_height_p95_m": 0.04093049094080925,
+          "tail_speed_m_s": 0.0002804934047162533,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 2.475021965801716,
+          "corner_error_percent": 2.0858054980635643,
+          "final_height_p95_m": 0.0397823229432106,
+          "tail_speed_m_s": 0.0005739771877415478,
+          "success": false
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 3.3512473106384277,
+          "corner_error_percent": 4.863947257399559,
+          "final_height_p95_m": 0.01603640615940094,
+          "tail_speed_m_s": 0.003912036307156086,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 2.04178337007761,
+          "corner_error_percent": 3.5600654780864716,
+          "final_height_p95_m": 0.03246871754527092,
+          "tail_speed_m_s": 0.0008190044900402427,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 1.434941403567791,
+        "corner_error_percent": 1.4281421899795532,
+        "final_height_p95_m": 0.018634840846061707,
+        "tail_speed_m_s": 0.004787900485098362,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 15,
+        "min_z_m": 8.107675239443779e-05,
+        "overlap_probe_count": 40,
+        "positive_layer_fraction": 0.95,
+        "median_layer_gap_mm": 10.90955105769847
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002996783470734954,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0017714614514261484,
+          "overlap_probe_count": 37,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.954450851095006
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0017714614514261484,
+          "overlap_probe_count": 37,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.954450851095006
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.001935761421918869,
+          "overlap_probe_count": 44,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.985654818469548
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0005001453682780266,
+          "overlap_probe_count": 44,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.994049046692865
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0024816575460135937,
+          "overlap_probe_count": 42,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.975413641475033
+        }
+      }
+    },
+    {
+      "seed": 50313,
+      "target": 0.3035023197357922,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 2,
+        "script_plus_two": 10,
+        "neural_plus_newton": 8,
+        "full_newton": 6
+      },
+      "learned_shortlist": [
+        2,
+        5,
+        8
+      ],
+      "script_shortlist": [
+        1,
+        3,
+        10
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 26.855522394180298,
+          "corner_error_percent": 69.65585947036743,
+          "final_height_p95_m": 0.002996543189510703,
+          "tail_speed_m_s": 5.035828394284181e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 8.1403948366642,
+          "corner_error_percent": 13.741801679134369,
+          "final_height_p95_m": 0.01212757732719183,
+          "tail_speed_m_s": 0.0027263006195425987,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 3.07607464492321,
+          "corner_error_percent": 5.745080858469009,
+          "final_height_p95_m": 0.04162446781992912,
+          "tail_speed_m_s": 0.000989678897894919,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 2.8807146474719048,
+          "corner_error_percent": 4.952434822916985,
+          "final_height_p95_m": 0.023202788084745407,
+          "tail_speed_m_s": 0.00025375853874720633,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 1.9566861912608147,
+          "corner_error_percent": 3.354162722826004,
+          "final_height_p95_m": 0.012092786841094494,
+          "tail_speed_m_s": 0.0035609505139291286,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 1.8517432734370232,
+          "corner_error_percent": 3.1320970505476,
+          "final_height_p95_m": 0.011932030320167542,
+          "tail_speed_m_s": 0.0027939940337091684,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.723505347967148,
+        "corner_error_percent": 8.549880981445312,
+        "final_height_p95_m": 0.03122752159833908,
+        "tail_speed_m_s": 0.00683233980089426,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 51,
+        "min_z_m": -0.013663542456924915,
+        "overlap_probe_count": 21,
+        "positive_layer_fraction": 0.7142857142857143,
+        "median_layer_gap_mm": 3.7058222345183154
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029964952263981104,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.000603582477197051,
+          "overlap_probe_count": 26,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.945244704535567
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002555697923526168,
+          "overlap_probe_count": 27,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.983345624633678
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0023038601502776146,
+          "overlap_probe_count": 23,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.954514299353004
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0003465618356131017,
+          "overlap_probe_count": 21,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.975403244757535
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 2.918727113865316e-05,
+          "overlap_probe_count": 24,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.972779171832967
+        }
+      }
+    },
+    {
+      "seed": 50314,
+      "target": 0.2540260678463927,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 2,
+        "script_plus_two": 1,
+        "neural_plus_newton": 5,
+        "full_newton": 5
+      },
+      "learned_shortlist": [
+        2,
+        6,
+        5
+      ],
+      "script_shortlist": [
+        1,
+        3,
+        7
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 29.47627902030945,
+          "corner_error_percent": 74.6031403541565,
+          "final_height_p95_m": 0.002995775081217289,
+          "tail_speed_m_s": 6.166198431856174e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 5.292303487658501,
+          "corner_error_percent": 8.924608677625656,
+          "final_height_p95_m": 0.017893509939312935,
+          "tail_speed_m_s": 0.005538140423595905,
+          "success": false
+        },
+        "neural": {
+          "shape_error_percent": 2.6331186294555664,
+          "corner_error_percent": 6.1587657779455185,
+          "final_height_p95_m": 0.03900735452771187,
+          "tail_speed_m_s": 0.0009085856727324426,
+          "success": false
+        },
+        "script_plus_two": {
+          "shape_error_percent": 5.292303487658501,
+          "corner_error_percent": 8.924608677625656,
+          "final_height_p95_m": 0.017893509939312935,
+          "tail_speed_m_s": 0.005538140423595905,
+          "success": false
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 2.65977643430233,
+          "corner_error_percent": 2.971658483147621,
+          "final_height_p95_m": 0.03703734278678894,
+          "tail_speed_m_s": 0.00024903015582822263,
+          "success": false
+        },
+        "full_newton": {
+          "shape_error_percent": 2.65977643430233,
+          "corner_error_percent": 2.971658483147621,
+          "final_height_p95_m": 0.03703734278678894,
+          "tail_speed_m_s": 0.00024903015582822263,
+          "success": false
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 2.345934882760048,
+        "corner_error_percent": 6.9340139627456665,
+        "final_height_p95_m": 0.025677084922790527,
+        "tail_speed_m_s": 0.007259462960064411,
+        "success": true
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 32,
+        "min_z_m": -0.0007342151366174221,
+        "overlap_probe_count": 29,
+        "positive_layer_fraction": 0.896551724137931,
+        "median_layer_gap_mm": 10.351774910353805
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.002995658665895462,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.000692343688569963,
+          "overlap_probe_count": 36,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.000173761426415
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.001574061461724341,
+          "overlap_probe_count": 35,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.974353668344522
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.000692343688569963,
+          "overlap_probe_count": 36,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 9.000173761426415
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0025705492589622736,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.979338611869114
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0025705492589622736,
+          "overlap_probe_count": 32,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.979338611869114
+        }
+      }
+    },
+    {
+      "seed": 50315,
+      "target": 0.21997988039218924,
+      "indices": {
+        "no_move": 0,
+        "script": 1,
+        "neural": 5,
+        "script_plus_two": 5,
+        "neural_plus_newton": 5,
+        "full_newton": 5
+      },
+      "learned_shortlist": [
+        5,
+        11,
+        1
+      ],
+      "script_shortlist": [
+        1,
+        9,
+        5
+      ],
+      "outcomes": {
+        "no_move": {
+          "shape_error_percent": 31.32685422897339,
+          "corner_error_percent": 78.00766229629517,
+          "final_height_p95_m": 0.002997389994561672,
+          "tail_speed_m_s": 6.098574090174225e-07,
+          "success": false
+        },
+        "script": {
+          "shape_error_percent": 3.1951740384101868,
+          "corner_error_percent": 5.200191214680672,
+          "final_height_p95_m": 0.01206167135387659,
+          "tail_speed_m_s": 0.005290658678859472,
+          "success": true
+        },
+        "neural": {
+          "shape_error_percent": 2.3224029690027237,
+          "corner_error_percent": 3.327719122171402,
+          "final_height_p95_m": 0.0272675808519125,
+          "tail_speed_m_s": 0.0003019548312295228,
+          "success": true
+        },
+        "script_plus_two": {
+          "shape_error_percent": 2.3224029690027237,
+          "corner_error_percent": 3.327719122171402,
+          "final_height_p95_m": 0.0272675808519125,
+          "tail_speed_m_s": 0.0003019548312295228,
+          "success": true
+        },
+        "neural_plus_newton": {
+          "shape_error_percent": 2.3224029690027237,
+          "corner_error_percent": 3.327719122171402,
+          "final_height_p95_m": 0.0272675808519125,
+          "tail_speed_m_s": 0.0003019548312295228,
+          "success": true
+        },
+        "full_newton": {
+          "shape_error_percent": 2.3224029690027237,
+          "corner_error_percent": 3.327719122171402,
+          "final_height_p95_m": 0.0272675808519125,
+          "tail_speed_m_s": 0.0003019548312295228,
+          "success": true
+        }
+      },
+      "predicted_neural": {
+        "shape_error_percent": 3.9565183222293854,
+        "corner_error_percent": 5.88228739798069,
+        "final_height_p95_m": 0.03608611598610878,
+        "tail_speed_m_s": 0.004533200059086084,
+        "success": false
+      },
+      "neural_contact": {
+        "strict_edge_face_crossings": 16,
+        "min_z_m": 0.0009941994212567806,
+        "overlap_probe_count": 35,
+        "positive_layer_fraction": 0.9142857142857143,
+        "median_layer_gap_mm": 12.261611907904689
+      },
+      "native_contact": {
+        "no_move": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0029972018674016,
+          "overlap_probe_count": 0,
+          "positive_layer_fraction": null,
+          "median_layer_gap_mm": null
+        },
+        "script": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": -0.00020254272385500371,
+          "overlap_probe_count": 33,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.993754347802216
+        },
+        "neural": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0022755954414606094,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.960841777619805
+        },
+        "script_plus_two": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0022755954414606094,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.960841777619805
+        },
+        "neural_plus_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0022755954414606094,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.960841777619805
+        },
+        "full_newton": {
+          "strict_edge_face_crossings": 0,
+          "min_z_m": 0.0022755954414606094,
+          "overlap_probe_count": 31,
+          "positive_layer_fraction": 1.0,
+          "median_layer_gap_mm": 8.960841777619805
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "one_cpu_logical_core": 0,
+  "candidate_count": 12,
+  "hybrid_teacher_rollouts": 3,
+  "timed_tasks": [
+    {
+      "seed": 50300,
+      "neural_seconds": 0.001688147895038128,
+      "full_newton_seconds": 15.562995095737278,
+      "hybrid_seconds": 4.177309097722173,
+      "full_choice": 8,
+      "hybrid_choice": 5,
+      "neural_choice": 6,
+      "method_order": [
+        "full_newton",
+        "hybrid"
+      ]
+    },
+    {
+      "seed": 50301,
+      "neural_seconds": 0.0018517759162932634,
+      "full_newton_seconds": 16.079821445979178,
+      "hybrid_seconds": 3.7965242248028517,
+      "full_choice": 9,
+      "hybrid_choice": 1,
+      "neural_choice": 11,
+      "method_order": [
+        "hybrid",
+        "full_newton"
+      ]
+    },
+    {
+      "seed": 50302,
+      "neural_seconds": 0.0017212873790413141,
+      "full_newton_seconds": 16.3638434689492,
+      "hybrid_seconds": 3.960032335948199,
+      "full_choice": 5,
+      "hybrid_choice": 5,
+      "neural_choice": 5,
+      "method_order": [
+        "full_newton",
+        "hybrid"
+      ]
+    },
+    {
+      "seed": 50303,
+      "neural_seconds": 0.001681947847828269,
+      "full_newton_seconds": 14.492298789788038,
+      "hybrid_seconds": 4.051881834864616,
+      "full_choice": 6,
+      "hybrid_choice": 8,
+      "neural_choice": 10,
+      "method_order": [
+        "hybrid",
+        "full_newton"
+      ]
+    }
+  ],
+  "mean_neural_seconds": 0.0017357897595502436,
+  "mean_hybrid_seconds": 3.99643687333446,
+  "mean_full_newton_seconds": 15.624739700113423,
+  "full_over_hybrid": 3.909667585234943,
+  "full_over_neural": 9001.516234409582
+}

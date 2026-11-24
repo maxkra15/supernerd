@@ -1,0 +1,217 @@
+{
+  "core": 8,
+  "summary": {
+    "neurall": {
+      "full_ms": 8.589753764681518,
+      "fast_ms": 7.3856174713000655,
+      "gate_parity_max_m": 5.960464477539063e-08,
+      "decisions_matched": 32
+    },
+    "supernerd": {
+      "full_ms": 12.238200288265944,
+      "fast_ms": 0.5673272535204887,
+      "gate_parity_max_m": 9.872019290924072e-08,
+      "decisions_matched": 32
+    },
+    "supernerd_mixed": {
+      "full_ms": 12.403836124576628,
+      "fast_ms": 0.5686426302418113,
+      "gate_parity_max_m": 2.3096799850463867e-07,
+      "decisions_matched": 32
+    }
+  },
+  "per_object": [
+    {
+      "seed": 51240,
+      "model": "neurall",
+      "gate_parity_max_m": 5.960464477539063e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007362492149695754,
+      "full_median_s": 0.008596187457442284
+    },
+    {
+      "seed": 51240,
+      "model": "supernerd",
+      "gate_parity_max_m": 5.21540641784668e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005688895471394062,
+      "full_median_s": 0.012205244041979313
+    },
+    {
+      "seed": 51240,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 3.91155481338501e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005780130159109831,
+      "full_median_s": 0.012359242653474212
+    },
+    {
+      "seed": 51241,
+      "model": "neurall",
+      "gate_parity_max_m": 1.4901161193847656e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007337826769798994,
+      "full_median_s": 0.008390907431021333
+    },
+    {
+      "seed": 51241,
+      "model": "supernerd",
+      "gate_parity_max_m": 5.960464477539063e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005653135012835264,
+      "full_median_s": 0.012303055031225085
+    },
+    {
+      "seed": 51241,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 2.3096799850463867e-07,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005647556390613317,
+      "full_median_s": 0.012444854248315096
+    },
+    {
+      "seed": 51242,
+      "model": "neurall",
+      "gate_parity_max_m": 5.960464477539063e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007503291824832559,
+      "full_median_s": 0.0086362324655056
+    },
+    {
+      "seed": 51242,
+      "model": "supernerd",
+      "gate_parity_max_m": 3.818422555923462e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005628704093396664,
+      "full_median_s": 0.012462646933272481
+    },
+    {
+      "seed": 51242,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 4.842877388000488e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005641451571136713,
+      "full_median_s": 0.01236281800083816
+    },
+    {
+      "seed": 51243,
+      "model": "neurall",
+      "gate_parity_max_m": 5.704350769519806e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007539439480751753,
+      "full_median_s": 0.008710656547918916
+    },
+    {
+      "seed": 51243,
+      "model": "supernerd",
+      "gate_parity_max_m": 4.6566128730773926e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005667754448950291,
+      "full_median_s": 0.01219562441110611
+    },
+    {
+      "seed": 51243,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 6.379559636116028e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005726809613406658,
+      "full_median_s": 0.012505550868809223
+    },
+    {
+      "seed": 51244,
+      "model": "neurall",
+      "gate_parity_max_m": 3.725290298461914e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007448127260431647,
+      "full_median_s": 0.008774275658652186
+    },
+    {
+      "seed": 51244,
+      "model": "supernerd",
+      "gate_parity_max_m": 5.4016709327697754e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005742511712014675,
+      "full_median_s": 0.012436994351446629
+    },
+    {
+      "seed": 51244,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 5.960464477539063e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005699759349226952,
+      "full_median_s": 0.012470407877117395
+    },
+    {
+      "seed": 51245,
+      "model": "neurall",
+      "gate_parity_max_m": 1.1175870895385742e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007325273472815752,
+      "full_median_s": 0.008583320071920753
+    },
+    {
+      "seed": 51245,
+      "model": "supernerd",
+      "gate_parity_max_m": 4.842877388000488e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005846843123435974,
+      "full_median_s": 0.01219042087905109
+    },
+    {
+      "seed": 51245,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 8.009374141693115e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005673093255609274,
+      "full_median_s": 0.012306572403758764
+    },
+    {
+      "seed": 51246,
+      "model": "neurall",
+      "gate_parity_max_m": 3.91155481338501e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007361350115388632,
+      "full_median_s": 0.008457327028736472
+    },
+    {
+      "seed": 51246,
+      "model": "supernerd",
+      "gate_parity_max_m": 8.195638656616211e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005652843974530697,
+      "full_median_s": 0.012206521118059754
+    },
+    {
+      "seed": 51246,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 8.568167686462402e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005664634518325329,
+      "full_median_s": 0.012242782628163695
+    },
+    {
+      "seed": 51247,
+      "model": "neurall",
+      "gate_parity_max_m": 4.516914486885071e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.007408742792904377,
+      "full_median_s": 0.008304546121507883
+    },
+    {
+      "seed": 51247,
+      "model": "supernerd",
+      "gate_parity_max_m": 9.872019290924072e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005678790621459484,
+      "full_median_s": 0.012269879458472133
+    },
+    {
+      "seed": 51247,
+      "model": "supernerd_mixed",
+      "gate_parity_max_m": 3.5390257835388184e-08,
+      "decisions_matched": 4,
+      "fast_median_s": 0.0005960238631814718,
+      "full_median_s": 0.012598524102941155
+    }
+  ]
+}

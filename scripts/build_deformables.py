@@ -114,8 +114,28 @@ def main():
     gradient_results = ROOT / "deformables/gradients/results"
     retention = read(gradient_results / "retention/mean.json")
     clock = read(gradient_results / "fit-capture.json")["capture_including_compression_wall_s"]
-    html = env.get_template("deformable-physics.html.j2").render(rows=rows, fresh=fresh, asset=asset,
-                                                           retention=retention, gradient_clock=clock)
+    tasks = ROOT / "tasks"
+    fold = read(tasks / "cloth/confirmation.json")["summary"]
+    fold_clock = read(tasks / "cloth/timings.json")
+    fold_rows = [
+        ("no_move", "Leave flat", 0, "—"),
+        ("script", "Geometric fold", 0, "—"),
+        ("neural", "Learned choice", 0, f"{fold_clock['mean_neural_seconds'] * 1000:.2f} ms"),
+        ("script_plus_two", "Geometric + two random programs", 3, "—"),
+        ("neural_plus_newton", "Learned shortlist, Newton selection", 3, f"{fold_clock['mean_hybrid_seconds']:.2f} s"),
+        ("full_newton", "All candidates in Newton", 12, f"{fold_clock['mean_full_newton_seconds']:.2f} s"),
+    ]
+    cable_rows = [("zero", "No added load"), ("supernerd", "SuperNeRD, released"),
+                  ("supernerd_mixed", "SuperNeRD, mixed continuation"), ("neurall", "NeurALL, GRU"),
+                  ("newton", "Newton search")]
+    gate_results = tasks / "cable/results"
+    html = env.get_template("deformable-physics.html.j2").render(
+        rows=rows, fresh=fresh, asset=asset, retention=retention, gradient_clock=clock,
+        fold=fold, fold_clock=fold_clock, fold_rows=fold_rows, cable_rows=cable_rows,
+        gates=read(gate_results / "summary.json")["results"],
+        gate_fast=read(gate_results / "fast-planning.json")["summary"],
+        gate_cont=read(gate_results / "continuous-summary.json"),
+    )
     (ROOT / "index.html").write_text(html)
     if args.pdf:
         print_paper(html)
